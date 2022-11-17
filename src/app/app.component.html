@@ -1,1 +1,23 @@
-<h1>Hello World</h1>
+<div class="menu">
+  <div class="menu-desktop">
+    <img class="logo" src="assets/img/logo_small_light.png" />
+    <div class="nav">
+      <p>link</p>
+      <p>menu</p>
+      <p>menu</p>
+      <p>menu</p>
+      <p>menu</p>
+    </div>
+  </div>
+</div>
+
+<div class="slideshow-container">
+  <div class="slideshow-border">
+    <img
+      *ngIf="showImage"
+      class="img-slideshow"
+      src="assets/img/{{ images[currentImage] }}"
+    />
+  </div>
+</div>
+<div class="slideshow-container slideshow-overlay"></div>

@@ -1,24 +1,83 @@
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-desktop {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  margin-bottom: 2rem;
+  z-index: 555;
+  background-color: white;
+}
+
+img.logo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+  height: 90px;
+  width: auto;
+  z-index: 999;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0 4rem;
+  p {
+    color: #3d75be;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+}
+
 .slideshow-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   height: 100vh;
   width: 100vw;
   max-width: 100%;
   overflow: hidden;
 }
 
+.slideshow-border {
+  border: 1px solid red;
+  position: absolute;
+  height: 300px;
+  width: auto;
+}
+
 .img-slideshow {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
+  position: absolute;
+  top: 6rem;
+  height: 50vh;
+  width: auto;
   object-fit: cover;
   animation: zoomIn 8s ease-out infinite;
 }
 
 @keyframes zoomIn {
   from {
-    transform: scale(1);
+    transform: scale(0.9);
     blur: 1;
   }
   to {
     transform: scale(1.1);
   }
+}
+
+.slideshow-overlay {
+  background-color: grey;
 }

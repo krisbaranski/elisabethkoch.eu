@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
       setTimeout(() => {
         this.showImage = true;
-      }, 10);
+      }, 5);
     }, 8000);
   }
 }
