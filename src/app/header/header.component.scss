@@ -1,0 +1,31 @@
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 7rem;
+  z-index: 1;
+  padding: 0 120px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 8px rgba(27, 52, 74, 0.178);
+
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  img {
+    height: 50px;
+    padding-top: 30px;
+  }
+
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: rgb(28, 108, 179);
+    text-decoration: none;
+    margin-left: 32px;
+
+    &:hover {
+      color: rgba(63, 145, 216, 0.526);
+    }
+  }
+}
