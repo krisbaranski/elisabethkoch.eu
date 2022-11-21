@@ -27,7 +27,7 @@ export class SlideshowComponent implements OnInit {
 
       setTimeout(() => {
         this.showImage = true;
-      }, 5);
+      }, 15);
     }, 8000);
   }
 }

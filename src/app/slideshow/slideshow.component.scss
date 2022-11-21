@@ -11,6 +11,7 @@
   max-width: 100%;
   object-fit: cover;
   animation: zoomIn 8s ease-out infinite;
+  background-color: black;
 }
 
 @keyframes zoomIn {
@@ -30,11 +31,12 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
   p {
-    border-left: 3px solid white;
+    border-left: 3px solid #999;
     margin-left: 300px;
-    padding-left: 2rem;
-    font-size: 4rem;
+    padding-left: 3rem;
+    font-size: 3rem;
     font-style: italic;
+    font-weight: 100;
     color: white;
   }
 }
