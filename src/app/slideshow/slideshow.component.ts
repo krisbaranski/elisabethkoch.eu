@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-slideshow',
+  templateUrl: './slideshow.component.html',
+  styleUrls: ['./slideshow.component.scss'],
 })
-<<<<<<< HEAD
-export class AppComponent implements OnInit {
+export class SlideshowComponent implements OnInit {
   images = ['image0.jpg', 'image1.jpg', 'image2.jpg'];
+  headlines = [
+    'bring your voice to the next level',
+    'sing like a bird',
+    'make your voice strong and confindent',
+  ];
   currentImage = 0;
   showImage = true;
 
@@ -24,11 +27,7 @@ export class AppComponent implements OnInit {
 
       setTimeout(() => {
         this.showImage = true;
-      }, 5);
+      }, 15);
     }, 8000);
   }
-=======
-export class AppComponent {
-  constructor(public router: Router) {}
->>>>>>> main
 }

@@ -1,0 +1,57 @@
+.slideshow-container {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.img-slideshow {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  object-fit: cover;
+  animation: zoomIn 8s ease-out infinite;
+  background-color: black;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+    blur: 1;
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.slideshow-overlay {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  p {
+    border-left: 3px solid rgba(188, 224, 255, 0.5);
+    margin-left: 300px;
+    padding-left: 3rem;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 100;
+    color: white;
+  }
+}
+
+.fadeIn {
+  animation: fadeInAnimation 1.5s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

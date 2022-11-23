@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="menu">
   <div class="menu-desktop">
     <img class="logo" src="assets/img/logo_small_light.png" />
@@ -21,3 +22,9 @@
   </div>
 </div>
 <div class="slideshow-container slideshow-overlay"></div>
+=======
+<app-header [darkMode]="router.url !== '/'"></app-header>
+<div [class.container]="router.url !== '/'">
+  <router-outlet></router-outlet>
+</div>
+>>>>>>> main
