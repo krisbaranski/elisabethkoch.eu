@@ -1,6 +1,6 @@
 <header [class.headerDark]="darkMode">
-  <img *ngIf="!darkMode" src="assets/img/logo_white.png" />
-  <img *ngIf="darkMode" src="assets/img/logo_blue.png" />
+  <img *ngIf="!darkMode" src="assets/img/logo_chopin_white.png" />
+  <img *ngIf="darkMode" src="assets/img/logo_chopin_blue.png" />
 
   <div [class.darkLinks]="darkMode">
     <a routerLink="/">Home</a>
@@ -10,5 +10,9 @@
     <a href="#">Contact</a> -->
     <a routerLink="privacy">Privacy Policy</a>
     <a routerLink="impressum">Impressum</a>
+
+    <!-- Translation links -->
+    <a class="langLink" (click)="translate.use('de')">DE</a>|
+    <a class="langLink" (click)="translate.use('en')">EN</a>
   </div>
 </header>
