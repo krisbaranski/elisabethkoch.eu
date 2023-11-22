@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class SlideshowComponent implements OnInit {
   images = ['image0.jpg', 'image1.jpg', 'image2.jpg'];
   headlines = [
-    'bring your voice to the next level',
+    'bring your appearance /n to the next level',
     'sing like a bird',
-    'make your voice strong and confindent',
+    'model your presence strong and confindent',
   ];
   currentImage = 0;
   showImage = true;
