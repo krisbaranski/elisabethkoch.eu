@@ -1,19 +1,23 @@
-header {
+footer {
   position: absolute;
   left: 0;
   right: 0;
-  height: 6rem;
+  padding: 20px 0;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(54, 14, 81, 0.864);
   box-shadow: 0px 6px 8px 0 rgba(27, 52, 74, 0.05);
 
-  menu {
+  div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     max-width: 1024px;
     margin: auto;
-    padding: 10px 30px;
+    padding: 20px 0;
+    line-height: 0.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: white;
 
     img {
       height: 60px;
@@ -35,7 +39,7 @@ header {
   }
 }
 
-.headerDark {
+.footerDark {
   background-color: white;
   box-shadow: 0px 6px 8px 0 rgba(27, 52, 74, 0.1);
 }
@@ -50,40 +54,8 @@ header {
   }
 }
 
-// .langLink {
-//   margin: 0;
-//   padding: 0;
-//   cursor: pointer;
-// }
-
 @media only screen and (max-width: 768px) {
-  header {
-    height: 5rem;
-    padding: 0 20px;
-
-    menu {
-      img {
-        height: 40px;
-        padding: 10px 0;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  header {
+  footer {
     padding: 10px 20px;
-    menu {
-      a {
-        flex-direction: column;
-        text-align: right;
-      }
-    }
-  }
-  .darkLinks {
-    a {
-      flex-direction: column;
-    }
   }
 }
