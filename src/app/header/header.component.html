@@ -1,5 +1,5 @@
 <header [class.headerDark]="darkMode">
-  <menu>
+  <menu [class.headerDark]="darkMode">
     <img *ngIf="!darkMode" src="assets/img/logo_light.png" />
     <img *ngIf="darkMode" src="assets/img/logo_dark.png" />
 
