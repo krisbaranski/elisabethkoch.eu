@@ -1,10 +1,10 @@
 footer {
-  position: relative;
+  position: absolute;
   left: 0;
   right: 0;
-  padding: 20px 0;
+  //   padding: 40px 0;
   z-index: 1;
-  background-color: rgba(54, 14, 81, 0.864);
+  background-color: #596c80ec;
   box-shadow: 0px 6px 8px 0 rgba(27, 52, 74, 0.05);
 
   div {
@@ -15,20 +15,25 @@ footer {
     flex-direction: column;
     max-width: 1024px;
     margin: auto;
-    padding: 20px 0;
-    line-height: 0.1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    color: white;
+    padding: 30px 0;
 
+    p {
+      //   padding: 2px 0;
+      margin: 5px auto;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 100;
+      color: white;
+    }
     img {
       height: 60px;
       padding: 10px 0;
     }
 
     a {
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 200;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 100;
       color: white;
       text-decoration: none;
       margin-left: 32px;
