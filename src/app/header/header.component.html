@@ -1,7 +1,7 @@
 <header [class.headerDark]="darkMode">
   <menu [class.headerDark]="darkMode">
-    <img *ngIf="!darkMode" src="assets/img/logo_light.png" />
-    <img *ngIf="darkMode" src="assets/img/logo_dark.png" />
+    <img *ngIf="!darkMode" src="assets/img/logo_light.png" routerLink="/" />
+    <img *ngIf="darkMode" src="assets/img/logo_dark.png" routerLink="/" />
 
     <div [class.darkLinks]="darkMode">
       <a routerLink="/">Home</a>
