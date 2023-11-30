@@ -75,5 +75,22 @@ footer {
 @media only screen and (max-width: 768px) {
   footer {
     padding: 10px 20px;
+    margin: auto;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: left;
+      max-width: 200px;
+      text-align: left;
+
+      img {
+        height: 50px;
+      }
+    }
+    div {
+      margin: 20px 0;
+    }
   }
 }
