@@ -2,41 +2,53 @@ footer {
   position: absolute;
   left: 0;
   right: 0;
-  //   padding: 40px 0;
+  padding: 30px 0;
   z-index: 1;
   background-color: #596c80ec;
   box-shadow: 0px 6px 8px 0 rgba(27, 52, 74, 0.05);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: auto;
+    max-width: 1024px;
+
+    img {
+      //   margin: auto 0;
+      height: 80px;
+      padding-top: 5px;
+    }
+  }
 
   div {
-    // position: absolute;
-    // bottom: 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    max-width: 1024px;
-    margin: auto;
-    padding: 30px 0;
+    // align-items: flex-start;
+    // justify-content: flex-start;
+    text-align: left;
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: white;
+      margin: 5px;
+      padding-bottom: 10px;
+    }
 
     p {
-      //   padding: 2px 0;
       margin: 5px auto;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
       font-weight: 100;
       color: white;
-    }
-    img {
-      height: 60px;
-      padding: 10px 0;
+      margin: 5px;
     }
 
     a {
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
       font-weight: 100;
       color: white;
       text-decoration: none;
-      margin-left: 32px;
+      margin: 5px;
 
       &:hover {
         color: rgba(255, 255, 255, 0.8);
@@ -45,20 +57,20 @@ footer {
   }
 }
 
-.footerDark {
-  background-color: white;
-  box-shadow: 0px 6px 8px 0 rgba(27, 52, 74, 0.1);
-}
+// .footerDark {
+//   background-color: white;
+//   box-shadow: 0px 6px 8px 0 rgba(27, 52, 74, 0.1);
+// }
 
-.darkLinks {
-  a {
-    color: rgb(28, 108, 179);
+// .darkLinks {
+//   a {
+//     color: rgb(28, 108, 179);
 
-    &:hover {
-      color: rgba(63, 145, 216, 0.5);
-    }
-  }
-}
+//     &:hover {
+//       color: rgba(63, 145, 216, 0.5);
+//     }
+//   }
+// }
 
 @media only screen and (max-width: 768px) {
   footer {
