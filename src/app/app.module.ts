@@ -12,6 +12,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { AppointmentComponent } from './appointment/appointment.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -27,6 +29,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrivacyComponent,
     FooterComponent,
     ContactComponent,
+    AboutmeComponent,
+    AppointmentComponent,
   ],
   imports: [
     BrowserModule,
