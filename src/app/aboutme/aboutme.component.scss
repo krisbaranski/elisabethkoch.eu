@@ -1,20 +1,30 @@
-.slideshow-container {
+section {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  height: 650px;
+  background-color: rgb(193, 177, 135);
+}
+
+.slideshow-container {
   max-width: 100%;
+  margin: auto;
+  max-width: 980px;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
   overflow: hidden;
 }
 
 .img-slideshow {
-  top: 0;
   height: 650px;
-  width: 100vw;
-  max-width: 100%;
+  width: 1080px;
   object-fit: cover;
+  object-position: top;
   animation: zoomIn 8s ease-out infinite;
   background-color: black;
+  overflow: hidden;
 }
 
 @keyframes zoomIn {
@@ -28,8 +38,9 @@
 }
 
 .slideshow-overlay {
+  // border: 2px solid red;
   position: relative;
-  top: 400px;
+  top: -100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,10 +87,10 @@
 
 .about {
   position: relative;
-  //   top: 500px;
+  // top: 500px;
   //   margin-top: 1000px;
   max-width: 800px;
-  margin: 450px auto 0;
+  margin: 550px auto 0;
   padding: 10px 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
@@ -114,3 +125,129 @@
     }
   }
 }
+
+// section {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .slideshow-container {
+//   position: absolute;
+//   display: flex;
+//   top: 0;
+//   // left: 0;
+//   // right: 0;
+//   //   max-width: 100%;
+//   // margin: 0 auto;
+//   overflow: hidden;
+// }
+
+// .img-slideshow {
+//   // top: 0;
+//   height: 650px;
+//   //   width: 100vw;
+//   max-width: 1280px;
+//   object-fit: cover;
+//   animation: zoomIn 8s ease-out infinite;
+//   background-color: black;
+// }
+
+// @keyframes zoomIn {
+//   from {
+//     transform: scale(1);
+//     blur: 1;
+//   }
+//   to {
+//     transform: scale(1.1);
+//   }
+// }
+
+// .slideshow-overlay {
+//   position: relative;
+//   top: 400px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   p {
+//     font-size: 2.5rem;
+//     font-style: italic;
+//     font-weight: 100;
+//     text-align: center;
+//     text-wrap: balance;
+//     color: white;
+//   }
+// }
+
+// .fadeIn {
+//   animation: fadeInAnimation 1.5s ease-in-out;
+// }
+
+// @keyframes fadeInAnimation {
+//   from {
+//     opacity: 0;
+//     transform: translateX(-150px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// .headerDark {
+//   background-color: white;
+// }
+
+// .darkLinks {
+//   a {
+//     color: rgb(28, 108, 179);
+
+//     &:hover {
+//       color: rgba(63, 145, 216, 0.5);
+//       background-color: rgba(63, 145, 216, 0.2);
+//     }
+//   }
+// }
+
+// .about {
+//   position: relative;
+//   max-width: 800px;
+//   margin: 450px auto 0;
+//   padding: 10px 0;
+//   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+//   h1 {
+//     font-size: 1.5rem;
+//     font-weight: 300;
+//     color: grey;
+//   }
+
+//   p {
+//     font-size: 1rem;
+//     font-weight: 200;
+//   }
+// }
+
+// @media only screen and (max-width: 1024px) {
+//   .slideshow-overlay {
+//     p {
+//       margin: 20px;
+//       font-size: 2rem;
+//       text-wrap: balance;
+//     }
+//   }
+
+//   .about {
+//     margin: 500px auto 0;
+//   }
+// }
+
+// @media only screen and (max-width: 768px) {
+//   .slideshow-overlay {
+//     p {
+//       margin: 10px;
+//       font-size: 1.5rem;
+//       text-wrap: balance;
+//     }
+//   }
+// }
