@@ -1,11 +1,12 @@
  footer {
-  background-color: #596c80ec;
+  background: gradient(#7d95afec, #596c80ec, #334557ec) ;
+  background: radial-gradient(#89a3bfec, #435a73);
+  padding: 60px 0;
   
   section {
     display: grid;
     width: min(90%, 880px);
     margin-inline: auto;
-    padding: 80px auto;
   }
 
   .flow {
