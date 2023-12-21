@@ -1,6 +1,6 @@
  footer {
-  background: gradient(#7d95afec, #596c80ec, #334557ec) ;
-  background: radial-gradient(#89a3bfec, #435a73);
+  // background: gradient(#7d95afec, #596c80ec, #334557ec) ;
+  background: linear-gradient(90deg,#435a73, #6883a0ec,#89a3bfec, #89a3bfec, #6883a0ec,  #435a73);
   padding: 60px 0;
   
   section {
@@ -72,13 +72,21 @@
 // // }
 
 @media (min-width: 40em) {
-  section {
+  footer {
+    background: radial-gradient(#89a3bfec, #435a73);
+
+    section {
     grid-template-columns: repeat(2, 1fr);
+  }
  }
 }
 
 @media (min-width: 60em) {
-  section {
-    grid-template-columns: repeat(4, 1fr);
-   }
+  footer {
+    background: radial-gradient(#89a3bfec, #435a73);
+
+    section {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
