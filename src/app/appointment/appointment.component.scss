@@ -39,7 +39,6 @@ section {
   td {
     background-color: hsla(213, 77%, 75%, 0.1);
     padding: 1rem 1.3rem;
-    // text-align: left;
   }
 
   tr:nth-of-type(2n) {
@@ -47,6 +46,7 @@ section {
   }
   td:nth-of-type(2n) {
     width: 20%;
+    text-align: center;
     // border: 2px solid red;
   }
 
