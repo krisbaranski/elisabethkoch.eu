@@ -46,7 +46,8 @@ section {
   justify-content: center;
 
   p {
-    font-size: 2.5rem;
+    margin: 20px;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: 100;
     text-align: center;
@@ -71,24 +72,11 @@ section {
   }
 }
 
-// DARK MODE
-.headerDark {
-  background-color: white;
-}
-
-.darkLinks {
-  a {
-    color: rgb(28, 108, 179);
-
-    &:hover {
-      color: rgba(63, 145, 216, 0.5);
-      background-color: rgba(63, 145, 216, 0.2);
-    }
-  }
-}
-
 // TEXT
 .about {
+  display: flex;
+  flex-direction: column;
+
   position: relative;
   width: min(90%, 800px);
   margin-inline: auto;
@@ -106,10 +94,11 @@ section {
   p {
     font-size: 1rem;
     font-weight: 200;
+    line-height: 1.4;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media (min-width: 40em) {
   .slideshow-overlay {
     p {
       margin: 20px;
@@ -117,13 +106,21 @@ section {
       text-wrap: balance;
     }
   }
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .right_col {
+    padding: 0 20px;
+    padding-top: 43px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 60em) {
   .slideshow-overlay {
     p {
-      margin: 10px;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       text-wrap: balance;
     }
   }
