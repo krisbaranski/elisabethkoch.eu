@@ -39,6 +39,10 @@ section {
   td {
     background-color: hsla(213, 77%, 75%, 0.1);
     padding: 1rem 1.3rem;
+
+    span {
+      font-weight: 400;
+    }
   }
 
   tr:nth-of-type(2n) {
