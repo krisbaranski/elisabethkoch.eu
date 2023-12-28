@@ -1,5 +1,7 @@
-<app-header [darkMode]="router.url !== '/'"></app-header>
+<app-header
+  [darkMode]="router.url !== '/' && router.url !== '/aboutme'"
+></app-header>
 <div [class.container]="router.url !== '/'">
   <router-outlet></router-outlet>
 </div>
-<app-footer></app-footer>
+<app-footer [darkMode]="router.url !== '/'"></app-footer>
