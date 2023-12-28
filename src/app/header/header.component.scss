@@ -34,7 +34,7 @@ header {
 
       &:hover {
         color: white;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       }
     }
   }
@@ -81,14 +81,6 @@ header {
       }
       a {
         font-size: 1rem;
-
-        &:hover {
-          border-bottom: 2px solid rgba(28, 109, 179, 0.5);
-        }
-
-        &:active {
-          border-bottom: 2px solid rgba(28, 109, 179, 0.5);
-        }
       }
     }
   }
