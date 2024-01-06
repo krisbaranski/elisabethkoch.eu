@@ -54,7 +54,7 @@ section {
   }
 }
 
-// TEXT ANIMATION
+// SLIDETEXT ANIMATION
 .fadeIn {
   animation: fadeInAnimation 1.5s ease-in-out;
 }
@@ -74,32 +74,34 @@ section {
 .about {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 
   position: relative;
-  width: min(90%, 800px);
-  margin-inline: auto;
-  margin: 650px auto 40px;
-  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  width: min(100%, 980px);
+  margin: 630px auto 0;
+  padding: 40px 30px 100px 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  // border: 2px solid red;
+  color: rgb(122, 104, 38);
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 300;
-    color: grey;
   }
 
   p {
-    font-size: 1rem;
-    font-weight: 200;
+    font-size: 1.1rem;
+    font-weight: 300;
     line-height: 1.4;
+    text-wrap: balance;
   }
 }
 
 @media (min-width: 40em) {
   .slideshow-overlay {
     p {
-      margin: 20px;
+      // margin: 20px;
       font-size: 2rem;
       text-wrap: balance;
     }
@@ -112,6 +114,7 @@ section {
   .right_col {
     padding: 0 20px;
     padding-top: 43px;
+    line-height: 1.4;
   }
 }
 
