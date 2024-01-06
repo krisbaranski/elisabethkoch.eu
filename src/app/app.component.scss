@@ -31,12 +31,13 @@
   width: 200px;
   height: 200px;
   border-radius: 9999px;
-  filter: blur(190px);
+  // opacity: 0.5;
+  filter: blur(108px);
 }
 
 .shape1 {
   animation: one 30s infinite ease;
-  background-color: rgba(130, 91, 13, 0.2);
+  background-color: rgba(130, 91, 13, 0.3);
 }
 
 @keyframes one {
@@ -64,7 +65,7 @@
 
 .shape2 {
   animation: two 25s infinite ease-in-out;
-  background-color: rgba(197, 133, 80, 0.2);
+  background-color: rgba(197, 133, 80, 0.3);
 }
 
 @keyframes two {
@@ -92,7 +93,7 @@
 
 .shape3 {
   animation: three 20s infinite ease-in;
-  background-color: rgba(103, 121, 202, 0.2);
+  background-color: rgba(103, 121, 202, 0.3);
 }
 
 @keyframes three {
@@ -120,7 +121,7 @@
 
 .shape4 {
   animation: four 40s infinite ease-in-out;
-  background-color: rgba(86, 143, 183, 0.2);
+  background-color: rgba(86, 143, 183, 0.3);
 }
 
 @keyframes four {
@@ -148,7 +149,7 @@
 
 .shape5 {
   animation: five 30s infinite ease;
-  background-color: rgba(193, 167, 81, 0.2);
+  background-color: rgba(193, 167, 81, 0.3);
 }
 
 @keyframes five {
