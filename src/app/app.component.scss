@@ -1,7 +1,197 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .container {
-  padding: 20px 20px 0 20px;
+  padding: 20px 0 0 0;
 }
 
 .slideshow-overlay {
   background-color: grey;
+}
+
+.animated_background {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.shapes {
+  position: fixed;
+  z-index: 0;
+}
+
+.shape1,
+.shape2,
+.shape3,
+.shape4,
+.shape5 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 9999px;
+  filter: blur(190px);
+}
+
+.shape1 {
+  animation: one 30s infinite ease;
+  background-color: rgba(183, 86, 86, 0.2);
+}
+
+@keyframes one {
+  0% {
+    left: 20vw;
+    top: 60vh;
+  }
+  25% {
+    left: 50vw;
+    top: 100vh;
+  }
+  50% {
+    left: 70vw;
+    top: 80vh;
+  }
+  75% {
+    left: 30vw;
+    top: 50vh;
+  }
+  100% {
+    left: 10vw;
+    top: 20vh;
+  }
+}
+
+.shape2 {
+  animation: two 25s infinite ease-in-out;
+  background-color: rgba(86, 141, 183, 0.2);
+}
+
+@keyframes two {
+  0% {
+    left: 40vw;
+    top: 80vh;
+  }
+  25% {
+    left: 50vw;
+    top: 50vh;
+  }
+  50% {
+    left: 80vw;
+    top: 30vh;
+  }
+  75% {
+    left: 60vw;
+    top: 10vh;
+  }
+  100% {
+    left: 20vw;
+    top: 50vh;
+  }
+}
+
+.shape3 {
+  animation: three 20s infinite ease-in;
+  background-color: rgba(152, 86, 183, 0.2);
+}
+
+@keyframes three {
+  0% {
+    left: 60vw;
+    top: 90vh;
+  }
+  25% {
+    left: 15vw;
+    top: 79vh;
+  }
+  50% {
+    left: 5vw;
+    top: 57vh;
+  }
+  75% {
+    left: 12vw;
+    top: 36vh;
+  }
+  100% {
+    left: 20vw;
+    top: 25vh;
+  }
+}
+
+.shape4 {
+  animation: four 40s infinite ease-in-out;
+  background-color: rgba(86, 183, 164, 0.2);
+}
+
+@keyframes four {
+  0% {
+    left: 70vw;
+    top: 50vh;
+  }
+  25% {
+    left: 80vw;
+    top: 40vh;
+  }
+  50% {
+    left: 90vw;
+    top: 30vh;
+  }
+  75% {
+    left: 60vw;
+    top: 15vh;
+  }
+  100% {
+    left: 40vw;
+    top: 10vh;
+  }
+}
+
+.shape5 {
+  animation: five 30s infinite ease;
+  background-color: rgba(183, 177, 86, 0.2);
+}
+
+@keyframes five {
+  0% {
+    left: 5vw;
+    top: 2vh;
+  }
+  25% {
+    left: 8vw;
+    top: 17vh;
+  }
+  50% {
+    left: 40vw;
+    top: 50vh;
+  }
+  75% {
+    left: 50vw;
+    top: 30vh;
+  }
+  100% {
+    left: 10vw;
+    top: 10vh;
+  }
+}
+
+@media (min-width: 40em) {
+  .shape1,
+  .shape2,
+  .shape3,
+  .shape4,
+  .shape5 {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 60em) {
+  .shape1,
+  .shape2,
+  .shape3,
+  .shape4,
+  .shape5 {
+    width: 700px;
+    height: 700px;
+  }
 }
