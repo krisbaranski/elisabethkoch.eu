@@ -1,7 +1,7 @@
 div {
   position: relative;
   box-sizing: border-box;
-  margin-top: 100px;
+  margin-top: 93px;
   width: min(100%, 800px);
   margin-inline: auto;
   padding: 30px;
@@ -31,6 +31,8 @@ div {
 
 @media (min-width: 40em) {
   div {
+    margin-top: 100px;
+
     h1 {
       font-size: 2.5rem;
       font-weight: 300;

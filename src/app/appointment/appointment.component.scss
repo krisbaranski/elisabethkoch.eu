@@ -1,12 +1,13 @@
 section {
   position: relative;
-  margin-top: 120px;
+  margin-top: 93px;
   width: min(100%, 780px);
   margin-inline: auto;
   padding: 40px 30px 100px 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(28, 108, 179);
   background-color: rgba(255, 255, 255, 0.4);
+
   // img {
   //   position: absolute;
   //   top: 0;
@@ -52,7 +53,6 @@ section {
   td:nth-of-type(2n) {
     width: 18%;
     text-align: center;
-    // border: 2px solid red;
   }
 
   td,
@@ -70,12 +70,10 @@ section {
   ol {
     padding-left: 20px;
   }
-  // .notes {
-  //   font-size: 0.6rem;
-  //   font-style: italic;
-  //   font-weight: 100;
-  //   line-height: 1;
-  //   // background-color: hsla(208, 100%, 97%, 0.862);
-  //   // border-radius: 5px;
-  // }
+}
+
+@media (min-width: 40em) {
+  section {
+    margin-top: 100px;
+  }
 }

@@ -1,14 +1,13 @@
 section {
   position: relative;
   box-sizing: border-box;
-  margin-top: 120px;
+  margin-top: 93px;
   width: min(100%, 780px);
   margin-inline: auto;
   padding: 40px 60px 100px 60px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(28, 108, 179);
   background-color: rgba(255, 255, 255, 0.4);
-  // border: 2px solid red;
 
   // img {
   //   background-color: #ffffff;
@@ -33,45 +32,47 @@ section {
     line-height: 1.6;
     text-wrap: balance;
   }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
 
-  .contact {
-    display: flex;
-    flex-direction: column;
+  font-family: inherit;
+  // border: 2px solid red;
 
-    font-family: inherit;
-    // border: 2px solid red;
-
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 300;
-      color: grey;
-    }
-
-    p {
-      font-size: 1rem;
-      font-weight: 200;
-    }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: grey;
   }
 
-  a {
+  p {
     font-size: 1rem;
-    font-weight: 500;
-    color: rgb(28, 108, 179);
-    text-decoration: none;
+    font-weight: 200;
   }
+}
 
-  @media (min-width: 40em) {
-    .contact {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
+a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(28, 108, 179);
+  text-decoration: none;
+}
 
-      .right_col {
-        padding: 5px 20px;
+@media (min-width: 40em) {
+  section {
+    margin-top: 100px;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 
-        p {
-          line-height: 1.8;
-        }
+    .right_col {
+      padding: 5px 20px;
+
+      p {
+        line-height: 1.8;
       }
     }
   }
