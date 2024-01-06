@@ -36,7 +36,7 @@
 
 .shape1 {
   animation: one 30s infinite ease;
-  background-color: rgba(183, 86, 86, 0.2);
+  background-color: rgba(130, 91, 13, 0.2);
 }
 
 @keyframes one {
@@ -57,19 +57,19 @@
     top: 50vh;
   }
   100% {
-    left: 10vw;
-    top: 20vh;
+    left: 20vw;
+    top: 60vh;
   }
 }
 
 .shape2 {
   animation: two 25s infinite ease-in-out;
-  background-color: rgba(86, 141, 183, 0.2);
+  background-color: rgba(197, 133, 80, 0.2);
 }
 
 @keyframes two {
   0% {
-    left: 40vw;
+    left: 30vw;
     top: 80vh;
   }
   25% {
@@ -85,14 +85,14 @@
     top: 10vh;
   }
   100% {
-    left: 20vw;
-    top: 50vh;
+    left: 30vw;
+    top: 80vh;
   }
 }
 
 .shape3 {
   animation: three 20s infinite ease-in;
-  background-color: rgba(152, 86, 183, 0.2);
+  background-color: rgba(103, 121, 202, 0.2);
 }
 
 @keyframes three {
@@ -120,7 +120,7 @@
 
 .shape4 {
   animation: four 40s infinite ease-in-out;
-  background-color: rgba(86, 183, 164, 0.2);
+  background-color: rgba(86, 143, 183, 0.2);
 }
 
 @keyframes four {
@@ -148,7 +148,7 @@
 
 .shape5 {
   animation: five 30s infinite ease;
-  background-color: rgba(183, 177, 86, 0.2);
+  background-color: rgba(193, 167, 81, 0.2);
 }
 
 @keyframes five {
@@ -165,12 +165,12 @@
     top: 50vh;
   }
   75% {
-    left: 50vw;
-    top: 30vh;
+    left: 30vw;
+    top: 20vh;
   }
   100% {
-    left: 10vw;
-    top: 10vh;
+    left: 5vw;
+    top: 2vh;
   }
 }
 
