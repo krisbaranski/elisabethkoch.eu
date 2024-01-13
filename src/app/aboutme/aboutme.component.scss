@@ -3,22 +3,24 @@ section {
   position: relative;
   z-index: 0;
 }
+
 .background-container {
-  position: absolute;
-  height: 100%;
-  width: 100vw;
-  max-width: 100%;
+  position: fixed;
+  // height: 100%;
+  // width: 100vw;
+  max-height: 100%;
   overflow: hidden;
-  transform: translateY(-20px);
+  // transform: translateY(-20px);
 }
 
 .img-backclip {
   height: 100vh;
-  width: 100vw;
+  // width: 100vw;
   max-width: 100%;
   object-fit: cover;
   object-position: bottom;
-  animation: zoomOut 8s ease-out infinite;
+  margin: auto;
+  // animation: zoomOut 8s ease-out infinite;
   filter: blur(10px);
   background-color: #435a73;
 }
@@ -140,6 +142,26 @@ aside {
 }
 
 @media (min-width: 40em) {
+  .background-container {
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    transform: translateY(-20px);
+  }
+
+  .img-backclip {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    animation: zoomOut 8s ease-out infinite;
+    filter: blur(10px);
+    background-color: #435a73;
+  }
+
   .slideshow-overlay {
     p {
       // margin: 20px;
