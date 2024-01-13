@@ -1,4 +1,11 @@
-<section>
+<section class="background-container">
+  <img
+    *ngIf="showImage"
+    class="img-backclip"
+    src="assets/img/{{ images[currentImage] }}"
+  />
+</section>
+<aside>
   <div class="slideshow-container">
     <img
       *ngIf="showImage"
@@ -6,12 +13,13 @@
       src="assets/img/{{ images[currentImage] }}"
     />
   </div>
+
   <div class="slideshow-container slideshow-overlay">
     <p *ngIf="showImage" class="fadeIn">
       {{ headlines[currentImage] }}
     </p>
   </div>
-</section>
+</aside>
 <div class="about">
   <div class="left_col">
     <h1>Über Mich</h1>
