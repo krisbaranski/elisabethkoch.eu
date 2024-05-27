@@ -25,14 +25,8 @@ section {
     font-size: 2.5rem;
     font-weight: 300;
   }
-
-  p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 1.6;
-    text-wrap: balance;
-  }
 }
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -47,8 +41,11 @@ section {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 200;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    text-wrap: balance;
   }
 }
 
@@ -61,7 +58,7 @@ a {
 
 @media (min-width: 40em) {
   section {
-    margin-top: 100px;
+    margin-top: 150px;
   }
   .contact {
     display: grid;
@@ -69,7 +66,14 @@ a {
     gap: 1rem;
 
     .right_col {
-      padding: 5px 20px;
+      padding: 5px 0;
+
+      p {
+        line-height: 1.8;
+      }
+    }
+    .left_col {
+      padding: 10px 0;
 
       p {
         line-height: 1.8;
