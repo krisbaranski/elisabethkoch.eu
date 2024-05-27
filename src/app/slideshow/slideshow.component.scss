@@ -17,7 +17,7 @@
 @keyframes zoomIn {
   from {
     transform: scale(1);
-    blur: 1;
+    blur: 20;
   }
   to {
     transform: scale(1.1);
@@ -30,11 +30,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
+
   p {
-    // border-left: 3px solid rgba(188, 224, 255, 0.5);
     margin: auto;
-    // padding-left: 3rem;
     font-size: 3rem;
     font-style: italic;
     font-weight: 100;
@@ -42,6 +42,68 @@
     text-wrap: balance;
     color: white;
   }
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 20vw;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin: 1rem 2rem;
+  padding: 2rem;
+  color: white;
+  backdrop-filter: blur(0.8rem);
+  background-color: #eeeeee40;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+.space {
+  height: 30vh;
+  width: 100%;
+
+  p {
+    transform: translateY(16vh);
+    border-top: 1px solid #aaa;
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.text {
+  max-width: 45vw;
+  margin: 6rem 2rem;
 }
 
 .fadeIn {
@@ -66,6 +128,36 @@
       font-size: 2.5rem;
       text-wrap: balance;
     }
+  }
+
+  .boxes {
+    position: relative;
+    margin-top: 4rem;
+  }
+
+  .box {
+    width: 30vw;
+    border: 1px solid #777;
+    border-radius: 5px;
+    margin: 1rem 2rem;
+    padding: 2rem;
+    color: #555;
+    backdrop-filter: blur(0.8rem);
+    background-color: #eeeeee40;
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+
+  .text {
+    max-width: 70vw;
+    margin: 4rem 2rem;
   }
 }
 
