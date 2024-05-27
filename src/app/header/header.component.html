@@ -1,12 +1,14 @@
 <header [class.headerDark]="darkMode">
   <menu [class.headerDark]="darkMode">
-    <img *ngIf="!darkMode" src="assets/img/logo_light.png" routerLink="/" />
-    <img *ngIf="darkMode" src="assets/img/logo_dark.png" routerLink="/" />
+    <div class="logo">
+      <img *ngIf="!darkMode" src="assets/img/logo_white.png" routerLink="/" />
+      <img *ngIf="darkMode" src="assets/img/logo_blue.png" routerLink="/" />
+    </div>
 
     <div [class.darkLinks]="darkMode">
       <a routerLink="/">Home</a>
       <a routerLink="aboutme">About me</a>
-      <a routerLink="appointment">Appointment</a>
+      <a routerLink="appointment-home">Appointment</a>
       <a routerLink="contact">Contact</a>
 
       <!-- Translation links -->
