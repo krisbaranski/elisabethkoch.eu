@@ -13,7 +13,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
-import { AppointmentComponent } from './appointment/appointment.component';
+import { AppointmentHomeComponent } from './appointment-home/appointment-home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//import { MatNativeDateModule } from '@angular/material/';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -30,7 +33,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     ContactComponent,
     AboutmeComponent,
-    AppointmentComponent,
+    AppointmentHomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
