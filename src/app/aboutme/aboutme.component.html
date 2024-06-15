@@ -5,6 +5,7 @@
     src="assets/img/{{ images2[currentImage] }}"
   />
 </section>
+
 <aside>
   <div class="slideshow-container">
     <img
@@ -20,29 +21,22 @@
     </p>
   </div>
 </aside>
+
 <div class="about">
-  <h1 class="title">Über Mich</h1>
   <div class="text">
-    <div class="left_col">
+    <h1>{{ "aboutme.title" | translate }}</h1>
+    <div class="frame">
+      <h3>{{ "aboutme.text_1_title" | translate }}</h3>
       <p>
-        Ich bin Diplom Logopädin, integrative Stimmtrainerin, Train the
-        Trainerin, Systemischer Coach, Kommunikationstrainerin und ausgebildete
-        Sprecherin.
+        {{ "aboutme.text_1" | translate }}
       </p>
+      <h3>{{ "aboutme.text_2_title" | translate }}</h3>
       <p>
-        Ich stand 4 Jahre als Schauspielerin auf der Bühne, habe eine
-        Gesangsausbildung, sowie eine Ausbildung zur Ostheopatin für
-        Stimmbehandlungen.
+        {{ "aboutme.text_2" | translate }}
       </p>
-    </div>
-    <div class="right_col">
-      <p>
-        Ich stehe selbst auch auf der Bühne und vor dem Mikrophon. Seit über 20
-        Jahren coache ich Menschen in Ihrer persönlichen Wirkung, Ihrer Präsenz,
-        ihrem Auftreten sowie Ihrer lebendigen Stimmkraft. Allem, was mit
-        Präsenz, Auftritt, Wirkung, lebendiger Stimme und Kommunikation in
-        Verbindung steht, gilt meine Leidenschaft.
-      </p>
+      <br />
+      <p>{{ "aboutme.end" | translate }}</p>
+      <img src="assets/img/signature.png" alt="signature" />
     </div>
   </div>
 </div>
