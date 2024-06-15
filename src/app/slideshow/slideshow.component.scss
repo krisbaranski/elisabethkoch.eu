@@ -24,14 +24,25 @@
   }
 }
 
+.flex-row {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .slideshow-overlay {
   position: absolute;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.2);
+  align-items: center;
 
   p {
     margin: auto;
@@ -44,11 +55,26 @@
   }
 }
 
-.slogan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.offer {
+  border: 1px solid #eee;
+
+  border-radius: 10px;
+  backdrop-filter: blur(0.5rem);
+  background-color: #eeeeee40;
+  padding: 1.5rem 2rem;
+  margin-top: 6rem;
+
+  a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  &:hover {
+    background-color: #0c6d9750;
+  }
 }
 
 .boxes {
@@ -56,9 +82,6 @@
   left: 0;
   right: 0;
   bottom: 2rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -95,13 +118,42 @@
 }
 
 .section {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
+  z-index: 20;
+
+  h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 2rem;
+  }
+
+  p {
+    color: #fff;
+  }
+}
+
+.back-img {
+  width: auto;
+  height: 50vh;
+  background-image: url(/assets/img/lights.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 4rem;
+  z-index: 1;
+}
+
+.blue {
+  width: auto;
+  height: auto;
+  padding: 4rem 2rem;
+  background-color: #57a7dc;
 }
 
 .text {
+  flex-direction: row;
   max-width: 45vw;
   margin: 6rem 2rem;
 }
