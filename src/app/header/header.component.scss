@@ -14,22 +14,22 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 5.5rem;
-    width: 90vw;
+    width: 1200px;
+    height: 7.5rem;
     margin-inline: auto;
 
     a {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
       font-family: inherit;
-      font-weight: 100;
-      color: rgba(255, 255, 255, 0.8);
+      font-weight: 300;
+      color: rgb(255, 255, 255);
       text-decoration: none;
-      padding: 4px 8px;
-      margin: 5px;
+      padding: 4px;
+      margin: 8px;
 
       &:hover {
         color: white;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
       }
 
       button {
@@ -39,9 +39,42 @@ header {
     }
 
     img {
-      cursor: pointer;
-      height: 35px;
+      height: 80px;
       width: auto;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .translate {
+      margin-left: 30px;
+    }
+
+    .social {
+      padding: 0 30px;
+
+      a {
+        margin: 0 5px;
+        border-bottom: none;
+
+        img {
+          background-clip: white;
+          width: 25px;
+          height: 25px;
+        }
+      }
+      a:hover {
+        transform: scale(0.9);
+        opacity: 0.8;
+      }
     }
   }
 
@@ -75,25 +108,27 @@ header {
 //   cursor: pointer;
 // }
 
-@media (min-width: 60em) {
-  header {
-    max-width: 700px;
-    height: 7.5rem;
-    display: flex;
-    margin-inline: auto;
+// @media (max-width: 1200px) {
+//   header {
+//     max-width: 700px;
+//     height: 5.5rem;
+//     display: flex;
+//     margin-inline: auto;
 
-    menu {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 14px;
+//     menu {
+//       width: 90vw;
+//       flex-direction: row;
+//       justify-content: space-between;
+//       padding: 14px;
 
-      img {
-        height: 50px;
-        padding: 14px 0;
-      }
-      a {
-        font-size: 1rem;
-      }
-    }
-  }
-}
+//       img {
+//         height: 40px;
+//         padding: 14px 0;
+//       }
+
+//       a {
+//         font-size: 0.9rem;
+//       }
+//     }
+//   }
+// }
