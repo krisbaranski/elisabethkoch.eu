@@ -142,11 +142,21 @@ header {
       }
 
       a {
+        width: auto;
         font-size: 0.9rem;
+
+        &:hover {
+          color: white;
+          background-color: rgba(42, 122, 202, 0.738);
+          border: none;
+        }
       }
 
       .mat-sidenav {
-        background-color: rgb(7, 63, 118);
+        background-color: rgba(7, 43, 78, 0.8);
+        backdrop-filter: blur(5px);
+        width: 100vw;
+        overflow: hidden;
       }
 
       #menuIcon {
@@ -177,6 +187,7 @@ header {
         justify-content: center;
         padding: 15px;
         color: white;
+        font-weight: 400;
 
         img {
           width: 30px;
