@@ -8,6 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "build-prod": "ng build --configuration development",
+    "build:browser:serverless": "ng build --base-href ./",
     "test": "ng test",
     "i18n:init": "ngx-translate-extract --input ./src --output ./src/assets/i18n/de.json ./src/assets/i18n/en.json --key-as-default-value --replace --format json",
     "i18n:extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/{de,en}.json --clean --format json"
