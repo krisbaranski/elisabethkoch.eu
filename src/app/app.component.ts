@@ -5,15 +5,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    standalone: true,
-    imports: [
-        HeaderComponent,
-        RouterOutlet,
-        FooterComponent,
-    ],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [HeaderComponent, RouterOutlet, FooterComponent],
 })
 export class AppComponent {
   title: String = 'title name';
