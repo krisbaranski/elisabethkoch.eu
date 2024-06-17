@@ -42,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
@@ -55,10 +56,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     BrowserAnimationsModule,
   ],
-  providers: [
-    HttpClient,
-    provideHttpClient(withInterceptorsFromDi()),
-    provideAnimationsAsync(),
-  ],
+  providers: [HttpClient],
 })
 export class AppModule {}
