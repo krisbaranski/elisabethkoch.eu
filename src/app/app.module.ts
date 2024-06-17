@@ -1,4 +1,6 @@
-import { StateKey, TransferState } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
@@ -23,6 +25,21 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 //import { MatNativeDateModule } from '@angular/material/';
+
+const routes: Routes = [
+  // Your routes here
+];
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    // Other components
+  ],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {

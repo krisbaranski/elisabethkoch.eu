@@ -1,5 +1,6 @@
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
 
 import { HttpLoaderFactory } from './app/app.module';
 import { environment } from './environments/environment';
@@ -12,9 +13,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import {
+  HttpClient,
+  provideHttpClient,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
 import { routes } from './app/app-routes';
-import { provideRouter } from '@angular/router';
 
 if (environment.production) {
   enableProdMode();
@@ -40,6 +44,5 @@ bootstrapApplication(AppComponent, {
     provideHttpClient(withInterceptorsFromDi()),
     provideAnimationsAsync(),
     provideAnimations(),
-    provideRouter(routes),
   ],
 }).catch((err) => console.error(err));
