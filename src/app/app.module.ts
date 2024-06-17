@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { HeaderComponent } from './header/header.component';
@@ -30,38 +29,3 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
-
-@NgModule({
-    declarations: [AppComponent],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        MatToolbarModule,
-        MatIconModule,
-        MatSidenavModule,
-        TranslateModule.forRoot({
-            defaultLanguage: 'de',
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient],
-            },
-        }),
-        BrowserAnimationsModule,
-        SlideshowComponent,
-        HeaderComponent,
-        ImpressumComponent,
-        PrivacyComponent,
-        FooterComponent,
-        ContactComponent,
-        AboutmeComponent,
-        AppointmentHomeComponent,
-    ],
-    providers: [
-        HttpClient,
-        provideHttpClient(withInterceptorsFromDi()),
-        provideAnimationsAsync(),
-    ],
-})
-export class AppModule {}
