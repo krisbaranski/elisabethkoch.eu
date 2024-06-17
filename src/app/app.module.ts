@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { StateKey, TransferState } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
@@ -7,7 +6,11 @@ import { HeaderComponent } from './header/header.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import {
+  HttpClient,
+  provideHttpClient,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
