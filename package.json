@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.0.4",
-    "@angular/cli": "~18.0.4",
+    "@angular/cli": "^18.0.4",
     "@angular/compiler-cli": "^18.0.3",
     "@bartholomej/ngx-translate-extract": "^8.0.2",
     "@types/jasmine": "~4.0.0",
