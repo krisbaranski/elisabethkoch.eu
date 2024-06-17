@@ -1,12 +1,15 @@
 <header [class.headerDark]="darkMode">
   <menu [class.headerDark]="darkMode">
     <div class="logo">
-      <img
-        *ngIf="!darkMode"
-        src="assets/img/new_logo_white.png"
-        routerLink="/"
-      />
-      <img *ngIf="darkMode" src="assets/img/new_logo_dark.png" routerLink="/" />
+      @if (!darkMode) {
+        <img
+          src="assets/img/new_logo_white.png"
+          routerLink="/"
+          />
+      }
+      @if (darkMode) {
+        <img src="assets/img/new_logo_dark.png" routerLink="/" />
+      }
     </div>
 
     <mat-toolbar>
@@ -43,14 +46,14 @@
             class="top_menu_item"
             href="https://instagram.com/stimme_gelungener_auftritt"
             target="_blank"
-          >
+            >
             <img src="./assets/img/instagram.svg" />
           </a>
           <a
             class="top_menu_item"
             href="https://linkedin.com/in/elisabeth-koch-bb7b372a9"
             target="_blank"
-          >
+            >
             <img src="./assets/img/linkedin.svg" />
           </a>
         </div>
@@ -61,7 +64,7 @@
         id="menuIcon"
         (click)="sidenav.toggle()"
         aria-label="Menu icon"
-      >
+        >
         <mat-icon>menu</mat-icon>
       </button>
     </mat-toolbar>
@@ -72,75 +75,75 @@
         [fixedInViewport]="true"
         [fixedTopGap]="130"
         mode="side"
-      >
+        >
         <div [class.darkLinks]="darkMode">
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
             routerLink="trainings"
             >{{ "menu.trainings" | translate }}</a
-          >
-          <a
-            class="sidebar_item"
-            (click)="sidenav.close()"
-            routerLink="courses"
-            >{{ "menu.workshops" | translate }}</a
-          >
-          <a
-            class="sidebar_item"
-            (click)="sidenav.close()"
-            routerLink="appointment-home"
-            >{{ "menu.offers" | translate }}</a
-          >
-          <a
-            class="sidebar_item"
-            (click)="sidenav.close()"
-            routerLink="aboutme"
-            >{{ "menu.aboutme" | translate }}</a
-          >
-          <a class="sidebar_item" (click)="sidenav.close()" routerLink="blog">{{
-            "menu.blog" | translate
-          }}</a>
-          <a
-            class="sidebar_item"
-            (click)="sidenav.close()"
-            routerLink="contact"
-            >{{ "menu.contact" | translate }}</a
-          >
-        </div>
+            >
+            <a
+              class="sidebar_item"
+              (click)="sidenav.close()"
+              routerLink="courses"
+              >{{ "menu.workshops" | translate }}</a
+              >
+              <a
+                class="sidebar_item"
+                (click)="sidenav.close()"
+                routerLink="appointment-home"
+                >{{ "menu.offers" | translate }}</a
+                >
+                <a
+                  class="sidebar_item"
+                  (click)="sidenav.close()"
+                  routerLink="aboutme"
+                  >{{ "menu.aboutme" | translate }}</a
+                  >
+                  <a class="sidebar_item" (click)="sidenav.close()" routerLink="blog">{{
+                    "menu.blog" | translate
+                  }}</a>
+                  <a
+                    class="sidebar_item"
+                    (click)="sidenav.close()"
+                    routerLink="contact"
+                    >{{ "menu.contact" | translate }}</a
+                    >
+                  </div>
 
-        <!-- Translation links -->
-        <div class="translate_sidebar">
-          <a
-            class="langLink sidebar_item"
-            (click)="translate.use('de')"
-            (click)="sidenav.close()"
-            >DE</a
-          >
-          <a
-            class="langLink sidebar_item"
-            (click)="translate.use('en')"
-            (click)="sidenav.close()"
-            >EN</a
-          >
-        </div>
+                  <!-- Translation links -->
+                  <div class="translate_sidebar">
+                    <a
+                      class="langLink sidebar_item"
+                      (click)="translate.use('de')"
+                      (click)="sidenav.close()"
+                      >DE</a
+                      >
+                      <a
+                        class="langLink sidebar_item"
+                        (click)="translate.use('en')"
+                        (click)="sidenav.close()"
+                        >EN</a
+                        >
+                      </div>
 
-        <div class="social_sidebar">
-          <a
-            (click)="sidenav.close()"
-            href="https://instagram.com/stimme_gelungener_auftritt"
-            target="_blank"
-          >
-            <img src="./assets/img/instagram.svg" />
-          </a>
-          <a
-            (click)="sidenav.close()"
-            href="https://linkedin.com/in/elisabeth-koch-bb7b372a9"
-            target="_blank"
-          >
-            <img src="./assets/img/linkedin.svg" />
-          </a></div
-      ></mat-sidenav>
-    </mat-sidenav-container>
-  </menu>
-</header>
+                      <div class="social_sidebar">
+                        <a
+                          (click)="sidenav.close()"
+                          href="https://instagram.com/stimme_gelungener_auftritt"
+                          target="_blank"
+                          >
+                          <img src="./assets/img/instagram.svg" />
+                        </a>
+                        <a
+                          (click)="sidenav.close()"
+                          href="https://linkedin.com/in/elisabeth-koch-bb7b372a9"
+                          target="_blank"
+                          >
+                          <img src="./assets/img/linkedin.svg" />
+                        </a></div
+                      ></mat-sidenav>
+                    </mat-sidenav-container>
+                  </menu>
+                </header>

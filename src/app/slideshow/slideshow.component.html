@@ -1,16 +1,19 @@
 <div class="slideshow-container">
-  <img
-    *ngIf="showImage"
-    class="img-slideshow"
-    src="assets/img/{{ images[currentImage] }}"
-  />
+  @if (showImage) {
+    <img
+      class="img-slideshow"
+      src="assets/img/{{ images[currentImage] }}"
+      />
+  }
 </div>
 <div class="slideshow-container slideshow-overlay flex-col">
-  <div *ngIf="showImage" class="flex-col fadeIn">
-    <p>
-      {{ headlines[currentImage] }}
-    </p>
-  </div>
+  @if (showImage) {
+    <div class="flex-col fadeIn">
+      <p>
+        {{ headlines[currentImage] }}
+      </p>
+    </div>
+  }
   <span class="offer">
     <a href="/appointment-home">first appointment »</a>
   </span>

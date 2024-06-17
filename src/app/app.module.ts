@@ -32,38 +32,36 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SlideshowComponent,
-    HeaderComponent,
-    ImpressumComponent,
-    PrivacyComponent,
-    FooterComponent,
-    ContactComponent,
-    AboutmeComponent,
-    AppointmentHomeComponent,
-  ],
-  bootstrap: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatSidenavModule,
-    TranslateModule.forRoot({
-      defaultLanguage: 'de',
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
-      },
-    }),
-    BrowserAnimationsModule,
-  ],
-  providers: [
-    HttpClient,
-    provideHttpClient(withInterceptorsFromDi()),
-    provideAnimationsAsync(),
-  ],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatSidenavModule,
+        TranslateModule.forRoot({
+            defaultLanguage: 'de',
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient],
+            },
+        }),
+        BrowserAnimationsModule,
+        SlideshowComponent,
+        HeaderComponent,
+        ImpressumComponent,
+        PrivacyComponent,
+        FooterComponent,
+        ContactComponent,
+        AboutmeComponent,
+        AppointmentHomeComponent,
+    ],
+    providers: [
+        HttpClient,
+        provideHttpClient(withInterceptorsFromDi()),
+        provideAnimationsAsync(),
+    ],
 })
 export class AppModule {}

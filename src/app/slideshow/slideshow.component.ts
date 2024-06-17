@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-slideshow',
-  templateUrl: './slideshow.component.html',
-  styleUrls: ['./slideshow.component.scss'],
+    selector: 'app-slideshow',
+    templateUrl: './slideshow.component.html',
+    styleUrls: ['./slideshow.component.scss'],
+    standalone: true,
 })
 export class SlideshowComponent implements OnInit {
   images = ['nature.png', 'sparcle.jpg', 'water.jpg'];

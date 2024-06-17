@@ -1,24 +1,28 @@
 <section class="background-container">
-  <img
-    *ngIf="showImage"
-    class="img-backclip"
-    src="assets/img/{{ images2[currentImage] }}"
-  />
+  @if (showImage) {
+    <img
+      class="img-backclip"
+      src="assets/img/{{ images2[currentImage] }}"
+      />
+  }
 </section>
 
 <aside>
   <div class="slideshow-container">
-    <img
-      *ngIf="showImage"
-      class="img-slideshow"
-      src="assets/img/{{ images[currentImage] }}"
-    />
+    @if (showImage) {
+      <img
+        class="img-slideshow"
+        src="assets/img/{{ images[currentImage] }}"
+        />
+    }
   </div>
 
   <div class="slideshow-container slideshow-overlay">
-    <p *ngIf="showImage" class="fadeIn">
-      {{ headlines[currentImage] }}
-    </p>
+    @if (showImage) {
+      <p class="fadeIn">
+        {{ headlines[currentImage] }}
+      </p>
+    }
   </div>
 </aside>
 

@@ -1,9 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-aboutme',
-  templateUrl: './aboutme.component.html',
-  styleUrls: ['./aboutme.component.scss'],
+    selector: 'app-aboutme',
+    templateUrl: './aboutme.component.html',
+    styleUrls: ['./aboutme.component.scss'],
+    standalone: true,
+    imports: [TranslateModule],
 })
 export class AboutmeComponent implements OnInit {
   @Input() darkMode = true;
