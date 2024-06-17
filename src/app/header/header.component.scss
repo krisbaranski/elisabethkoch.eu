@@ -9,6 +9,16 @@ header {
   display: flex;
   justify-content: center;
 
+  #menuIcon,
+  .sidenav {
+    display: none;
+  }
+
+  .mat-toolbar {
+    width: auto;
+    background-color: transparent;
+  }
+
   menu {
     display: flex;
     flex-direction: row;
@@ -80,7 +90,6 @@ header {
 
   .headerDark {
     background-color: transparent;
-    // border-bottom: 1px solid rgba(28, 109, 179, 0.5);
   }
 
   .darkLinks {
@@ -99,36 +108,92 @@ header {
         border-bottom: 1px solid rgba(28, 109, 179, 0.5);
       }
     }
+
+    .social {
+      img {
+        background-clip: rgb(51, 26, 26);
+      }
+    }
   }
 }
 
-// .langLink {
-//   margin: 0;
-//   padding: 0;
-//   cursor: pointer;
-// }
+.langLink {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
 
-// @media (max-width: 1200px) {
-//   header {
-//     max-width: 700px;
-//     height: 5.5rem;
-//     display: flex;
-//     margin-inline: auto;
+@media (max-width: 1200px) {
+  header {
+    max-width: 700px;
+    height: 5.5rem;
+    display: flex;
+    margin-inline: auto;
 
-//     menu {
-//       width: 90vw;
-//       flex-direction: row;
-//       justify-content: space-between;
-//       padding: 14px;
+    menu {
+      width: 90vw;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 14px;
 
-//       img {
-//         height: 40px;
-//         padding: 14px 0;
-//       }
+      img {
+        height: 70px;
+        padding: 14px 0;
+      }
 
-//       a {
-//         font-size: 0.9rem;
-//       }
-//     }
-//   }
-// }
+      a {
+        width: auto;
+        font-size: 0.9rem;
+
+        &:hover {
+          color: white;
+          background-color: rgba(42, 122, 202, 0.738);
+          border: none;
+        }
+      }
+
+      .mat-sidenav {
+        background-color: rgba(7, 43, 78, 0.8);
+        backdrop-filter: blur(5px);
+        width: 100vw;
+        overflow: hidden;
+      }
+
+      #menuIcon {
+        display: flex;
+        justify-content: flex-end;
+        color: #ddd;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: transparent;
+      }
+
+      .sidenav {
+        position: fixed;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .top_menu_item {
+        display: none;
+      }
+
+      .sidebar_item,
+      .translate_sidebar,
+      .social_sidebar {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        color: white;
+        font-weight: 400;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
