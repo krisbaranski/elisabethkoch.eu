@@ -1,7 +1,8 @@
 {
   "builds": [
     {
-      "src": "angular.json"
+      "src": "dist/elisabethkoch.eu/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
