@@ -157,6 +157,13 @@ aside {
   img {
     width: 12rem;
   }
+
+  .signature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -186,6 +193,14 @@ aside {
     .frame {
       border-right: none;
       padding-right: 0;
+    }
+
+    .signature {
+      flex-direction: column;
+
+      img {
+        padding: 2rem;
+      }
     }
   }
 }
