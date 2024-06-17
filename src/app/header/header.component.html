@@ -1,11 +1,12 @@
 <header [class.headerDark]="darkMode">
   <menu [class.headerDark]="darkMode">
     <div class="logo">
-      @if (!darkMode) {
-      <img src="assets/img/new_logo_white.png" routerLink="/" />
-      } @if (darkMode) {
-      <img src="assets/img/new_logo_dark.png" routerLink="/" />
-      }
+      <img
+        *ngIf="!darkMode"
+        src="assets/img/new_logo_white.png"
+        routerLink="/"
+      />
+      <img *ngIf="darkMode" src="assets/img/new_logo_dark.png" routerLink="/" />
     </div>
 
     <mat-toolbar>
