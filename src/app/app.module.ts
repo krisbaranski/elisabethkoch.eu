@@ -15,8 +15,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { AppointmentHomeComponent } from './appointment-home/appointment-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-//import { MatNativeDateModule } from '@angular/material/';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -48,6 +49,9 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
     }),
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent],

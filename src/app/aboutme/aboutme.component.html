@@ -2,15 +2,17 @@
   <img
     *ngIf="showImage"
     class="img-backclip"
+    alt="background_portrait"
     src="assets/img/{{ images2[currentImage] }}"
   />
 </section>
 
-<aside>
+<div class="aside">
   <div class="slideshow-container">
     <img
       *ngIf="showImage"
       class="img-slideshow"
+      alt="background_portrait"
       src="assets/img/{{ images[currentImage] }}"
     />
   </div>
@@ -20,7 +22,7 @@
       {{ headlines[currentImage] }}
     </p>
   </div>
-</aside>
+</div>
 
 <div class="about">
   <div class="text">
@@ -35,8 +37,15 @@
         {{ "aboutme.text_2" | translate }}
       </p>
       <br />
-      <p>{{ "aboutme.end" | translate }}</p>
-      <img src="assets/img/signature.png" alt="signature" />
+      <div class="signature">
+        <div>
+          <p>{{ "aboutme.end" | translate }}</p>
+          <img src="assets/img/signature.png" alt="signature" />
+        </div>
+        <div>
+          <img src="assets/img/about_me.jpg" alt="portrait" />
+        </div>
+      </div>
     </div>
   </div>
 </div>

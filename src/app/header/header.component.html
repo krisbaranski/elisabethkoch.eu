@@ -4,60 +4,151 @@
       <img
         *ngIf="!darkMode"
         src="assets/img/new_logo_white.png"
+        alt="logo"
         routerLink="/"
       />
-      <img *ngIf="darkMode" src="assets/img/new_logo_dark.png" routerLink="/" />
+
+      <img
+        *ngIf="darkMode"
+        src="assets/img/new_logo_dark.png"
+        alt="logo"
+        routerLink="/"
+      />
     </div>
 
-    <div class="menu">
-      <!-- 
-      <div>
-        <button>
-          <svg
-            width="20px"
-            height="20px"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+    <mat-toolbar>
+      <div class="menu">
+        <div [class.darkLinks]="darkMode">
+          <a class="top_menu_item" routerLink="trainings">{{
+            "menu.trainings" | translate
+          }}</a>
+          <a class="top_menu_item" routerLink="courses">{{
+            "menu.workshops" | translate
+          }}</a>
+          <a class="top_menu_item" routerLink="appointment-home">{{
+            "menu.offers" | translate
+          }}</a>
+          <a class="top_menu_item" routerLink="aboutme">{{
+            "menu.aboutme" | translate
+          }}</a>
+          <a class="top_menu_item" routerLink="blog">{{
+            "menu.blog" | translate
+          }}</a>
+          <a class="top_menu_item" routerLink="contact">{{
+            "menu.contact" | translate
+          }}</a>
+        </div>
+
+        <!-- Translation links -->
+        <div class="translate" [class.darkLinks]="darkMode">
+          <a class="langLink top_menu_item" (click)="translate.use('de')">DE</a>
+          <a class="langLink top_menu_item" (click)="translate.use('en')">EN</a>
+        </div>
+
+        <div class="social" [class.darkLinks]="darkMode">
+          <a
+            class="top_menu_item"
+            href="https://instagram.com/stimme_gelungener_auftritt"
+            target="_blank"
           >
-            <path
-              fill="#000000"
-              fill-rule="evenodd"
-              d="M18 5a1 1 0 100-2H2a1 1 0 000 2h16zm0 4a1 1 0 100-2h-8a1 1 0 100 2h8zm1 3a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 5a1 1 0 100-2h-8a1 1 0 100 2h8z"
-            />
-          </svg>
-        </button>
-      </div> -->
-
-      <div [class.darkLinks]="darkMode">
-        <a routerLink="trainings">{{ "menu.trainings" | translate }}</a>
-        <a routerLink="courses">{{ "menu.workshops" | translate }}</a>
-        <a routerLink="appointment-home">{{ "menu.offers" | translate }}</a>
-        <a routerLink="aboutme">{{ "menu.aboutme" | translate }}</a>
-        <a routerLink="blog">{{ "menu.blog" | translate }}</a>
-        <a routerLink="contact">{{ "menu.contact" | translate }}</a>
+            <img src="./assets/img/instagram.svg" alt="instagram" />
+          </a>
+          <a
+            class="top_menu_item"
+            href="https://linkedin.com/in/elisabeth-koch-bb7b372a9"
+            target="_blank"
+          >
+            <img src="./assets/img/linkedin.svg" alt="linkedin" />
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Translation links -->
-    <div class="translate">
-      <a class="langLink" (click)="translate.use('de')">DE</a>
-      <a class="langLink" (click)="translate.use('en')">EN</a>
-    </div>
+      <button
+        mat-icon-button
+        id="menuIcon"
+        (click)="sidenav.toggle()"
+        aria-label="Menu icon"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
 
-    <div class="social">
-      <a
-        href="https://instagram.com/stimme_gelungener_auftritt"
-        target="_blank"
+    <mat-sidenav-container class="sidenav">
+      <mat-sidenav
+        #sidenav
+        [fixedInViewport]="true"
+        [fixedTopGap]="130"
+        mode="side"
       >
-        <img src="./assets/img/instagram.svg" />
-      </a>
-      <a
-        href="https://linkedin.com/in/elisabeth-koch-bb7b372a9"
-        target="_blank"
-      >
-        <img src="./assets/img/linkedin.svg" />
-      </a>
-    </div>
+        <div [class.darkLinks]="darkMode">
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            routerLink="trainings"
+            >{{ "menu.trainings" | translate }}</a
+          >
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            routerLink="courses"
+            >{{ "menu.workshops" | translate }}</a
+          >
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            routerLink="appointment-home"
+            >{{ "menu.offers" | translate }}</a
+          >
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            routerLink="aboutme"
+            >{{ "menu.aboutme" | translate }}</a
+          >
+          <a class="sidebar_item" (click)="sidenav.close()" routerLink="blog">{{
+            "menu.blog" | translate
+          }}</a>
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            routerLink="contact"
+            >{{ "menu.contact" | translate }}</a
+          >
+        </div>
+
+        <!-- Translation links -->
+        <div class="translate_sidebar">
+          <a
+            class="langLink sidebar_item"
+            (click)="translate.use('de')"
+            (click)="sidenav.close()"
+            >DE</a
+          >
+          <a
+            class="langLink sidebar_item"
+            (click)="translate.use('en')"
+            (click)="sidenav.close()"
+            >EN</a
+          >
+        </div>
+
+        <div class="social_sidebar">
+          <a
+            (click)="sidenav.close()"
+            href="https://instagram.com/stimme_gelungener_auftritt"
+            target="_blank"
+          >
+            <img src="./assets/img/instagram.svg" alt="instagram" />
+          </a>
+          <a
+            (click)="sidenav.close()"
+            href="https://linkedin.com/in/elisabeth-koch-bb7b372a9"
+            target="_blank"
+          >
+            <img src="./assets/img/linkedin.svg" alt="linkedin" />
+          </a>
+        </div>
+      </mat-sidenav>
+    </mat-sidenav-container>
   </menu>
 </header>
