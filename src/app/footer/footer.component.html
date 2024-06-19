@@ -1,29 +1,18 @@
 <footer>
   <section>
     <div class="flow logo">
-      <img
-        src="assets/img/new_logo_white.png"
-        width="120px"
-        height="auto"
-        alt="logo"
-        routerLink="/"
-      />
+      <img src="assets/img/new_logo_white.png" alt="logo" routerLink="/" />
     </div>
 
     <div class="flow">
-      <h1>Contact</h1>
+      <h1>{{ "footer.title" | translate }}</h1>
       <p>Elisabeth Koch</p>
       <p>Behaim Straße 27</p>
       <p>13086 Berlin</p>
 
       <div class="social">
         <a class="mail" href="mailto:mail@elisabethkoch.eu">
-          <img
-            src="./assets/img/envelope.svg"
-            alt="mail"
-            width="20px"
-            height="auto"
-          />
+          <img src="./assets/img/envelope.svg" alt="mail" />
         </a>
       </div>
     </div>
@@ -32,16 +21,16 @@
       <div class="links">
         <h1>Links</h1>
         <a routerLink="/">Home</a>
-        <a routerLink="trainings">Trainings</a>
-        <a routerLink="appointment">Appointments</a>
-        <a routerLink="aboutme">About Me</a>
-        <a routerLink="contact">Contact</a>
+        <a routerLink="trainings">{{ "footer.link_train" | translate }}</a>
+        <a routerLink="appointment">{{ "footer.link_offer" | translate }}</a>
+        <a routerLink="aboutme">{{ "footer.link_about" | translate }}</a>
+        <a routerLink="contact">{{ "footer.title" | translate }}</a>
       </div>
     </div>
 
     <div class="flow">
       <h1>Legal</h1>
-      <a routerLink="privacy">Privacy Policy</a>
+      <a routerLink="privacy">{{ "footer.link_policy" | translate }}</a>
       <a routerLink="impressum">Impressum</a>
       <br />
 
@@ -50,23 +39,13 @@
           href="https://instagram.com/stimme_gelungener_auftritt"
           target="_blank"
         >
-          <img
-            src="./assets/img/instagram.svg"
-            alt="instagram"
-            width="auto"
-            height="auto"
-          />
+          <img src="./assets/img/instagram.svg" alt="instagram" />
         </a>
         <a
           href="https://linkedin.com/in/elisabeth-koch-bb7b372a9"
           target="_blank"
         >
-          <img
-            src="./assets/img/linkedin.svg"
-            alt="linkedin"
-            width="auto"
-            height="auto"
-          />
+          <img src="./assets/img/linkedin.svg" alt="linkedin" />
         </a>
       </div>
     </div>
