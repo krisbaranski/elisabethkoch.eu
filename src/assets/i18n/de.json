@@ -7,8 +7,19 @@
     "blog": "Blog",
     "contact": "Kontakt"
   },
+  "home": {
+    "slide_1": "bring deine presenz auf das höchste niveau",
+    "slide_2": "strahl wie die Sonne, trette auf wie der Löwe",
+    "slide_3": "modeliere deine Erscheinung, stark und selbstbewusst",
+    "button_offer": "erstes Termin »",
+    "box_1": "STIMME",
+    "box_2": "VERTRAUEN",
+    "box_3": "PRÄSENZ"
+  },
   "aboutme": {
     "title": "Über mich",
+    "slide_1": "dein professionelles training",
+    "slide_2": "führt dich auf die Spitze",
     "text_1_title": "Von der Schreinerin zur Stimmexpertin",
     "text_1": [
       "Meine Begeisterung für die Vielfalt des menschlichen Ausdrucks prägten meine persönliche und berufliche Entwicklung. Schon früh beobachtete ich die Menschen um mich herum, wie sie die Aufmerksamkeit der Zuhörer für sich gewannen. Als Abschluss meiner Schreinerlehre baute ich als Gesellenstück ein Rednerpult. Mit diesem  verlieh ich meiner Leidenschaft für Kommunikation und Sprache Ausdruck und wurde Logopädin und Schauspielerin."
@@ -19,6 +30,7 @@
     ],
     "end": "Herzlich, Deine Elisabeth Koch"
   },
+  "contact": { "title": "Kontakt" },
   "footer": {
     "title": "Kontakt",
     "link_train": "Training",

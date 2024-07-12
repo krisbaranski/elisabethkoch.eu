@@ -1,44 +1,51 @@
 section {
   position: relative;
-  box-sizing: border-box;
-  margin-top: 93px;
   width: min(100%, 780px);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-inline: auto;
-  padding: 40px 60px 100px 60px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(28, 108, 179);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: rgba(255, 255, 255, 0.4);
 
-  // img {
-  //   background-color: #ffffff;
-  //   position: absolute;
-  //   top: 120px;
-  //   left: 0;
-  //   right: 0;
-  //   width: 1080px;
-  //   height: 200px;
-  //   object-fit: cover;
-  //   margin-inline: auto;
-  // }
+  img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+    z-index: 1;
+  }
 
   h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-size: 7rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+    z-index: 2;
   }
 }
 
 .contact {
+  // position: relative;
   display: flex;
-  flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
   font-family: inherit;
-  // border: 2px solid red;
-
-  h1 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: grey;
-  }
+  backdrop-filter: blur(8px);
+  background-color: rgba(37, 127, 212, 0.595);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  z-index: 2;
 
   p {
     font-size: 1.1rem;
@@ -54,6 +61,26 @@ a {
   font-weight: 500;
   color: rgb(28, 108, 179);
   text-decoration: none;
+}
+
+.social {
+  padding-top: 20px;
+  position: absolute;
+
+  a {
+    background-color: transparent;
+  }
+
+  img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+      transform: scale(0.9);
+      border-radius: 0;
+    }
+  }
 }
 
 @media (min-width: 40em) {

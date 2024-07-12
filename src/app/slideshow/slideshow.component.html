@@ -8,31 +8,31 @@
 <div class="slideshow-container slideshow-overlay flex-col">
   <div *ngIf="showImage" class="flex-col fadeIn">
     <p>
-      {{ headlines[currentImage] }}
+      {{ headlines[currentImage] | translate }}
     </p>
   </div>
   <span class="offer">
-    <a href="/appointment-home">first appointment »</a>
+    <a href="/appointment-home">{{ 'home.button_offer' | translate }}</a>
   </span>
 </div>
 
 <div class="boxes flex-row">
   <div class="box">
-    <h1>VOICE</h1>
+    <h1>{{ 'home.box_1' | translate }}</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae
       veniam suscipit illum officiis ex illo repellendus inventore ad omnis?
     </p>
   </div>
   <div class="box">
-    <h1>CONFIDENCE</h1>
+    <h1>{{ 'home.box_2' | translate }}</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae
       veniam suscipit illum officiis ex illo repellendus inventore ad omnis?
     </p>
   </div>
   <div class="box">
-    <h1>PRESENCE</h1>
+    <h1>{{ 'home.box_3' | translate }}</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae
       veniam suscipit illum officiis ex illo repellendus inventore ad omnis?
