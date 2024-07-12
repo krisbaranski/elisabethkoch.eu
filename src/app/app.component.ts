@@ -12,7 +12,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [HeaderComponent, RouterOutlet, FooterComponent],
 })
 export class AppComponent {
-  title: String = 'title name';
+  title: String = 'elisabethkoch.eu';
   @Input() darkMode = true;
 
   constructor(public router: Router, public translate: TranslateService) {

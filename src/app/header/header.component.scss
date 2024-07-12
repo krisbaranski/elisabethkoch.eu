@@ -127,10 +127,6 @@ header {
     }
 
     .social {
-<<<<<<< HEAD
-      img {
-        background-clip: rgb(51, 26, 26);
-=======
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -141,45 +137,11 @@ header {
         background-color: rgba(28, 108, 179, 0.5);
         border-radius: 6px;
         margin: 0 5px;
->>>>>>> new_backup
       }
     }
   }
 }
 
-<<<<<<< HEAD
-.langLink {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-  header {
-    max-width: 700px;
-    height: 5.5rem;
-    display: flex;
-    margin-inline: auto;
-
-    menu {
-      width: 90vw;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 14px;
-
-      img {
-        height: 70px;
-        padding: 14px 0;
-      }
-
-      a {
-        width: auto;
-        font-size: 0.9rem;
-
-        &:hover {
-          color: white;
-          background-color: rgba(42, 122, 202, 0.738);
-=======
 @media (max-width: 1200px) {
   header {
     max-width: 700px;
@@ -207,7 +169,6 @@ header {
         &:hover {
           color: white;
           background-color: rgba(9, 38, 68, 0.738);
->>>>>>> new_backup
           border: none;
         }
       }
@@ -222,11 +183,7 @@ header {
       #menuIcon {
         display: flex;
         justify-content: flex-end;
-<<<<<<< HEAD
-        color: #ddd;
-=======
         color: #0a599f;
->>>>>>> new_backup
         border: 1px solid #ddd;
         border-radius: 5px;
         background-color: transparent;
@@ -257,14 +214,11 @@ header {
           width: 30px;
           height: 30px;
         }
-<<<<<<< HEAD
-=======
 
         a,
         &:hover {
           color: white;
         }
->>>>>>> new_backup
       }
     }
   }

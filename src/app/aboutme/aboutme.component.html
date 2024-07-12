@@ -1,39 +1,14 @@
 <section class="background-container">
-<<<<<<< HEAD
-  @if (showImage) {
-    <img
-      class="img-backclip"
-      src="assets/img/{{ images2[currentImage] }}"
-      />
-  }
-=======
   <img
     *ngIf="showImage"
     class="img-backclip"
     alt="background_portrait"
     src="assets/img/{{ images2[currentImage] }}"
   />
->>>>>>> new_backup
 </section>
 
 <div class="aside">
   <div class="slideshow-container">
-<<<<<<< HEAD
-    @if (showImage) {
-      <img
-        class="img-slideshow"
-        src="assets/img/{{ images[currentImage] }}"
-        />
-    }
-  </div>
-
-  <div class="slideshow-container slideshow-overlay">
-    @if (showImage) {
-      <p class="fadeIn">
-        {{ headlines[currentImage] }}
-      </p>
-    }
-=======
     <img
       *ngIf="showImage"
       class="img-slideshow"
@@ -46,26 +21,25 @@
     <p *ngIf="showImage" class="fadeIn">
       {{ headlines[currentImage] | translate }}
     </p>
->>>>>>> new_backup
   </div>
 </div>
 
 <div class="about">
   <div class="text">
-    <h1>{{ "aboutme.title" | translate }}</h1>
+    <h1>{{ 'aboutme.title' | translate }}</h1>
     <div class="frame">
-      <h3>{{ "aboutme.text_1_title" | translate }}</h3>
+      <h3>{{ 'aboutme.text_1_title' | translate }}</h3>
       <p>
-        {{ "aboutme.text_1" | translate }}
+        {{ 'aboutme.text_1' | translate }}
       </p>
-      <h3>{{ "aboutme.text_2_title" | translate }}</h3>
+      <h3>{{ 'aboutme.text_2_title' | translate }}</h3>
       <p>
-        {{ "aboutme.text_2" | translate }}
+        {{ 'aboutme.text_2' | translate }}
       </p>
       <br />
       <div class="signature">
         <div>
-          <p>{{ "aboutme.end" | translate }}</p>
+          <p>{{ 'aboutme.end' | translate }}</p>
           <img src="assets/img/signature.png" alt="signature" />
         </div>
         <div>

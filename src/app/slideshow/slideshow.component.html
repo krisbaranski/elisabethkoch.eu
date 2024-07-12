@@ -1,27 +1,14 @@
 <div class="slideshow-container">
   @if (showImage) {
-    <img
-      class="img-slideshow"
-      src="assets/img/{{ images[currentImage] }}"
-      />
+  <img class="img-slideshow" src="assets/img/{{ images[currentImage] }}" />
   }
 </div>
 <div class="slideshow-container slideshow-overlay flex-col">
-<<<<<<< HEAD
-  @if (showImage) {
-    <div class="flex-col fadeIn">
-      <p>
-        {{ headlines[currentImage] }}
-      </p>
-    </div>
-  }
-=======
   <div *ngIf="showImage" class="flex-col fadeIn">
     <p>
       {{ headlines[currentImage] | translate }}
     </p>
   </div>
->>>>>>> new_backup
   <span class="offer">
     <a href="/appointment-home">{{ 'home.button_offer' | translate }}</a>
   </span>

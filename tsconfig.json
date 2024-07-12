@@ -16,13 +16,6 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-<<<<<<< HEAD
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["es2020", "dom"],
-    "useDefineForClassFields": false,
-    "typeRoots": ["node_modules/@types", "typings"]
-=======
     "target": "ES2022",
     "module": "es2020",
     "lib": [
@@ -30,7 +23,6 @@
       "dom"
     ],
     "useDefineForClassFields": false
->>>>>>> new_backup
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

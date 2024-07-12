@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 // import { ImpressumComponent } from './impressum/impressum.component';
 // import { PrivacyComponent } from './privacy/privacy.component';
@@ -6,7 +7,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 // import { AboutmeComponent } from './aboutme/aboutme.component';
 // import { AppointmentHomeComponent } from './appointment-home/appointment-home.component';
 
-export const routes: Routes = [
+const routes: Routes = [
   { path: '', component: SlideshowComponent },
   // { path: 'aboutme', component: AboutmeComponent },
   // { path: 'appointment-home', component: AppointmentHomeComponent },
@@ -14,3 +15,9 @@ export const routes: Routes = [
   // { path: 'impressum', component: ImpressumComponent },
   // { path: 'privacy', component: PrivacyComponent },
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
