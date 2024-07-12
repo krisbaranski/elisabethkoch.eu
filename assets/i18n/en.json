@@ -7,8 +7,19 @@
     "blog": "Blog",
     "contact": "Contact"
   },
+  "home": {
+    "slide_1": "bring your presence to the next level",
+    "slide_2": "shine like a sun, emerge like a lion",
+    "slide_3": "model your appearance strong and confindent",
+    "button_offer": "first appointment »",
+    "box_1": "VOICE",
+    "box_2": "CONFINENCE",
+    "box_3": "PRESENCE"
+  },
   "aboutme": {
     "title": "About me",
+    "slide_1": "your professional coaching",
+    "slide_2": "brings you to the top",
     "text_1_title": "From a Carpenter to an Expert of Voice",
     "text_1": [
       "My Enthusiasm for the diversity of human Expression has shaped my personal and professional Development. From an early age, I observed people around me as they captured the Attention of the Audience. At the end of my carpentry Apprenticeship, I built a Lectern as my journeyman's Piece. With this I expressed my Passion for Communication and Language and became a speech Therapist and an Actress."
@@ -18,5 +29,14 @@
       "Today I am an Expert in Voice and successful Performance and work as a Trainer and Coach at the Interface between Voice, personality Development, Communication and relationship Building. With more than 20 years of Experience, I assist my Clients in developing their lively vocal Power, their personal Impact, their pleasant Presence and Communication. My further training as a Vocalcoach, Singer, Systemic Coach and Speaker enables me to work holistically, individually and profound. With Sensitivity and Humor, I create an Atmosphere full of lightness and clarity in which trying out and integrating new things into Work and private Life is successful.My Work is continually enriched and inspired by collaboration with Colleagues from related Fields. I look forward to accompanying you in your vocal, personal and professional Development."
     ],
     "end": "Sincerely, \nyours Elisabeth Koch"
+  },
+  "contact": { "title": "Contact" },
+  "footer": {
+    "title": "Contact",
+    "link_train": "Trainings",
+    "link_work": "Workshops",
+    "link_offer": "Offers",
+    "link_about": "About me",
+    "link_policy": "Privacy Policy"
   }
 }
