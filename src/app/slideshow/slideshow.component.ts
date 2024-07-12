@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-slideshow',
@@ -7,12 +8,10 @@ import { Component, OnInit } from '@angular/core';
     standalone: true,
 })
 export class SlideshowComponent implements OnInit {
+  constructor(private translate: TranslateService) {}
   images = ['nature.png', 'sparcle.jpg', 'water.jpg'];
-  headlines = [
-    'bring your presence to the next level',
-    'shine like a sun, emerge like a lion',
-    'model your appearance strong and confindent',
-  ];
+  headlines = ['home.slide_1', 'home.slide_2', 'home.slide_3'];
+
   currentImage = 0;
   showImage = true;
 

@@ -1,31 +1,23 @@
 section {
   position: relative;
-  margin-top: 93px;
-  width: min(100%, 780px);
   margin-inline: auto;
-  padding: 40px 30px 100px 30px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 140px 30px 100px 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(28, 108, 179);
   background-color: rgba(255, 255, 255, 0.4);
 
-  // img {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   width: 800px;
-  //   max-width: 100%;
-  //   margin: auto;
-  //   // max-width: 980px;
-  //   // display: flex;
-  //   // justify-content: center;
-  //   // align-items: center;
-  //   // overflow: hidden;
-  // }
-
   h1 {
-    font-size: 2.5rem;
+    padding-bottom: 60px;
+    font-size: 6rem;
     font-weight: 300;
+    line-height: 1.2;
+  }
+
+  h3 {
+    margin: 40px auto;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   table {
@@ -39,7 +31,7 @@ section {
   }
 
   td {
-    background-color: hsla(213, 77%, 75%, 0.1);
+    background-color: hsla(213, 63%, 84%, 0.1);
     padding: 1rem 1.3rem;
 
     span {
@@ -48,12 +40,13 @@ section {
   }
 
   tr:nth-of-type(2n) {
-    background-color: hsla(213, 72%, 78%, 0.2);
+    background-color: hsla(213, 70%, 79%, 0.1);
   }
-  td:nth-of-type(2n) {
-    width: 18%;
-    text-align: center;
-  }
+
+  // td:nth-of-type(2n) {
+  //   width: 18%;
+  //   text-align: center;
+  // }
 
   td,
   p,
@@ -71,10 +64,55 @@ section {
   ol {
     padding-left: 20px;
   }
+
+  .title {
+    width: min(100%, 780px);
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid rgba(5, 61, 108, 0.3);
+    border-radius: 10px;
+  }
+
+  .table {
+    // position: relative;
+    width: 100vw;
+    // background-color: black;
+    // transition: translate(-40px);
+  }
 }
 
-@media (min-width: 40em) {
+@media (max-width: 60em) {
   section {
     margin-top: 100px;
+    width: 80vw;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .title {
+      margin: 80px auto;
+      padding: 20px;
+      border: 1px solid rgba(5, 61, 108, 0.3);
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  section {
+    margin-top: 80px;
+    width: 80vw;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .title {
+      margin: 80px auto;
+      padding: 20px;
+      border: 1px solid rgba(5, 61, 108, 0.3);
+      border-radius: 10px;
+    }
   }
 }

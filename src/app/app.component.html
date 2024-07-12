@@ -7,10 +7,14 @@
     <div class="shape5"></div>
   </div> -->
   <app-header
-    [darkMode]="router.url !== '/' && router.url !== '/aboutme'"
+    [darkMode]="
+      router.url !== '/' &&
+      router.url !== '/aboutme' &&
+      router.url !== '/contact'
+    "
   ></app-header>
   <div [class.container]="router.url !== '/'">
     <router-outlet></router-outlet>
   </div>
-  <app-footer></app-footer>
+  <!-- <app-footer></app-footer> -->
 </div>

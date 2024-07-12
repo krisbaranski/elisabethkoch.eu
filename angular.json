@@ -35,8 +35,13 @@
               "budgets": [
                 {
                   "type": "initial",
+<<<<<<< HEAD
                   "maximumWarning": "3mb",
                   "maximumError": "5mb"
+=======
+                  "maximumWarning": "4mb",
+                  "maximumError": "6mb"
+>>>>>>> new_backup
                 },
                 {
                   "type": "anyComponentStyle",
@@ -67,10 +72,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "elisabethkoch.eu:build:production"
             },
             "development": {
               "browserTarget": "elisabethkoch.eu:build:development"
+=======
+              "buildTarget": "elisabethkoch.eu:build:production"
+            },
+            "development": {
+              "buildTarget": "elisabethkoch.eu:build:development"
+>>>>>>> new_backup
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +90,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "elisabethkoch.eu:build"
+=======
+            "buildTarget": "elisabethkoch.eu:build"
+>>>>>>> new_backup
           }
         },
         "test": {

@@ -1,6 +1,7 @@
 <header [class.headerDark]="darkMode">
   <menu [class.headerDark]="darkMode">
     <div class="logo">
+<<<<<<< HEAD
       @if (!darkMode) {
         <img
           src="assets/img/new_logo_white.png"
@@ -10,6 +11,21 @@
       @if (darkMode) {
         <img src="assets/img/new_logo_dark.png" routerLink="/" />
       }
+=======
+      <img
+        *ngIf="!darkMode"
+        src="assets/img/new_logo_white.png"
+        alt="logo"
+        routerLink="/"
+      />
+
+      <img
+        *ngIf="darkMode"
+        src="assets/img/new_logo_dark.png"
+        alt="logo"
+        routerLink="/"
+      />
+>>>>>>> new_backup
     </div>
 
     <mat-toolbar>
@@ -41,6 +57,7 @@
           <a class="langLink top_menu_item" (click)="translate.use('en')">EN</a>
         </div>
 
+<<<<<<< HEAD
         <div class="social" [class.darkLinks]="darkMode">
           <a
             class="top_menu_item"
@@ -56,6 +73,25 @@
             >
             <img src="./assets/img/linkedin.svg" />
           </a>
+=======
+        <div [class.darkLinks]="darkMode">
+          <div class="social">
+            <a
+              class="top_menu_item"
+              href="https://instagram.com/stimme_gelungener_auftritt"
+              target="_blank"
+            >
+              <img src="./assets/img/instagram.svg" alt="instagram" />
+            </a>
+            <a
+              class="top_menu_item"
+              href="https://linkedin.com/in/elisabeth-koch-bb7b372a9"
+              target="_blank"
+            >
+              <img src="./assets/img/linkedin.svg" alt="linkedin" />
+            </a>
+          </div>
+>>>>>>> new_backup
         </div>
       </div>
 
@@ -64,7 +100,11 @@
         id="menuIcon"
         (click)="sidenav.toggle()"
         aria-label="Menu icon"
+<<<<<<< HEAD
         >
+=======
+      >
+>>>>>>> new_backup
         <mat-icon>menu</mat-icon>
       </button>
     </mat-toolbar>
@@ -72,16 +112,25 @@
     <mat-sidenav-container class="sidenav">
       <mat-sidenav
         #sidenav
+<<<<<<< HEAD
         [fixedInViewport]="true"
         [fixedTopGap]="130"
         mode="side"
         >
+=======
+        mode="side"
+        [fixedInViewport]="true"
+        [fixedTopGap]="130"
+        (click)="sidenav.close()"
+      >
+>>>>>>> new_backup
         <div [class.darkLinks]="darkMode">
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
             routerLink="trainings"
             >{{ "menu.trainings" | translate }}</a
+<<<<<<< HEAD
             >
             <a
               class="sidebar_item"
@@ -147,3 +196,61 @@
                     </mat-sidenav-container>
                   </menu>
                 </header>
+=======
+          >
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            routerLink="courses"
+            >{{ "menu.workshops" | translate }}</a
+          >
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            routerLink="appointment-home"
+            >{{ "menu.offers" | translate }}</a
+          >
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            routerLink="aboutme"
+            >{{ "menu.aboutme" | translate }}</a
+          >
+          <a class="sidebar_item" (click)="sidenav.close()" routerLink="blog">{{
+            "menu.blog" | translate
+          }}</a>
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            routerLink="contact"
+            >{{ "menu.contact" | translate }}</a
+          >
+        </div>
+
+        <!-- Translation links -->
+        <div class="translate_sidebar">
+          <a class="langLink sidebar_item" (click)="translate.use('de')">DE</a>
+          <a class="langLink sidebar_item" (click)="translate.use('en')">EN</a>
+        </div>
+
+        <div class="social_sidebar">
+          <a
+            (click)="sidenav.close()"
+            href="https://instagram.com/stimme_gelungener_auftritt"
+            target="_blank"
+          >
+            <img src="./assets/img/instagram.svg" alt="instagram" />
+          </a>
+          <a
+            (click)="sidenav.close()"
+            href="https://linkedin.com/in/elisabeth-koch-bb7b372a9"
+            target="_blank"
+          >
+            <img src="./assets/img/linkedin.svg" alt="linkedin" />
+          </a>
+        </div>
+      </mat-sidenav>
+    </mat-sidenav-container>
+  </menu>
+</header>
+>>>>>>> new_backup
