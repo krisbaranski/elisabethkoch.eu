@@ -8,9 +8,9 @@
     "contact": "Kontakt"
   },
   "home": {
-    "slide_1": "bring deine presenz auf das höchste niveau",
-    "slide_2": "strahl wie die Sonne, trette auf wie der Löwe",
-    "slide_3": "modeliere deine Erscheinung, stark und selbstbewusst",
+    "slide_1": "Bewege und inspiriere mit Deiner klaren Präsenz",
+    "slide_2": "Strahle Ruhe aus und gewinne die Herzen Deiner Zuhörer",
+    "slide_3": "lebendig, stark  & selbstbewusst in Stimme und Auftreten",
     "button_offer": "erstes Termin »",
     "box_1": "STIMME",
     "box_2": "VERTRAUEN",
@@ -20,15 +20,18 @@
     "title": "Über mich",
     "slide_1": "dein professionelles training",
     "slide_2": "führt dich auf die Spitze",
-    "text_1_title": "Von der Schreinerin zur Stimmexpertin",
     "text_1": [
-      "Meine Begeisterung für die Vielfalt des menschlichen Ausdrucks prägten meine persönliche und berufliche Entwicklung. Schon früh beobachtete ich die Menschen um mich herum, wie sie die Aufmerksamkeit der Zuhörer für sich gewannen. Als Abschluss meiner Schreinerlehre baute ich als Gesellenstück ein Rednerpult. Mit diesem  verlieh ich meiner Leidenschaft für Kommunikation und Sprache Ausdruck und wurde Logopädin und Schauspielerin."
+      "Ich bin Elisabeth Koch. Schon als Kind faszinierten mich Redner in der Vielfalt ihres Ausdrucks. Gespannt lauschte ich ihren Stimmen und beobachtete ihre Körpersprache. Dazu hatte ich reichlich Gelegenheit, denn in meiner Familie wimmelt es von gebildeten und diskussions- und redefreudigen Menschen, die in faszinierender Unterschiedlichkeit um Aufmerksamkeit warben. Und Sonntags gingen wir in die Kirche. Da gab es für mich ne Menge zu beobachten, denn unser Pfarrer war ein rhetorisches Genie. Ein Genuss für mich."
     ],
-    "text_2_title": "Meine heutige Arbeit",
+    "text_2_title": "Von der Schreinerin zur Stimmexpertin",
     "text_2": [
-      "Heute bin ich Expertin für Stimme und gelungenen Auftritt und arbeite als Trainerin und Coach an den Schnittstellen zwischen Stimme, Persönlichkeitsentwicklung, Kommunikation und Beziehungsgestaltung. Mit mehr als 20 Jahren Erfahrung assistiere ich meinen Klienten in der Entwicklung ihrer lebendigen Stimmkraft, persönlichen Wirkung, angenehmen Präsenz und Kommunikation. Meine Weiterbildungen zur Stimmtrainerin, Sängerin, systemischem Coach und zur Sprecherin ermöglichen mir ganzheitliches, individuelles und tiefgehendes Arbeiten. Mit Feingefühl und Humor kreiere ich eine Atmosphäre voller Leichtigkeit und Klarheit, in der das Ausprobieren und Integrieren von Neuem in das Arbeits- und Privatleben gelingt. Meine Arbeit bereichert und inspiriert sich kontinuierlich aus der Zusammenarbeit mit Kollegen aus angrenzenden Fachgebieten. Ich freue mich, Dich in Deiner stimmlichen, persönlichen und beruflichen Entwicklung zu begleiten."
+      "Nach der Schule wurde ich Schreinerin. Mit Werkzeug und Holz in meinen Händen kam ich in Verbindung zu meiner körperlichen Kraft und Balance. Als Gesellenstück baute ich ein Rednerpult. Einfach, weil ich fand, dass es ein spannendes Möbel sei. Mit diesem verlieh ich meiner Leidenschaft für Kommunikation und Sprache Ausdruck und wurde Logopädin und Schauspielerin."
     ],
-    "end": "Herzlich, Deine Elisabeth Koch"
+    "text_3_title": "Meine heutige Arbeit",
+    "text_3": [
+      "Heute bin ich Expertin für Stimme und gelungenen Auftritt und arbeite als Trainerin und Coach an den Schnittstellen zwischen Stimme, Persönlichkeitsentwicklung, Kommunikation und Beziehungsgestaltung. Mit mehr als 2 Jahrzehnten Erfahrung assistiere ich meinen Klienten in der Entwicklung ihrer lebendigen Stimmkraft, ihrer persönlichen Wirkung sowie ihrer angenehmen Präsenz und Kommunikation. Mit Feingefühl und Humor kreiere ich eine Atmosphäre voller Leichtigkeit und Klarheit, in der das Ausprobieren und Integrieren von Neuem in das Arbeits- und Privatleben gelingt. Meine Weiterbildungen zur Stimmtrainerin, Sängerin, zum systemischen Coach und zur Atemexpertin ermöglichen mir ganzheitliches, individuelles und tiefgehendes Arbeiten. Meine Arbeit erweitert und inspiriert sich kontinuierlich aus der Zusammenarbeit mit Kollegen aus angrenzenden Fachgebieten. Ich freue mich, Dich in Deiner stimmlichen, persönlichen und beruflichen Entwicklung zu begleiten."
+    ],
+    "end": "Herzlich, \n Deine Elisabeth Koch"
   },
   "contact": { "title": "Kontakt" },
   "footer": {
