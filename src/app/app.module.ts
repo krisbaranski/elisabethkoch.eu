@@ -8,13 +8,15 @@ import { SlideshowComponent } from "./slideshow/slideshow.component"
 import { HeaderComponent } from "./header/header.component"
 import { AboutmeComponent } from "./aboutme/aboutme.component"
 import { FooterComponent } from "./footer/footer.component"
-// import { ImpressumComponent } from './impressum/impressum.component';
-// import { PrivacyComponent } from './privacy/privacy.component';
+import { TermineComponent } from "./termine/termine.component"
+import { HomeComponent } from "./home/home.component"
+import { ImpressumComponent } from "./impressum/impressum.component"
+import { PrivacyComponent } from "./privacy/privacy.component"
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core"
 import { TranslateHttpLoader } from "@ngx-translate/http-loader"
 import { HttpClientModule, HttpClient } from "@angular/common/http"
-// import { ContactComponent } from './contact/contact.component';
-// import { AppointmentHomeComponent } from './appointment-home/appointment-home.component';
+import { ContactComponent } from "./contact/contact.component"
+import { AppointmentHomeComponent } from "./appointment-home/appointment-home.component"
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 import { MatToolbarModule } from "@angular/material/toolbar"
 import { MatIconModule } from "@angular/material/icon"
@@ -28,14 +30,16 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     SlideshowComponent,
     HeaderComponent,
     AboutmeComponent,
     FooterComponent,
-    // ImpressumComponent,
-    // PrivacyComponent,
-    // ContactComponent,
-    // AppointmentHomeComponent,
+    TermineComponent,
+    ImpressumComponent,
+    PrivacyComponent,
+    ContactComponent,
+    AppointmentHomeComponent,
   ],
   imports: [
     BrowserModule,
