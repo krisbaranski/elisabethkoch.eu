@@ -111,7 +111,7 @@ section {
   box-sizing: border-box;
   display: flex;
   width: 100%;
-  margin: 180px auto 0;
+  margin: 340px auto 0;
   padding: 40px 30px 100px 30px;
   background-color: #281e1e;
   color: rgba(195, 162, 43, 0.8);
@@ -122,28 +122,31 @@ section {
 
   .text {
     max-width: 780px;
-    margin: auto;
+    // margin: auto;
+    padding: 0;
   }
 
   .frame {
     border-right: 1px solid rgba(195, 162, 43, 0.5);
-    padding-right: 3rem;
+    padding-right: 3rem0;
   }
 
   h1 {
     color: #281e1e;
     font-size: 5rem;
     font-weight: 100;
+    font-style: italic;
     letter-spacing: 1.1;
     text-transform: uppercase;
     text-align: left;
     transform: translateY(-150px);
-    padding: 1rem 0 1rem 2rem;
+    padding: 1rem;
   }
 
   h3 {
     font-size: 1.4rem;
     padding-bottom: 1rem;
+    margin-top: 4rem;
   }
 
   p {
@@ -191,7 +194,7 @@ section {
     h1 {
       font-size: 4rem;
       line-height: 1;
-      transform: translateY(-200px);
+      transform: translateY(-170px);
       // padding: 1rem;
     }
     .frame {
@@ -204,6 +207,17 @@ section {
 
       img {
         padding: 2rem;
+      }
+    }
+  }
+}
+
+@media (max_width: 440px) {
+  .about {
+    .text {
+      h1 {
+        font-size: 3.5rem;
+        transform: translateY(-190px);
       }
     }
   }

@@ -19,16 +19,18 @@
 .box {
   width: 20vw;
   height: auto;
-  border: 1px solid #0a4996;
+  //   border: 1px solid #5889c596;
+  border: 1px solid red;
   border-radius: 5px;
   margin: 1rem 2rem;
   padding: 2rem;
-  color: #0a4996;
   backdrop-filter: blur(0.8rem);
-  background-color: #eeeeee40;
+  background-color: #14111140;
 
   h1 {
+    color: #0b55b0c5;
     text-align: center;
+    font-size: 2rem;
   }
 
   p {
