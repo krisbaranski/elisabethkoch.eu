@@ -135,8 +135,8 @@ header {
 
 @media (max-width: 1200px) {
   header {
-    max-width: 700px;
-    height: 5.5rem;
+    position: absolute;
+    height: 6rem;
     display: flex;
     margin-inline: auto;
     backdrop-filter: none;
@@ -164,19 +164,21 @@ header {
     }
 
     .mat-sidenav {
-      background-color: rgba(7, 43, 78, 0.8);
+      background-color: rgba(23, 43, 64, 0.8);
       backdrop-filter: blur(5px);
       width: 100vw;
       overflow: hidden;
+      top: -50px;
     }
 
     #menuIcon {
       display: flex;
       justify-content: flex-end;
-      color: #0a599f;
-      border: 1px solid #ddd;
+      color: #fff;
+      border: 2px solid #a6a6a6;
       border-radius: 5px;
       background-color: transparent;
+      margin-right: 1rem;
     }
 
     .sidenav {
@@ -191,14 +193,18 @@ header {
       display: none;
     }
 
-    .sidebar_item,
+    .sidebar_items,
     .translate_sidebar,
     .social_sidebar {
+      // position: relative;
       display: flex;
       justify-content: center;
-      padding: 15px;
+      width: fit-content;
+      padding: 10px 15px;
+      margin: auto;
       color: white;
       font-weight: 400;
+      transform: translateY(35px);
 
       img {
         width: 30px;
@@ -209,6 +215,18 @@ header {
       &:hover {
         color: white;
       }
+    }
+    .sidebar_items {
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+    }
+
+    .sidebar_item {
+      // border: 1px solid red;
+      // margin: 50px auto;
+      text-align: center;
+      // padding: 40px;
     }
   }
 }

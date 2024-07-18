@@ -11,8 +11,8 @@
         <div [class.darkLinks]="darkMode">
           <a
             class="top_menu_item"
-            [routerLinkActive]="'active'"
             routerLink="/"
+            [routerLinkActive]="'active'"
             [routerLinkActiveOptions]="{ exact: true }"
             >{{ "menu.trainings" | translate }}</a
           >
@@ -83,31 +83,43 @@
         #sidenav
         mode="side"
         [fixedInViewport]="true"
-        [fixedTopGap]="130"
+        [fixedTopGap]="98"
         (click)="sidenav.close()"
       >
-        <div [class.darkLinks]="darkMode">
-          <a class="sidebar_item" (click)="sidenav.close()" routerLink="/">{{
-            "menu.trainings" | translate
-          }}</a>
+        <div class="sidebar_items" [class.darkLinks]="darkMode">
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLink="/"
+            >{{ "menu.trainings" | translate }}</a
+          >
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            [routerLinkActive]="'active'"
             routerLink="courses"
             >{{ "menu.workshops" | translate }}</a
           >
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
+            [routerLinkActive]="'active'"
             routerLink="aboutme"
             >{{ "menu.aboutme" | translate }}</a
           >
-          <a class="sidebar_item" (click)="sidenav.close()" routerLink="blog">{{
-            "menu.blog" | translate
-          }}</a>
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
+            [routerLinkActive]="'active'"
+            routerLink="blog"
+            >{{ "menu.blog" | translate }}</a
+          >
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            [routerLinkActive]="'active'"
             routerLink="contact"
             >{{ "menu.contact" | translate }}</a
           >
