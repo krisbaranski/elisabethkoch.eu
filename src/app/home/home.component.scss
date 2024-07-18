@@ -13,10 +13,12 @@
   position: relative;
   margin: 6rem auto;
   flex-wrap: wrap;
+  min-height: 50vh;
 }
 
 .box {
   width: 20vw;
+  height: auto;
   border: 1px solid #0a4996;
   border-radius: 5px;
   margin: 1rem 2rem;

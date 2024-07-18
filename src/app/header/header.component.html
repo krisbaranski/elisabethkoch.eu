@@ -1,19 +1,9 @@
 <header [class.headerDark]="darkMode">
   <menu [class.headerDark]="darkMode">
     <div class="logo">
-      <img
-        *ngIf="!darkMode"
-        src="assets/img/new_logo_white.png"
-        alt="logo"
-        routerLink="/"
-      />
+      <img *ngIf="!darkMode" src="assets/img/new_logo_white.png" alt="logo" />
 
-      <img
-        *ngIf="darkMode"
-        src="assets/img/new_logo_dark.png"
-        alt="logo"
-        routerLink="/"
-      />
+      <img *ngIf="darkMode" src="assets/img/new_logo_dark.png" alt="logo" />
     </div>
 
     <mat-toolbar>
@@ -22,7 +12,8 @@
           <a
             class="top_menu_item"
             [routerLinkActive]="'active'"
-            routerLink="trainings"
+            routerLink="/"
+            [routerLinkActiveOptions]="{ exact: true }"
             >{{ "menu.trainings" | translate }}</a
           >
           <a
@@ -96,12 +87,9 @@
         (click)="sidenav.close()"
       >
         <div [class.darkLinks]="darkMode">
-          <a
-            class="sidebar_item"
-            (click)="sidenav.close()"
-            routerLink="trainings"
-            >{{ "menu.trainings" | translate }}</a
-          >
+          <a class="sidebar_item" (click)="sidenav.close()" routerLink="/">{{
+            "menu.trainings" | translate
+          }}</a>
           <a
             class="sidebar_item"
             (click)="sidenav.close()"

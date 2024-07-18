@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core"
-import { TranslateService } from "@ngx-translate/core"
 
 @Component({
   selector: "app-slideshow",
@@ -7,7 +6,7 @@ import { TranslateService } from "@ngx-translate/core"
   styleUrls: ["./slideshow.component.scss"],
 })
 export class SlideshowComponent implements OnInit {
-  constructor(private translate: TranslateService) {}
+  constructor() {}
   images = ["nature.png", "sparcle.jpg", "water.jpg"]
   headlines = ["home.slide_1", "home.slide_2", "home.slide_3"]
 

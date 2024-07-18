@@ -7,8 +7,8 @@ header {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   justify-content: center;
-  background-color: transparent;
-  backdrop-filter: blur(0.5rem);
+  background-color: #00000020;
+  backdrop-filter: blur(2px);
 
   #menuIcon,
   .sidenav {
@@ -20,18 +20,13 @@ header {
     background-color: transparent;
   }
 
-  .active {
-    font-weight: 600;
-    color: yellowgreen;
-  }
-
   menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 1200px;
-    height: 7.5rem;
+    height: 5rem;
     margin-inline: auto;
 
     a {
@@ -43,7 +38,8 @@ header {
       padding: 4px;
       margin: 8px;
 
-      &:hover {
+      &:hover,
+      &.active {
         color: white;
         border-bottom: 1px solid rgba(255, 255, 255, 0.8);
       }
@@ -55,13 +51,13 @@ header {
     }
 
     img {
-      height: 80px;
+      height: 60px;
       width: auto;
-      cursor: pointer;
+      // cursor: pointer;
 
-      &:hover {
-        transform: scale(0.95);
-      }
+      // &:hover {
+      // transform: scale(0.95);
+      // }
     }
 
     .menu {
@@ -149,71 +145,69 @@ header {
       width: 100vw;
       flex-direction: row;
       justify-content: space-between;
-      padding: 1rem;
 
       img {
-        height: 70px;
-        padding: 14px 0;
+        height: 60px;
+        // padding: 10px 0;
       }
 
-      a {
-        width: auto;
-        font-size: 0.9rem;
+      // a {
+      //   width: auto;
+      //   font-size: 0.9rem;
+      //   color: white;
+
+      //   &:hover {
+      //     color: white;
+      //     background-color: rgba(9, 38, 68, 0.738);
+      //     border: none;
+      //   }
+    }
+
+    .mat-sidenav {
+      background-color: rgba(7, 43, 78, 0.8);
+      backdrop-filter: blur(5px);
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    #menuIcon {
+      display: flex;
+      justify-content: flex-end;
+      color: #0a599f;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: transparent;
+    }
+
+    .sidenav {
+      position: fixed;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .top_menu_item {
+      display: none;
+    }
+
+    .sidebar_item,
+    .translate_sidebar,
+    .social_sidebar {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      color: white;
+      font-weight: 400;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      a,
+      &:hover {
         color: white;
-
-        &:hover {
-          color: white;
-          background-color: rgba(9, 38, 68, 0.738);
-          border: none;
-        }
-      }
-
-      .mat-sidenav {
-        background-color: rgba(7, 43, 78, 0.8);
-        backdrop-filter: blur(5px);
-        width: 100vw;
-        overflow: hidden;
-      }
-
-      #menuIcon {
-        display: flex;
-        justify-content: flex-end;
-        color: #0a599f;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: transparent;
-      }
-
-      .sidenav {
-        position: fixed;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      .top_menu_item {
-        display: none;
-      }
-
-      .sidebar_item,
-      .translate_sidebar,
-      .social_sidebar {
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-        color: white;
-        font-weight: 400;
-
-        img {
-          width: 30px;
-          height: 30px;
-        }
-
-        a,
-        &:hover {
-          color: white;
-        }
       }
     }
   }
