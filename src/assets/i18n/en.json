@@ -20,24 +20,49 @@
     "title": "About me",
     "slide_1": "your professional coaching",
     "slide_2": "brings you to the top",
-    "text_1": [
-      "My name is Elisabeth Koch. I have always been fascinated by speakers and the diversity of their expressions. I have listened intently to their voices and observed their body language. I have had plenty of opportunities to do this, because my family was teeming with educated people who were keen to discuss and talk and who vied for attention in fascinatingly different ways. And on Sundays we went to church. There was a lot for me to observe, because our pastor was a rhetorical genius. A pleasure for me."
+    "text_1.1": [
+      "My name is Elisabeth Koch. I have always been fascinated by speakers and the diversity of their expressions. I have listened intently to their voices and observed their body language."
+    ],
+    "text_1.2": [
+      "I have had plenty of opportunities to do this, because my family was teeming with educated people who were keen to discuss and talk and who vied for attention in fascinatingly different ways. And on Sundays we went to church. There was a lot for me to observe, because our pastor was a rhetorical genius. A pleasure for me."
     ],
     "text_2_title": "From a carpenter to voice expert",
-    "text_2": [
-      "After finishing school, I became a carpenter. With tools and wood in my hands, I got in touch with my physical strength and balance. As my final project, I built a Lectern as a journeyman's piece. Simply because I thought this is an exciting piece of furniture. I used it to express my passion for communication and speech and became a speech therapist and actress."
+    "text_2.1": [
+      "After finishing school, I became a carpenter. With tools and wood in my hands, I got in touch with my physical strength and balance. As my final project, I built a Lectern as a journeyman's piece."
+    ],
+    "text_2.2": [
+      "Simply because I thought this is an exciting piece of furniture. I used it to express my passion for communication and speech and became a speech therapist and actress."
     ],
     "text_3_title": "My current work",
-    "text_3": [
-      "Today I am an expert in voice and successful performance and work as a trainer and coach at the junctions of voice, personal development, communication and relationship building. With more than two decades of experience, I assist my clients in developing their lively vocal power, their personal impact and their pleasant presence and communication. With sensitivity and humor, I create an atmosphere full of lightness and clarity in which trying out and integrating new things into my clients work and private lives becomes their basis for their success and well-being. My further training as a voice coach, singer, systemic coach and breathing expert enables me to work holistically, individually and in depth. My work is continuously expanded and inspired by collaboration with colleagues in related fields. I look forward to accompanying you in your vocal, personal and professional development."
+    "text_3.1": [
+      "Today I am an expert in voice and successful performance and work as a trainer and coach at the junctions of voice, personal development, communication and relationship building."
+    ],
+    "text_3.2": [
+      "With more than two decades of experience, I assist my clients in developing their lively vocal power, their personal impact and their pleasant presence and communication."
+    ],
+    "text_3.3": [
+      "With sensitivity and humor, I create an atmosphere full of lightness and clarity in which trying out and integrating new things into my clients work and private lives becomes their basis for their success and well-being."
+    ],
+    "text_3.4": [
+      "My further training as a voice coach, singer, systemic coach and breathing expert enables me to work holistically, individually and in depth."
+    ],
+    "text_3.5": [
+      "My work is continuously expanded and inspired by collaboration with colleagues in related fields. I look forward to accompanying you in your vocal, personal and professional development."
     ],
     "end": "Cordially, \n Elisabeth Koch"
   },
-  "contact": { "title": "Contact" },
+  "contact": {
+    "title": "Contact",
+    "text_1.1": ["Are you curious?"],
+    "text_1.2": [
+      "Here you can write me a personal message, register or choose an appointment for your free initial consultation by phone."
+    ],
+    "text_1.3": ["I look forward to meeting you!"]
+  },
   "footer": {
     "title": "Contact",
     "link_train": "Trainings",
-    "link_work": "Workshops",
+    "link_work": "Courses",
     "link_blog": "Blog",
     "link_about": "About me",
     "link_policy": "Privacy Policy"
