@@ -1,12 +1,13 @@
 import { NgModule } from "@angular/core"
 import { BrowserModule } from "@angular/platform-browser"
-// import { HashLocationStrategy, LocationStrategy } from "@angular/common"
+import { HashLocationStrategy, LocationStrategy } from "@angular/common"
 
 import { AppRoutingModule } from "./app-routing.module"
 import { AppComponent } from "./app.component"
 import { SlideshowComponent } from "./slideshow/slideshow.component"
 import { HeaderComponent } from "./header/header.component"
 import { AboutmeComponent } from "./aboutme/aboutme.component"
+import { WorkComponent } from "./work/work.component"
 import { FooterComponent } from "./footer/footer.component"
 import { TermineComponent } from "./termine/termine.component"
 import { HomeComponent } from "./home/home.component"
@@ -34,6 +35,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SlideshowComponent,
     HeaderComponent,
     AboutmeComponent,
+    WorkComponent,
     FooterComponent,
     TermineComponent,
     ImpressumComponent,
@@ -60,7 +62,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   providers: [
     HttpClientModule,
-    // { provide: LocationStrategy, useClass: HashLocationStrategy },
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
   ],
   bootstrap: [AppComponent],
 })
