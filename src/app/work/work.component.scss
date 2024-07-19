@@ -33,6 +33,7 @@
     margin-top: 3rem;
     margin-bottom: 4rem;
     padding: 1rem;
+    line-height: 1.5;
   }
 
   h3 {
@@ -87,7 +88,8 @@
     h1 {
       font-size: 4rem;
       line-height: 1;
-      transform: translateY(-170px);
+      margin-top: 2rem;
+      //   transform: translateY(-170px);
     }
     .frame {
       border-right: none;
@@ -109,7 +111,7 @@
     .text {
       h1 {
         font-size: 3.5rem;
-        transform: translateY(-190px);
+        // transform: translateY(-190px);
       }
     }
   }
