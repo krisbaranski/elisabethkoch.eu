@@ -2,7 +2,10 @@
   <app-header
     [darkMode]="
       router.url !== '/' &&
-      router.url !== '/aboutme' &&
+      router.url !== '/profile' &&
+      router.url !== '/profile#aboutme' &&
+      router.url !== '/profile#work' &&
+      router.url !== '/profile#facts' &&
       router.url !== '/contact'
     "
   ></app-header>

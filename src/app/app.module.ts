@@ -8,6 +8,8 @@ import { SlideshowComponent } from "./slideshow/slideshow.component"
 import { HeaderComponent } from "./header/header.component"
 import { AboutmeComponent } from "./aboutme/aboutme.component"
 import { WorkComponent } from "./work/work.component"
+import { FactsComponent } from "./facts/facts.component"
+import { ProfileComponent } from "./profile/profile.component"
 import { FooterComponent } from "./footer/footer.component"
 import { TermineComponent } from "./termine/termine.component"
 import { HomeComponent } from "./home/home.component"
@@ -22,10 +24,11 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 import { MatToolbarModule } from "@angular/material/toolbar"
 import { MatIconModule } from "@angular/material/icon"
 import { MatSidenavModule } from "@angular/material/sidenav"
+import { MatMenuModule } from "@angular/material/menu"
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http)
+  return new TranslateHttpLoader(http, "./assets/i18n/", ".json")
 }
 
 @NgModule({
@@ -34,8 +37,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     SlideshowComponent,
     HeaderComponent,
+    ProfileComponent,
     AboutmeComponent,
     WorkComponent,
+    FactsComponent,
     FooterComponent,
     TermineComponent,
     ImpressumComponent,
@@ -59,6 +64,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
+    MatMenuModule,
   ],
   providers: [
     HttpClientModule,
