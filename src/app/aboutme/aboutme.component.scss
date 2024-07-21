@@ -1,4 +1,8 @@
 // Backgound Animation
+.menu_space {
+  height: 2rem;
+}
+
 section {
   position: relative;
   box-sizing: border-box;
@@ -6,7 +10,7 @@ section {
 }
 
 .background-container {
-  position: fixed;
+  position: absolute;
   height: 100%;
   width: 100vw;
   max-width: 100%;
@@ -111,7 +115,7 @@ section {
   box-sizing: border-box;
   display: flex;
   width: 100%;
-  margin: 340px auto 0;
+  margin: 80px auto 0;
   padding: 40px 30px 100px 30px;
   background-color: #281e1e;
   color: rgba(195, 162, 43, 0.8);
@@ -131,15 +135,14 @@ section {
   }
 
   h1 {
-    color: #281e1e;
+    color: #cda00c;
     font-size: 5rem;
     font-weight: 100;
     font-style: italic;
     letter-spacing: 1.1;
     text-transform: uppercase;
     text-align: left;
-    transform: translateY(-150px);
-    padding: 1rem;
+    padding: 4rem;
   }
 
   h3 {
@@ -193,10 +196,9 @@ section {
     h1 {
       font-size: 4rem;
       line-height: 1;
-      transform: translateY(-170px);
     }
     .frame {
-      border-right: none;
+      border: none;
       padding-right: 0;
     }
 
@@ -215,7 +217,6 @@ section {
     .text {
       h1 {
         font-size: 3.5rem;
-        transform: translateY(-190px);
       }
     }
   }

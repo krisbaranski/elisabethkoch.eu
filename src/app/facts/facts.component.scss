@@ -76,19 +76,13 @@
 }
 
 @media (max-width: 700px) {
-  .slideshow-overlay {
-    p {
-      font-size: 1.5rem;
-    }
-  }
-
-  .about {
+  .contain {
     h1 {
       font-size: 4rem;
       line-height: 1;
     }
     .frame {
-      border-right: none;
+      border: none;
       padding-right: 0;
     }
 

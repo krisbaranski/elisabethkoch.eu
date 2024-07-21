@@ -89,11 +89,10 @@
       font-size: 4rem;
       line-height: 1;
       margin-top: 2rem;
-      //   transform: translateY(-170px);
     }
     .frame {
-      border-right: none;
-      padding-right: 0;
+      border: none;
+      padding-left: 0;
     }
 
     .signature {
@@ -111,7 +110,6 @@
     .text {
       h1 {
         font-size: 3.5rem;
-        // transform: translateY(-190px);
       }
     }
   }
