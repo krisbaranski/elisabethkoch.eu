@@ -3,7 +3,7 @@
     "trainings": "Training",
     "workshops": "Kurse",
     "offers": "Angebote",
-    "aboutme": "Über mich",
+    "profile": "Profil",
     "blog": "Blog",
     "contact": "Kontakt"
   },
@@ -19,7 +19,7 @@
   "aboutme": {
     "title": "Über mich",
     "slide_1": "dein professionelles training",
-    "slide_2": "führt dich auf die Spitze",
+    "slide_2": "führt dich an die Spitze",
     "text_1.1": "Ich bin Elisabeth Koch. Schon als Kind faszinierten mich Redner in der Vielfalt ihres Ausdrucks. Gespannt lauschte ich ihren Stimmen und beobachtete ihre Körpersprache.",
     "text_1.2": "Dazu hatte ich reichlich Gelegenheit, denn in meiner Familie wimmelt es von gebildeten und diskussions- und redefreudigen Menschen, die in faszinierender Unterschiedlichkeit um Aufmerksamkeit warben. Und Sonntags gingen wir in die Kirche. Da gab es für mich ne Menge zu beobachten, denn unser Pfarrer war ein rhetorisches Genie. Ein Genuss für mich.",
     "text_2_title": "Von der Schreinerin zur Stimmexpertin",
@@ -63,6 +63,55 @@
     "text_10": "Dann vereinbare hier (verlinken) einen Termin für ein kostenfreies Erstgespräch",
     "text_11": "Ich freu mich auf Dich!"
   },
+  "facts": {
+    "title": "Fakten",
+    "title_1": "Expertin für Stimme und gelungenen Auftritt",
+    "text_1": "Integrative Stimmtrainerin, Diplom Logopädin, Systemischer Coach & Trainerin",
+    "title_2": "Was ich tue:",
+    "text_2": [
+      "Ich schule Redner & Politiker in der Entwicklung ihres individuellen und starken Auftritts.",
+      "Ich biete Präsenztraining für Führungskräfte und zeige ihnen, wie sie souverän & sicher auftreten.",
+      "Ich begleite Podcast-Hosts und Journalisten in der Entwicklung ihres kraftvollen, warmen Stimmklangs, in dem ihre Professionalität, Expertise & Erfahrung auditiv greifbar werden.",
+      "Ich begleite Trainer, Berater & Coaches in der Entfaltung ihres Stimmpotentials für den Gewinn an Sicherheit und innere Ruhe für die Arbeit mit ihren Klienten.",
+      "Ich gebe Sängern, Schauspielern und Sprechern Sicherheit für ein neues, freies Singen & Sprechen.",
+      " Ich führe Sänger und Sprecher aus ihrer Kehlkopfentzündung heraus in eine gesunde Stimme.",
+      "Ich begleite Schnellsprecher auf dem Weg zur klaren & freien Kommunikation."
+    ],
+    "title_3": "Meine Kundengruppen:",
+    "text_3": [
+      "Führungskräfte & alle, die es werden wollen",
+      "Frauen",
+      "Schnellsprecher",
+      "Politiker & Redner",
+      "Podcast-Hosts & Journalisten",
+      "Trainer, Berater & Coaches",
+      "Sänger, Sprecher & Schauspieler"
+    ],
+    "title_4": "Ausbildung und Wissen:",
+    "text_4": [
+      "Diplom Logopädin, Schauspielerin & Sängerin",
+      "Integrative Stimmtrainerin & Atemexpertin",
+      "Train the Trainer",
+      "Systemischer Gesundheitscoach",
+      "Trainerin für Auftritt, Präsenz, Charisma, Kommunikation & Rhetorik",
+      "Stress- & Resilienztrainerin",
+      "Führungskräftetrainerin",
+      "Stotter- und Polterexpertin",
+      "Schreinerin"
+    ]
+  },
+  "termin": {
+    "title_1": "Termine",
+    "text_1.1": " Schreiben Sie mir gerne eine persönliche Nachricht oder wählen Sie einen Termin für ein 30-minütiges, kostenfreies Erstgespräch per Telefon aus.",
+    "text_1.2": "Ich freue über Ihre Nachricht!",
+    "title_2": "Alle Angebote auf Anfrage.",
+    "table_1": "30minütiges Erstgespräch per Telefon, kostenfrei",
+    "table_2": "Probestunde 60min nach ersten Telefonat",
+    "table_3": "Einzelcoaching á 60min",
+    "table_4": "Einzelcoaching 6er Paket 6x60min",
+    "table_5": "Im Zeitraum von vier Monaten Einzelcoaching 10er Paket 10x60min Im Zeitraum von 6 Monaten",
+    "table_6": "SOS Termin 1x90min:"
+  },
   "contact": {
     "title": "Kontakt",
     "text_1.1": "Du bist neugierig?",
@@ -74,7 +123,7 @@
     "link_train": "Training",
     "link_work": "Kurse",
     "link_blog": "Blog",
-    "link_about": "Über mich",
+    "link_profile": "Profil",
     "link_policy": "Datenschutz"
   }
 }
