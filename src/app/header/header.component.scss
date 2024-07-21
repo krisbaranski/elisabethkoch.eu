@@ -1,14 +1,18 @@
-header {
-  position: absolute;
-  left: 0;
-  right: 0;
+:host {
   width: 100%;
-  z-index: 10;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   justify-content: center;
-  background-color: #00000020;
-  backdrop-filter: blur(2px);
+  background: radial-gradient(#3477bfbd, #114b89a4);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
 
   #menuIcon,
   .sidenav {
@@ -26,7 +30,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 1200px;
-    height: 5rem;
+    height: 4rem;
     margin-inline: auto;
 
     a {
@@ -41,7 +45,7 @@ header {
       &:hover,
       &.active {
         color: white;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+        border-bottom: 1px solid rgb(255, 227, 17);
       }
 
       button {
@@ -135,22 +139,22 @@ header {
 
 @media (max-width: 1200px) {
   header {
-    position: absolute;
-    height: 6rem;
+    height: 4.4rem;
     display: flex;
     margin-inline: auto;
     backdrop-filter: none;
+    top: 0;
 
     menu {
+      padding-top: 5px;
+      margin-top: 0;
       width: 100vw;
       flex-direction: row;
       justify-content: space-between;
 
       img {
-        height: 60px;
-        // padding: 10px 0;
+        height: 50px;
       }
-
       // a {
       //   width: auto;
       //   font-size: 0.9rem;

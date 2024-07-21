@@ -24,6 +24,7 @@ export class HeaderComponent implements OnInit {
 
   goToPart(fragment: any) {
     this.router.navigateByUrl("profile#" + fragment)
+    this.sidenav.close()
   }
 
   onProfileClick(event: Event) {

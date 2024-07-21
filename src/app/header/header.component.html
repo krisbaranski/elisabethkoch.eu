@@ -95,7 +95,7 @@
         #sidenav
         mode="side"
         [fixedInViewport]="true"
-        [fixedTopGap]="98"
+        [fixedTopGap]="70"
         (click)="sidenav.close()"
       >
         <div class="sidebar_items" [class.darkLinks]="darkMode">
@@ -124,28 +124,13 @@
             >{{ "menu.profile" | translate }}</a
           >
           <mat-menu #profile="matMenu">
-            <button
-              mat-menu-item
-              [routerLinkActive]="'active'"
-              routerLink="aboutme"
-              (click)="sidenav.close()"
-            >
+            <button mat-menu-item (click)="navigateAndClose('aboutme')">
               {{ "aboutme.title" | translate }}
             </button>
-            <button
-              mat-menu-item
-              [routerLinkActive]="'active'"
-              routerLink="work"
-              (click)="sidenav.close()"
-            >
+            <button mat-menu-item (click)="navigateAndClose('work')">
               {{ "work.title" | translate }}
             </button>
-            <button
-              mat-menu-item
-              [routerLinkActive]="'active'"
-              routerLink="facts"
-              (click)="sidenav.close()"
-            >
+            <button mat-menu-item (click)="navigateAndClose('facts')">
               {{ "facts.title" | translate }}
             </button>
           </mat-menu>
