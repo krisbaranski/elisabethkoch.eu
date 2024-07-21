@@ -23,11 +23,23 @@
             >{{ "menu.workshops" | translate }}</a
           >
           <a
+            mat-button
+            [matMenuTriggerFor]="profile"
             class="top_menu_item"
             [routerLinkActive]="'active'"
-            routerLink="aboutme"
-            >{{ "menu.aboutme" | translate }}</a
+            >{{ "menu.profile" | translate }}</a
           >
+          <mat-menu #profile="matMenu">
+            <button mat-menu-item (click)="goToPart('aboutme')">
+              {{ "aboutme.title" | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('work')">
+              {{ "work.title" | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('facts')">
+              {{ "facts.title" | translate }}
+            </button>
+          </mat-menu>
           <a
             class="top_menu_item"
             [routerLinkActive]="'active'"
@@ -90,6 +102,7 @@
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
+            (click)="navigateAndClose('')"
             [routerLinkActive]="'active'"
             [routerLinkActiveOptions]="{ exact: true }"
             routerLink="/"
@@ -98,20 +111,48 @@
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
+            (click)="navigateAndClose('courses')"
             [routerLinkActive]="'active'"
             routerLink="courses"
             >{{ "menu.workshops" | translate }}</a
           >
           <a
+            mat-button
+            (click)="onProfileClick($event)"
+            [matMenuTriggerFor]="profile"
             class="sidebar_item"
-            (click)="sidenav.close()"
-            [routerLinkActive]="'active'"
-            routerLink="aboutme"
-            >{{ "menu.aboutme" | translate }}</a
+            >{{ "menu.profile" | translate }}</a
           >
+          <mat-menu #profile="matMenu">
+            <button
+              mat-menu-item
+              [routerLinkActive]="'active'"
+              routerLink="aboutme"
+              (click)="sidenav.close()"
+            >
+              {{ "aboutme.title" | translate }}
+            </button>
+            <button
+              mat-menu-item
+              [routerLinkActive]="'active'"
+              routerLink="work"
+              (click)="sidenav.close()"
+            >
+              {{ "work.title" | translate }}
+            </button>
+            <button
+              mat-menu-item
+              [routerLinkActive]="'active'"
+              routerLink="facts"
+              (click)="sidenav.close()"
+            >
+              {{ "facts.title" | translate }}
+            </button>
+          </mat-menu>
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
+            (click)="navigateAndClose('blog')"
             [routerLinkActive]="'active'"
             routerLink="blog"
             >{{ "menu.blog" | translate }}</a
@@ -119,6 +160,7 @@
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
+            (click)="navigateAndClose('contact')"
             [routerLinkActive]="'active'"
             routerLink="contact"
             >{{ "menu.contact" | translate }}</a
