@@ -155,6 +155,7 @@
 
     h1 {
       text-align: center;
+      font-size: 1.5rem;
     }
 
     p {
@@ -175,6 +176,12 @@
       margin: 10px;
       font-size: 2rem;
       text-wrap: balance;
+    }
+  }
+
+  .box {
+    h1 {
+      font-size: 1.2rem;
     }
   }
 }
