@@ -3,7 +3,7 @@
     "trainings": "Trainings",
     "workshops": "Courses",
     "offers": "Offers",
-    "profile": "Profile",
+    "profile": "About Me",
     "blog": "Blog",
     "contact": "Contact"
   },
@@ -97,7 +97,7 @@
     "title": "Contact",
     "link_train": "Trainings",
     "link_work": "Courses",
-    "link_profile": "Profile",
+    "link_profile": "About Me",
     "link_blog": "Blog",
     "link_policy": "Privacy Policy"
   }

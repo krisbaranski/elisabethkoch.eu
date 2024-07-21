@@ -3,7 +3,7 @@
     "trainings": "Training",
     "workshops": "Kurse",
     "offers": "Angebote",
-    "profile": "Profil",
+    "profile": "Über Mich",
     "blog": "Blog",
     "contact": "Kontakt"
   },
@@ -17,7 +17,7 @@
     "box_3": "PRÄSENZ"
   },
   "aboutme": {
-    "title": "Über mich",
+    "title": "Über Mich",
     "slide_1": "dein professionelles training",
     "slide_2": "führt dich an die Spitze",
     "text_1.1": "Ich bin Elisabeth Koch. Schon als Kind faszinierten mich Redner in der Vielfalt ihres Ausdrucks. Gespannt lauschte ich ihren Stimmen und beobachtete ihre Körpersprache.",
@@ -123,7 +123,7 @@
     "link_train": "Training",
     "link_work": "Kurse",
     "link_blog": "Blog",
-    "link_profile": "Profil",
+    "link_profile": "Über Mich",
     "link_policy": "Datenschutz"
   }
 }
