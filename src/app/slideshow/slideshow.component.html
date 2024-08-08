@@ -5,14 +5,16 @@
     src="assets/img/{{ images[currentImage] }}"
   />
 </div>
-<div class="slideshow-overlay flex-col">
-  <div *ngIf="showImage" class="fadeIn">
-    <h1>{{ headlines[currentImage] | translate }}</h1>
-    <p>
-      {{ text[currentImage] | translate }}
-    </p>
+<div class="contain">
+  <div class="slideshow-overlay flex-col">
+    <div *ngIf="showImage" class="fadeIn">
+      <h1>{{ headlines[currentImage] | translate }}</h1>
+      <p>
+        {{ text[currentImage] | translate }}
+      </p>
+    </div>
+    <span class="offer">
+      <a href="/#termine">{{ 'home.button_offer' | translate }}</a>
+    </span>
   </div>
-  <span class="offer">
-    <a href="/#termine">{{ 'home.button_offer' | translate }}</a>
-  </span>
 </div>

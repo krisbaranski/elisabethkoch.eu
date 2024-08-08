@@ -17,7 +17,7 @@ header {
   .logo a:hover {
     cursor: pointer;
     opacity: 0.8;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
   }
 
   #menuIcon,
@@ -48,7 +48,7 @@ header {
       font-weight: 300;
       color: #00649c;
       text-decoration: none;
-      border: 1px solid #fff;
+      border: 1px solid transparent;
       margin-left: 2px;
       padding: 7px 14px;
 
@@ -116,12 +116,13 @@ header {
         width: auto;
         font-size: 0.9rem;
         color: white;
+        margin: 2px;
 
         &:hover,
         &.active {
           color: #00649c;
           background-color: #dcf4ff;
-          border-radius: 6px;
+          border-radius: 16px;
         }
       }
 
