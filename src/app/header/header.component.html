@@ -1,66 +1,90 @@
-<header [class.headerDark]="darkMode">
-  <menu [class.headerDark]="darkMode">
-    <div class="logo">
-      <img *ngIf="!darkMode" src="assets/img/new_logo_white.png" alt="logo" />
-
-      <img *ngIf="darkMode" src="assets/img/new_logo_dark.png" alt="logo" />
-    </div>
-
+<header>
+  <menu>
     <mat-toolbar>
+      <div class="logo">
+        <a>
+          <img src="assets/img/logo_blue.png" alt="logo" routerLink="/" />
+        </a>
+      </div>
       <div class="menu">
-        <div [class.darkLinks]="darkMode">
+        <div>
           <a
+            mat-button
+            [matMenuTriggerFor]="trainings"
             class="top_menu_item"
-            routerLink="/"
             [routerLinkActive]="'active'"
-            [routerLinkActiveOptions]="{ exact: true }"
-            >{{ "menu.trainings" | translate }}</a
+            >{{ 'menu.trainings' | translate }}</a
           >
+          <mat-menu #trainings="matMenu">
+            <button mat-menu-item (click)="goToPart('trainings#home')">
+              {{ 'trainings.title_1' | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('trainings#work')">
+              {{ 'trainings.title_2' | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('trainings#facts')">
+              {{ 'trainings.title_3' | translate }}
+            </button>
+          </mat-menu>
           <a
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="courses"
-            >{{ "menu.workshops" | translate }}</a
+            >{{ 'menu.courses' | translate }}</a
           >
           <a
             mat-button
             [matMenuTriggerFor]="profile"
             class="top_menu_item"
             [routerLinkActive]="'active'"
-            >{{ "menu.profile" | translate }}</a
+            >{{ 'menu.profile' | translate }}</a
           >
           <mat-menu #profile="matMenu">
-            <button mat-menu-item (click)="goToPart('aboutme')">
-              {{ "aboutme.title" | translate }}
+            <button mat-menu-item (click)="goToPart('profile#aboutme')">
+              {{ 'aboutme.title' | translate }}
             </button>
-            <button mat-menu-item (click)="goToPart('work')">
-              {{ "work.title" | translate }}
+            <button mat-menu-item (click)="goToPart('profile#work')">
+              {{ 'work.title' | translate }}
             </button>
-            <button mat-menu-item (click)="goToPart('facts')">
-              {{ "facts.title" | translate }}
+            <button mat-menu-item (click)="goToPart('profile#facts')">
+              {{ 'facts.title' | translate }}
             </button>
           </mat-menu>
+
           <a
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="blog"
-            >{{ "menu.blog" | translate }}</a
+            >{{ 'menu.blog' | translate }}</a
           >
           <a
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="contact"
-            >{{ "menu.contact" | translate }}</a
+            >{{ 'menu.contact' | translate }}</a
           >
         </div>
 
         <!-- Translation links -->
-        <div class="translate" [class.darkLinks]="darkMode">
-          <a class="langLink top_menu_item" (click)="translate.use('de')">DE</a>
-          <a class="langLink top_menu_item" (click)="translate.use('en')">EN</a>
+        <div class="translate">
+          <!-- Show German link only if the current language is not German -->
+          <a
+            *ngIf="currentLanguage !== 'de'"
+            class="langLink top_menu_item"
+            (click)="changeLanguage('de')"
+            >DE</a
+          >
+
+          <!-- Show English link only if the current language is not English -->
+          <a
+            *ngIf="currentLanguage !== 'en'"
+            class="langLink top_menu_item"
+            (click)="changeLanguage('en')"
+            >EN</a
+          >
         </div>
 
-        <div [class.darkLinks]="darkMode">
+        <!-- <div [class.darkLinks]="darkMode">
           <div class="social">
             <a
               class="top_menu_item"
@@ -77,7 +101,7 @@
               <img src="./assets/img/linkedin.svg" alt="linkedin" />
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <button
@@ -98,7 +122,7 @@
         [fixedTopGap]="70"
         (click)="sidenav.close()"
       >
-        <div class="sidebar_items" [class.darkLinks]="darkMode">
+        <div class="sidebar_items">
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
@@ -106,7 +130,7 @@
             [routerLinkActive]="'active'"
             [routerLinkActiveOptions]="{ exact: true }"
             routerLink="/"
-            >{{ "menu.trainings" | translate }}</a
+            >{{ 'menu.trainings' | translate }}</a
           >
           <a
             class="sidebar_item"
@@ -114,24 +138,25 @@
             (click)="navigateAndClose('courses')"
             [routerLinkActive]="'active'"
             routerLink="courses"
-            >{{ "menu.workshops" | translate }}</a
+            >{{ 'menu.courses' | translate }}</a
           >
           <a
             mat-button
             (click)="onProfileClick($event)"
+            [routerLinkActive]="'active'"
             [matMenuTriggerFor]="profile"
             class="sidebar_item"
-            >{{ "menu.profile" | translate }}</a
+            >{{ 'menu.profile' | translate }}</a
           >
           <mat-menu #profile="matMenu">
             <button mat-menu-item (click)="navigateAndClose('aboutme')">
-              {{ "aboutme.title" | translate }}
+              {{ 'aboutme.title' | translate }}
             </button>
             <button mat-menu-item (click)="navigateAndClose('work')">
-              {{ "work.title" | translate }}
+              {{ 'work.title' | translate }}
             </button>
             <button mat-menu-item (click)="navigateAndClose('facts')">
-              {{ "facts.title" | translate }}
+              {{ 'facts.title' | translate }}
             </button>
           </mat-menu>
           <a
@@ -140,7 +165,7 @@
             (click)="navigateAndClose('blog')"
             [routerLinkActive]="'active'"
             routerLink="blog"
-            >{{ "menu.blog" | translate }}</a
+            >{{ 'menu.blog' | translate }}</a
           >
           <a
             class="sidebar_item"
@@ -148,16 +173,27 @@
             (click)="navigateAndClose('contact')"
             [routerLinkActive]="'active'"
             routerLink="contact"
-            >{{ "menu.contact" | translate }}</a
+            >{{ 'menu.contact' | translate }}</a
           >
         </div>
 
         <!-- Translation links -->
         <div class="translate_sidebar">
-          <a class="langLink sidebar_item" (click)="translate.use('de')">DE</a>
-          <a class="langLink sidebar_item" (click)="translate.use('en')">EN</a>
+          <a
+            class="langLink sidebar_item"
+            *ngIf="currentLanguage !== 'de'"
+            (click)="changeLanguage('de')"
+            >DE</a
+          >
+          <a
+            class="langLink sidebar_item"
+            *ngIf="currentLanguage !== 'en'"
+            (click)="changeLanguage('en')"
+            >EN</a
+          >
         </div>
 
+        <!-- Social links -->
         <div class="social_sidebar">
           <a
             (click)="sidenav.close()"

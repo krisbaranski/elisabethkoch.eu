@@ -1,20 +1,17 @@
 footer {
   position: relative;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background: radial-gradient(#77afeb, #225c9aa0);
-  padding: 60px 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: radial-gradient(#77afeb, #225c9a);
+  padding: 5rem 0;
   z-index: 1;
 
-  section {
+  .wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-inline: auto;
     justify-items: center;
+    align-items: start;
     width: min(90%, 1200px);
-
-    .logo {
-      gap: 60px;
-    }
   }
 
   .flow,
@@ -25,123 +22,103 @@ footer {
     text-align: left;
     line-height: 1.6rem;
     max-width: 100%;
+  }
 
-    img {
-      height: 80px;
-      object-fit: contain;
-      cursor: pointer;
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    margin: 5px;
+    padding-bottom: 10px;
+  }
 
-      &:hover {
-        transform: scale(0.95);
-        opacity: 0.8;
-      }
+  p {
+    font-weight: 100;
+    color: white;
+    margin: 2px 5px;
+  }
+
+  a {
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    padding: 2px 5px;
+
+    &:hover {
+      color: rgb(28, 108, 179);
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
     }
+  }
 
-    h1 {
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: white;
-      margin: 5px;
-      padding-bottom: 10px;
-    }
-
-    p {
-      font-weight: 100;
-      color: white;
-      margin: 2px 5px;
-    }
+  .social {
+    padding-top: 20px;
 
     a {
-      font-weight: 300;
-      color: white;
-      text-decoration: none;
-      text-align: left;
-      padding: 2px 5px;
+      background-color: transparent;
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
 
       &:hover {
-        color: rgb(28, 108, 179);
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 5px;
-      }
-    }
-
-    .social {
-      padding-top: 20px;
-
-      a {
-        background-color: transparent;
-      }
-
-      img {
-        width: 25px;
-        height: 25px;
-
-        &:hover {
-          transform: scale(0.9);
-          border-radius: 0;
-        }
+        transform: scale(0.9);
+        border-radius: 0;
       }
     }
   }
-}
 
-.copyright {
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 100;
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding: 50px 20px;
-}
+  .foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 
-@media (max-width: 1200px) {
-  footer {
-    background: linear-gradient(
-      90deg,
-      #435a73,
-      #6883a0,
-      #89a3bf,
-      #89a3bf,
-      #6883a0,
-      #435a73
-    );
-
-    section {
-      grid-template-columns: repeat(2, 1fr);
-      // gap: 3rem;
-
-      .flow {
-        display: grid;
-        padding: 40px;
-        width: auto;
-        margin: 0 40px;
-
-        img,
-        .links {
-          justify-self: end;
-        }
-      }
+    img {
+      height: 50px;
+      object-fit: contain;
     }
+  }
+
+  .logo {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .copyright {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+    display: flex;
+    padding: 50px 20px;
   }
 }
 
-@media (max-width: 700px) {
+//
+// MEDIA QUERIES
+//
+@media screen and (max-width: 768px) {
   footer {
-    background: radial-gradient(#89a3bfec, #435a73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    section {
-      grid-template-columns: repeat(1, 1fr);
+    .wrapper {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
 
       .flow {
-        display: grid;
-        justify-content: center;
-        margin: auto;
-
-        img {
-          height: 60px;
-        }
-
+        margin: 1rem 0;
         h1 {
           font-size: 1.2rem;
         }
@@ -151,6 +128,18 @@ footer {
           max-width: 100%;
         }
       }
+    }
+
+    .foot {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 6rem;
+    }
+
+    .copyright {
+      padding: 0;
     }
   }
 }

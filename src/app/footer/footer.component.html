@@ -1,11 +1,18 @@
 <footer>
-  <section>
-    <div class="flow logo">
-      <img src="assets/img/new_logo_white.png" alt="logo" />
+  <div class="wrapper">
+    <div class="flow">
+      <div class="links">
+        <h1>Links</h1>
+        <a routerLink="/">{{ 'menu.trainings' | translate }}</a>
+        <a routerLink="seminare">{{ 'menu.courses' | translate }}</a>
+        <a routerLink="profile">{{ 'menu.profile' | translate }}</a>
+        <a routerLink="blog">{{ 'menu.blog' | translate }}</a>
+        <a routerLink="contact">{{ 'menu.contact' | translate }}</a>
+      </div>
     </div>
 
     <div class="flow">
-      <h1>{{ "footer.title" | translate }}</h1>
+      <h1>{{ 'menu.contact' | translate }}</h1>
       <p>Elisabeth Koch</p>
       <p>Behaimstraße 27</p>
       <p>13086 Berlin</p>
@@ -18,19 +25,8 @@
     </div>
 
     <div class="flow">
-      <div class="links">
-        <h1>Links</h1>
-        <a routerLink="/">{{ "footer.link_train" | translate }}</a>
-        <a routerLink="seminare">{{ "footer.link_work" | translate }}</a>
-        <a routerLink="profile">{{ "footer.link_profile" | translate }}</a>
-        <a routerLink="blog">{{ "footer.link_blog" | translate }}</a>
-        <a routerLink="contact">{{ "footer.title" | translate }}</a>
-      </div>
-    </div>
-
-    <div class="flow">
       <h1>Legal</h1>
-      <a routerLink="privacy">{{ "footer.link_policy" | translate }}</a>
+      <a routerLink="privacy">{{ 'menu.policy' | translate }}</a>
       <a routerLink="impressum">Impressum</a>
       <br />
 
@@ -49,10 +45,16 @@
         </a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- copyright and social media -->
-  <div class="copyright">
-    <p>© Elisabeth Koch since 2018</p>
+  <div class="foot">
+    <img
+      routerLink="/"
+      class="logo"
+      src="assets/img/logo_white.png"
+      alt="logo"
+    />
+    <!-- copyright and social media -->
+    <p class="copyright">© Elisabeth Koch {{ currentYear }}</p>
   </div>
 </footer>

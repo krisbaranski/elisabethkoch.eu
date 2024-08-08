@@ -1,16 +1,5 @@
-<div class="animated_background">
-  <app-header
-    [darkMode]="
-      router.url !== '/' &&
-      router.url !== '/profile' &&
-      router.url !== '/profile#aboutme' &&
-      router.url !== '/profile#work' &&
-      router.url !== '/profile#facts' &&
-      router.url !== '/contact'
-    "
-  ></app-header>
-  <div [class.container]="router.url !== '/'">
-    <router-outlet></router-outlet>
-  </div>
-  <app-footer></app-footer>
+<app-header></app-header>
+<div [class.container]="router.url">
+  <router-outlet></router-outlet>
 </div>
+<app-footer></app-footer>

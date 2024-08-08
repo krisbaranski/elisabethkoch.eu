@@ -1,7 +1,18 @@
 <section id="contact">
-  <img src="assets/img/dandelion2.png" alt="background" />
-  <h1>{{ "contact.title" | translate }}</h1>
+  <!-- <img src="assets/img/butterfly.jpg" alt="background" /> -->
+  <h1>{{ 'contact.title' | translate }}</h1>
   <div class="contact">
+    <div class="right_col">
+      <p>
+        {{ 'contact.text_1.1' | translate }}
+      </p>
+      <p>
+        {{ 'contact.text_1.2' | translate }}
+      </p>
+      <p>
+        {{ 'contact.text_1.3' | translate }}
+      </p>
+    </div>
     <div class="left_col">
       <p>Elisabeth Koch</p>
       <p>Behaimstraße 27</p>
@@ -11,17 +22,6 @@
         <a href="mailto:mail@elisabethkoch.eu" class="social">
           <img src="./assets/img/envelope.svg" alt="mail" />
         </a>
-      </p>
-    </div>
-    <div class="right_col">
-      <p>
-        {{ "contact.text_1.1" | translate }}
-      </p>
-      <p>
-        {{ "contact.text_1.2" | translate }}
-      </p>
-      <p>
-        {{ "contact.text_1.3" | translate }}
       </p>
     </div>
   </div>

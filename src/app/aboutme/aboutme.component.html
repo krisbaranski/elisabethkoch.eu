@@ -1,4 +1,4 @@
-<!-- <div class="menu_space" id="aboutme"></div> -->
+<div class="menu_space" id="aboutme"></div>
 
 <!-- <section class="background-container">
   <img
@@ -9,7 +9,7 @@
   />
 </section> -->
 
-<div class="aside">
+<div class="slide">
   <div class="slideshow-container">
     <img
       *ngIf="showImage"
@@ -27,48 +27,49 @@
 </div>
 
 <div class="about">
-  <div class="text">
-    <h1>{{ "aboutme.title" | translate }}</h1>
+  <div class="grid">
+    <div class="title">
+      <h1>{{ 'aboutme.title' | translate }}</h1>
+      <img src="assets/img/about_me.jpg" alt="portrait" />
+    </div>
+
     <div class="frame">
       <p>
-        {{ "aboutme.text_1.1" | translate }}
+        {{ 'aboutme.text_1.1' | translate }}
       </p>
       <p>
-        {{ "aboutme.text_1.2" | translate }}
+        {{ 'aboutme.text_1.2' | translate }}
       </p>
-      <h3>{{ "aboutme.text_2_title" | translate }}</h3>
+      <h3>{{ 'aboutme.text_2_title' | translate }}</h3>
       <p>
-        {{ "aboutme.text_2.1" | translate }}
-      </p>
-      <p>
-        {{ "aboutme.text_2.2" | translate }}
-      </p>
-      <h3>{{ "aboutme.text_3_title" | translate }}</h3>
-      <p>
-        {{ "aboutme.text_3.1" | translate }}
+        {{ 'aboutme.text_2.1' | translate }}
       </p>
       <p>
-        {{ "aboutme.text_3.2" | translate }}
+        {{ 'aboutme.text_2.2' | translate }}
+      </p>
+    </div>
+
+    <div class="text">
+      <h3>{{ 'aboutme.text_3_title' | translate }}</h3>
+      <p>
+        {{ 'aboutme.text_3.1' | translate }}
       </p>
       <p>
-        {{ "aboutme.text_3.3" | translate }}
+        {{ 'aboutme.text_3.2' | translate }}
       </p>
       <p>
-        {{ "aboutme.text_3.4" | translate }}
+        {{ 'aboutme.text_3.3' | translate }}
       </p>
       <p>
-        {{ "aboutme.text_3.5" | translate }}
+        {{ 'aboutme.text_3.4' | translate }}
       </p>
-      <br />
-      <div class="signature">
-        <div>
-          <p>{{ "aboutme.end" | translate }}</p>
-          <img src="assets/img/signature.png" alt="signature" />
-        </div>
-        <div>
-          <img src="assets/img/about_me.jpg" alt="portrait" />
-        </div>
-      </div>
+      <p>
+        {{ 'aboutme.text_3.5' | translate }}
+      </p>
+    </div>
+    <div class="signature">
+      <p>{{ 'aboutme.end' | translate }}</p>
+      <img src="assets/img/signature.png" alt="signature" />
     </div>
   </div>
 </div>
