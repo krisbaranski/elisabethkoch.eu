@@ -1,17 +1,18 @@
 {
   "menu": {
     "trainings": "Trainings",
-    "workshops": "Courses",
+    "courses": "Courses",
     "offers": "Offers",
-    "profile": "About Me",
+    "profile": "Profile",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "policy": "Privacy Policy"
   },
   "home": {
     "slide_1": "move and inspire with your clear voice and presence",
     "slide_2": "Let your voice and personality shine & win the hearts of your listeners ",
     "slide_3": "Lively, strong & self-confident in voice and appearance",
-    "button_offer": "first appointment »",
+    "button_offer": "make appointment »",
     "box_1": "VOICE",
     "box_2": "CONFINENCE",
     "box_3": "PRESENCE"

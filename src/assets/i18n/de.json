@@ -1,20 +1,31 @@
 {
   "menu": {
     "trainings": "Training",
-    "workshops": "Kurse",
+    "courses": "Kurse",
     "offers": "Angebote",
-    "profile": "Über Mich",
+    "profile": "Profil",
     "blog": "Blog",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "policy": "Datenschutz"
   },
   "home": {
-    "slide_1": "Bewege und inspiriere mit Deiner klaren Präsenz",
-    "slide_2": "Strahle Ruhe aus und gewinne die Herzen Deiner Zuhörer",
-    "slide_3": "lebendig, stark  & selbstbewusst in Stimme und Auftreten",
-    "button_offer": "erstes Termin »",
+    "slide_1": "Strahle Ruhe aus und gewinne die Herzen Deiner Zuhörer",
+    "slide_2": "lebendig, stark  & selbstbewusst in Stimme und Auftreten",
+    "slide_3": "Bewege und inspiriere mit Deiner klaren Präsenz",
+    "button_offer": "Termin vereinbaren »",
     "box_1": "STIMME",
     "box_2": "VERTRAUEN",
     "box_3": "PRÄSENZ"
+  },
+  "trainings": {
+    "title": "Trainings",
+    "text": "",
+    "title_1": "Für Frauen",
+    "text_1": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
+    "title_2": "Für Männer",
+    "text_2": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
+    "title_3": "Für Firmen",
+    "text_3": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
   },
   "aboutme": {
     "title": "Über Mich",
@@ -117,13 +128,5 @@
     "text_1.1": "Du bist neugierig?",
     "text_1.2": "Hier kannst Du mir eine persönliche Nachricht schreiben, Dich anmelden oder einen Termin für Dein kostenfreies Erstgespräch per Telefon auswählen.",
     "text_1.3": "Ich freu mich auf Dich!"
-  },
-  "footer": {
-    "title": "Kontakt",
-    "link_train": "Training",
-    "link_work": "Kurse",
-    "link_blog": "Blog",
-    "link_profile": "Über Mich",
-    "link_policy": "Datenschutz"
   }
 }
