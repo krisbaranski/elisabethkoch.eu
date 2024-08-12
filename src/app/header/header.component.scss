@@ -4,7 +4,6 @@
 
 header {
   position: sticky;
-  // overflow: hidden;
   display: flex;
   justify-content: space-between;
   top: 0;
@@ -14,10 +13,14 @@ header {
   z-index: 1000;
   transition: all 0.3s ease;
 
-  .logo a:hover {
+  .logo {
     cursor: pointer;
-    opacity: 0.8;
     border: 1px solid transparent;
+
+    &:hover {
+      opacity: 0.8;
+      background-color: none;
+    }
   }
 
   #menuIcon,
@@ -105,7 +108,7 @@ header {
 
     menu {
       padding-top: 10px;
-      margin-top: 0;
+      margin-top: 2rem;
 
       img {
         height: 50px;
@@ -116,7 +119,7 @@ header {
         width: auto;
         font-size: 0.9rem;
         color: white;
-        margin: 2px;
+        margin: 8px;
 
         &:hover,
         &.active {
@@ -124,6 +127,11 @@ header {
           background-color: #dcf4ff;
           border-radius: 16px;
         }
+
+        // img .logo &:hover {
+        //   background-color: transparent;
+        //   color: transparent;
+        // }
       }
 
       .menu {
@@ -142,10 +150,10 @@ header {
         display: flex;
         justify-content: flex-end;
         color: #00649c;
-        border: 2px solid #00649c;
+        border: 1px solid #00649c;
         border-radius: 5px;
         background-color: transparent;
-        margin-right: 1rem;
+        margin: 0 1rem;
       }
 
       .sidenav {

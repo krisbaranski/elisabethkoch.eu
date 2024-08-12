@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideshowComponent implements OnInit {
   constructor() {}
-  images = ['nature.png', 'sparcle.jpg', 'water.jpg'];
+  images = ['poem.png', 'stage.jpg', 'sings.png'];
   headlines = ['home.box_1', 'home.box_2', 'home.box_3'];
   text = ['home.slide_1', 'home.slide_2', 'home.slide_3'];
 

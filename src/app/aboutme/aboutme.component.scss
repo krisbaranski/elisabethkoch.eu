@@ -195,6 +195,9 @@ section {
 ///
 /// MEDIA QUERIES
 @media (max-width: 1200px) {
+  .slideshow-container {
+    border-radius: 0;
+  }
   .slideshow-overlay {
     p {
       font-size: 2rem;
