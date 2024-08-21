@@ -40,7 +40,6 @@ section {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  transform: translateY(-20px);
   border-radius: 10px;
 }
 
@@ -48,8 +47,8 @@ section {
   height: 750px;
   width: 1200px;
   object-fit: cover;
-  object-position: top;
-  animation: zoomIn 10s ease-out infinite;
+  object-position: center;
+  animation: zoomIn 10s ease-in-out infinite;
   background-color: black;
   overflow: hidden;
 }
