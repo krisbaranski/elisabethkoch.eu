@@ -44,6 +44,7 @@
   position: absolute;
   top: 40vh;
   color: white;
+  transform: translateX(20vw);
 
   .fadeIn {
     animation: fadeInAnimation 1.5s ease-in-out;
@@ -117,6 +118,7 @@
 
 @media only screen and (max-width: 1024px) {
   .slideshow-overlay {
+    transform: translateY(0);
     .fadeIn {
       align-items: center;
       h1 {
