@@ -1,34 +1,34 @@
-import { Component, Input, OnInit } from "@angular/core"
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-aboutme",
-  templateUrl: "./aboutme.component.html",
-  styleUrls: ["./aboutme.component.scss"],
+  selector: 'app-aboutme',
+  templateUrl: './aboutme.component.html',
+  styleUrls: ['./aboutme.component.scss'],
 })
 export class AboutmeComponent implements OnInit {
-  @Input() darkMode = true
+  @Input() darkMode = true;
 
   constructor() {}
 
-  images = ["aboutme.jpg", "aboutme2.jpg"]
-  images2 = ["bg-ochre.png", "bg-grey.png"]
-  headlines = ["aboutme.slide_1", "aboutme.slide_2"]
-  currentImage = 0
-  showImage = true
+  images = ['me_green.png', 'aboutme2.jpg'];
+  images2 = ['bg-ochre.png', 'bg-grey.png'];
+  headlines = ['aboutme.slide_1', 'aboutme.slide_2'];
+  currentImage = 0;
+  showImage = true;
 
   ngOnInit() {
-    this.updateImage()
+    this.updateImage();
   }
 
   updateImage() {
     setInterval(() => {
-      this.currentImage++
-      this.currentImage = this.currentImage % this.images.length
-      this.showImage = false
+      this.currentImage++;
+      this.currentImage = this.currentImage % this.images.length;
+      this.showImage = false;
 
       setTimeout(() => {
-        this.showImage = true
-      }, 15)
-    }, 8000)
+        this.showImage = true;
+      }, 15);
+    }, 10000);
   }
 }
