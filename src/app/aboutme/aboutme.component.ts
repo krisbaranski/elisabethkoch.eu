@@ -28,6 +28,6 @@ export class AboutmeComponent implements OnInit {
       setTimeout(() => {
         this.showImage = true;
       }, 15);
-    }, 10000);
+    }, 8000);
   }
 }
