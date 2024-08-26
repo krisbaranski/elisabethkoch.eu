@@ -1,27 +1,49 @@
 <div class="contain" id="facts">
-  <div class="text">
-    <h1>{{ "facts.title" | translate }}</h1>
-    <div class="frame">
-      <h3>{{ "facts.title_1" | translate }}</h3>
-      <p>{{ "facts.text_1" | translate }}</p>
-      <h3>{{ "facts.title_2" | translate }}</h3>
-      <ul>
-        <li *ngFor="let text of text_2">
-          {{ text | translate }}
-        </li>
-      </ul>
-      <h3>{{ "facts.title_3" | translate }}</h3>
-      <ul>
-        <li *ngFor="let text of text_3">
-          {{ text | translate }}
-        </li>
-      </ul>
-      <h3>{{ "facts.title_4" | translate }}</h3>
-      <ul>
-        <li *ngFor="let text of text_4">
-          {{ text | translate }}
-        </li>
-      </ul>
+  <div class="flex">
+    <div class="text">
+      <h1>{{ 'facts.title' | translate }}</h1>
+      <h3>{{ 'facts.title_1' | translate }}</h3>
+    </div>
+    <div class="profession">
+      <p>{{ 'facts.text_1' | translate }}</p>
+    </div>
+
+    <div class="accordion">
+      <div>
+        <label for="first"
+          >{{ 'facts.title_2' | translate }} <span>&#x3e;</span></label
+        >
+        <input type="radio" name="accordion" id="first" />
+        <section class="content">
+          <li class="list" *ngFor="let text of text_2">
+            {{ text | translate }}
+          </li>
+        </section>
+      </div>
+
+      <div>
+        <label for="second"
+          >{{ 'facts.title_3' | translate }} <span>&#x3e;</span></label
+        >
+        <input type="radio" name="accordion" id="second" />
+        <section class="content">
+          <li class="list" *ngFor="let text of text_3">
+            {{ text | translate }}
+          </li>
+        </section>
+      </div>
+
+      <div>
+        <label for="third"
+          >{{ 'facts.title_4' | translate }} <span>&#x3e;</span></label
+        >
+        <input type="radio" name="accordion" id="third" />
+        <section class="content">
+          <li class="list" *ngFor="let text of text_4">
+            {{ text | translate }}
+          </li>
+        </section>
+      </div>
     </div>
   </div>
 </div>
