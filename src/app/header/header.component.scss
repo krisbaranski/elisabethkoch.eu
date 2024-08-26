@@ -107,9 +107,6 @@ header {
     flex-direction: row;
 
     menu {
-      padding-top: 10px;
-      margin-top: 2rem;
-
       img {
         height: 50px;
       }
@@ -127,11 +124,6 @@ header {
           background-color: #dcf4ff;
           border-radius: 16px;
         }
-
-        // img .logo &:hover {
-        //   background-color: transparent;
-        //   color: transparent;
-        // }
       }
 
       .menu {
@@ -215,8 +207,15 @@ header {
   }
 }
 
-@media (max-width: 520px) {
-  header menu {
-    margin: 0;
+@media (max-width: 600px) {
+  header {
+    menu {
+      width: 100%;
+      margin-left: 0;
+
+      .logo {
+        margin-left: 0;
+      }
+    }
   }
 }

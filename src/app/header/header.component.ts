@@ -32,25 +32,25 @@ export class HeaderComponent implements OnInit {
     this.currentLanguage = lang;
   }
 
-  goToPart(fragment: string) {
-    // Assuming the fragment parameter contains only the part after #
-    this.router.navigateByUrl(fragment);
-    this.sidenav.close();
-  }
-
   // goToPart(fragment: string) {
-  //   switch (fragment) {
-  //     case 'profile':
-  //       this.router.navigateByUrl('profile#' + fragment);
-  //       break;
-  //     case 'training':
-  //       this.router.navigateByUrl('training#' + fragment);
-  //       break;
-  //     default:
-  //       this.router.navigateByUrl(fragment);
-  //   }
+  //   // Assuming the fragment parameter contains only the part after #
+  //   this.router.navigateByUrl(fragment);
   //   this.sidenav.close();
   // }
+
+  goToPart(fragment: string) {
+    switch (fragment) {
+      case 'profile':
+        this.router.navigateByUrl('profile#' + fragment);
+        break;
+      case 'trainings':
+        this.router.navigateByUrl('trainings#' + fragment);
+        break;
+      default:
+        this.router.navigateByUrl(fragment);
+    }
+    this.sidenav.close();
+  }
 
   onProfileClick(event: Event) {
     event.stopImmediatePropagation();
