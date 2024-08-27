@@ -15,9 +15,11 @@
         >
         <input type="radio" name="accordion" id="first" />
         <section class="content">
-          <li class="list" *ngFor="let text of text_2">
-            {{ text | translate }}
-          </li>
+          <ul>
+            <li class="list" *ngFor="let text of text_2">
+              {{ text | translate }}
+            </li>
+          </ul>
         </section>
       </div>
 
@@ -27,9 +29,11 @@
         >
         <input type="radio" name="accordion" id="second" />
         <section class="content">
-          <li class="list" *ngFor="let text of text_3">
-            {{ text | translate }}
-          </li>
+          <ul>
+            <li class="list" *ngFor="let text of text_3">
+              {{ text | translate }}
+            </li>
+          </ul>
         </section>
       </div>
 
@@ -39,9 +43,11 @@
         >
         <input type="radio" name="accordion" id="third" />
         <section class="content">
-          <li class="list" *ngFor="let text of text_4">
-            {{ text | translate }}
-          </li>
+          <ul>
+            <li class="list" *ngFor="let text of text_4">
+              {{ text | translate }}
+            </li>
+          </ul>
         </section>
       </div>
     </div>

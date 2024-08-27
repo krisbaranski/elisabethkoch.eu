@@ -73,6 +73,10 @@
     border-radius: 5px;
   }
 
+  .accordion section li {
+    list-style: disc;
+  }
+
   .accordion div label {
     display: flex;
     justify-content: space-between;
@@ -103,12 +107,11 @@
     overflow: hidden;
     color: #fff;
     transition: max-height 0.5s;
-    list-style: disc;
     line-height: 1.5;
   }
 
   .accordion label + input[type='radio']:checked + .content {
-    max-height: 600px;
+    max-height: 700px;
   }
 }
 
