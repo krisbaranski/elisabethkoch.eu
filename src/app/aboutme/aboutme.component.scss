@@ -154,6 +154,7 @@ section {
     font-weight: 300;
     letter-spacing: 0.7px;
     color: #d6eefe;
+    // margin: auto;
   }
 
   img {
@@ -189,9 +190,19 @@ section {
     }
   }
 
-  .about h1 {
-    font-size: 4rem;
-    line-height: 2;
+  .grid {
+    padding-left: none;
+  }
+
+  .about {
+    h1 {
+      font-size: 4rem;
+      line-height: 2;
+    }
+
+    p {
+      margin-right: 2rem;
+    }
   }
 
   .fadeIn {
@@ -213,7 +224,7 @@ section {
   .grid {
     padding: 0 50px;
     margin-right: 3rem;
-    padding: 0;
+    padding-left: auto;
   }
 
   .text {
@@ -233,6 +244,10 @@ section {
     h1 {
       font-size: 4rem;
       line-height: 2;
+
+      p {
+        margin: auto;
+      }
     }
 
     .frame {
@@ -241,6 +256,7 @@ section {
     }
   }
 }
+
 @media (max-width: 765px) {
   .slideshow-overlay {
     top: -150px;
@@ -252,7 +268,7 @@ section {
 
   .about {
     h1 {
-      font-size: 4rem;
+      font-size: 3.4rem;
       line-height: 1;
     }
 
@@ -267,24 +283,35 @@ section {
     }
 
     .signature {
-      flex-direction: row;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid red;
+
+      img {
+        margin: 1rem;
+      }
     }
   }
 }
 
 @media (max_width: 440px) {
   .about {
-    .text {
-      h1 {
-        font-size: 3.5rem;
-      }
-    }
+    padding: 1rem;
+    margin: auto;
 
-    .signature {
-      flex-direction: column;
-      img {
-        margin: 1rem;
-      }
+    h1 {
+      font-size: 1.6rem;
+      border: 1px solid red;
+    }
+  }
+
+  .signature {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+
+    img {
+      margin: 1rem;
     }
   }
 }
