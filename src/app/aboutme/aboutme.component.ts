@@ -10,8 +10,8 @@ export class AboutmeComponent implements OnInit {
 
   constructor() {}
 
-  images = ['me_green.png', 'aboutme3.png'];
-  headlines = ['aboutme.slide_1', 'aboutme.slide_2'];
+  images = ['me_green.png', 'aboutme2.jpg'];
+  headlines = ['', ''];
   currentImage = 0;
   showImage = true;
 
