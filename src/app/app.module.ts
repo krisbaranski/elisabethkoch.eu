@@ -18,6 +18,7 @@ import { BoxesComponent } from './boxes/boxes.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
+import { TrainingsShortComponent } from './trainings-short/trainings-short.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -52,6 +53,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormComponent,
     TermineComponent,
     TrainingsComponent,
+    TrainingsShortComponent,
     ImpressumComponent,
     PrivacyComponent,
     ContactComponent,
