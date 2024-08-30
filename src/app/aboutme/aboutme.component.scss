@@ -127,18 +127,17 @@ section {
 
   .text {
     grid-column: 1 / 4;
+    // margin-inline: auto;
     // align-items: flex-start;
     max-width: 1100px;
   }
 
   h1 {
-    // font-family: 'assets/fonts/src/assets/fonts/moritza_script/Moritza Script.ttf';
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 100;
-    // font-style: italic;
     letter-spacing: 1.5;
     text-transform: uppercase;
-    color: #c9ddfb;
+    color: #fff;
     padding: 4rem 0;
   }
 
@@ -196,8 +195,7 @@ section {
 
   .about {
     h1 {
-      font-size: 4rem;
-      line-height: 2;
+      line-height: 1;
     }
 
     p {
@@ -241,19 +239,14 @@ section {
       padding: 0 2rem;
     }
 
-    h1 {
-      font-size: 4rem;
-      line-height: 2;
-
-      p {
-        margin: auto;
-      }
+    p {
+      margin: auto;
     }
+  }
 
-    .frame {
-      border: none;
-      padding-right: 1rem;
-    }
+  .frame {
+    border: none;
+    padding-right: 1rem;
   }
 }
 
@@ -267,12 +260,6 @@ section {
   }
 
   .about {
-    overflow: hidden;
-    h1 {
-      font-size: 3.4rem;
-      line-height: 1;
-    }
-
     h3 {
       margin-right: 1rem;
     }
@@ -282,9 +269,7 @@ section {
     }
     .frame,
     .text {
-      width: 90vw;
-      border: none;
-      padding: 0;
+      margin: auto;
     }
 
     .signature {
@@ -304,7 +289,7 @@ section {
     margin: auto;
 
     h1 {
-      font-size: 1.6rem;
+      font-size: 2rem;
     }
   }
 

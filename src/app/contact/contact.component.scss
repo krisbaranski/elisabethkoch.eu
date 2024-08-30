@@ -1,35 +1,17 @@
-section {
-  position: relative;
-  width: min(100%, 780px);
-  min-height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 180px auto;
-  margin-inline: auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
-  img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: top;
-    z-index: 1;
-  }
+.wrapper {
+  margin: 6rem auto;
+  max-width: 980px;
+  box-sizing: border-box;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 
   h1 {
-    font-size: 7rem;
-    font-weight: 600;
-    color: #ffffff;
-    text-align: left;
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 2rem;
-    z-index: 2;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1;
+    color: #134478;
+    padding-bottom: 3rem;
   }
 }
 
@@ -53,21 +35,12 @@ section {
     line-height: 1.6;
     letter-spacing: 0.8px;
     text-wrap: balance;
+    line-height: 1.8;
   }
 
+  .left_col,
   .right_col {
-    padding: 5px 0;
-
-    p {
-      line-height: 1.8;
-    }
-  }
-  .left_col {
-    padding: 10px 0;
-
-    p {
-      line-height: 1.8;
-    }
+    padding: 2rem;
   }
 }
 
@@ -99,8 +72,9 @@ a {
 }
 
 @media (max-width: 720px) {
-  section {
+  .wrapper {
     display: flex;
+    flex-direction: column;
 
     h1 {
       font-size: 16vw;
@@ -112,16 +86,18 @@ a {
 
   .contact {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
     flex-direction: column;
     line-height: 1.8;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
-    .left_col {
-      padding: 25px auto;
-    }
     .right_col {
-      padding: 100px 40px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
       text-align: center;
     }
   }
