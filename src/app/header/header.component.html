@@ -23,13 +23,24 @@
             <button mat-menu-item (click)="goToPart('trainings#facts')">
               {{ 'trainings.title_3' | translate }}
             </button>
+            <button mat-menu-item (click)="goToPart('trainings#facts')">
+              {{ 'trainings.title_4' | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('trainings#facts')">
+              {{ 'trainings.title_5' | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('trainings#facts')">
+              {{ 'trainings.title_6' | translate }}
+            </button>
           </mat-menu>
+
           <a
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="courses"
             >{{ 'menu.courses' | translate }}</a
           >
+
           <a
             mat-button
             [matMenuTriggerFor]="profile"

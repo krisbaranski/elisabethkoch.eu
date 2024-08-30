@@ -20,9 +20,14 @@ const routes: Routes = [
 ];
 
 const routerOptions: ExtraOptions = {
-  scrollPositionRestoration: 'disabled',
+  scrollPositionRestoration: 'top',
   anchorScrolling: 'disabled',
 };
+
+// const routerOptions: ExtraOptions = {
+//   anchorScrolling: 'enabled',
+//   scrollPositionRestoration: 'enabled',
+// };
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, routerOptions)],

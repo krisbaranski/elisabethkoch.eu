@@ -29,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
@@ -75,6 +76,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
+    MatButtonModule,
     MatMenuModule,
     ReactiveFormsModule,
     MatFormFieldModule,

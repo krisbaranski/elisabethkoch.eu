@@ -38,18 +38,40 @@ export class HeaderComponent implements OnInit {
   //   this.sidenav.close();
   // }
 
+  // goToPart(fragment: string) {
+  //   const [path, anchor] = fragment.split('#');
+  //   this.router.navigate([path], { fragment: anchor });
+  // }
+
+  // goToPart(fragment: string) {
+  //   switch (fragment) {
+  //     case 'profile':
+  //       this.router.navigateByUrl('profile#' + fragment);
+  //       break;
+  //     case 'trainings':
+  //       this.router.navigateByUrl('trainings#' + fragment);
+  //       break;
+  //     default:
+  //       this.router.navigateByUrl(fragment);
+  //   }
+  //   this.sidenav.close();
+  // }
+
   goToPart(fragment: string) {
-    switch (fragment) {
-      case 'profile':
-        this.router.navigateByUrl('profile#' + fragment);
-        break;
-      case 'trainings':
-        this.router.navigateByUrl('trainings#' + fragment);
-        break;
-      default:
-        this.router.navigateByUrl(fragment);
-    }
-    this.sidenav.close();
+    const [path, anchor] = fragment.split('#');
+    this.router.navigate([path], { fragment: anchor }).then(() => {
+      // Wait a short period for navigation to complete before trying to scroll
+      setTimeout(() => {
+        const element = document.getElementById(anchor);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest',
+          });
+        }
+      }, 200); // Delay ensures content is loaded
+    });
   }
 
   onProfileClick(event: Event) {
