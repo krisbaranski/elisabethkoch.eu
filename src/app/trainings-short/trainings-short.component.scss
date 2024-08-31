@@ -1,4 +1,5 @@
 .wrapper {
+  position: relative;
   margin: 6rem auto;
   max-width: 980px;
   box-sizing: border-box;
@@ -39,16 +40,25 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 4fr;
 }
 
+#slide_1,
+#slide_2,
+#slide_3,
+#slide_4,
+#slide_5,
+#slide_6 {
+  display: none;
+}
+
 .slide {
+  position: relative;
+  display: grid;
   background: linear-gradient(135deg, #367cc8, #77afeb);
   border-radius: 2rem;
   margin: 0 0.25rem;
-  overflow: hidden;
-  max-height: 350px;
-  position: relative;
+  max-height: 380px;
   cursor: pointer;
-  display: grid;
   box-shadow: 5px 3px 12px #00000040;
+  overflow: hidden;
 
   h3 {
     padding: 2rem;
@@ -58,7 +68,10 @@
   }
 
   p {
-    padding: 2rem;
+    align-self: start;
+    align-content: start;
+    padding: 0 2rem 5rem;
+    padding-top: 0;
     font-size: 1.1rem;
     font-weight: 100;
     color: #fff;
@@ -70,11 +83,13 @@
     grid-area: 1/1;
     transform-origin: bottom left;
     place-self: end;
+    align-self: end;
     align-items: center;
     gap: 1.3rem;
 
     background-color: #d2edfd;
     margin: 1rem;
+    padding-top: 1rem;
     border-radius: 2rem;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -111,5 +126,51 @@
   p {
     transform: scale(1);
     opacity: 1;
+    transition-delay: 300ms;
+  }
+}
+
+//
+//
+//
+// media query
+@media (max-width: 768px) {
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide {
+    margin: 0.5rem;
+    height: 5rem;
+
+    h3 {
+      padding-top: 1.5rem;
+      font-size: 1.4rem;
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    a,
+    p {
+      opacity: 0;
+    }
+  }
+
+  .slide:hover {
+    height: auto;
+    transition: height 300ms;
+    padding-bottom: 5rem;
+  }
+
+  .slide:nth-child(1):not(:has(~ .slide:hover)) {
+    a,
+    p {
+      transform: scale(1);
+      opacity: 1;
+      transition-delay: 300ms;
+    }
   }
 }
