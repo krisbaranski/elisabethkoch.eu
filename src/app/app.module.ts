@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { SlideAboutmeComponent } from './slide-aboutme/slide-aboutme.component';
 import { WorkComponent } from './work/work.component';
 import { FactsComponent } from './facts/facts.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -48,6 +49,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     ProfileComponent,
     AboutmeComponent,
+    SlideAboutmeComponent,
     WorkComponent,
     FactsComponent,
     FooterComponent,
