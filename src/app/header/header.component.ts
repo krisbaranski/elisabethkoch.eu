@@ -10,12 +10,31 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class HeaderComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
-  isShrink: boolean = false;
+  isSticky: boolean = false;
+  previousScrollPosition: number = window.scrollY;
   currentLanguage: string;
+
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //   this.isShrink = window.scrollY > 50000;
+  // }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isShrink = window.scrollY > 50000;
+    const currentScrollPosition = window.scrollY;
+
+    // Check if user is scrolling down
+    if (
+      currentScrollPosition > this.previousScrollPosition &&
+      currentScrollPosition > 800
+    ) {
+      this.isSticky = true; // Show sticky menu when scrolling down
+    } else {
+      this.isSticky = false; // Hide sticky menu when scrolling up
+    }
+
+    // Update the previous scroll position
+    this.previousScrollPosition = currentScrollPosition;
   }
 
   constructor(public translate: TranslateService, private router: Router) {
@@ -31,31 +50,6 @@ export class HeaderComponent implements OnInit {
     this.translate.use(lang);
     this.currentLanguage = lang;
   }
-
-  // goToPart(fragment: string) {
-  //   // Assuming the fragment parameter contains only the part after #
-  //   this.router.navigateByUrl(fragment);
-  //   this.sidenav.close();
-  // }
-
-  // goToPart(fragment: string) {
-  //   const [path, anchor] = fragment.split('#');
-  //   this.router.navigate([path], { fragment: anchor });
-  // }
-
-  // goToPart(fragment: string) {
-  //   switch (fragment) {
-  //     case 'profile':
-  //       this.router.navigateByUrl('profile#' + fragment);
-  //       break;
-  //     case 'trainings':
-  //       this.router.navigateByUrl('trainings#' + fragment);
-  //       break;
-  //     default:
-  //       this.router.navigateByUrl(fragment);
-  //   }
-  //   this.sidenav.close();
-  // }
 
   goToPart(fragment: string) {
     const [path, anchor] = fragment.split('#');
