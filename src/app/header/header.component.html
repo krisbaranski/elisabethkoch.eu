@@ -114,14 +114,33 @@
       >
         <div class="sidebar_items">
           <a
-            class="sidebar_item"
-            (click)="sidenav.close()"
-            (click)="navigateAndClose('')"
+            mat-button
+            (click)="onSidemenuClick($event)"
             [routerLinkActive]="'active'"
-            [routerLinkActiveOptions]="{ exact: true }"
-            routerLink="/trainings"
+            [matMenuTriggerFor]="trainings"
+            class="sidebar_item sublink"
             >{{ 'menu.trainings' | translate }}</a
           >
+          <mat-menu #trainings="matMenu">
+            <button mat-menu-item (click)="goToPart('trainings#home')">
+              {{ 'trainings.title_1' | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('trainings#work')">
+              {{ 'trainings.title_2' | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('trainings#facts')">
+              {{ 'trainings.title_3' | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('trainings#facts')">
+              {{ 'trainings.title_4' | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('trainings#facts')">
+              {{ 'trainings.title_5' | translate }}
+            </button>
+            <button mat-menu-item (click)="goToPart('trainings#facts')">
+              {{ 'trainings.title_6' | translate }}
+            </button>
+          </mat-menu>
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
@@ -132,10 +151,10 @@
           >
           <a
             mat-button
-            (click)="onProfileClick($event)"
+            (click)="onSidemenuClick($event)"
             [routerLinkActive]="'active'"
             [matMenuTriggerFor]="profile"
-            class="sidebar_item"
+            class="sidebar_item sublink"
             >{{ 'menu.profile' | translate }}</a
           >
           <mat-menu #profile="matMenu">

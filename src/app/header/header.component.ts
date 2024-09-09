@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
     // Check if user is scrolling down
     if (
       currentScrollPosition > this.previousScrollPosition &&
-      currentScrollPosition > 800
+      currentScrollPosition > 300
     ) {
       this.isSticky = true; // Show sticky menu when scrolling down
     } else {
@@ -68,7 +68,7 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  onProfileClick(event: Event) {
+  onSidemenuClick(event: Event) {
     event.stopImmediatePropagation();
   }
 
