@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './slide-aboutme.component.scss',
 })
 export class SlideAboutmeComponent {
-  images = ['me_green.png', 'aboutme2.jpg'];
+  images = ['me_green.png', 'me_orange.png'];
   headlines = ['', ''];
   currentImage = 0;
   showImage = true;

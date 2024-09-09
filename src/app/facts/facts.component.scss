@@ -70,7 +70,7 @@
     background: #93c6d145;
     padding: 1rem 2rem;
     border: 1px solid #fff;
-    border-radius: 5px;
+    border-radius: 6px;
   }
 
   .accordion section li {
@@ -112,6 +112,9 @@
 
   .accordion label + input[type='radio']:checked + .content {
     max-height: 1000px;
+    span {
+      transform: rotate(90deg);
+    }
   }
 }
 

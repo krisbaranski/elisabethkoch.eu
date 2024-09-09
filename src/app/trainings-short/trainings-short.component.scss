@@ -1,7 +1,7 @@
 .wrapper {
   position: relative;
   margin: 6rem auto;
-  max-width: 980px;
+  max-width: 1200px;
   box-sizing: border-box;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -47,7 +47,7 @@ input[type='radio'] {
   position: relative;
   display: grid;
   background: linear-gradient(135deg, #367cc8, #77afeb);
-  border-radius: 2rem;
+  border-radius: 12px;
   margin: 0 0.25rem;
   max-height: 380px;
   cursor: pointer;
@@ -88,7 +88,7 @@ input[type='radio'] {
     background-color: #d2edfd;
     margin: 1rem;
     padding-top: 1rem;
-    border-radius: 2rem;
+    border-radius: 6px;
     padding: 1rem 2rem;
     text-decoration: none;
     color: #134478;
