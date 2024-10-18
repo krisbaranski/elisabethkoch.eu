@@ -1,9 +1,10 @@
 .slideshow-container {
   position: relative;
-  height: 100vh;
+  height: 102vh;
   width: 100vw;
   max-width: 100%;
   overflow: hidden;
+  margin: 0;
 }
 
 .img-slideshow {
@@ -32,26 +33,27 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    // margin-right: 2rem;
   }
 
   h1 {
     font-size: 3.2rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    line-height: 1;
-    // letter-spacing: 4pt;
+    line-height: 1.1;
+    letter-spacing: 2pt;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 100;
     margin-bottom: 2rem;
+    line-height: 1;
   }
 
   p {
-    width: 90%;
+    width: 85%;
     font-size: 1.4rem;
     font-style: italic;
     font-weight: 300;
@@ -63,13 +65,12 @@
     display: flex;
     justify-content: flex-start;
     margin-top: 1rem;
-    // margin-right: 2rem;
 
     a {
       border-radius: 3px;
       backdrop-filter: blur(0.5rem);
       background-color: #d5a208;
-      padding: 1.4rem 4rem;
+      padding: 1.2rem 4rem;
       // margin-top: 6rem;
       color: #ffffff;
       text-align: center;
@@ -114,11 +115,34 @@
   }
 }
 
-@media only screen and (max-height: 724px) {
-  .slideshow-overlay .offer {
-    display: flex;
-    justify-content: center;
-    margin-right: 0;
+@media only screen and (max-width: 1400px) {
+  .slideshow-overlay {
+    width: 300px;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      line-height: 1.1;
+      // letter-spacing: 2pt;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 100;
+      margin-bottom: 2rem;
+      text-wrap: balance;
+      line-height: 1.2;
+    }
+
+    p {
+      width: 85%;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      text-wrap: pretty;
+      line-height: 1.2;
+    }
   }
 }
 

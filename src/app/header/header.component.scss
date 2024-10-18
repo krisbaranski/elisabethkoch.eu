@@ -9,7 +9,7 @@ header {
   top: 0;
   width: 100%;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
-  background: #fff;
+  // background: transparent;
   z-index: 1000;
   transition: all 0.3s ease;
 
@@ -25,7 +25,7 @@ header {
 }
 
 .sticky-menu {
-  top: -6rem;
+  top: -7rem;
 }
 
 #menuIcon,
@@ -45,8 +45,9 @@ menu {
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
-  width: min(1200px, 80% - 4rem);
-  height: 4rem;
+  align-items: center;
+  width: min(1400px, 80% - 4rem);
+  height: 6rem;
   margin-inline: auto;
 
   a {
@@ -54,7 +55,8 @@ menu {
     font-size: 1.1rem;
     font-family: inherit;
     font-weight: 300;
-    color: #00649c;
+    // color: #00649c;
+    color: #fff;
     text-decoration: none;
     border: 1px solid transparent;
     margin-left: 2px;
@@ -74,8 +76,12 @@ menu {
     }
   }
 
+  p {
+    color: #fff;
+  }
+
   img {
-    height: 60px;
+    height: 100px;
     width: auto;
   }
 
