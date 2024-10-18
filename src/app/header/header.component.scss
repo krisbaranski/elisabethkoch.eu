@@ -120,7 +120,7 @@ menu {
 
     menu {
       img {
-        height: 50px;
+        height: 80px;
       }
 
       a {
@@ -143,7 +143,8 @@ menu {
       }
 
       .mat-sidenav {
-        background-color: rgba(23, 43, 64, 0.8);
+        background-color: #770000cc;
+        // background-color: #ff5a137b;
         backdrop-filter: blur(5px);
         width: 100vw;
         overflow: hidden;
@@ -154,7 +155,7 @@ menu {
     #menuIcon {
       display: flex;
       justify-content: flex-end;
-      color: #00649c;
+      color: #830000;
       // border: 1px solid #00649c;
       border-radius: 6px;
       background-color: transparent;
@@ -233,6 +234,9 @@ menu {
     menu {
       width: 100%;
       margin-left: 0;
+      img {
+        height: 60px;
+      }
 
       .logo {
         margin-left: 0;
