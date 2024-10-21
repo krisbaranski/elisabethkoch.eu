@@ -1,11 +1,11 @@
-<header [ngClass]="{ 'sticky-menu': isSticky }">
-  <menu>
+<header [ngClass]="{ 'sticky-menu': isSticky }" [class.headerDark]="darkMode">
+  <menu [class.headerDark]="darkMode">
     <mat-toolbar>
       <div class="logo">
         <img src="assets/img/logo_lila.png" alt="logo" routerLink="/" />
       </div>
       <div class="menu">
-        <div>
+        <div [class.darkLinks]="darkMode">
           <a
             mat-button
             [matMenuTriggerFor]="trainings"
@@ -75,7 +75,7 @@
         </div>
 
         <!-- Translation links -->
-        <div class="translate">
+        <div class="translate" [class.darkLinks]="darkMode">
           <!-- Show German link only if the current language is not German -->
           <a
             *ngIf="currentLanguage !== 'de'"

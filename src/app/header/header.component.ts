@@ -1,4 +1,10 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  ViewChild,
+  HostListener,
+} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
@@ -11,13 +17,9 @@ import { MatSidenav } from '@angular/material/sidenav';
 export class HeaderComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
   isSticky: boolean = false;
+  @Input() darkMode = true;
   previousScrollPosition: number = window.scrollY;
   currentLanguage: string;
-
-  // @HostListener('window:scroll', [])
-  // onWindowScroll() {
-  //   this.isShrink = window.scrollY > 50000;
-  // }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
