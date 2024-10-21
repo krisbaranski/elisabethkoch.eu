@@ -9,6 +9,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SlideAboutmeComponent } from './slide-aboutme/slide-aboutme.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 import { WorkComponent } from './work/work.component';
 import { FactsComponent } from './facts/facts.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -16,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TermineComponent } from './termine/termine.component';
 import { HomeComponent } from './home/home.component';
 import { BoxesComponent } from './boxes/boxes.component';
+import { BoxesHomeComponent } from './boxes-home/boxes-home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
@@ -46,10 +48,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     SlideshowComponent,
     HomeComponent,
     BoxesComponent,
+    BoxesHomeComponent,
     HeaderComponent,
     ProfileComponent,
     AboutmeComponent,
     SlideAboutmeComponent,
+    TestimonialComponent,
     WorkComponent,
     FactsComponent,
     FooterComponent,
