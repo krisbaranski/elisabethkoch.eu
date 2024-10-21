@@ -26,7 +26,6 @@ header {
 
 .sticky-menu {
   top: -8rem;
-  background-color: #fff;
 }
 
 #menuIcon,
@@ -65,7 +64,6 @@ menu {
 
     &:hover,
     &.active {
-      // color: #004065;
       color: #830000;
       border: 1px solid #830000;
       border-radius: 6px;

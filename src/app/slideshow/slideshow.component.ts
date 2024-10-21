@@ -9,7 +9,7 @@ export class SlideshowComponent implements OnInit {
   constructor() {}
   images = ['aboutme1.jpg'];
   text_big = ['home.slide_1'];
-  headline = ['home.box_1'];
+  headline = ['home.title_1'];
   text_small = ['home.text_1'];
   // images = ['aboutme.jpg', 'stage.jpg', 'poem.png'];
   // text_big = ['home.slide_1', 'home.slide_2', 'home.slide_3'];

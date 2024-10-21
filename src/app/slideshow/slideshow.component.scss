@@ -1,6 +1,6 @@
 .slideshow-container {
   position: relative;
-  height: 108vh;
+  height: 100vh;
   width: 100vw;
   max-width: 100%;
   min-height: 100%;
@@ -92,17 +92,17 @@
   0% {
     transform: scale(1);
     blur: 20;
-    opacity: 0;
+    // opacity: 0;
   }
   10% {
-    opacity: 1;
+    // opacity: 1;
   }
   95% {
-    opacity: 1;
+    // opacity: 1;
   }
   100% {
     transform: scale(1.1);
-    opacity: 0;
+    // opacity: 0;
   }
 }
 
