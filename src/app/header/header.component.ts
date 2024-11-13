@@ -17,6 +17,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 export class HeaderComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
   isSticky: boolean = false;
+  isOpen: boolean = false;
   @Input() darkMode = true;
   previousScrollPosition: number = window.scrollY;
   currentLanguage: string;

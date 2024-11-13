@@ -9,7 +9,7 @@ header {
   top: 0;
   width: 100%;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
-  // background: transparent;
+  // background-color: #410000;
   z-index: 1000;
   transition: all 0.3s ease;
 
@@ -26,6 +26,11 @@ header {
 
 .sticky-menu {
   top: -8rem;
+  background: transparent;
+}
+
+.open-menu {
+  top: 0rem;
 }
 
 #menuIcon,
@@ -75,10 +80,6 @@ menu {
     }
   }
 
-  p {
-    color: #fff;
-  }
-
   img {
     height: 100px;
     width: auto;
@@ -90,10 +91,19 @@ menu {
     align-items: center;
   }
 
-  .translate {
+  .translate,
+  .spacer {
     display: flex;
     align-items: center;
     margin-left: 30px;
+    color: #fff;
+  }
+
+  p {
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 100;
   }
 }
 
@@ -105,7 +115,7 @@ menu {
 }
 
 .headerDark {
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .darkLinks {
@@ -140,7 +150,7 @@ menu {
 }
 
 //
-// Media queries
+// MEDIA QUERIES
 //
 @media (max-width: 1200px) {
   header {
@@ -184,6 +194,12 @@ menu {
         overflow: hidden;
         top: -50px;
       }
+
+      // .spacer {
+      //   border-top: 1px solid #fff;
+      //   margin: 3rem auto 1rem;
+      //   width: 5rem;
+      // }
     }
 
     #menuIcon {
@@ -208,6 +224,14 @@ menu {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      .spacer {
+        border-top: 1px solid #fff;
+        margin: auto;
+        margin-top: 4rem;
+        margin-bottom: 0;
+        width: 5rem;
+      }
     }
 
     .top_menu_item {
