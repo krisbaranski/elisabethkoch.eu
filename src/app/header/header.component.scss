@@ -12,6 +12,7 @@ header {
   // background-color: #410000;
   z-index: 1000;
   transition: all 0.3s ease;
+  // background-color: #fff;
 
   .logo {
     cursor: pointer;
@@ -25,7 +26,7 @@ header {
 }
 
 .sticky-menu {
-  top: -8rem;
+  top: -7rem;
   background: transparent;
 }
 
@@ -61,7 +62,7 @@ menu {
     font-family: inherit;
     font-weight: 300;
     // color: #00649c;
-    color: #fff;
+    color: #690046;
     text-decoration: none;
     border: 1px solid transparent;
     margin-left: 2px;
@@ -69,8 +70,8 @@ menu {
 
     &:hover,
     &.active {
-      color: #830000;
-      border: 1px solid #830000;
+      color: #690046;
+      border: 1px solid #690046;
       border-radius: 6px;
     }
 
@@ -81,7 +82,7 @@ menu {
   }
 
   img {
-    height: 100px;
+    height: 60px;
     width: auto;
   }
 
@@ -96,7 +97,7 @@ menu {
     display: flex;
     align-items: center;
     margin-left: 30px;
-    color: #fff;
+    color: #690046;
   }
 
   p {
@@ -124,12 +125,12 @@ menu {
 
     &:hover {
       font-weight: 300;
-      border-bottom: 1px solid #830000;
+      border-bottom: 1px solid #690046;
     }
 
     &:active {
       font-weight: 300;
-      color: #830000;
+      color: #690046;
       border-bottom: 1px solid rgba(28, 109, 179, 0.5);
     }
   }
@@ -163,10 +164,6 @@ menu {
     flex-direction: row;
 
     menu {
-      img {
-        height: 80px;
-      }
-
       a {
         padding: 10px 15px;
         width: auto;
@@ -176,7 +173,7 @@ menu {
 
         &:hover,
         &.active {
-          color: #830000;
+          color: #690046;
           background-color: #ffcfcfe0;
           border-radius: 6px;
         }
@@ -187,7 +184,7 @@ menu {
       }
 
       .mat-sidenav {
-        background-color: #770000cc;
+        background-color: #690046cc;
         // background-color: #ff5a137b;
         backdrop-filter: blur(5px);
         width: 100vw;
@@ -205,7 +202,7 @@ menu {
     #menuIcon {
       display: flex;
       justify-content: flex-end;
-      color: #830000;
+      color: #690046;
       // border: 1px solid #00649c;
       border-radius: 6px;
       background-color: transparent;
@@ -292,8 +289,9 @@ menu {
     menu {
       width: 100%;
       margin-left: 0;
+
       img {
-        height: 60px;
+        height: 50px;
       }
 
       .logo {
