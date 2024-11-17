@@ -39,15 +39,15 @@
   }
 
   h1 {
-    font-size: 3.6rem;
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 300;
     margin-bottom: 2rem;
     line-height: 1.1;
     letter-spacing: 2pt;
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 100;
     margin-bottom: 2rem;
     line-height: 1;
@@ -55,10 +55,10 @@
 
   p {
     width: 85%;
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 100;
     text-wrap: pretty;
-    line-height: 1.2;
+    line-height: 1.6;
     letter-spacing: 2;
   }
 
@@ -75,7 +75,7 @@
       color: #ffffff;
       text-align: center;
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 300;
 
       &:hover {
@@ -140,15 +140,15 @@
     width: 300px;
 
     h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
+      font-size: 2.4rem;
+      font-weight: 300;
       margin-bottom: 2rem;
       line-height: 1.1;
       // letter-spacing: 2pt;
     }
 
     h3 {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       font-weight: 100;
       margin-bottom: 2rem;
       text-wrap: balance;
@@ -157,8 +157,8 @@
 
     p {
       width: 85%;
-      font-size: 1.2rem;
-      font-weight: 300;
+      font-size: 0.7rem;
+      font-weight: 100;
       text-wrap: pretty;
       line-height: 1.2;
     }
