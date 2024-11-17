@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat/Montserrat-Regular.woff')
+    format('truetype');
+  font-weight: 100, 300, 600, 800;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
