@@ -1,6 +1,6 @@
 footer {
   position: relative;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #052a33;
   padding: 5rem 0;
   z-index: 1;
@@ -27,28 +27,30 @@ footer {
   h1 {
     font-size: 1.4rem;
     font-weight: 400;
-    color: white;
+    color: #ffffff;
     margin: 5px;
     padding-bottom: 10px;
   }
 
   p {
+    font-size: 0.8rem;
     font-weight: 100;
-    color: white;
+    color: #ffffff;
     margin: 2px 5px;
   }
 
   a {
+    font-size: 0.8rem;
     font-weight: 300;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     text-align: left;
     padding: 2px 5px;
 
     &:hover {
       color: #690046;
-      background-color: rgba(255, 255, 255, 0.7);
-      border-radius: 5px;
+      background-color: #d5a208;
+      border-radius: 4px;
     }
   }
 
@@ -96,9 +98,9 @@ footer {
 
   .copyright {
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 100;
-    color: white;
+    color: #ffffff;
     display: flex;
     padding: 50px 20px;
   }
