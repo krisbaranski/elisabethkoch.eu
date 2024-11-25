@@ -1,0 +1,27 @@
+<div class="wrapper" id="form">
+  <div class="form-container">
+    <mat-form-field class="form_field">
+      <!-- <mat-label class="label">Name</mat-label> -->
+      <input matInput class="input" placeholder="Name" />
+    </mat-form-field>
+
+    <mat-form-field class="form_field">
+      <!-- <mat-label class="label">Email</mat-label> -->
+      <input
+        matInput
+        class="input"
+        placeholder="pat@example.com"
+        [formControl]="email"
+        required
+      />
+      <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form_field">
+      <mat-label class="label">Message</mat-label>
+      <textarea matInput placeholder="Message" rows="10"></textarea>
+    </mat-form-field>
+
+    <button href="/appointment-home" class="btn">Submit</button>
+  </div>
+</div>

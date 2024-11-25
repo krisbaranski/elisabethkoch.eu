@@ -1,0 +1,245 @@
+.slideshow-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.img-slideshow {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  object-fit: cover;
+  animation: zoomIn 20s ease-in-out infinite;
+  background-color: black;
+}
+
+.contain {
+  display: block;
+  right: 20px;
+}
+
+.slideshow-overlay {
+  width: 500px;
+  position: absolute;
+  top: 40vh;
+  color: white;
+  transform: translateX(65vw);
+
+  .fadeIn {
+    // animation: fadeInAnimation 1.5s ease-in-out;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    letter-spacing: 2pt;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    line-height: 1;
+  }
+
+  p {
+    width: 85%;
+    font-size: 1rem;
+    font-weight: 100;
+    text-wrap: pretty;
+    line-height: 1.6;
+    letter-spacing: 2;
+  }
+
+  .offer {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+
+    a {
+      border-radius: 3px;
+      backdrop-filter: blur(0.5rem);
+      background-color: #d5a208;
+      padding: 1.2rem 4rem;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 300;
+
+      &:hover {
+        color: #d5a208;
+        background-color: #690046;
+      }
+    }
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+    blur: 20;
+    // opacity: 0;
+  }
+  10% {
+    // opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  95% {
+    // opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    // opacity: 0;
+  }
+
+  // @keyframes zoomIn {
+  //   0% {
+  //     transform: scale(1);
+  //     blur: 20;
+  //     // opacity: 0;
+  //   }
+  //   10% {
+  //     // opacity: 1;
+  //   }
+  //   95% {
+  //     // opacity: 1;
+  //   }
+  //   100% {
+  //     transform: scale(1.1);
+  //     // opacity: 0;
+  //   }
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .slideshow-overlay {
+    width: 300px;
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      line-height: 1.1;
+      // letter-spacing: 2pt;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 100;
+      margin-bottom: 2rem;
+      text-wrap: balance;
+      line-height: 1.2;
+    }
+
+    p {
+      width: 85%;
+      font-size: 0.7rem;
+      font-weight: 100;
+      text-wrap: pretty;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .slideshow-overlay {
+    width: 80vw;
+    bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    transform: translateX(10vw);
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+      // letter-spacing: 2pt;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 100;
+      margin-bottom: 1rem;
+      text-wrap: balance;
+      line-height: 1.2;
+    }
+
+    p {
+      width: 55%;
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-wrap: pretty;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+
+    .offer {
+      a {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 682px) {
+  .slideshow-overlay {
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      line-height: 1.1;
+      // letter-spacing: 2pt;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 100;
+      margin-bottom: 0.6rem;
+      text-wrap: balance;
+      line-height: 1.2;
+    }
+
+    p {
+      width: 100%;
+      font-size: 0.8rem;
+      text-wrap: pretty;
+      margin-bottom: 0.2rem;
+    }
+
+    .offer {
+      a {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

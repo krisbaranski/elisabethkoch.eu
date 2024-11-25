@@ -1,0 +1,25 @@
+<div class="slideshow-container" id="home">
+  <img
+    *ngIf="showImage"
+    class="img-slideshow"
+    src="assets/img/{{ images[currentImage] }}"
+  />
+</div>
+<div class="contain">
+  <div class="slideshow-overlay">
+    <div *ngIf="showImage" class="fadeIn">
+      <h3>{{ text_big[currentImage] | translate }}</h3>
+      <h1>
+        {{ headline[currentImage] | translate }}
+      </h1>
+      <p>
+        {{ text_small[currentImage] | translate }}
+      </p>
+    </div>
+    <span class="offer">
+      <a href="https://calendly.com/mail-76ib/30min" target="_blank">{{
+        'home.button_offer' | translate
+      }}</a>
+    </span>
+  </div>
+</div>
