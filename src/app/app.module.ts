@@ -5,29 +5,30 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SlideshowComponent } from './slideshow/slideshow.component';
+import { SlideshowComponent } from './home/slideshow/slideshow.component';
 import { HeaderComponent } from './header/header.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
-import { SlideAboutmeComponent } from './slide-aboutme/slide-aboutme.component';
+import { AboutmeComponent } from './profile/aboutme/aboutme.component';
+import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
-import { WorkComponent } from './work/work.component';
-import { FactsComponent } from './facts/facts.component';
+import { WorkComponent } from './profile/work/work.component';
+import { FactsComponent } from './profile/facts/facts.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
-import { TermineComponent } from './termine/termine.component';
+import { TermineComponent } from './contact/termine/termine.component';
 import { HomeComponent } from './home/home.component';
 import { BoxesComponent } from './boxes/boxes.component';
-import { BoxesHomeComponent } from './boxes-home/boxes-home.component';
+import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
-import { TrainingsShortComponent } from './trainings-short/trainings-short.component';
+import { TrainingsShortComponent } from './trainings/trainings-short/trainings-short.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
-import { FormComponent } from './form/form.component';
-import { AppointmentHomeComponent } from './appointment-home/appointment-home.component';
+import { TidycalComponent } from './contact/tidycal/tidycal.component';
+import { FormComponent } from './contact/form/form.component';
+import { AppointmentHomeComponent } from './contact/appointment-home/appointment-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -64,6 +65,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ImpressumComponent,
     PrivacyComponent,
     ContactComponent,
+    TidycalComponent,
     AppointmentHomeComponent,
   ],
   imports: [
