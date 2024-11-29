@@ -1,4 +1,7 @@
-<header [ngClass]="{ 'sticky-menu': isSticky }" [class.headerDark]="darkMode">
+<header
+  [ngClass]="{ 'sticky-menu': isSticky, 'open-menu': isOpen }"
+  [class.headerDark]="darkMode"
+>
   <menu [class.headerDark]="darkMode">
     <mat-toolbar>
       <div class="logo">
