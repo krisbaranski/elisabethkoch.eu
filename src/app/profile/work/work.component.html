@@ -48,7 +48,9 @@
       <br />
       <div class="signature">
         <span class="offer">
-          <a routerLink="contact">{{ 'home.button_offer' | translate }}</a>
+          <a routerLink="contact" (click)="goToPart('contact#termin')">{{
+            'home.button_offer' | translate
+          }}</a>
         </span>
       </div>
     </div>

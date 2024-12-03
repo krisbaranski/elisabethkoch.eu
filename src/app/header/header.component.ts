@@ -53,6 +53,7 @@ export class HeaderComponent implements OnInit {
 
     this.currentLanguage = this.translate.currentLang || 'de'; // Default language
   }
+
   changeLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLanguage = lang;
