@@ -27,8 +27,9 @@
 }
 
 .box {
-  width: 450px;
+  max-width: 450px;
   height: auto;
+  padding: 1rem;
 
   h1 {
     color: #690046;
