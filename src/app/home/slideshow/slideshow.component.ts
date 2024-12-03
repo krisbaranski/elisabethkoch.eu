@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-slideshow',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slideshow.component.scss'],
 })
 export class SlideshowComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
   images = ['aboutme1.jpg'];
   text_big = ['home.slide_1'];
   headline = ['home.title_1'];
@@ -33,5 +34,22 @@ export class SlideshowComponent implements OnInit {
         this.showImage = true;
       }, 15);
     }, 200000);
+  }
+
+  goToPart(fragment: string) {
+    const [path, anchor] = fragment.split('#');
+    this.router.navigate([path], { fragment: anchor }).then(() => {
+      // Wait a short period for navigation to complete before trying to scroll
+      setTimeout(() => {
+        const element = document.getElementById(anchor);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest',
+          });
+        }
+      }, 200); // Delay ensures content is loaded
+    });
   }
 }
