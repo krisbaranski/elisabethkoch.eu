@@ -1,4 +1,6 @@
-<app-header [darkMode]="router.url !== '/'"></app-header>
+<app-header
+  [darkMode]="router.url !== '/' && router.url !== '/contact'"
+></app-header>
 <div [class.container]="router.url">
   <router-outlet></router-outlet>
 </div>

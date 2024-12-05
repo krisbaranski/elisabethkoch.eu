@@ -32,6 +32,26 @@ header {
 .open-menu {
   top: 0rem;
   background: #fff;
+
+  menu {
+    a {
+      color: #690046;
+
+      &:hover,
+      &.active {
+        color: #690046;
+        border: 1px solid #690046;
+        border-radius: 6px;
+      }
+    }
+    .translate,
+    .spacer {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      color: #690046;
+    }
+  }
 }
 
 #menuIcon,
@@ -56,12 +76,13 @@ menu {
   height: 5rem;
   margin-inline: auto;
 
-  a {
+  a,
+  .top_menu_item {
     box-sizing: border-box;
     font-size: 1.1rem;
     font-family: inherit;
     font-weight: 300;
-    color: #690046;
+    color: #fff;
     text-decoration: none;
     border: 1px solid transparent;
     margin-left: 2px;
@@ -69,8 +90,8 @@ menu {
 
     &:hover,
     &.active {
-      color: #690046;
-      border: 1px solid #690046;
+      color: #fff;
+      border: 1px solid #fff;
       border-radius: 6px;
     }
 
@@ -96,7 +117,7 @@ menu {
     display: flex;
     align-items: center;
     margin-left: 30px;
-    color: #690046;
+    color: #fff;
   }
 
   p {
