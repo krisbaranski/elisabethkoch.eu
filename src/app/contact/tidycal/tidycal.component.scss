@@ -1,6 +1,7 @@
 .tidycal {
   max-width: 1200px;
-  margin: 4rem auto;
+  margin-top: 4rem;
+  margin-inline: auto;
   transform: translateY(-170px);
   background-color: #fff;
   border-radius: 6px;
@@ -18,11 +19,13 @@ iframe {
   height: 800px;
   overflow: hidden;
   min-height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
-.tidycal-embed {
-  height: 100%;
-}
+// .tidycal-embed {
+//   height: 100%;
+// }
 
 h3 {
   text-align: center;
