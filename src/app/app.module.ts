@@ -21,6 +21,7 @@ import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
+import { WomenComponent } from './trainings/women/women.component';
 import { TrainingsShortComponent } from './trainings/trainings-short/trainings-short.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -61,6 +62,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormComponent,
     TermineComponent,
     TrainingsComponent,
+    WomenComponent,
     TrainingsShortComponent,
     ImpressumComponent,
     PrivacyComponent,
