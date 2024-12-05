@@ -1,25 +1,38 @@
+/* Regular */
 @font-face {
   font-family: 'Montserrat';
-  src: url('/assets/fonts/Montserrat/Montserrat-Regular.woff')
-    format('truetype');
-  src: url('/assets/fonts/Montserrat/Montserrat-Thin.woff') format('truetype');
-  src: url('/assets/fonts/Montserrat/Montserrat-SemiBold.woff')
-    format('truetype');
-  font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
-  font-style: thin, normal, bold, italic;
-  letter-spacing: normal;
+  src: url('/assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
+/* Thin */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat/Montserrat-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Regular (default weight 400) */
 @font-face {
   font-family: 'Reading';
   src: url('/assets/fonts/Reading/Reading_Regular.ttf') format('truetype');
-  font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+  font-weight: 400;
   font-style: normal;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
