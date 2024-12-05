@@ -28,7 +28,11 @@
   "trainings": {
     "title": "Trainings",
     "text": "",
-    "title_1": "Frauen",
+    "women": {
+      "title_1": "Frauen, Stimme & Leadership",
+      "title_2": "Frauen mit starker Stimme in Führung",
+      "text": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, die Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: in meetings und Präsentationen sowie in jeder täglichen Kommunikation"
+    },
     "text_1": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
     "title_2": "Redner",
     "text_2": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
