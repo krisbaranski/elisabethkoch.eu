@@ -1,24 +1,19 @@
 <footer>
   <div class="wrapper">
     <div class="flow">
-      <div class="links">
-        <h1>Links</h1>
-        <a routerLink="/">{{ 'menu.trainings' | translate }}</a>
-        <a routerLink="seminare">{{ 'menu.courses' | translate }}</a>
-        <a routerLink="profile">{{ 'menu.profile' | translate }}</a>
-        <a routerLink="blog">{{ 'menu.blog' | translate }}</a>
-        <a routerLink="contact">{{ 'menu.contact' | translate }}</a>
-      </div>
-    </div>
-
-    <div class="flow">
-      <h1>Legal</h1>
-      <a routerLink="privacy">{{ 'menu.policy' | translate }}</a>
-      <a routerLink="impressum">Impressum</a>
+      <h1>Elisabeth Koch</h1>
+      <p>Behaimstraße 27</p>
+      <p>13086 Berlin</p>
       <br />
-      <br />
-
+      <p></p>
+      <p></p>
+      <p>+49 0176 72173650</p>
+      <p>mail(at)elisabethkoch.eu</p>
       <div class="social">
+        <!-- <a class="mail" href="mailto:mail@elisabethkoch.eu">
+          <img src="./assets/img/envelope.svg" alt="mail" />
+        </a> -->
+
         <a
           href="https://instagram.com/stimme_gelungener_auftritt"
           target="_blank"
@@ -35,27 +30,58 @@
     </div>
 
     <div class="flow">
-      <h1>{{ 'menu.contact' | translate }}</h1>
-      <p>Elisabeth Koch</p>
-      <p>Behaimstraße 27</p>
-      <p>13086 Berlin</p>
-
-      <div class="social">
-        <a class="mail" href="mailto:mail@elisabethkoch.eu">
-          <img src="./assets/img/envelope.svg" alt="mail" />
+      <div class="links">
+        <h1>Trainings</h1>
+        <a (click)="goToPart('trainings#home')">
+          {{ 'trainings.title_1' | translate }}
         </a>
+        <a (click)="goToPart('trainings#work')">
+          {{ 'trainings.title_2' | translate }}
+        </a>
+        <a (click)="goToPart('trainings#facts')">
+          {{ 'trainings.title_3' | translate }}
+        </a>
+        <a (click)="goToPart('trainings#facts')">
+          {{ 'trainings.title_4' | translate }}
+        </a>
+        <a (click)="goToPart('trainings#facts')">
+          {{ 'trainings.title_5' | translate }}
+        </a>
+        <a (click)="goToPart('trainings#facts')">
+          {{ 'trainings.title_6' | translate }}
+        </a>
+      </div>
+    </div>
+
+    <div class="flow">
+      <div class="links">
+        <h1>Blog</h1>
+        <a routerLink="/">{{ 'menu.trainings' | translate }}</a>
+        <a routerLink="seminare">{{ 'menu.courses' | translate }}</a>
+        <a routerLink="profile">{{ 'menu.profile' | translate }}</a>
+        <a routerLink="blog">{{ 'menu.blog' | translate }}</a>
+        <a routerLink="contact">{{ 'menu.contact' | translate }}</a>
       </div>
     </div>
   </div>
 
-  <div class="foot">
-    <img
-      routerLink="/"
-      class="logo"
-      src="assets/img/logo_white.png"
-      alt="logo"
-    />
-    <!-- copyright and social media -->
-    <p class="copyright">© Elisabeth Koch {{ currentYear }}</p>
+  <div class="base">
+    <div class="foot">
+      <a routerLink="privacy">{{ 'menu.policy' | translate }}</a>
+      <a routerLink="impressum">Impressum</a>
+    </div>
+    <div class="foot">
+      <img
+        routerLink="/"
+        class="logo"
+        src="assets/img/logo_white.png"
+        alt="logo"
+      />
+      <!-- copyright and social media -->
+      <p class="copyright">
+        © {{ currentYear }} Elisabeth Koch • Webdesign Pineapple Blue •
+        Developer krisbaranski.com
+      </p>
+    </div>
   </div>
 </footer>
