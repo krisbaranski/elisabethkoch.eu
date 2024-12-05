@@ -5,7 +5,7 @@
     "offers": "Angebote",
     "profile": "Profil",
     "blog": "Blog",
-    "contact": "Kontakt",
+    "contact": "Termin vereinbaren",
     "policy": "Datenschutz"
   },
   "home": {
@@ -140,9 +140,8 @@
     "table_6": "SOS Termin 1x90min:"
   },
   "contact": {
-    "title": "Kontakt",
-    "text_1.1": "Du bist neugierig?",
-    "text_1.2": "Hier kannst Du mir eine persönliche Nachricht schreiben, Dich anmelden oder einen Termin für Dein kostenfreies Erstgespräch per Telefon auswählen.",
-    "text_1.3": "Ich freu mich auf Dich!"
+    "title": "Lass uns darüber sprechen was dich bewegt",
+    "text_1": "Kostenfreies Erstgespräch",
+    "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen."
   }
 }
