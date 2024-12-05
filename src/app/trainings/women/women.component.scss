@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: min(840px, 100vh);
+  background-image: url('../../../assets/img/contact_bg.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
+  text-wrap: pretty;
+  padding-top: 4rem;
+}
+
+.text {
+  color: #ffffff;
+  max-width: 700px;
+  text-align: center;
+  padding: 1rem;
+
+  h3 {
+    line-height: 1.2;
+    font-size: clamp(2.8rem, 4vw, 3.4rem);
+    font-weight: 500;
+  }
+
+  h6 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 100;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    line-height: 2;
+    padding: 4rem 1rem;
+  }
+
+  .offer a {
+    border-radius: 3px;
+    backdrop-filter: blur(0.5rem);
+    background-color: #d5a208;
+    padding: 1.2rem 4rem;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-weight: 300;
+
+    &:hover {
+      color: #d5a208;
+      background-color: #690046;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .text {
+    .offer a {
+      padding: 0.8rem 2rem;
+    }
+  }
+}
