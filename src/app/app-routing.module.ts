@@ -3,7 +3,6 @@ import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { TrainingsComponent } from './trainings/trainings.component';
-import { WomenComponent } from './trainings/women/women.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImpressumComponent } from './impressum/impressum.component';
@@ -12,7 +11,6 @@ import { PrivacyComponent } from './privacy/privacy.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'trainings', component: TrainingsComponent },
-  { path: 'women', component: WomenComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'impressum', component: ImpressumComponent },

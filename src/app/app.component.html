@@ -1,6 +1,8 @@
 <app-header
   [darkMode]="
-    router.url !== '/' && router.url !== '/women' && router.url !== '/contact'
+    router.url !== '/' &&
+    router.url !== '/trainings' &&
+    router.url !== '/contact'
   "
 ></app-header>
 <div [class.container]="router.url">
