@@ -1,6 +1,8 @@
 <div class="contain" id="work">
   <div class="text">
-    <h1>{{ 'profile.work.title' | translate }}</h1>
+    <div class="title">
+      <h1>{{ 'profile.work.title' | translate }}</h1>
+    </div>
     <div class="frame">
       <h3>{{ 'profile.work.title_1' | translate }}</h3>
       <p>
@@ -46,13 +48,11 @@
       </p>
       <p>{{ 'profile.work.text_11' | translate }}</p>
       <br />
-      <div class="signature">
-        <span class="offer">
-          <a routerLink="contact" (click)="goToPart('contact#termin')">{{
-            'home.button_offer' | translate
-          }}</a>
-        </span>
-      </div>
     </div>
+  </div>
+  <div class="signature">
+    <span class="offer">
+      <a routerLink="contact">{{ 'home.button_offer' | translate }}</a>
+    </span>
   </div>
 </div>

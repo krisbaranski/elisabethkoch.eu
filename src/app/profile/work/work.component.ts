@@ -12,11 +12,11 @@ export class WorkComponent {
   text_8: string[];
 
   constructor(public translate: TranslateService, public router: Router) {
-    this.translate.get('work.text_7').subscribe((res: string[]) => {
+    this.translate.get('profile.work.text_7').subscribe((res: string[]) => {
       this.text_7 = res;
     });
 
-    this.translate.get('work.text_8').subscribe((res: string[]) => {
+    this.translate.get('profile.work.text_8').subscribe((res: string[]) => {
       this.text_8 = res;
     });
   }
