@@ -9,6 +9,7 @@ import { SlideshowComponent } from './home/slideshow/slideshow.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutmeComponent } from './profile/aboutme/aboutme.component';
 import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.component';
+import { SlideshowMeComponent } from './profile/slideshow-me/slideshow-me.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { WorkComponent } from './profile/work/work.component';
 import { FactsComponent } from './profile/facts/facts.component';
@@ -56,6 +57,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProfileComponent,
     AboutmeComponent,
     SlideAboutmeComponent,
+    SlideshowMeComponent,
     TestimonialComponent,
     WorkComponent,
     FactsComponent,

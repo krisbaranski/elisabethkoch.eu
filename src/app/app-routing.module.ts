@@ -7,7 +7,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
-import { FaqComponent } from './home/faq/faq.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,7 +15,6 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'impressum', component: ImpressumComponent },
   { path: 'privacy', component: PrivacyComponent },
-  { path: 'faq', component: FaqComponent },
 ];
 
 const routerOptions: ExtraOptions = {
