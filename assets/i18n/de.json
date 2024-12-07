@@ -22,28 +22,40 @@
     "button_offer": "Jetzt anfragen!"
   },
   "testimonials": {
-    "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \" ",
-    "author_1": "Karina F."
+    "author_1": "Karina F.",
+    "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \" "
   },
   "trainings": {
     "title": "Trainings",
-    "text": "",
     "women": {
+      "title": "Frauen",
       "title_1": "Frauen, Stimme & Leadership",
+      "text_2": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
       "title_2": "Frauen mit starker Stimme in Führung",
-      "text": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, die Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: in meetings und Präsentationen sowie in jeder täglichen Kommunikation"
+      "text_1": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, die Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: in meetings und Präsentationen sowie in jeder täglichen Kommunikation"
     },
-    "text_1": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
-    "title_2": "Redner",
-    "text_2": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "title_3": "Führungskräfte",
-    "text_3": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "title_4": "Sänger & Sprecher",
-    "text_4": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "title_5": "Journalisten & Podcast Hosts",
-    "text_5": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "title_6": "Trainer, Berater & Coaches",
-    "text_6": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
+    "speaker": {
+      "title": "Redner",
+      "title_1": "Redner",
+      "title_2": "Frauen mit starker Stimme in Führung",
+      "text_2": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+    },
+    "manager": {
+      "title": "Führungskräfte",
+      "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+    },
+    "singer": {
+      "title": "Sänger & Sprecher",
+      "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+    },
+    "podcast": {
+      "title": "Journalisten & Podcast Hosts",
+      "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+    },
+    "trainer": {
+      "title": "Trainer, Berater & Coaches",
+      "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+    },
     "link": "Mehr »"
   },
   "aboutme": {
@@ -147,5 +159,12 @@
     "title": "Lass uns darüber sprechen was dich bewegt",
     "text_1": "Kostenfreies Erstgespräch",
     "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen."
+  },
+  "blog": {
+    "title_1": "Artikel 1",
+    "title_2": "Artikel 2",
+    "title_3": "Artikel 3",
+    "title_4": "Artikel 4",
+    "title_5": "Artikel 5"
   }
 }
