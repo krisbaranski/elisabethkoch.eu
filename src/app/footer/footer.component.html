@@ -32,23 +32,23 @@
     <div class="flow">
       <div class="links">
         <h1>Trainings</h1>
-        <a (click)="goToPart('trainings#home')">
-          {{ 'trainings.title_1' | translate }}
+        <a (click)="goToPart('trainings#women')">
+          {{ 'trainings.women.title' | translate }}
         </a>
-        <a (click)="goToPart('trainings#work')">
-          {{ 'trainings.title_2' | translate }}
-        </a>
-        <a (click)="goToPart('trainings#facts')">
-          {{ 'trainings.title_3' | translate }}
+        <a (click)="goToPart('trainings#speaker')">
+          {{ 'trainings.speaker.title' | translate }}
         </a>
         <a (click)="goToPart('trainings#facts')">
-          {{ 'trainings.title_4' | translate }}
+          {{ 'trainings.manager.title' | translate }}
         </a>
         <a (click)="goToPart('trainings#facts')">
-          {{ 'trainings.title_5' | translate }}
+          {{ 'trainings.singer.title' | translate }}
         </a>
         <a (click)="goToPart('trainings#facts')">
-          {{ 'trainings.title_6' | translate }}
+          {{ 'trainings.podcast.title' | translate }}
+        </a>
+        <a (click)="goToPart('trainings#facts')">
+          {{ 'trainings.trainer.title' | translate }}
         </a>
       </div>
     </div>
@@ -56,11 +56,11 @@
     <div class="flow">
       <div class="links">
         <h1>Blog</h1>
-        <a routerLink="/">{{ 'menu.trainings' | translate }}</a>
-        <a routerLink="seminare">{{ 'menu.courses' | translate }}</a>
-        <a routerLink="profile">{{ 'menu.profile' | translate }}</a>
-        <a routerLink="blog">{{ 'menu.blog' | translate }}</a>
-        <a routerLink="contact">{{ 'menu.contact' | translate }}</a>
+        <a routerLink="blog">{{ 'blog.title_1' | translate }}</a>
+        <a routerLink="blog">{{ 'blog.title_2' | translate }}</a>
+        <a routerLink="blog">{{ 'blog.title_3' | translate }}</a>
+        <a routerLink="blog">{{ 'blog.title_4' | translate }}</a>
+        <a routerLink="blog">{{ 'blog.title_5' | translate }}</a>
       </div>
     </div>
   </div>
@@ -78,10 +78,11 @@
         alt="logo"
       />
       <!-- copyright and social media -->
-      <p class="copyright">
-        © {{ currentYear }} Elisabeth Koch • Webdesign Pineapple Blue •
-        Developer krisbaranski.com
-      </p>
+      <p class="copyright">© {{ currentYear }} Elisabeth Koch</p>
+      <p class="point">•</p>
+      <p class="copyright">Webdesign by Pineapple Blue</p>
+      <p class="point">•</p>
+      <p class="copyright">Developed by Kris Baranski</p>
     </div>
   </div>
 </footer>

@@ -107,13 +107,14 @@ footer {
     color: #ffffff;
     display: flex;
     padding: 50px 20px;
+    margin-left: 0.6rem;
   }
 }
 
 //
 // MEDIA QUERIES
 //
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 864px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -152,8 +153,12 @@ footer {
     }
 
     .copyright {
-      padding: 2rem;
+      padding: 1rem;
       text-align: center;
+    }
+
+    .point {
+      display: none;
     }
   }
 }
