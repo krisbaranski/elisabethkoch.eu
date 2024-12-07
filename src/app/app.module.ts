@@ -12,6 +12,7 @@ import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.com
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { WorkComponent } from './profile/work/work.component';
 import { FactsComponent } from './profile/facts/facts.component';
+import { FaqComponent } from './home/faq/faq.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
 import { TermineComponent } from './contact/termine/termine.component';
@@ -58,6 +59,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     TestimonialComponent,
     WorkComponent,
     FactsComponent,
+    FaqComponent,
     FooterComponent,
     FormComponent,
     TermineComponent,

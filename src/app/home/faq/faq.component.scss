@@ -1,0 +1,99 @@
+.wrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 1rem auto;
+  background-image: url('../../../assets/img/contact_bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #052a33;
+  font-family: 'Montserrat', sans-serif;
+  text-wrap: pretty;
+  line-height: 1.5;
+  z-index: 2;
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+
+  .text {
+    text-align: center;
+    padding-bottom: 2rem;
+
+    h3 {
+      font-size: clamp(2.8rem, 4vw, 3.4rem);
+      font-weight: 600;
+    }
+
+    h6 {
+      line-height: 1.2;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 200;
+      padding-bottom: 2rem;
+    }
+
+    p {
+      line-height: 1.2;
+      font-size: clamp(1rem, 3vw, 1.4rem);
+      font-weight: 200;
+      margin-top: 4rem;
+    }
+  }
+
+  .accordion {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  details {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    width: 100%;
+    margin: 1rem;
+    color: #052a33;
+  }
+
+  summary {
+    font-weight: normal;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em 0.5em 0.5em 2em;
+    background-color: #fff;
+  }
+
+  details[open] {
+    padding: 0.5em;
+  }
+
+  details[open] summary {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0.5em;
+  }
+
+  details p {
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+}
+
+///
+///
+/// MEDIA QUERIES
+@media (max-width: 1200px) {
+  .flex,
+  .accordion {
+    max-width: 90vw;
+    margin: 2rem;
+  }
+}
