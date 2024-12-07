@@ -25,6 +25,16 @@
     "author_1": "Karina F.",
     "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \" "
   },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "text": "Hier findest Du Antworten auf die wichtigsten Fragen. Wenn Du weitere Fragen hast, kannst Du Dich gerne an mich wenden.",
+    "question_1": "Was ist ein Stimmtraining?",
+    "answer_1": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten.",
+    "question_2": "Was ist ein Stimmtraining?",
+    "answer_2": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten.",
+    "question_3": "Was ist ein Stimmtraining?",
+    "answer_3g": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten."
+  },
   "trainings": {
     "title": "Trainings",
     "women": {
@@ -58,89 +68,91 @@
     },
     "link": "Mehr »"
   },
-  "aboutme": {
-    "title": "Über Mich",
-    "slide_1": "dein professionelles training",
-    "slide_2": "führt dich an die Spitze der Performanz",
-    "text_1.1": "Ich bin Elisabeth Koch. Schon als Kind faszinierten mich Redner in der Vielfalt ihres Ausdrucks. Gespannt lauschte ich ihren Stimmen und beobachtete ihre Körpersprache.",
-    "text_1.2": "Dazu hatte ich reichlich Gelegenheit, denn in meiner Familie wimmelt es von gebildeten und diskussions- und redefreudigen Menschen, die in faszinierender Unterschiedlichkeit um Aufmerksamkeit warben. Und Sonntags gingen wir in die Kirche. Da gab es für mich ne Menge zu beobachten, denn unser Pfarrer war ein rhetorisches Genie. Ein Genuss für mich.",
-    "text_2_title": "Von der Schreinerin zur Stimmexpertin",
-    "text_2.1": "Nach der Schule wurde ich Schreinerin. Mit Werkzeug und Holz in meinen Händen kam ich in Verbindung zu meiner körperlichen Kraft und Balance. Als Gesellenstück baute ich ein Rednerpult. Einfach, weil ich fand, dass es ein spannendes Möbel sei.",
-    "text_2.2": "Mit diesem verlieh ich meiner Leidenschaft für Kommunikation und Sprache Ausdruck und wurde Logopädin und Schauspielerin.",
-    "text_3_title": "Meine heutige Arbeit",
-    "text_3.1": "Heute bin ich Expertin für Stimme und gelungenen Auftritt und arbeite als Trainerin und Coach an den Schnittstellen zwischen Stimme, Persönlichkeitsentwicklung, Kommunikation und Beziehungsgestaltung.",
-    "text_3.2": "Mit mehr als 2 Jahrzehnten Erfahrung assistiere ich meinen Klienten in der Entwicklung ihrer lebendigen Stimmkraft, ihrer persönlichen Wirkung sowie ihrer angenehmen Präsenz und Kommunikation.",
-    "text_3.3": "Mit Feingefühl und Humor kreiere ich eine Atmosphäre voller Leichtigkeit und Klarheit, in der das Ausprobieren und Integrieren von Neuem in das Arbeits- und Privatleben gelingt.",
-    "text_3.4": "Meine Weiterbildungen zur Stimmtrainerin, Sängerin, zum systemischen Coach und zur Atemexpertin ermöglichen mir ganzheitliches, individuelles und tiefgehendes Arbeiten.",
-    "text_3.5": "Meine Arbeit erweitert und inspiriert sich kontinuierlich aus der Zusammenarbeit mit Kollegen aus angrenzenden Fachgebieten. Ich freue mich, Dich in Deiner stimmlichen, persönlichen und beruflichen Entwicklung zu begleiten.",
-    "end": "Herzlich, Elisabeth Koch"
-  },
-  "work": {
-    "title": "Wie ich arbeite",
-    "title_1": "Stimmtraining - wie geht das?",
-    "text_1": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
-    "title_2": "Stimme aufwärmen als erstes",
-    "text_2": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "title_3": "Ich arbeite ganzheitlich.",
-    "text_3": "Du wirst Deine Atmung erforschen, vertiefen, ausdehnen, und neu balancieren. So, dass sie flexibel und beweglich in Dir pulsiert und Dich von innen her stärkt.",
-    "title_4": "",
-    "text_4": "Du wirst Deine Resonanzräume beleben, die im Dornröschenschlaf versunken waren. Du wirst Deine Stimme neu spüren, Deinen Körper beleben.Gemeinsam verankern wir all die neuen Facetten so in Dir, dass sie Dich stärken.",
-    "title_5": "",
-    "text_5": "Wir schauen auch, wie Du unter Stress, in herausfordernden Situationen gelassen und guter Stimmung bleibst. Wie Du Deine Persönlichkeit und Deine Präsenz zum Strahlen bringst und die Herzen Deiner Zuhörer gewinnst.",
-    "title_6": "Deine Stimme - Deine Superkraft",
-    "text_6": "Zusammen finden wir die Schaltstellen die Deine Stimme stark und lebendig zum klingen bringen und Dein Auftreten kraftvoll, herzlich und warm werden lassen. Die Sicherheit und Stärke, die damit in Dir wächst, spürst Du sofort und Deine Zuhörer auch. Du wirst es lieben!",
-    "title_7": "Was brauchst Du dafür?",
-    "text_7": ["Neugier und Mut", "Offenheit", "Experimentierbereitschaft"],
-    "title_8": "Du gewinnst",
-    "text_8": [
-      "ein souveränes Auftreten und Präsentieren, mit dem Du Dich sicher & wohl fühlst",
-      "einen selbstbewussten Klang aus Deiner Mitte heraus",
-      "eine ausdruckstarke Stimme, mit der Du gehört und wahrgenommen wirst",
-      "eine authentische Präsenz",
-      "Deinen starken, natürlichen Führungscharakter"
-    ],
-    "title_9": "Stimme ist die Königsdisziplin der Rhetorik!",
-    "text_9": "Mit einer starken und überzeugenden Stimme kommt Deine Botschaft wirkungsvoll und mit Leichtigkeit an.",
-    "title_10": "Klingt das gut für Dich? Möchtest Du das auch?",
-    "text_10": "Dann vereinbare hier (verlinken) einen Termin für ein kostenfreies Erstgespräch",
-    "text_11": "Ich freu mich auf Dich!"
-  },
-  "facts": {
-    "title": "Fakten",
-    "title_1": "Expertin für Stimme und gelungenen Auftritt",
-    "text_1": "Integrative Stimmtrainerin, Diplom Logopädin, Systemischer Coach & Trainerin",
-    "title_2": "Was ich tue:",
-    "text_2": [
-      "Ich schule Redner & Politiker in der Entwicklung ihres individuellen und starken Auftritts.",
-      "Ich biete Präsenztraining für Führungskräfte und zeige ihnen, wie sie souverän & sicher auftreten.",
-      "Ich begleite Podcast-Hosts und Journalisten in der Entwicklung ihres kraftvollen, warmen Stimmklangs, in dem ihre Professionalität, Expertise & Erfahrung auditiv greifbar werden.",
-      "Ich begleite Trainer, Berater & Coaches in der Entfaltung ihres Stimmpotentials für den Gewinn an Sicherheit und innere Ruhe für die Arbeit mit ihren Klienten.",
-      "Ich gebe Sängern, Schauspielern und Sprechern Sicherheit für ein neues, freies Singen & Sprechen.",
-      " Ich führe Sänger und Sprecher aus ihrer Kehlkopfentzündung heraus in eine gesunde Stimme.",
-      "Ich begleite Schnellsprecher auf dem Weg zur klaren & freien Kommunikation."
-    ],
-    "title_3": "Meine Kundengruppen:",
-    "text_3": [
-      "Führungskräfte & alle, die es werden wollen",
-      "Frauen",
-      "Schnellsprecher",
-      "Politiker & Redner",
-      "Podcast-Hosts & Journalisten",
-      "Trainer, Berater & Coaches",
-      "Sänger, Sprecher & Schauspieler"
-    ],
-    "title_4": "Ausbildung und Wissen:",
-    "text_4": [
-      "Diplom Logopädin, Schauspielerin & Sängerin",
-      "Integrative Stimmtrainerin & Atemexpertin",
-      "Train the Trainer",
-      "Systemischer Gesundheitscoach",
-      "Trainerin für Auftritt, Präsenz, Charisma, Kommunikation & Rhetorik",
-      "Stress- & Resilienztrainerin",
-      "Führungskräftetrainerin",
-      "Stotter- und Polterexpertin",
-      "Schreinerin"
-    ]
+  "profile": {
+    "aboutme": {
+      "title": "Über Mich",
+      "slide_1": "dein professionelles training",
+      "slide_2": "führt dich an die Spitze der Performanz",
+      "text_1.1": "Ich bin Elisabeth Koch. Schon als Kind faszinierten mich Redner in der Vielfalt ihres Ausdrucks. Gespannt lauschte ich ihren Stimmen und beobachtete ihre Körpersprache.",
+      "text_1.2": "Dazu hatte ich reichlich Gelegenheit, denn in meiner Familie wimmelt es von gebildeten und diskussions- und redefreudigen Menschen, die in faszinierender Unterschiedlichkeit um Aufmerksamkeit warben. Und Sonntags gingen wir in die Kirche. Da gab es für mich ne Menge zu beobachten, denn unser Pfarrer war ein rhetorisches Genie. Ein Genuss für mich.",
+      "text_2_title": "Von der Schreinerin zur Stimmexpertin",
+      "text_2.1": "Nach der Schule wurde ich Schreinerin. Mit Werkzeug und Holz in meinen Händen kam ich in Verbindung zu meiner körperlichen Kraft und Balance. Als Gesellenstück baute ich ein Rednerpult. Einfach, weil ich fand, dass es ein spannendes Möbel sei.",
+      "text_2.2": "Mit diesem verlieh ich meiner Leidenschaft für Kommunikation und Sprache Ausdruck und wurde Logopädin und Schauspielerin.",
+      "text_3_title": "Meine heutige Arbeit",
+      "text_3.1": "Heute bin ich Expertin für Stimme und gelungenen Auftritt und arbeite als Trainerin und Coach an den Schnittstellen zwischen Stimme, Persönlichkeitsentwicklung, Kommunikation und Beziehungsgestaltung.",
+      "text_3.2": "Mit mehr als 2 Jahrzehnten Erfahrung assistiere ich meinen Klienten in der Entwicklung ihrer lebendigen Stimmkraft, ihrer persönlichen Wirkung sowie ihrer angenehmen Präsenz und Kommunikation.",
+      "text_3.3": "Mit Feingefühl und Humor kreiere ich eine Atmosphäre voller Leichtigkeit und Klarheit, in der das Ausprobieren und Integrieren von Neuem in das Arbeits- und Privatleben gelingt.",
+      "text_3.4": "Meine Weiterbildungen zur Stimmtrainerin, Sängerin, zum systemischen Coach und zur Atemexpertin ermöglichen mir ganzheitliches, individuelles und tiefgehendes Arbeiten.",
+      "text_3.5": "Meine Arbeit erweitert und inspiriert sich kontinuierlich aus der Zusammenarbeit mit Kollegen aus angrenzenden Fachgebieten. Ich freue mich, Dich in Deiner stimmlichen, persönlichen und beruflichen Entwicklung zu begleiten.",
+      "end": "Herzlich, Elisabeth Koch"
+    },
+    "work": {
+      "title": "Wie ich arbeite",
+      "title_1": "Stimmtraining - wie geht das?",
+      "text_1": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
+      "title_2": "Stimme aufwärmen als erstes",
+      "text_2": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
+      "title_3": "Ich arbeite ganzheitlich.",
+      "text_3": "Du wirst Deine Atmung erforschen, vertiefen, ausdehnen, und neu balancieren. So, dass sie flexibel und beweglich in Dir pulsiert und Dich von innen her stärkt.",
+      "title_4": "",
+      "text_4": "Du wirst Deine Resonanzräume beleben, die im Dornröschenschlaf versunken waren. Du wirst Deine Stimme neu spüren, Deinen Körper beleben.Gemeinsam verankern wir all die neuen Facetten so in Dir, dass sie Dich stärken.",
+      "title_5": "",
+      "text_5": "Wir schauen auch, wie Du unter Stress, in herausfordernden Situationen gelassen und guter Stimmung bleibst. Wie Du Deine Persönlichkeit und Deine Präsenz zum Strahlen bringst und die Herzen Deiner Zuhörer gewinnst.",
+      "title_6": "Deine Stimme - Deine Superkraft",
+      "text_6": "Zusammen finden wir die Schaltstellen die Deine Stimme stark und lebendig zum klingen bringen und Dein Auftreten kraftvoll, herzlich und warm werden lassen. Die Sicherheit und Stärke, die damit in Dir wächst, spürst Du sofort und Deine Zuhörer auch. Du wirst es lieben!",
+      "title_7": "Was brauchst Du dafür?",
+      "text_7": ["Neugier und Mut", "Offenheit", "Experimentierbereitschaft"],
+      "title_8": "Du gewinnst",
+      "text_8": [
+        "ein souveränes Auftreten und Präsentieren, mit dem Du Dich sicher & wohl fühlst",
+        "einen selbstbewussten Klang aus Deiner Mitte heraus",
+        "eine ausdruckstarke Stimme, mit der Du gehört und wahrgenommen wirst",
+        "eine authentische Präsenz",
+        "Deinen starken, natürlichen Führungscharakter"
+      ],
+      "title_9": "Stimme ist die Königsdisziplin der Rhetorik!",
+      "text_9": "Mit einer starken und überzeugenden Stimme kommt Deine Botschaft wirkungsvoll und mit Leichtigkeit an.",
+      "title_10": "Klingt das gut für Dich? Möchtest Du das auch?",
+      "text_10": "Dann vereinbare hier (verlinken) einen Termin für ein kostenfreies Erstgespräch",
+      "text_11": "Ich freu mich auf Dich!"
+    },
+    "facts": {
+      "title": "Fakten",
+      "title_1": "Expertin für Stimme und gelungenen Auftritt",
+      "text_1": "Integrative Stimmtrainerin, Diplom Logopädin, Systemischer Coach & Trainerin",
+      "title_2": "Was ich tue:",
+      "text_2": [
+        "Ich schule Redner & Politiker in der Entwicklung ihres individuellen und starken Auftritts.",
+        "Ich biete Präsenztraining für Führungskräfte und zeige ihnen, wie sie souverän & sicher auftreten.",
+        "Ich begleite Podcast-Hosts und Journalisten in der Entwicklung ihres kraftvollen, warmen Stimmklangs, in dem ihre Professionalität, Expertise & Erfahrung auditiv greifbar werden.",
+        "Ich begleite Trainer, Berater & Coaches in der Entfaltung ihres Stimmpotentials für den Gewinn an Sicherheit und innere Ruhe für die Arbeit mit ihren Klienten.",
+        "Ich gebe Sängern, Schauspielern und Sprechern Sicherheit für ein neues, freies Singen & Sprechen.",
+        " Ich führe Sänger und Sprecher aus ihrer Kehlkopfentzündung heraus in eine gesunde Stimme.",
+        "Ich begleite Schnellsprecher auf dem Weg zur klaren & freien Kommunikation."
+      ],
+      "title_3": "Meine Kundengruppen:",
+      "text_3": [
+        "Führungskräfte & alle, die es werden wollen",
+        "Frauen",
+        "Schnellsprecher",
+        "Politiker & Redner",
+        "Podcast-Hosts & Journalisten",
+        "Trainer, Berater & Coaches",
+        "Sänger, Sprecher & Schauspieler"
+      ],
+      "title_4": "Ausbildung und Wissen:",
+      "text_4": [
+        "Diplom Logopädin, Schauspielerin & Sängerin",
+        "Integrative Stimmtrainerin & Atemexpertin",
+        "Train the Trainer",
+        "Systemischer Gesundheitscoach",
+        "Trainerin für Auftritt, Präsenz, Charisma, Kommunikation & Rhetorik",
+        "Stress- & Resilienztrainerin",
+        "Führungskräftetrainerin",
+        "Stotter- und Polterexpertin",
+        "Schreinerin"
+      ]
+    }
   },
   "termin": {
     "title_1": "Termine",

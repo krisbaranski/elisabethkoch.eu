@@ -34,74 +34,114 @@
     "text_6": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
     "link": "More »"
   },
-  "aboutme": {
-    "title": "About me",
-    "slide_1": "your professional coaching",
-    "slide_2": "brings you to the top",
-    "text_1.1": [
-      "My name is Elisabeth Koch. I have always been fascinated by speakers and the diversity of their expressions. I have listened intently to their voices and observed their body language."
-    ],
-    "text_1.2": [
-      "I have had plenty of opportunities to do this, because my family was teeming with educated people who were keen to discuss and talk and who vied for attention in fascinatingly different ways. And on Sundays we went to church. There was a lot for me to observe, because our pastor was a rhetorical genius. A pleasure for me."
-    ],
-    "text_2_title": "From a carpenter to voice expert",
-    "text_2.1": [
-      "After finishing school, I became a carpenter. With tools and wood in my hands, I got in touch with my physical strength and balance. As my final project, I built a Lectern as a journeyman's piece."
-    ],
-    "text_2.2": [
-      "Simply because I thought this is an exciting piece of furniture. I used it to express my passion for communication and speech and became a speech therapist and actress."
-    ],
-    "text_3_title": "My current work",
-    "text_3.1": [
-      "Today I am an expert in voice and successful performance and work as a trainer and coach at the junctions of voice, personal development, communication and relationship building."
-    ],
-    "text_3.2": [
-      "With more than two decades of experience, I assist my clients in developing their lively vocal power, their personal impact and their pleasant presence and communication."
-    ],
-    "text_3.3": [
-      "With sensitivity and humor, I create an atmosphere full of lightness and clarity in which trying out and integrating new things into my clients work and private lives becomes their basis for their success and well-being."
-    ],
-    "text_3.4": [
-      "My further training as a voice coach, singer, systemic coach and breathing expert enables me to work holistically, individually and in depth."
-    ],
-    "text_3.5": [
-      "My work is continuously expanded and inspired by collaboration with colleagues in related fields. I look forward to accompanying you in your vocal, personal and professional development."
-    ],
-    "end": "Cordially, \n Elisabeth Koch"
-  },
-  "work": {
-    "title": "How I work",
-    "title_1": "Vocalcoaching - how does it work?",
-    "text_1": "What you tell me about your voice, your appearance and its sticking points is important to me, because you are the expert. And then I listen and look closely at what your voice, your body, your breathing and your nervous system need to become strong.",
-    "title_2": "Warming up your voice first",
-    "text_2": "A warmed-up voice immediately sounds livelier, more flowing and clearer. And it feels that way too. A few minutes that are crucial for your voice. Together we will find out how and where the exercises fit into your everyday life.",
-    "title_3": "I work holistically",
-    "text_3": "You will explore, deepen, expand and rebalance your breathing. So that it pulsates flexibly and agilely within you and strengthens you from within.",
-    "title_4": "",
-    "text_4": "You will revitalize your resonance spaces that have been dormant. You will feel your voice anew and revitalize your body. Together we will anchor all the new facets in you so that they strengthen you.",
-    "title_5": "",
-    "text_5": "We will also look at how you can remain calm and good mood under stress and in challenging situations. How to make your personality and presence shine and win the hearts of your listeners.",
-    "title_6": "Your voice - your superpower",
-    "text_6": "Together we will find the switch points that make the sound of your voice strong and lively and make your performance powerful, warm and welcoming. You will immediately feel the confidence and strength that grows within you, and so will your listeners. You will love it!",
-    "title_7": "What do you need for this?",
-    "text_7": [
-      "curiosity and courage",
-      "openness",
-      "willingness to experiment"
-    ],
-    "title_8": "You gain",
-    "text_8": [
-      "a confident appearance and presentation that makes you feel safe and comfortable",
-      "a self-confident sound from your center",
-      "an expressive voice with which you are heard and noticed",
-      "an authentic presence",
-      "your strong, natural leadership character"
-    ],
-    "title_9": "Voice is the supreme discipline of rhetoric!",
-    "text_9": "With a strong and convincing voice, your message comes across effectively and with ease.",
-    "title_10": "Does that sound good to you? Would you like that too?",
-    "text_10": "Then make an appointment here (link) for a free initial consultation",
-    "text_11": "I look forward to hearing from you!"
+  "profile": {
+    "aboutme": {
+      "title": "About me",
+      "slide_1": "your professional coaching",
+      "slide_2": "brings you to the top",
+      "text_1.1": [
+        "My name is Elisabeth Koch. I have always been fascinated by speakers and the diversity of their expressions. I have listened intently to their voices and observed their body language."
+      ],
+      "text_1.2": [
+        "I have had plenty of opportunities to do this, because my family was teeming with educated people who were keen to discuss and talk and who vied for attention in fascinatingly different ways. And on Sundays we went to church. There was a lot for me to observe, because our pastor was a rhetorical genius. A pleasure for me."
+      ],
+      "text_2_title": "From a carpenter to voice expert",
+      "text_2.1": [
+        "After finishing school, I became a carpenter. With tools and wood in my hands, I got in touch with my physical strength and balance. As my final project, I built a Lectern as a journeyman's piece."
+      ],
+      "text_2.2": [
+        "Simply because I thought this is an exciting piece of furniture. I used it to express my passion for communication and speech and became a speech therapist and actress."
+      ],
+      "text_3_title": "My current work",
+      "text_3.1": [
+        "Today I am an expert in voice and successful performance and work as a trainer and coach at the junctions of voice, personal development, communication and relationship building."
+      ],
+      "text_3.2": [
+        "With more than two decades of experience, I assist my clients in developing their lively vocal power, their personal impact and their pleasant presence and communication."
+      ],
+      "text_3.3": [
+        "With sensitivity and humor, I create an atmosphere full of lightness and clarity in which trying out and integrating new things into my clients work and private lives becomes their basis for their success and well-being."
+      ],
+      "text_3.4": [
+        "My further training as a voice coach, singer, systemic coach and breathing expert enables me to work holistically, individually and in depth."
+      ],
+      "text_3.5": [
+        "My work is continuously expanded and inspired by collaboration with colleagues in related fields. I look forward to accompanying you in your vocal, personal and professional development."
+      ],
+      "end": "Cordially, \n Elisabeth Koch"
+    },
+
+    "work": {
+      "title": "How I work",
+      "title_1": "Vocalcoaching - how does it work?",
+      "text_1": "What you tell me about your voice, your appearance and its sticking points is important to me, because you are the expert. And then I listen and look closely at what your voice, your body, your breathing and your nervous system need to become strong.",
+      "title_2": "Warming up your voice first",
+      "text_2": "A warmed-up voice immediately sounds livelier, more flowing and clearer. And it feels that way too. A few minutes that are crucial for your voice. Together we will find out how and where the exercises fit into your everyday life.",
+      "title_3": "I work holistically",
+      "text_3": "You will explore, deepen, expand and rebalance your breathing. So that it pulsates flexibly and agilely within you and strengthens you from within.",
+      "title_4": "",
+      "text_4": "You will revitalize your resonance spaces that have been dormant. You will feel your voice anew and revitalize your body. Together we will anchor all the new facets in you so that they strengthen you.",
+      "title_5": "",
+      "text_5": "We will also look at how you can remain calm and good mood under stress and in challenging situations. How to make your personality and presence shine and win the hearts of your listeners.",
+      "title_6": "Your voice - your superpower",
+      "text_6": "Together we will find the switch points that make the sound of your voice strong and lively and make your performance powerful, warm and welcoming. You will immediately feel the confidence and strength that grows within you, and so will your listeners. You will love it!",
+      "title_7": "What do you need for this?",
+      "text_7": [
+        "curiosity and courage",
+        "openness",
+        "willingness to experiment"
+      ],
+      "title_8": "You gain",
+      "text_8": [
+        "a confident appearance and presentation that makes you feel safe and comfortable",
+        "a self-confident sound from your center",
+        "an expressive voice with which you are heard and noticed",
+        "an authentic presence",
+        "your strong, natural leadership character"
+      ],
+      "title_9": "Voice is the supreme discipline of rhetoric!",
+      "text_9": "With a strong and convincing voice, your message comes across effectively and with ease.",
+      "title_10": "Does that sound good to you? Would you like that too?",
+      "text_10": "Then make an appointment here (link) for a free initial consultation",
+      "text_11": "I look forward to hearing from you!"
+    },
+    "facts": {
+      "title": "Facts",
+      "title_1": "Expertin für Stimme und gelungenen Auftritt",
+      "text_1": "Integrative Stimmtrainerin, Diplom Logopädin, Systemischer Coach & Trainerin",
+      "title_2": "What i do:",
+      "text_2": [
+        "I teach Redner & Politiker in der Entwicklung ihres individuellen und starken Auftritts.",
+        "Ich biete Präsenztraining für Führungskräfte und zeige ihnen, wie sie souverän & sicher auftreten.",
+        "Ich begleite Podcast-Hosts und Journalisten in der Entwicklung ihres kraftvollen, warmen Stimmklangs, in dem ihre Professionalität, Expertise & Erfahrung auditiv greifbar werden.",
+        "Ich begleite Trainer, Berater & Coaches in der Entfaltung ihres Stimmpotentials für den Gewinn an Sicherheit und innere Ruhe für die Arbeit mit ihren Klienten.",
+        "Ich gebe Sängern, Schauspielern und Sprechern Sicherheit für ein neues, freies Singen & Sprechen.",
+        " Ich führe Sänger und Sprecher aus ihrer Kehlkopfentzündung heraus in eine gesunde Stimme.",
+        "Ich begleite Schnellsprecher auf dem Weg zur klaren & freien Kommunikation."
+      ],
+      "title_3": "My Clients:",
+      "text_3": [
+        "Führungskräfte & alle, die es werden wollen",
+        "Frauen",
+        "Schnellsprecher",
+        "Politiker & Redner",
+        "Podcast-Hosts & Journalisten",
+        "Trainer, Berater & Coaches",
+        "Sänger, Sprecher & Schauspieler"
+      ],
+      "title_4": "Education and Knowledge:",
+      "text_4": [
+        "Diplom Logopädin, Schauspielerin & Sängerin",
+        "Integrative Stimmtrainerin & Atemexpertin",
+        "Train the Trainer",
+        "Systemischer Gesundheitscoach",
+        "Trainerin für Auftritt, Präsenz, Charisma, Kommunikation & Rhetorik",
+        "Stress- & Resilienztrainerin",
+        "Führungskräftetrainerin",
+        "Stotter- und Polterexpertin",
+        "Schreinerin"
+      ]
+    }
   },
   "contact": {
     "title": "Contact",
