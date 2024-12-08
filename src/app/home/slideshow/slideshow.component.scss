@@ -25,7 +25,7 @@
 .slideshow-overlay {
   width: 500px;
   position: absolute;
-  top: 40vh;
+  bottom: 10vh;
   color: white;
   transform: translateX(65vw);
 
@@ -48,12 +48,12 @@
     font-size: clamp(1rem, 2vw, 1.8rem);
     font-weight: 100;
     line-height: 1.4;
-    padding-bottom: 1.5rem;
+    // padding-bottom: 1.5rem;
     text-wrap: balance;
   }
 
   p {
-    width: 85%;
+    // width: 90%;
     font-size: clamp(0.8rem, 2vw, 1rem);
     font-weight: 100;
     text-wrap: pretty;
