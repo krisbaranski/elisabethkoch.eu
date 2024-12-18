@@ -11,7 +11,9 @@ import { AboutmeComponent } from './profile/aboutme/aboutme.component';
 import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.component';
 import { SlideshowMeComponent } from './profile/slideshow-me/slideshow-me.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { TestimonialWomenComponent } from './trainings/women/testimonial-women/testimonial-women.component';
 import { WorkComponent } from './profile/work/work.component';
+import { WorkWomenComponent } from './trainings/women/work-women/work-women.component';
 import { FactsComponent } from './profile/facts/facts.component';
 import { FaqComponent } from './home/faq/faq.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -20,6 +22,7 @@ import { TermineComponent } from './contact/termine/termine.component';
 import { HomeComponent } from './home/home.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
+import { BoxesWomenComponent } from './trainings/women/boxes-women/boxes-women.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
@@ -53,13 +56,16 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     BoxesComponent,
     BoxesHomeComponent,
+    BoxesWomenComponent,
     HeaderComponent,
     ProfileComponent,
     AboutmeComponent,
     SlideAboutmeComponent,
     SlideshowMeComponent,
-    TestimonialComponent,
     WorkComponent,
+    WorkWomenComponent,
+    TestimonialComponent,
+    TestimonialWomenComponent,
     FactsComponent,
     FaqComponent,
     FooterComponent,
