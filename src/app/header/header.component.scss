@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
   top: 0;
   width: 100%;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   z-index: 1000;
   transition: all 0.3s ease;
   backdrop-filter: blur(2rem);
@@ -35,12 +35,12 @@ header {
 
   menu {
     a {
-      color: #690046;
+      color: #052a33;
 
       &:hover,
       &.active {
-        color: #690046;
-        border: 1px solid #690046;
+        color: #052a33;
+        border: 1px solid #052a33;
         border-radius: 6px;
       }
     }
@@ -49,7 +49,7 @@ header {
       display: flex;
       align-items: center;
       margin-left: 30px;
-      color: #690046;
+      color: #052a33;
     }
   }
 }
@@ -76,17 +76,22 @@ menu {
   height: 5rem;
   margin-inline: auto;
 
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   a,
   .top_menu_item {
     box-sizing: border-box;
     font-size: 1.1rem;
-    font-family: inherit;
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
     text-decoration: none;
     border: 1px solid transparent;
     margin-left: 2px;
-    padding: 7px 14px;
+    padding: 10px 14px;
 
     &:hover,
     &.active {
@@ -94,22 +99,11 @@ menu {
       border: 1px solid #fff;
       border-radius: 6px;
     }
-
-    button {
-      color: #ddd;
-      background-color: transparent;
-    }
   }
 
   img {
     height: 60px;
     width: auto;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 
   .translate,
@@ -141,16 +135,16 @@ menu {
 
 .darkLinks {
   a {
-    color: #830000;
+    color: #052a33;
 
     &:hover {
       font-weight: 300;
-      border-bottom: 1px solid #690046;
+      border-bottom: 1px solid #052a33;
     }
 
     &:active {
       font-weight: 300;
-      color: #690046;
+      color: #052a33;
       border-bottom: 1px solid #1c6db380;
     }
   }
@@ -195,8 +189,8 @@ menu {
 
         &:hover,
         &.active {
-          color: #690046;
-          background-color: #ffcfcfe0;
+          color: #052a33;
+          background-color: #cfdfffb9;
           border-radius: 6px;
         }
       }
@@ -206,33 +200,28 @@ menu {
       }
 
       .mat-sidenav {
-        background-color: #690046;
+        background-color: #052a33;
         backdrop-filter: blur(5px);
         width: 100vw;
         height: 100vh;
         overflow: hidden;
         top: -50px;
       }
-
-      // .spacer {
-      //   border-top: 1px solid #fff;
-      //   margin: 3rem auto 1rem;
-      //   width: 5rem;
-      // }
     }
 
     #menuIcon {
       display: flex;
-      justify-content: flex-end;
-      color: #690046;
-      // border: 1px solid #00649c;
+      align-items: center;
+      justify-content: center;
+      color: #052a33;
       border-radius: 6px;
+      // border: 1px solid #052a33;
       background-color: transparent;
-      margin: 0 1rem;
+      margin: 0 0.3rem;
 
-      &:hover {
-        opacity: 0.8;
-        background-color: transparent;
+      mat-icon {
+        transform: rotate(90deg) translateY(-3px);
+        font-weight: 600;
       }
     }
 
@@ -293,7 +282,7 @@ menu {
       border-bottom: none;
 
       img {
-        background-color: #690046;
+        background-color: #052a33;
         border-radius: 6px;
         width: 28px;
         height: 28px;

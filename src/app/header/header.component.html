@@ -5,7 +5,7 @@
   <menu [class.headerDark]="darkMode">
     <mat-toolbar>
       <div class="logo">
-        <img src="assets/img/logo_lila.png" alt="logo" routerLink="/" />
+        <img src="assets/img/logo_darkblue.svg" alt="logo" routerLink="/" />
       </div>
       <div class="menu">
         <div [class.darkLinks]="darkMode">
@@ -38,6 +38,7 @@
           </mat-menu>
 
           <a
+            mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="courses"
@@ -64,13 +65,14 @@
           </mat-menu>
 
           <a
+            mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="blog"
             >{{ 'menu.blog' | translate }}</a
           >
           <a
-            mat-form-field-control
+            mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="contact"
@@ -108,7 +110,7 @@
         (click)="sidenav.toggle()"
         aria-label="Menu icon"
       >
-        <mat-icon>menu</mat-icon>
+        <mat-icon>|||</mat-icon>
       </button>
     </mat-toolbar>
 
