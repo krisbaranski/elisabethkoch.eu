@@ -43,10 +43,47 @@
     "title": "Trainings",
     "women": {
       "title": "Frauen",
-      "title_1": "Frauen, Stimme & Leadership",
+      "title_1": "Women, Voice & Leadership",
       "text_2": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
       "title_2": "Frauen mit starker Stimme in Führung",
-      "text_1": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, die Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: in meetings und Präsentationen sowie in jeder täglichen Kommunikation"
+      "text_1": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, die Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: in meetings und Präsentationen sowie in jeder täglichen Kommunikation",
+      "boxes": {
+        "box_1": {
+          "title_1": "Souveraen",
+          "title_2": "Kraftvoll",
+          "title_3": "Authentisch",
+          "title_4": "Leicht"
+        },
+        "box_2": {
+          "title": "Entfalte Deine Führungsstimme",
+          "title_1": "Stimmliche Präsenz entwickeln:",
+          "text_1": "Lerne Techniken, die Deine Stimme & Sprache kraftvoll, klar und souverän klingen lassen.",
+          "title_2": "Authentizität in der Kommunikation:",
+          "text_2": "Finde Deinen natürlichen Stimmklang, der Deine Persönlichkeit unterstreicht und Authentizität vermittelt.",
+          "title_3": "Umgang mit Nervosität & Lampenfieber:",
+          "text_3": "Wandle Nervosität in freudige Erwartung. Fühl Dich mit Deiner Stimme auch in herausfordernden Situationen zentriert, sicher & wohl.",
+          "title_4": "Führungsstärke durch Stimme:.",
+          "text_4": "Entwickle einen lebendigen Stimmklang in dem Deine Qualitäten zum klingen kommen. Schenke Sicherheit und werde gehört."
+        },
+        "box_3": "",
+        "box_4": {
+          "title": "Dieser Kurs ist genau das Richtige für dich, wenn du:",
+          "text_1": [
+            "endlich gehört werden willst",
+            "den nächsten Schritt in deiner Karriere gehen möchtest",
+            "Führungsverantwortung übernehmen willst",
+            "bereits Führungskraft bist oder auf dem Weg dorthin"
+          ],
+          "text_2": "Damit Deine Führungsqualitäten auch in Deinem Stimmklang lebendig werden, Du souverän & kraftvoll aus Deiner Mitte heraus wirken und kommunizieren kannst."
+        }
+      },
+      "testimonial": {
+        "text": " \"Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen. \"",
+        "author": "Martina S., selbständige Trainerin"
+      },
+      "work": {
+        "title_1": "Die Kursinhalte"
+      }
     },
     "speaker": {
       "title": "Redner",
