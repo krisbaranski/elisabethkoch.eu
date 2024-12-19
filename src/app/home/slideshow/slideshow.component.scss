@@ -38,13 +38,13 @@
     align-items: flex-start;
   }
 
-  h3 {
+  h1 {
     line-height: 1.2;
     font-size: clamp(2rem, 4vw, 3.4rem);
     font-weight: 400;
   }
 
-  h6 {
+  h2 {
     font-size: clamp(1rem, 2vw, 1.8rem);
     font-weight: 100;
     line-height: 1.4;
@@ -55,8 +55,9 @@
   p {
     // width: 90%;
     font-size: clamp(0.8rem, 2vw, 1rem);
-    font-weight: 100;
-    text-wrap: pretty;
+    font-weight: 200;
+    font-weight: thin;
+    text-wrap: balance;
     line-height: 1.6;
     letter-spacing: 1.6;
   }

@@ -7,24 +7,27 @@
   align-items: center;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  text-wrap: pretty;
-  margin: 10rem auto;
+  text-wrap: balance;
+  margin: 6rem auto;
 }
 
 .boxes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 1200px;
-  column-gap: 4rem;
-  row-gap: 8rem;
+  column-gap: 2rem;
+  row-gap: 4rem;
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 450px;
   height: auto;
-  padding: 1rem;
+  padding: 2rem;
 
-  h3 {
+  h2 {
     font-size: clamp(1.4rem, 2vw, 1.6rem);
     font-weight: 200;
     color: #d7a533;
@@ -33,27 +36,28 @@
 
   p {
     color: #052a33;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
     font-weight: 200;
     text-align: left;
   }
 }
 
 .box-frame {
-  border-left: 1px solid #052a33;
-  padding-left: 2rem;
+  border-left: 1px solid #d7a533;
+  padding-left: 1rem;
+  margin-left: 2rem;
   align-content: center;
   color: #d7a533;
 
   h1 {
     font-size: clamp(2.8rem, 4.4vw, 5rem);
-    font-weight: 200;
+    font-weight: 100;
     line-height: 1;
   }
 
   .handwrite {
     font-family: 'Testimonia', sans-serif;
-    font-size: clamp(6.8rem, 10vw, 12rem);
+    font-size: 10rem;
   }
 }
 
@@ -99,5 +103,18 @@ img {
 
   .box-frame {
     border-left: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-right: 0;
+    text-align: left;
+
+    h1 {
+      font-size: clamp(2.4rem, 4vw, 4.5rem);
+    }
+
+    .handwrite {
+      font-family: 'Testimonia', sans-serif;
+      font-size: clamp(5rem, 4vw, 7rem);
+    }
   }
 }
