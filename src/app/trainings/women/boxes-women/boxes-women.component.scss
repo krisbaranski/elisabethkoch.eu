@@ -79,6 +79,7 @@ img {
   .wrapper {
     margin: 3rem auto;
   }
+
   .boxes {
     grid-template-columns: 1fr; /* 1 column */
     grid-template-rows: auto; /* Automatic row heights */
@@ -109,16 +110,18 @@ img {
 
   .box-frame {
     border-right: none;
+    margin-right: 1rem;
     margin-left: 1rem;
+    padding-right: 0;
     text-align: left;
 
     h1 {
-      font-size: clamp(2rem, 3vw, 4rem);
+      font-size: clamp(2.4rem, 4vw, 4.5rem);
     }
 
     .handwrite {
       font-family: 'Testimonia', sans-serif;
-      font-size: clamp(4rem, 5vw, 7rem);
+      font-size: clamp(5rem, 4vw, 7rem);
     }
   }
 }
