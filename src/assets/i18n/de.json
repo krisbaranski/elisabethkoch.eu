@@ -5,7 +5,7 @@
     "offers": "Angebote",
     "profile": "Profil",
     "blog": "Blog",
-    "contact": "Termin vereinbaren",
+    "contact": "Kennenlernen",
     "policy": "Datenschutz"
   },
   "home": {
@@ -16,14 +16,22 @@
     "box_1": "Stimme",
     "box_2": "Vertrauen",
     "box_3": "Präsenz",
-    "text_1": "Mit mir werden Deine Qualitäten in Deinem Stimmklang hörbar. Du lernst, wie Du Deinen Standpunkt durch innere und körperliche Stabilität auch in herausfordenden Situationen vertreten kannst.",
-    "text_2": "Mit mir werden Deine Qualitäten in Deinem Stimmklang hörbar. Du lernst, wie Du Deinen Standpunkt durch innere und körperliche Stabilität auch in herausfordenden Situationen vertreten kannst.",
-    "text_3": "Mit mir werden Deine Qualitäten in Deinem Stimmklang hörbar. Du lernst, wie Du Deinen Standpunkt durch innere und körperliche Stabilität auch in herausfordenden Situationen vertreten kannst.",
+    "text_1": "Fühlst Du Dich manchmal unwohl oder unsicher beim Sprechen? Oder magst Du Deine Stimme nicht?",
+    "text_2": "Stell Dir vor, Du fühlst Dich selbstbewusst, souverän und inspirierst die Menschen mit Deinen Botschaften.",
+    "text_3": " Dein Stimmklang ist Dein Schlüssel für souveräne Präsenz und gelungenen Auftritt.",
+    "text_4": "Deine Stimme erschliesst Dir ein authentisches und kompetentes Auftreten, mit dem Du das Vertrauen und die Aufmerksamkeit Deiner Zuhörer gewinnst. ",
+    "text_5": "Ich zeige Dir, wie Du Deine lebendige, kraftvolle Stimme aus Dir hervorholst und Dein Auftreten in kürzester Zeit effektiv stärkst und verbesserst: ",
+    "text_6": "Mit praktischem Wissen über den Einsatz und die Wirkung Deiner Stimme, Deiner Körperhaltung, Deiner Atmung, und Deiner individuellen Ressourcen. ",
+    "text_7": "Damit Du Dich anderen sicher & selbstbewusst zuwenden und authentisch auf Augenhöhe begegnen kannst. Damit Du in Deiner Profession stark & souverän in der Welt wirken kannst.",
     "button_offer": "Jetzt anfragen!"
   },
   "testimonials": {
-    "author_1": "Karina F.",
-    "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \" "
+    "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \" ",
+    "author_1": "Karina F."
+  },
+  "sentences": {
+    "text_1": " \"When your voice brings you joy, you're in the best of yourself! \" ",
+    "author_1": "Celine Dion"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -39,10 +47,47 @@
     "title": "Trainings",
     "women": {
       "title": "Frauen",
-      "title_1": "Frauen, Stimme & Leadership",
+      "title_1": "Women, Voice & Leadership",
       "text_2": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
       "title_2": "Frauen mit starker Stimme in Führung",
-      "text_1": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, die Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: in meetings und Präsentationen sowie in jeder täglichen Kommunikation"
+      "text_1": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, die Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: in meetings und Präsentationen sowie in jeder täglichen Kommunikation",
+      "boxes": {
+        "box_1": {
+          "title_1": "Souveraen",
+          "title_2": "Kraftvoll",
+          "title_3": "Authentisch",
+          "title_4": "Leicht"
+        },
+        "box_2": {
+          "title": "Entfalte Deine Führungsstimme",
+          "title_1": "Stimmliche Präsenz entwickeln:",
+          "text_1": "Lerne Techniken, die Deine Stimme & Sprache kraftvoll, klar und souverän klingen lassen.",
+          "title_2": "Authentizität in der Kommunikation:",
+          "text_2": "Finde Deinen natürlichen Stimmklang, der Deine Persönlichkeit unterstreicht und Authentizität vermittelt.",
+          "title_3": "Umgang mit Nervosität & Lampenfieber:",
+          "text_3": "Wandle Nervosität in freudige Erwartung. Fühl Dich mit Deiner Stimme auch in herausfordernden Situationen zentriert, sicher & wohl.",
+          "title_4": "Führungsstärke durch Stimme:.",
+          "text_4": "Entwickle einen lebendigen Stimmklang in dem Deine Qualitäten zum klingen kommen. Schenke Sicherheit und werde gehört."
+        },
+        "box_3": "",
+        "box_4": {
+          "title": "Dieser Kurs ist genau das Richtige für dich, wenn du:",
+          "text_1": [
+            "endlich gehört werden willst",
+            "den nächsten Schritt in deiner Karriere gehen möchtest",
+            "Führungsverantwortung übernehmen willst",
+            "bereits Führungskraft bist oder auf dem Weg dorthin"
+          ],
+          "text_2": "Damit Deine Führungsqualitäten auch in Deinem Stimmklang lebendig werden, Du souverän & kraftvoll aus Deiner Mitte heraus wirken und kommunizieren kannst."
+        }
+      },
+      "testimonial": {
+        "text": " \"Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen. \"",
+        "author": "Martina S., selbständige Trainerin"
+      },
+      "work": {
+        "title_1": "Die Kursinhalte"
+      }
     },
     "speaker": {
       "title": "Redner",
