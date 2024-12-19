@@ -1,3 +1,11 @@
+/* Thin */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat/Montserrat-Thin.woff') format('woff');
+  font-weight: 200;
+  font-style: thin;
+}
+
 /* Regular */
 @font-face {
   font-family: 'Montserrat';
@@ -6,19 +14,11 @@
   font-style: normal;
 }
 
-/* Thin */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/assets/fonts/Montserrat/Montserrat-Thin.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
 /* SemiBold */
 @font-face {
   font-family: 'Montserrat';
-  src: url('/assets/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
-  font-weight: 500;
+  src: url('/assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+  font-weight: 600;
   font-style: bold;
 }
 
