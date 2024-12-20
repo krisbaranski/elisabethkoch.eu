@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
     ) {
       this.isSticky = true; // Hide sticky menu when scrolling up
       this.isOpen = false;
-    } else if (currentScrollPosition < 300) {
+    } else if (currentScrollPosition < 250) {
       this.isOpen = false;
     } else {
       this.isSticky = false; // Show sticky menu when scrolling down
@@ -95,6 +95,7 @@ export class HeaderComponent implements OnInit {
           });
         }
       }, 200); // Delay ensures content is loaded
+      // Close the sidebar after navigation is complete
       this.sidenav.close();
     });
   }

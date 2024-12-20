@@ -36,10 +36,11 @@ header {
 
 .open-menu {
   top: 0rem;
-  background: #fff;
+  background-color: #fff;
 
   menu {
-    a {
+    a,
+    .top_menu_item {
       color: #052a33;
 
       &:hover,
@@ -177,7 +178,7 @@ menu {
 //
 // MEDIA QUERIES
 //
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   // /* Ensure the sidenav is fixed and fits the screen */
   // .fixed-sidenav {
   //   position: fixed; /* Keep it fixed in place */
@@ -344,7 +345,7 @@ menu {
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   header {
     menu {
       width: 100%;

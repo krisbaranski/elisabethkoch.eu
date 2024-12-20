@@ -55,7 +55,7 @@
   p {
     // width: 90%;
     font-size: clamp(0.8rem, 2vw, 1rem);
-    font-weight: 200;
+    font-weight: 300;
     font-weight: thin;
     text-wrap: balance;
     line-height: 1.6;
@@ -80,7 +80,7 @@
 
       &:hover {
         color: #d5a208;
-        background-color: #690046;
+        background-color: #052a33;
       }
     }
   }
