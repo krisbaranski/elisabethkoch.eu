@@ -8,6 +8,7 @@ import {
 import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-header',
@@ -21,6 +22,7 @@ export class HeaderComponent implements OnInit {
   @Input() darkMode = true;
   previousScrollPosition: number = window.scrollY;
   currentLanguage: string;
+  isSidenavOpen = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -44,7 +46,11 @@ export class HeaderComponent implements OnInit {
     this.previousScrollPosition = currentScrollPosition;
   }
 
-  constructor(public translate: TranslateService, private router: Router) {
+  constructor(
+    public translate: TranslateService,
+    private router: Router,
+    private overlayContainer: OverlayContainer
+  ) {
     // this language will be used as a fallback when a translation isn't found in the current language
     translate.setDefaultLang('en');
 
@@ -58,6 +64,22 @@ export class HeaderComponent implements OnInit {
     this.translate.use(lang);
     this.currentLanguage = lang;
   }
+
+  onSidenavOpened() {
+    this.isSidenavOpen = true;
+  }
+
+  onSidenavClosed() {
+    this.isSidenavOpen = false;
+  }
+
+  // onSidenavOpened() {
+  //   this.overlayContainer.getContainerElement().classList.add('no-scroll');
+  // }
+
+  // onSidenavClosed() {
+  //   this.overlayContainer.getContainerElement().classList.remove('no-scroll');
+  // }
 
   goToPart(fragment: string) {
     const [path, anchor] = fragment.split('#');
@@ -73,6 +95,7 @@ export class HeaderComponent implements OnInit {
           });
         }
       }, 200); // Delay ensures content is loaded
+      this.sidenav.close();
     });
   }
 

@@ -38,3 +38,8 @@
 .container {
   padding: 0;
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

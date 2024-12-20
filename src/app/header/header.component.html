@@ -104,6 +104,7 @@
         </div>
       </div>
 
+      <!-- MOBILE MENU HAMBURGER  -->
       <button
         mat-icon-button
         id="menuIcon"
@@ -113,11 +114,14 @@
         <mat-icon>|||</mat-icon>
       </button>
     </mat-toolbar>
-
+    <!-- SIDEMENU MOBILE -->
     <mat-sidenav-container class="sidenav">
       <mat-sidenav
         #sidenav
         mode="side"
+        [(opened)]="isSidenavOpen"
+        (opened)="onSidenavOpened()"
+        (closed)="onSidenavClosed()"
         [fixedInViewport]="true"
         [fixedTopGap]="90"
         (click)="sidenav.close()"

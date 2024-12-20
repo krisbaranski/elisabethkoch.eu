@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 header {
   position: fixed;
   display: flex;
@@ -164,10 +169,34 @@ menu {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 //
 // MEDIA QUERIES
 //
 @media (max-width: 1200px) {
+  // /* Ensure the sidenav is fixed and fits the screen */
+  // .fixed-sidenav {
+  //   position: fixed; /* Keep it fixed in place */
+  //   top: 0;
+  //   left: 0;
+  //   width: 300px; /* Adjust based on your sidenav width */
+  //   height: 100vh; /* Restrict to viewport height */
+  //   overflow: hidden; /* Prevent the sidenav itself from scrolling */
+  //   background: #ffffff; /* Optional: Add background color */
+  //   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  // }
+
+  // /* Enable scrolling inside the sidenav content */
+  // .fixed-sidenav .sidenav {
+  //   height: 100%; /* Fill the fixed sidenav */
+  //   overflow-y: auto; /* Add scrolling for the content if it overflows */
+  //   box-sizing: border-box; /* Ensure padding doesn't add to the width/height */
+  // }
+
   header {
     display: flex;
     margin-inline: auto;
@@ -207,9 +236,9 @@ menu {
         background-color: #052a33;
         backdrop-filter: blur(5px);
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh + 90px);
         overflow: hidden;
-        top: -50px;
+        bottom: 0;
       }
     }
 
@@ -219,7 +248,6 @@ menu {
       justify-content: center;
       color: #052a33;
       border-radius: 6px;
-      // border: 1px solid #052a33;
       background-color: transparent;
       margin: 0 0.3rem;
 
@@ -233,9 +261,12 @@ menu {
       box-sizing: border-box;
       position: fixed;
       left: 0;
+      bottom: 0;
+      margin-top: 90px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
 
       .spacer {
         border-top: 1px solid #fff;
@@ -267,14 +298,13 @@ menu {
         height: 30px;
       }
     }
+
     .sidebar_items {
       display: flex;
-      margin: auto;
+      // margin: auto;
       flex-direction: column;
-    }
-
-    .sidebar_item {
-      text-align: center;
+      justify-content: center;
+      align-items: center;
     }
 
     .sublink {
@@ -295,6 +325,21 @@ menu {
 
     a:hover {
       transform: scale(0.9);
+    }
+  }
+}
+
+.open-menu {
+  menu {
+    a {
+      color: #fff;
+
+      &:hover,
+      &.active {
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 6px;
+      }
     }
   }
 }
