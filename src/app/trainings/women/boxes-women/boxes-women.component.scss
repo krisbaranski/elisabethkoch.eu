@@ -110,10 +110,12 @@ img {
 
   .box-frame {
     border-right: none;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    padding-right: 0;
-    text-align: left;
+    // margin-right: 1rem;
+    // margin-left: 1rem;
+    // padding-right: 0;
+    margin: 2rem 1rem;
+    padding: 0;
+    text-align: center;
 
     h1 {
       font-size: clamp(2.4rem, 4vw, 4.5rem);
