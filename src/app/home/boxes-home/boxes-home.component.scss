@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 1200px;
-  column-gap: 4rem;
+  column-gap: 6rem;
   row-gap: 4rem;
 }
 
@@ -64,7 +64,7 @@
 }
 
 img {
-  width: 100%;
+  width: 120%;
   border-radius: 6px;
   justify-content: center;
 }
@@ -122,5 +122,9 @@ img {
       font-family: 'Testimonia', sans-serif;
       font-size: clamp(5rem, 4vw, 7rem);
     }
+  }
+
+  img {
+    width: 100%;
   }
 }
