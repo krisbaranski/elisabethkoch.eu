@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { SlideshowComponent } from './home/slideshow/slideshow.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutmeComponent } from './profile/aboutme/aboutme.component';
+import { AboutmeShortComponent } from './home/aboutme-short/aboutme-short.component';
 import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.component';
 import { SlideshowMeComponent } from './profile/slideshow-me/slideshow-me.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
@@ -33,6 +34,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
 import { TidycalComponent } from './contact/tidycal/tidycal.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FormComponent } from './contact/form/form.component';
 import { AppointmentHomeComponent } from './contact/appointment-home/appointment-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -60,6 +62,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     ProfileComponent,
     AboutmeComponent,
+    AboutmeShortComponent,
     SlideAboutmeComponent,
     SlideshowMeComponent,
     WorkComponent,
@@ -78,6 +81,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrivacyComponent,
     ContactComponent,
     TidycalComponent,
+    NewsletterComponent,
     AppointmentHomeComponent,
   ],
   imports: [
