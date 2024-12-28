@@ -1,5 +1,5 @@
 footer {
-  background: #052a33;
+  background: var(--color-dark);
   padding: 3rem 0;
   z-index: 1;
 }
@@ -47,8 +47,8 @@ a {
   padding: 2px 5px;
 
   &:hover {
-    color: #690046;
-    background-color: #d5a208;
+    color: var(--color-dark);
+    background-color: var(--color-light);
     border-radius: 4px;
   }
 }
@@ -105,7 +105,7 @@ a {
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: 300;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   padding: 50px 20px;
   margin-left: 0.6rem;

@@ -7,7 +7,7 @@
   background-image: url('../../../assets/img/contact_bg.png');
   background-size: cover;
   background-position: center;
-  color: #052a33;
+  color: var(--color-dark);
   font-family: 'Montserrat', sans-serif;
   text-wrap: pretty;
   line-height: 1.5;
@@ -62,7 +62,7 @@
     padding: 0.5em 0.5em 0;
     width: 100%;
     margin: 1rem;
-    color: #052a33;
+    color: var(--color-dark);
   }
 
   summary {

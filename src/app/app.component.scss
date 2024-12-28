@@ -38,9 +38,13 @@
   font-style: normal;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  --color-light: #b18724;
+  --color-dark: #052a33;
 }
 
 .container {

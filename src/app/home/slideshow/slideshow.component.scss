@@ -14,7 +14,7 @@
   max-width: 100%;
   object-fit: cover;
   animation: zoomIn 20s ease-in-out infinite;
-  background-color: black;
+  background-color: var(--color-dark);
 }
 
 .contain {
@@ -48,7 +48,6 @@
     font-size: clamp(1rem, 2vw, 1.8rem);
     font-weight: 200;
     line-height: 1.4;
-    // padding-bottom: 1.5rem;
     text-wrap: balance;
   }
 
@@ -70,7 +69,7 @@
     a {
       border-radius: 3px;
       backdrop-filter: blur(0.5rem);
-      background-color: #d5a208;
+      background-color: var(--color-light);
       padding: 1.2rem 4rem;
       color: #ffffff;
       text-align: center;
@@ -79,8 +78,8 @@
       font-weight: 300;
 
       &:hover {
-        color: #d5a208;
-        background-color: #052a33;
+        color: var(--color-light);
+        background-color: var(--color-dark);
       }
     }
   }

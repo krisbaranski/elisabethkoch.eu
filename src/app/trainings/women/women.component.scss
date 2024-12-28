@@ -40,7 +40,7 @@
   .offer a {
     border-radius: 3px;
     backdrop-filter: blur(0.5rem);
-    background-color: #d5a208;
+    background-color: var(--color-light);
     padding: 1.2rem 4rem;
     color: #ffffff;
     text-align: center;
@@ -49,8 +49,8 @@
     font-weight: 400;
 
     &:hover {
-      color: #d5a208;
-      background-color: #690046;
+      color: var(--color-light);
+      background-color: var(--color-dark);
     }
   }
 }

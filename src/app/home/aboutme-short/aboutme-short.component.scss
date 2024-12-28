@@ -30,7 +30,7 @@
   h3 {
     font-size: clamp(1.4rem, 4vw, 2rem);
     padding-bottom: 0.6rem;
-    color: #d7a533;
+    color: var(--color-light);
     line-height: 1;
   }
 
@@ -45,14 +45,14 @@
     font-size: clamp(0.8rem, 2vw, 0.9rem);
     font-weight: 400;
     font-style: thin;
-    color: #052a33;
+    color: var(--color-dark);
     text-align: left;
     margin: 0.5rem auto;
   }
 }
 
 span {
-  color: #d7a533;
+  color: var(--color-light);
   font-size: clamp(1rem, 3vw, 1.2rem);
   font-weight: 300;
   padding-top: 1.6rem;
