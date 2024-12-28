@@ -11,14 +11,38 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'trainings', component: TrainingsComponent },
-  { path: 'courses', component: CoursesComponent },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'impressum', component: ImpressumComponent },
-  { path: 'privacy', component: PrivacyComponent },
+  { path: '', component: HomeComponent, data: { animation: 'HomePage' } },
+  {
+    path: 'trainings',
+    component: TrainingsComponent,
+    data: { animation: 'HomePage' },
+  },
+  {
+    path: 'courses',
+    component: CoursesComponent,
+    data: { animation: 'CoursesPage' },
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    data: { animation: 'ProfilePage' },
+  },
+  { path: 'blog', component: BlogComponent, data: { animation: 'BlogPage' } },
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: { animation: 'ContactPage' },
+  },
+  {
+    path: 'impressum',
+    component: ImpressumComponent,
+    data: { animation: 'ImpressumPage' },
+  },
+  {
+    path: 'privacy',
+    component: PrivacyComponent,
+    data: { animation: 'PrivacyPage' },
+  },
 ];
 
 const routerOptions: ExtraOptions = {

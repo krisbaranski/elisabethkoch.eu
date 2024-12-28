@@ -8,12 +8,16 @@
     router.url !== '/trainings#singer' &&
     router.url !== '/trainings#podcast' &&
     router.url !== '/trainings#trainer' &&
+    router.url !== '/courses' &&
     router.url !== '/profile' &&
     router.url !== '/profile#aboutme' &&
+    router.url !== '/profile#work' &&
+    router.url !== '/profile#facts' &&
+    router.url !== '/blog' &&
     router.url !== '/contact'
   "
 ></app-header>
-<div [class.container]="router.url">
-  <router-outlet></router-outlet>
+<div [class.container]="router.url" [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
 </div>
 <app-footer></app-footer>
