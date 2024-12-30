@@ -4,9 +4,9 @@
       <h3>
         {{ 'profile.aboutme.text_2_title' | translate }}
       </h3>
-      <span class="handwrite">
+      <h3 class="handwrite">
         {{ 'profile.aboutme.text_2_title_span' | translate }}
-      </span>
+      </h3>
       <p>
         {{ 'profile.aboutme.text_2.1' | translate }}
 
@@ -15,7 +15,14 @@
       <p>
         {{ 'profile.aboutme.text_3.1' | translate }}
       </p>
-      <span>Zum Profil -></span>
+      <span
+        ><a routerLink="profile">
+          Zum Profil
+          <img
+            src="../../../assets/img/thin-long-arrow-right-icon-long.svg"
+            alt="arrow"
+          /> </a
+      ></span>
     </div>
 
     <div class="box">

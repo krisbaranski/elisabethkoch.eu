@@ -1,6 +1,4 @@
 .wrapper {
-  position: relative;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +27,6 @@
 
   h3 {
     font-size: clamp(1.4rem, 4vw, 2rem);
-    padding-bottom: 0.6rem;
     color: var(--color-light);
     line-height: 1;
   }
@@ -37,8 +34,9 @@
   .handwrite {
     font-family: 'Testimonia', sans-serif;
     font-size: clamp(3.2rem, 10vw, 6rem);
-    margin: 1.4rem auto;
-    padding-bottom: 1rem;
+    color: var(--color-light);
+    margin: 1rem auto;
+    line-height: 1;
   }
 
   p {
@@ -52,10 +50,20 @@
 }
 
 span {
-  color: var(--color-light);
-  font-size: clamp(1rem, 3vw, 1.2rem);
-  font-weight: 300;
-  padding-top: 1.6rem;
+  margin: 1rem 0;
+
+  a {
+    color: var(--color-light);
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-weight: 300;
+    text-decoration: none;
+
+    img {
+      width: 2.5rem;
+      margin-left: 1rem;
+      padding-bottom: 0;
+    }
+  }
 }
 
 img {
