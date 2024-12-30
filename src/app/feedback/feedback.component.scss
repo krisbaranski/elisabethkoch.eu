@@ -9,20 +9,20 @@
   background-position: center;
 }
 
-.text {
-  color: #ffffff;
-  padding: 4rem 1rem;
-  max-width: 1000px;
-  text-align: center;
-  line-height: 1.6;
-  margin: 10rem auto;
+.title {
+  margin-top: 6rem;
+
+  h1 {
+    font-family: 'Testimonia', sans-serif;
+    font-size: clamp(3.2rem, 10vw, 6rem);
+    color: var(--color-light);
+    text-align: center;
+  }
 }
 
 .boxes {
-  position: relative;
-  margin: 3rem auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  margin: 3rem auto 6rem;
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
