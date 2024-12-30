@@ -216,7 +216,13 @@
   "contact": {
     "title": "Lass uns darüber sprechen was dich bewegt",
     "text_1": "Kostenfreies Erstgespräch",
-    "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen."
+    "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen.",
+    "short": {
+      "header": "Ich freue mich von dir zu",
+      "span": "hören",
+      "box": "Wenn Du neugierig geworden bist, schreib mir gerne eine persönliche Nachricht, oder buch Dir einen Termin für Dein kostenfreies Ersgespräch. Ich freue mich auf Dich!",
+      "button": "Gespräch vereinbaren"
+    }
   },
   "blog": {
     "title_1": "Artikel 1",
@@ -224,5 +230,12 @@
     "title_3": "Artikel 3",
     "title_4": "Artikel 4",
     "title_5": "Artikel 5"
+  },
+  "footer": {
+    "name": "Elisabeth Koch",
+    "adress_11": "Behaimstraße 27",
+    "adress_12": "13086 Berlin",
+    "adress_21": "+49 0176 72173650",
+    "adress_22": "mail(at)elisabethkoch.eu"
   }
 }
