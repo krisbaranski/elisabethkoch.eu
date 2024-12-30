@@ -32,6 +32,7 @@ import { TrainingsComponent } from './trainings/trainings.component';
 import { WomenComponent } from './trainings/women/women.component';
 import { TrainingsShortComponent } from './trainings/trainings-short/trainings-short.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactShortComponent } from './home/contact-short/contact-short.component';
 import { TidycalComponent } from './contact/tidycal/tidycal.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FormComponent } from './contact/form/form.component';
@@ -83,6 +84,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ImpressumComponent,
     PrivacyComponent,
     ContactComponent,
+    ContactShortComponent,
     TidycalComponent,
     NewsletterComponent,
     AppointmentHomeComponent,
