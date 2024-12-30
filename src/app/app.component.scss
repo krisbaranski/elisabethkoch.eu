@@ -47,11 +47,15 @@
   --color-dark: #052a33;
 }
 
+html {
+  font-size: 16px;
+}
+
 .container {
   padding: 0;
 }
 
-.no-scroll {
-  overflow: hidden;
-  height: 100%;
-}
+// .no-scroll {
+//   overflow: hidden;
+//   height: 100%;
+// }
