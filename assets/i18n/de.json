@@ -26,11 +26,11 @@
     "button_offer": "Jetzt anfragen!"
   },
   "testimonials": {
-    "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \" ",
+    "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \"",
     "author_1": "Karina F."
   },
   "sentences": {
-    "text_1": " \"When your voice brings you joy, you're in the best of yourself! \" ",
+    "text_1": " \" When your voice brings you joy, you're in the best of yourself! \" ",
     "author_1": "Celine Dion"
   },
   "faq": {
@@ -83,7 +83,7 @@
       },
       "testimonial": {
         "title": "Kundenstimmen",
-        "text": " \"Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen. \"",
+        "text": " \" Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen. \" ",
         "author": "Martina S., selbständige Trainerin"
       },
       "work": {
@@ -205,7 +205,7 @@
     "title_1": "Termine",
     "title_1.1": "Termin vereinbaren",
     "text_1.1": " Schreiben Sie mir gerne eine persönliche Nachricht oder wählen Sie einen Termin für ein 30-minütiges, kostenfreies Erstgespräch per Telefon aus.",
-    "text_1.2": "Ich freue über Ihre Nachricht!",
+    "text_1.2": "Ich freue mich über Ihre Nachricht!",
     "title_2": "Alle Angebote auf Anfrage.",
     "table_1": "30minütiges Erstgespräch per Telefon, kostenfrei",
     "table_2": "Probestunde 60min nach ersten Telefonat",
@@ -219,7 +219,7 @@
     "text_1": "Kostenfreies Erstgespräch",
     "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen.",
     "short": {
-      "header": "Ich freue mich von Dir zu",
+      "header": "Ich freue mich, von Dir zu",
       "span": "hören",
       "box": "Wenn Du neugierig geworden bist, schreib mir gerne eine persönliche Nachricht, oder buch Dir einen Termin für Dein kostenfreies Ersgespräch. Ich freue mich auf Dich!",
       "button": "Gespräch vereinbaren"
