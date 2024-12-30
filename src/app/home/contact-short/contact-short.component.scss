@@ -1,0 +1,134 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  margin: 6rem auto;
+}
+
+.header {
+  width: min(90vw - 2rem, 1060px);
+  justify-content: flex-start;
+
+  h1 {
+    font-size: clamp(2.4rem, 7vw, 5rem);
+    padding: 2rem auto;
+    font-weight: 100;
+    font-style: thin;
+    color: var(--color-light);
+    line-height: 1;
+  }
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  column-gap: 4rem;
+
+  .handwrite {
+    // height: 100%;
+    font-family: 'Testimonia', sans-serif;
+    font-size: clamp(4rem, 12vw, 10rem);
+    color: var(--color-light);
+    margin: 1rem auto;
+    line-height: 1;
+  }
+}
+
+.box {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 450px;
+  padding: 2rem;
+
+  .frame {
+    flex-direction: column;
+    border: 3px solid var(--color-light);
+    border-radius: 3px;
+    padding: 2rem;
+
+    .adress {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: row;
+      margin-top: 1.6rem;
+      gap: 2rem;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  p {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    font-style: thin;
+    color: var(--color-dark);
+    text-align: left;
+    margin: 0.5rem auto;
+  }
+}
+
+.offer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+
+  a {
+    border-radius: 3px;
+    background-color: var(--color-light);
+    padding: 1em 2em;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-weight: 300;
+
+    &:hover {
+      color: var(--color-light);
+      background-color: var(--color-dark);
+    }
+  }
+}
+
+///
+///
+/// MEDIA QUERIES
+@media screen and (max-width: 1200px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0;
+    column-gap: 0;
+    padding: 1rem auto;
+  }
+
+  .frame {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.offer {
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .box {
+    .frame .adress {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}
