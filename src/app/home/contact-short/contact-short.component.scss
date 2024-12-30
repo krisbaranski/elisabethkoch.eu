@@ -25,11 +25,11 @@
 .boxes {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
   max-width: 1200px;
   column-gap: 4rem;
 
   .handwrite {
-    // height: 100%;
     font-family: 'Testimonia', sans-serif;
     font-size: clamp(4rem, 12vw, 10rem);
     color: var(--color-light);
@@ -39,8 +39,10 @@
 }
 
 .box {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   max-width: 450px;
   padding: 2rem;
 
