@@ -13,10 +13,9 @@
   justify-content: flex-start;
 
   h1 {
-    font-size: clamp(2.4rem, 7vw, 5rem);
+    font-size: clamp(2.6rem, 5vw, 4.5rem);
     padding: 2rem auto;
-    font-weight: 100;
-    font-style: thin;
+    font-family: 'Montserrat Thin', sans-serif;
     color: var(--color-light);
     line-height: 1;
   }
@@ -73,26 +72,26 @@
     text-align: left;
     margin: 0.5rem auto;
   }
-}
 
-.offer {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 2rem;
+  .offer {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
 
-  a {
-    border-radius: 3px;
-    background-color: var(--color-light);
-    padding: 1em 2em;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    font-size: clamp(0.8rem, 2vw, 1.2rem);
-    font-weight: 300;
+    a {
+      border-radius: 3px;
+      background-color: var(--color-light);
+      padding: 1em 2em;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-size: clamp(0.8rem, 4vw, 1.2rem);
+      font-weight: 300;
 
-    &:hover {
-      color: var(--color-light);
-      background-color: var(--color-dark);
+      &:hover {
+        color: var(--color-light);
+        background-color: var(--color-dark);
+      }
     }
   }
 }
@@ -105,6 +104,7 @@
     display: flex;
     justify-content: center;
   }
+
   .boxes {
     display: flex;
     flex-direction: column;
@@ -115,17 +115,19 @@
     padding: 1rem auto;
   }
 
-  .frame {
-    display: flex;
-    justify-content: center;
+  .box {
+    .offer {
+      margin: 2rem auto;
+    }
   }
 }
 
-.offer {
-  justify-content: center;
-}
-
 @media screen and (max-width: 500px) {
+  .header {
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
   .box {
     .frame .adress {
       flex-direction: column;

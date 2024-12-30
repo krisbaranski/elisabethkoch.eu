@@ -6,8 +6,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  text-wrap: balance;
+  font-family: 'Montserrat Regular', sans-serif;
   margin: 6rem auto;
 }
 
@@ -52,6 +51,7 @@
   color: var(--color-light);
 
   h1 {
+    font-family: 'Montserrat Thin', sans-serif;
     font-size: clamp(2.8rem, 4.4vw, 5rem);
     font-weight: 100;
     line-height: 1;

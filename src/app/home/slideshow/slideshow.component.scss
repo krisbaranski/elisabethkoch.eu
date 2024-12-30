@@ -18,6 +18,7 @@
 }
 
 .contain {
+  font-family: 'Montserrat Regular', sans-serif;
   display: block;
   right: 20px;
 }
@@ -41,12 +42,12 @@
   h1 {
     line-height: 1.2;
     font-size: clamp(2rem, 4vw, 3.4rem);
-    font-weight: 600;
+    font-family: 'Montserrat Bold', sans-serif;
   }
 
   h2 {
     font-size: clamp(1rem, 2vw, 1.8rem);
-    font-weight: 200;
+    font-family: 'Montserrat Light', sans-serif;
     line-height: 1.4;
     text-wrap: balance;
   }

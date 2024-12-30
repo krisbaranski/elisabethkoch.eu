@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Regular', sans-serif;
   text-wrap: balance;
   margin: 6rem auto;
 }
@@ -26,6 +26,7 @@
   padding: 2rem;
 
   h3 {
+    font-family: 'Montserrat Light', sans-serif;
     font-size: clamp(1.4rem, 4vw, 2rem);
     color: var(--color-light);
     line-height: 1;
