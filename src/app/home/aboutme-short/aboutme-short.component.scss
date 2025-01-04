@@ -70,6 +70,7 @@ span {
 img {
   width: 100%;
   background-size: cover;
+  object-fit: contain;
   border-radius: 6px;
   justify-content: center;
 }
