@@ -21,11 +21,12 @@
 
 h1 {
   font-family: 'Montserrat Light', sans-serif;
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-size: var(--size-2);
+  line-height: 1.6;
   margin-bottom: 3rem;
 }
 
 p {
   font-family: 'Montserrat Bold', sans-serif;
-  font-size: clamp(0.8rem, 4vw, 0.9rem);
+  font-size: var(--size--2);
 }

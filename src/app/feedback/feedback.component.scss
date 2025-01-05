@@ -13,8 +13,8 @@
   margin-top: 6rem;
 
   h1 {
-    font-family: 'Testimonia', sans-serif;
-    font-size: clamp(3.2rem, 10vw, 6rem);
+    font-family: 'Funky-signature';
+    font-size: 6rem;
     color: var(--color-light);
     text-align: center;
   }
@@ -43,14 +43,14 @@
     color: #fff;
 
     h1 {
-      font-family: 'Montserrat Regular', sans-serif;
-      font-size: clamp(0.9rem, 3vw, 1.2rem);
+      font-family: 'Montserrat Bold', sans-serif;
+      font-size: var(--size--2);
       margin-bottom: 0.5rem;
     }
 
     p {
       font-family: 'Montserrat Light', sans-serif;
-      font-size: clamp(0.8rem, 2vw, 0.9rem);
+      font-size: var(--size--1);
     }
   }
 }
@@ -59,6 +59,12 @@
 // // MEDIA QUERIES
 // //
 @media only screen and (max-width: 1024px) {
+  .title {
+    h1 {
+      font-size: var(--size-5);
+    }
+  }
+
   .box {
     flex: 0 1 80vw;
   }
