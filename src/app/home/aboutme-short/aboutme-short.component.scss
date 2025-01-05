@@ -27,21 +27,21 @@
 
   h3 {
     font-family: 'Montserrat Light', sans-serif;
-    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-size: var(--size-2);
     color: var(--color-light);
     line-height: 1;
   }
 
   .handwrite {
-    font-family: 'Testimonia', sans-serif;
-    font-size: clamp(3.2rem, 10vw, 6rem);
+    font-family: 'Funky-signature';
+    font-size: 5rem;
     color: var(--color-light);
     margin: 1rem auto;
     line-height: 1;
   }
 
   p {
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    font-size: var(--size--2);
     font-weight: 400;
     font-style: thin;
     color: var(--color-dark);
@@ -55,7 +55,7 @@ span {
 
   a {
     color: var(--color-light);
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-size: var(--size--1);
     font-weight: 300;
     text-decoration: none;
 
@@ -95,6 +95,7 @@ img {
     flex: 0 1 80vw;
 
     .handwrite {
+      font-size: var(--size-5);
       justify-content: flex-start;
     }
 

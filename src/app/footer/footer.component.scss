@@ -1,5 +1,6 @@
 footer {
   background: var(--color-dark);
+  font-family: 'Montserrat Regular', sans-serif;
   padding: 3rem 0;
   z-index: 1;
 }
@@ -24,7 +25,8 @@ footer {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-family: 'Montserrat Regular', sans-serif;
+  font-size: var(--size-0);
   font-weight: 400;
   color: #ffffff;
   margin: 5px;
@@ -32,14 +34,14 @@ h1 {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: var(--size--2);
   font-weight: 300;
   color: #ffffff;
   margin: 2px 5px;
 }
 
 a {
-  font-size: 0.8rem;
+  font-size: var(--size--2);
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
@@ -103,7 +105,7 @@ a {
 
 .copyright {
   font-family: inherit;
-  font-size: 0.8rem;
+  font-size: var(--size--2);
   font-weight: 300;
   color: #fff;
   display: flex;
@@ -130,9 +132,6 @@ a {
 
     .flow {
       margin: 1rem 0;
-      h1 {
-        font-size: 1.2rem;
-      }
 
       .links {
         justify-self: center;

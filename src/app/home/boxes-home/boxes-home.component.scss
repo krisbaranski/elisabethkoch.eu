@@ -27,14 +27,14 @@
   padding: 2rem;
 
   h2 {
-    font-size: clamp(1.4rem, 4vw, 1.6rem);
+    font-size: var(--size-1);
     font-weight: 100;
     color: var(--color-light);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   p {
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    font-size: var(--size--2);
     font-weight: 400;
     font-style: thin;
     color: var(--color-dark);
@@ -52,14 +52,14 @@
 
   h1 {
     font-family: 'Montserrat Thin', sans-serif;
-    font-size: clamp(2.8rem, 4.4vw, 5rem);
+    font-size: var(--size-5);
     font-weight: 100;
     line-height: 1;
   }
 
   .handwrite {
-    font-family: 'Testimonia', sans-serif;
-    font-size: 10rem;
+    font-family: 'Funky-signature';
+    font-size: 9rem;
   }
 }
 
@@ -69,6 +69,7 @@ img {
   border-radius: 6px;
   justify-content: center;
 }
+
 //
 // MEDIA QUERIES
 //
@@ -103,6 +104,10 @@ img {
   .box {
     flex: 0 1 80vw;
     padding: 1rem;
+
+    p {
+      line-height: 1.4;
+    }
   }
 
   .box-frame {
@@ -116,16 +121,11 @@ img {
     text-align: center;
 
     h1 {
-      font-size: clamp(2.4rem, 4vw, 4.5rem);
+      font-size: var(--size-5);
     }
 
     .handwrite {
-      font-family: 'Testimonia', sans-serif;
-      font-size: clamp(5rem, 4vw, 7rem);
+      font-size: clamp(6rem, 9vw, 9rem);
     }
-  }
-
-  img {
-    width: 100%;
   }
 }

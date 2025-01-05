@@ -40,20 +40,20 @@
   }
 
   h1 {
-    line-height: 1.2;
-    font-size: clamp(2rem, 4vw, 3.4rem);
     font-family: 'Montserrat Bold', sans-serif;
+    font-size: var(--size-3);
+    line-height: 1.2;
   }
 
   h2 {
-    font-size: clamp(1rem, 2vw, 1.8rem);
     font-family: 'Montserrat Light', sans-serif;
-    line-height: 1.4;
+    font-size: var(--size-1);
     text-wrap: balance;
+    line-height: 1.4;
   }
 
   p {
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: var(--size--2);
     font-weight: 300;
     font-weight: thin;
     text-wrap: balance;
@@ -73,7 +73,7 @@
       color: #ffffff;
       text-align: center;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: --size-0;
       font-weight: 300;
 
       &:hover {
@@ -133,10 +133,9 @@
     text-align: left;
     transform: translateX(10vw);
 
-    h3,
-    h6 {
-      margin: 0;
-      padding: 0.5rem;
+    h1,
+    h2 {
+      margin: 0.3rem 0;
     }
 
     p {
@@ -144,21 +143,7 @@
     }
 
     .offer {
-      a {
-        font-size: 1rem;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 682px) {
-  .slideshow-overlay {
-    .offer {
-      margin-left: 0.5rem;
-
-      a {
-        font-size: 0.8rem;
-      }
+      margin-bottom: 2rem;
     }
   }
 }
