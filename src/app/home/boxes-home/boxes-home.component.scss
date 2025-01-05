@@ -1,6 +1,4 @@
 .wrapper {
-  position: relative;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +74,9 @@ img {
 @media only screen and (max-width: 1024px) {
   .wrapper {
     margin: 3rem auto;
+    width: 90vw;
   }
+
   .boxes {
     grid-template-columns: 1fr; /* 1 column */
     grid-template-rows: auto; /* Automatic row heights */
@@ -112,10 +112,6 @@ img {
 
   .box-frame {
     border-left: none;
-    // margin-right: 1rem;
-    // margin-left: 1rem;
-    // padding-right: 0;
-    // padding-left: 0;
     margin: 2rem 1rem;
     padding: 0;
     text-align: center;
