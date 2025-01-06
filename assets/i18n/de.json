@@ -25,28 +25,15 @@
     "text_7": "Damit Du Dich anderen sicher & selbstbewusst zuwenden und authentisch auf Augenhöhe begegnen kannst. Damit Du in Deiner Profession stark & souverän in der Welt wirken kannst.",
     "button_offer": "Jetzt anfragen!"
   },
-  "testimonials": {
-    "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \"",
-    "author_1": "Karina F."
-  },
-  "sentences": {
-    "text_1": " \" When your voice brings you joy, you're in the best of yourself! \" ",
-    "author_1": "Celine Dion"
-  },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "text": "Hier findest Du Antworten auf die wichtigsten Fragen. Wenn Du weitere Fragen hast, kannst Du Dich gerne an mich wenden.",
-    "question_1": "Was ist ein Stimmtraining?",
-    "answer_1": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten.",
-    "question_2": "Was ist ein Stimmtraining?",
-    "answer_2": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten.",
-    "question_3": "Was ist ein Stimmtraining?",
-    "answer_3g": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten."
-  },
   "trainings": {
-    "title": "Trainings",
+    "short": {
+      "title": "Einzeltraining",
+      "text": "Einzeltraining",
+      "link": "Zu den Trainings"
+    },
     "women": {
       "title": "Frauen",
+      "short": "- Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facere at culpa, laudantium ipsa consequatur saepe doloremque delectus voluptatem aliquid!",
       "title_1": "Women, Voice & Leadership",
       "text_2": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
       "title_2": "Frauen mit starker Stimme in Führung",
@@ -83,7 +70,7 @@
       },
       "testimonial": {
         "title": "Kundenstimmen",
-        "text": " \" Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen. \" ",
+        "text": "\" Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen. \"",
         "author": "Martina S., selbständige Trainerin"
       },
       "work": {
@@ -113,6 +100,10 @@
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "link": "Mehr »"
+  },
+  "courses": {
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia a, voluptatem, amet rerum fuga tempore quidem aspernatur facere iusto aperiam itaque ea et, perferendis accusantium praesentium laudantium vel eum.",
+    "link": "Zu den Kursen"
   },
   "profile": {
     "aboutme": {
@@ -201,18 +192,12 @@
       ]
     }
   },
-  "termin": {
-    "title_1": "Termine",
-    "title_1.1": "Termin vereinbaren",
-    "text_1.1": " Schreiben Sie mir gerne eine persönliche Nachricht oder wählen Sie einen Termin für ein 30-minütiges, kostenfreies Erstgespräch per Telefon aus.",
-    "text_1.2": "Ich freue mich über Ihre Nachricht!",
-    "title_2": "Alle Angebote auf Anfrage.",
-    "table_1": "30minütiges Erstgespräch per Telefon, kostenfrei",
-    "table_2": "Probestunde 60min nach ersten Telefonat",
-    "table_3": "Einzelcoaching á 60min",
-    "table_4": "Einzelcoaching 6er Paket 6x60min",
-    "table_5": "Im Zeitraum von vier Monaten Einzelcoaching 10er Paket 10x60min Im Zeitraum von 6 Monaten",
-    "table_6": "SOS Termin 1x90min:"
+  "blog": {
+    "title_1": "Artikel 1",
+    "title_2": "Artikel 2",
+    "title_3": "Artikel 3",
+    "title_4": "Artikel 4",
+    "title_5": "Artikel 5"
   },
   "contact": {
     "title": "Lass uns darüber sprechen was dich bewegt",
@@ -225,12 +210,23 @@
       "button": "Gespräch vereinbaren"
     }
   },
-  "blog": {
-    "title_1": "Artikel 1",
-    "title_2": "Artikel 2",
-    "title_3": "Artikel 3",
-    "title_4": "Artikel 4",
-    "title_5": "Artikel 5"
+  "testimonials": {
+    "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \"",
+    "author_1": "Karina F."
+  },
+  "sentences": {
+    "text_1": "\"When your voice brings you joy, you're in the best of yourself!\"",
+    "author_1": "Celine Dion"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "text": "Hier findest Du Antworten auf die wichtigsten Fragen. Wenn Du weitere Fragen hast, kannst Du Dich gerne an mich wenden.",
+    "question_1": "Was ist ein Stimmtraining?",
+    "answer_1": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten.",
+    "question_2": "Was ist ein Stimmtraining?",
+    "answer_2": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten.",
+    "question_3": "Was ist ein Stimmtraining?",
+    "answer_3g": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten."
   },
   "footer": {
     "name": "Elisabeth Koch",
