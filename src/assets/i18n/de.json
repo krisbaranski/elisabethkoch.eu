@@ -70,6 +70,20 @@
       },
       "work": {
         "title_1": "Die Kursinhalte"
+      },
+      "benefits": {
+        "title": "Der Benefit",
+        "texte": {
+          "title_1": "Souveränität:",
+          "text_1": "Erreiche stimmliche Souveränität, mit der Du Dich in Deiner Kompetenz stark, unabhängig und gut fühlst.",
+          "title_2": "Selbstbewusstsein:",
+          "text_2": "Entdecke Deine persönliche starke Stimme, die Dir in jeder Situation Sicherheit schenkt.",
+          "title_3": "Einflussnahme:",
+          "text_3": "Inspiriere andere über Deinen Stimmklang und nimm Einfluss.",
+          "title_4": "Lebendigkeit:",
+          "text_4": "Lass auch Deine inneren Qualitäten in Deinem Stimmklang hörbar werden & gewinne die Herzen Deiner Zuhörer."
+        },
+        "link": "Zur Buchung"
       }
     },
     "speaker": {
@@ -97,8 +111,28 @@
     "link": "Mehr »"
   },
   "courses": {
-    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia a, voluptatem, amet rerum fuga tempore quidem aspernatur facere iusto aperiam itaque ea et, perferendis accusantium praesentium laudantium vel eum.",
-    "link": "Zu den Kursen"
+    "text": "- Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia a, voluptatem, amet rerum fuga tempore quidem aspernatur facere iusto aperiam itaque ea et, perferendis accusantium praesentium laudantium vel eum.",
+    "link": "Zu den Kursen",
+    "short": {
+      "title": "Die Kursinhalte",
+      "texte": {
+        "title_1": "Körper & Entspannungsübungen",
+        "text_1": "",
+        "title_2": "Atemübungen",
+        "text_2": "",
+        "title_3": "Stimmgesundheit",
+        "text_3": "",
+        "title_4": "Stimmtechnik",
+        "text_4": "",
+        "title_5": "Erproben von Auftrittsituationen",
+        "text_5": "",
+        "title_6": "Sprechtempo & Verständlichkeit",
+        "text_6": "",
+        "title_7": "Ausdruck & Überzeugungskraft",
+        "text_7": ""
+      },
+      "link": "Zur Buchung"
+    }
   },
   "profile": {
     "aboutme": {
