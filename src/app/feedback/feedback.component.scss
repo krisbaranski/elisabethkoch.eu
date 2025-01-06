@@ -30,7 +30,7 @@
 }
 
 .box {
-  flex: 0 1 20vw;
+  flex: 0 1 19vw;
   height: auto;
   border: 3px solid #ffffff7a;
   border-radius: 3px;
@@ -41,18 +41,19 @@
 
   .content {
     color: #fff;
-    line-height: 1.3;
 
     h1 {
       font-family: 'Montserrat Bold', sans-serif;
       font-size: var(--size--1);
       margin-bottom: 0.5rem;
       text-wrap: balance;
+      line-height: 1.3;
     }
 
     p {
       font-family: 'Montserrat Light', sans-serif;
       font-size: var(--size--2);
+      line-height: 1.3;
     }
   }
 }
@@ -63,11 +64,11 @@
 @media only screen and (max-width: 1024px) {
   .title {
     h1 {
-      font-size: var(--size-5);
+      font-size: clamp(3rem, 8vw, 8rem);
     }
   }
 
   .box {
-    flex: 0 1 80vw;
+    flex: 0 1 70vw;
   }
 }

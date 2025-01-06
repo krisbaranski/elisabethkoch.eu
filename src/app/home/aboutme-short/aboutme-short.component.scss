@@ -95,7 +95,7 @@ img {
     flex: 0 1 80vw;
 
     .handwrite {
-      font-size: var(--size-5);
+      font-size: clamp(3rem, 8vw, 5rem);
       justify-content: flex-start;
     }
 
