@@ -68,11 +68,6 @@
           "text_2": "Damit Deine Führungsqualitäten auch in Deinem Stimmklang lebendig werden, Du souverän & kraftvoll aus Deiner Mitte heraus wirken und kommunizieren kannst."
         }
       },
-      "testimonial": {
-        "title": "Kundenstimmen",
-        "text": "\" Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen. \"",
-        "author": "Martina S., selbständige Trainerin"
-      },
       "work": {
         "title_1": "Die Kursinhalte"
       }
@@ -211,8 +206,17 @@
     }
   },
   "testimonials": {
+    "title": "Kundenstimmen",
     "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \"",
-    "author_1": "Karina F."
+    "author_1": "Karina F.",
+    "text_2": " \"Die Arbeit mit Elisabeth hat mir eine solide Basis für mein Instrument Stimme geschenkt. Ich nehme meine Stimme viel bewusster wahr, kann mit ihr spielen und mich auf ihre Wirkung verlassen.\"",
+    "author_2": "Ursula Feuerherdt / selbstständig 43 Jahre / Gründerin der Jadeflower Academy",
+    "link_2": "https://jadeflower.academy/",
+    "text_3": " \"Elisabeth verfügt als Trainerin für Rhetorik und Redekunst über bemerkenswerte Fachkenntnisse. Innerhalb weniger Wochen hat sich meine Verwendung von Füllwörtern in Ein Fortschritt, den ich zuvor für nahezu unmöglich gehalten hätte.\"",
+    "author_3": "Dr. Gayannée Kedia / Department of Psychology /Karl-Franzens-Universität Graz",
+    "link_3": "https://abrilliantmind.blog",
+    "text_4": "\"Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen.\"",
+    "author_4": "Martina S., selbständige Trainerin"
   },
   "sentences": {
     "text_1": "\"When your voice brings you joy, you're in the best of yourself!\"",
