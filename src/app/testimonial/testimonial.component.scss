@@ -16,7 +16,7 @@
   max-width: 1200px;
   text-align: center;
   line-height: 1.6;
-  margin: 10rem auto;
+  margin: 10rem 5rem;
 }
 
 h1 {
@@ -29,4 +29,10 @@ h1 {
 p {
   font-family: 'Montserrat Bold', sans-serif;
   font-size: var(--size--2);
+}
+
+@media screen and (max-width: 620px) {
+  .text {
+    margin: 5rem 1rem;
+  }
 }
