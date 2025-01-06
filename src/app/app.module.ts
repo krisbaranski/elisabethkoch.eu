@@ -29,8 +29,8 @@ import { BoxesWomenComponent } from './trainings/women/boxes-women/boxes-women.c
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
+import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
 import { WomenComponent } from './trainings/women/women.component';
-import { TrainingsShortComponent } from './trainings/trainings-short/trainings-short.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactShortComponent } from './home/contact-short/contact-short.component';
 import { TidycalComponent } from './contact/tidycal/tidycal.component';
@@ -38,6 +38,8 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FormComponent } from './contact/form/form.component';
 import { AppointmentHomeComponent } from './contact/appointment-home/appointment-home.component';
+import { CoursesComponent } from './courses/courses.component';
+import { CoursesShortComponent } from './courses/courses-short/courses-short.component';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -58,38 +60,40 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    SlideshowComponent,
-    HomeComponent,
+    AppointmentHomeComponent,
+    AboutmeComponent,
+    AboutmeShortComponent,
     BoxesComponent,
     BoxesHomeComponent,
     BoxesWomenComponent,
+    ContactComponent,
+    ContactShortComponent,
+    CoursesComponent,
+    CoursesShortComponent,
+    FactsComponent,
+    FaqComponent,
+    FeedbackComponent,
+    FooterComponent,
+    FormComponent,
     HeaderComponent,
+    HomeComponent,
+    HomeComponent,
+    SlideshowComponent,
     ProfileComponent,
-    AboutmeComponent,
-    AboutmeShortComponent,
     SlideAboutmeComponent,
     SlideshowMeComponent,
     WorkComponent,
     WorkWomenComponent,
     TestimonialComponent,
     TestimonialWomenComponent,
-    FactsComponent,
-    FaqComponent,
-    FeedbackComponent,
-    FooterComponent,
-    FormComponent,
     TermineComponent,
     TrainingsComponent,
-    WomenComponent,
     TrainingsShortComponent,
+    WomenComponent,
     ImpressumComponent,
     PrivacyComponent,
-    ContactComponent,
-    ContactShortComponent,
     TidycalComponent,
     NewsletterComponent,
-    AppointmentHomeComponent,
   ],
   imports: [
     BrowserModule,
