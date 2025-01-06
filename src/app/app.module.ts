@@ -39,9 +39,10 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { FormComponent } from './contact/form/form.component';
 import { AppointmentHomeComponent } from './contact/appointment-home/appointment-home.component';
 import { CourseContentComponent } from './trainings/women/course-content/course-content.component';
-import {BenefitsShortComponent} from './trainings/women/benefits-short/benefits-short.component';
+import { BenefitsShortComponent } from './trainings/women/benefits-short/benefits-short.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesShortComponent } from './courses/courses-short/courses-short.component';
+import { SpacerComponent } from './spacer/spacer.component';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -86,6 +87,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProfileComponent,
     SlideAboutmeComponent,
     SlideshowMeComponent,
+    SpacerComponent,
     WorkComponent,
     WorkWomenComponent,
     TestimonialComponent,
