@@ -1,13 +1,10 @@
 .wrapper {
-  position: relative;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  text-wrap: balance;
+  font-family: 'Montserrat Regular', sans-serif;
   margin: 6rem auto;
 }
 
@@ -22,26 +19,21 @@
 .box {
   max-width: 450px;
   height: auto;
-  padding: 1rem;
+  padding: 2rem;
 
   h2 {
-    font-size: clamp(1.4rem, 4vw, 1.6rem);
-    font-weight: 100;
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: var(--size-1);
     color: var(--color-light);
     margin-bottom: 2rem;
   }
 
   p {
+    font-family: 'Montserrat Regular', sans-serif;
     color: var(--color-dark);
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
-    font-weight: 300;
-    font-style: light;
+    font-size: var(--size--2);
     text-align: left;
-    margin: 2rem auto;
-
-    span {
-      font-weight: 400;
-    }
+    margin: 0.5rem auto;
   }
 }
 
@@ -54,21 +46,20 @@
   color: var(--color-light);
 
   h1 {
-    font-size: 4rem;
-    font-weight: 200;
-    font-style: light;
+    font-family: 'Montserrat thin', sans-serif;
+    font-size: var(--size-5);
     line-height: 1;
   }
 
   .handwrite {
-    font-family: 'Testimonia', sans-serif;
+    font-family: 'Funky-signature';
     font-size: 8rem;
   }
 }
 
 img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 6px;
   justify-content: center;
 }
@@ -111,20 +102,16 @@ img {
 
   .box-frame {
     border-right: none;
-    // margin-right: 1rem;
-    // margin-left: 1rem;
-    // padding-right: 0;
     margin: 2rem 1rem;
     padding: 0;
     text-align: center;
 
     h1 {
-      font-size: clamp(2.4rem, 4vw, 4.5rem);
+      font-size: var(--size-5);
     }
 
     .handwrite {
-      font-family: 'Testimonia', sans-serif;
-      font-size: clamp(5rem, 4vw, 7rem);
+      font-size: clamp(5rem, 9vw, 9rem);
     }
   }
 }
