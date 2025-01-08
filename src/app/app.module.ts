@@ -14,7 +14,6 @@ import { AboutmeShortComponent } from './home/aboutme-short/aboutme-short.compon
 import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.component';
 import { SlideshowMeComponent } from './profile/slideshow-me/slideshow-me.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
-import { TestimonialWomenComponent } from './trainings/women/testimonial-women/testimonial-women.component';
 import { WorkComponent } from './profile/work/work.component';
 import { WorkWomenComponent } from './trainings/women/work-women/work-women.component';
 import { FactsComponent } from './profile/facts/facts.component';
@@ -30,6 +29,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
+import { TrainingComponent } from './trainings/training/training.component';
+import { HeroComponent } from './trainings/hero/hero.component';
 import { WomenComponent } from './trainings/women/women.component';
 import { SpeakerComponent } from './trainings/speaker/speaker.component';
 import { ManagerComponent } from './trainings/manager/manager.component';
@@ -96,10 +97,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     WorkComponent,
     WorkWomenComponent,
     TestimonialComponent,
-    TestimonialWomenComponent,
     TermineComponent,
     TrainingsComponent,
     TrainingsShortComponent,
+    TrainingComponent,
+    HeroComponent,
     WomenComponent,
     SpeakerComponent,
     ManagerComponent,
