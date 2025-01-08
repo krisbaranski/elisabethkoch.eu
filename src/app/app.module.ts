@@ -31,6 +31,11 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
 import { WomenComponent } from './trainings/women/women.component';
+import { SpeakerComponent } from './trainings/speaker/speaker.component';
+import { ManagerComponent } from './trainings/manager/manager.component';
+import { SingerComponent } from './trainings/singer/singer.component';
+import { PodcastComponent } from './trainings/podcast/podcast.component';
+import { TrainerComponent } from './trainings/trainer/trainer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactShortComponent } from './home/contact-short/contact-short.component';
 import { TidycalComponent } from './contact/tidycal/tidycal.component';
@@ -96,6 +101,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     TrainingsComponent,
     TrainingsShortComponent,
     WomenComponent,
+    SpeakerComponent,
+    ManagerComponent,
+    SingerComponent,
+    PodcastComponent,
+    TrainerComponent,
     ImpressumComponent,
     PrivacyComponent,
     TidycalComponent,

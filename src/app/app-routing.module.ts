@@ -10,12 +10,28 @@ import { ContactComponent } from './contact/contact.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 
+import { WomenComponent } from './trainings/women/women.component';
+import { SpeakerComponent } from './trainings/speaker/speaker.component';
+import { ManagerComponent } from './trainings/manager/manager.component';
+import { SingerComponent } from './trainings/singer/singer.component';
+import { PodcastComponent } from './trainings/podcast/podcast.component';
+import { TrainerComponent } from './trainings/trainer/trainer.component';
+
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'HomePage' } },
   {
     path: 'trainings',
     component: TrainingsComponent,
-    data: { animation: 'HomePage' },
+    children: [
+      { path: 'women', component: WomenComponent },
+      { path: 'speaker', component: SpeakerComponent },
+      { path: 'manager', component: ManagerComponent },
+      { path: 'singer', component: SingerComponent },
+      { path: 'podcast', component: PodcastComponent },
+      { path: 'trainer', component: TrainerComponent },
+      { path: '', redirectTo: 'women', pathMatch: 'full' }, // Default child route
+    ],
+    data: { animation: 'TrainingsPage' },
   },
   {
     path: 'courses',
