@@ -9,15 +9,15 @@
     "policy": "Datenschutz"
   },
   "home": {
-    "slide_1": "Frei sprechen, kraftvoll auftreten!",
-    "slide_2": "Gewinne die Herzen Deiner Zuhörer",
-    "slide_3": "Inspiriere mit Deiner Energie",
-    "title_1": "Entfalte dein Stimmpotenzial!",
+    "title_1": "Frei sprechen, kraftvoll auftreten!",
+    "title_2": "Entfalte dein Stimmpotenzial!",
     "box_1": "Stimme",
     "box_2": "Vertrauen",
     "box_3": "Präsenz",
+    "text_title_1": "Gewinne die Herzen Deiner Zuhörer",
+    "text_title_2": "Inspiriere mit Deiner Energie",
     "text_1": "Fühlst Du Dich manchmal unwohl oder unsicher beim Sprechen? Oder magst Du Deine Stimme nicht?",
-    "text_2": "Stell Dir vor, Du fühlst Dich selbstbewusst, souverän und inspirierst die Menschen mit Deinen Botschaften.",
+    "text_2": "Stell Dir vor, Du fühlst Dich selbstbewusst, souverän und inspirierst die Menschen mit Deiner Botschaften.",
     "text_3": "Dein Stimmklang ist Dein Schlüssel für souveräne Präsenz und gelungenen Auftritt.",
     "text_4": "Deine Stimme erschliesst Dir ein authentisches und kompetentes Auftreten, mit dem Du das Vertrauen und die Aufmerksamkeit Deiner Zuhörer gewinnst. ",
     "text_5": "Ich zeige Dir, wie Du Deine lebendige, kraftvolle Stimme aus Dir hervorholst und Dein Auftreten in kürzester Zeit effektiv stärkst und verbesserst: ",
@@ -33,11 +33,11 @@
     },
     "women": {
       "title": "Frauen",
-      "short": "- Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facere at culpa, laudantium ipsa consequatur saepe doloremque delectus voluptatem aliquid!",
+      "short": "- In Deinem Stimmklang und Deinem Auftreten werden Deine Kompetenzen Unmittelbar hörbar & spürbar. Trainiere Deine authentische, starke Stimme und Dein souveränes Auftreten. Mach es Dir einfach und lass Dein Publikum spüren, dass es Dir am Herzen liegt!",
       "title_1": "Women, Voice & Leadership",
       "text_2": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
       "title_2": "Frauen mit starker Stimme in Führung",
-      "text_1": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, das Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: in Meetings und Präsentationen sowie in jeder täglichen Kommunikation",
+      "text_1": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, das Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: In Meetings und Präsentationen sowie in der täglichen Kommunikation",
       "boxes": {
         "box_1": {
           "title_1": "Souverän",
@@ -88,24 +88,29 @@
     },
     "speaker": {
       "title": "Redner",
+      "short": "- Lege eine persönlichen Stärken als Redner frei, inspiriere Deine Zuhörer & verlasse Dich auf Deine Stimme und Präsenz. Mit gezieltem Training gewinnen Deine Botschaften Character & Wirkung.",
       "title_1": "Redner",
       "title_2": "Frauen mit starker Stimme in Führung",
       "text_2": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "manager": {
       "title": "Führungskräfte",
+      "short": "- Die eigene Expertise adäquat und überzeugend vermitteln, ist heute wichtiger denn je – und eine Kunst, die sich erlernen lässt. Ich zeige Dir, wie Du Deine Wirkung mit einfachen Techniken in kürzester Zeit effektiv verbesserst und Deinen Standpunkt auch in herausfordernden Situationen vertreten kannst.",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "singer": {
       "title": "Sänger & Sprecher",
+      "short": "- Selbst bei starker Beanspruchung sollte Deine Stimme keinerlei Ermüdungserscheinungen zeigen. Ich zeige Dir, wie sich Deine Stimme mit Atem- und Stimmtechniken innerhalb kürzester Zeit regenerieren kann. Entdecke den Zauber der Mühelosigkeit für Deine Stimme & gewinne Sicherheit für ein freies, gesundes Singen & Sprechen.",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "podcast": {
-      "title": "Journalisten & Podcast Hosts",
+      "title": "Podcast Hosts",
+      "short": "- Ein inspirierender Podcast lebt von Deiner kraftvollen, warmen und lebendigen Stimme. An ihr entscheidet sich innerhalb von Millisekunden, ob Deine Hörer zuhören oder abschalten. Trainiere Deine Stimme und kreiere eine gewinnende Atmosphäre für Deine Zuhörer.",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "trainer": {
-      "title": "Trainer, Berater & Coaches",
+      "title": "Trainer & Berater",
+      "short": "- Die Essenz Deines Characters und Deiner Kompetenz vermittelt sich Deinem Stimmklang & Deinem Auftreten. Deine Klienten entscheiden in Millisekunden. Mit einem lebendigen Stimmklang & souveränen Auftreten schenkst Du Sicherheit und gewinnst Vertrauen. Die Basis für Eure gemeinsame Beziehung und Deine wertvolle Arbeit.",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "link": "Mehr »"
@@ -253,7 +258,7 @@
     "author_4": "Martina S., selbständige Trainerin"
   },
   "sentences": {
-    "text_1": "\"When your voice brings you joy, you're in the best of yourself!\"",
+    "text_1": "\"When your voice brings you joy, you're the best of yourself!\"",
     "author_1": "Celine Dion"
   },
   "faq": {
