@@ -37,6 +37,7 @@ export class AppComponent {
   title: String = 'title name';
   @Input() darkMode = true;
 
+  // Transtale constructor
   constructor(
     public router: Router,
     public translate: TranslateService,
@@ -49,6 +50,7 @@ export class AppComponent {
     translate.use('de');
   }
 
+  // Prepare the route animation between pages
   prepareRoute(outlet: RouterOutlet) {
     return (
       outlet &&
