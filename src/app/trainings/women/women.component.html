@@ -1,17 +1,10 @@
-<div class="wrapper">
-  <div class="text">
-    <h2>{{ 'trainings.women.title_1' | translate }}</h2>
-    <h1>{{ 'trainings.women.title_2' | translate }}</h1>
-    <p>{{ 'trainings.women.text_1' | translate }}</p>
-    <span class="offer">
-      <a routerLink="contact" (click)="goToPart('contact')">{{
-        'home.button_offer' | translate
-      }}</a>
-    </span>
-  </div>
-</div>
+<app-hero
+  titleMedium="trainings.women.title_1"
+  titleBig="trainings.women.title_2"
+  text="trainings.women.text_1"
+/>
 <app-boxes-women />
-<app-testimonial-women />
+<app-testimonial text="testimonials.text_1" author="testimonials.author_1" />
 <app-course-content />
 <app-benefits-short />
 <app-spacer />
