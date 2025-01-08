@@ -89,13 +89,15 @@
     "speaker": {
       "title": "Redner",
       "short": "- Lege eine persönlichen Stärken als Redner frei, inspiriere Deine Zuhörer & verlasse Dich auf Deine Stimme und Präsenz. Mit gezieltem Training gewinnen Deine Botschaften Character & Wirkung.",
-      "title_1": "Redner",
+      "title_1": "Voice & Confidence",
       "title_2": "Frauen mit starker Stimme in Führung",
-      "text_2": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "manager": {
       "title": "Führungskräfte",
       "short": "- Die eigene Expertise adäquat und überzeugend vermitteln, ist heute wichtiger denn je – und eine Kunst, die sich erlernen lässt. Ich zeige Dir, wie Du Deine Wirkung mit einfachen Techniken in kürzester Zeit effektiv verbesserst und Deinen Standpunkt auch in herausfordernden Situationen vertreten kannst.",
+      "title_1": "Voice & Leadership",
+      "title_2": "Führung mit klare & freundliche Stimme",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "singer": {
@@ -246,6 +248,8 @@
   },
   "testimonials": {
     "title": "Kundenstimmen",
+    "text": "\"When your voice brings you joy, you're the best of yourself!\"",
+    "author": "Celine Dion",
     "text_1": " \"Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! \"",
     "author_1": "Karina F.",
     "text_2": " \"Die Arbeit mit Elisabeth hat mir eine solide Basis für mein Instrument Stimme geschenkt. Ich nehme meine Stimme viel bewusster wahr, kann mit ihr spielen und mich auf ihre Wirkung verlassen.\"",
