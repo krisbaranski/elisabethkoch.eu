@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contact-short',
@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './contact-short.component.html',
   styleUrl: './contact-short.component.scss',
 })
-export class ContactShortComponent {}
+export class ContactShortComponent {
+  @Input() text_1: string;
+  @Input() text_2: string;
+}
