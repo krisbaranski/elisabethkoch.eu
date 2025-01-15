@@ -19,7 +19,7 @@
     "text_1": "Fühlst Du Dich manchmal unwohl oder unsicher beim Sprechen? Oder magst Du Deine Stimme nicht?",
     "text_2": "Stell Dir vor, Du fühlst Dich selbstbewusst, souverän und inspirierst die Menschen mit Deiner Botschaften.",
     "text_3": "Dein Stimmklang ist Dein Schlüssel für souveräne Präsenz und gelungenen Auftritt.",
-    "text_4": "Deine Stimme erschliesst Dir ein authentisches und kompetentes Auftreten, mit dem Du das Vertrauen und die Aufmerksamkeit Deiner Zuhörer gewinnst. ",
+    "text_4": "Deine Stimme erschliesst Dir ein authentisches und kompetentes Auftreten, mit dem Du das Vertrauen und die Aufmerksamkeit Deiner Zuhörer gewinnst.",
     "text_5": "Ich zeige Dir, wie Du Deine lebendige, kraftvolle Stimme aus Dir hervorholst und Dein Auftreten in kürzester Zeit effektiv stärkst und verbesserst: ",
     "text_6": "Mit praktischem Wissen über den Einsatz und die Wirkung Deiner Stimme, Deiner Körperhaltung, Deiner Atmung, und Deiner individuellen Ressourcen. ",
     "text_7": "Damit Du Dich anderen sicher & selbstbewusst zuwenden und authentisch auf Augenhöhe begegnen kannst. Damit Du in Deiner Profession stark & souverän in der Welt wirken kannst.",
@@ -28,12 +28,13 @@
   "trainings": {
     "short": {
       "title": "Einzeltraining",
-      "text": "Einzeltraining",
+      "text_1": "Dein Stimmklang, Deine Körpersprache und Deine Präsenz machen Deine Kompetenzen unmittelbar hörbar und spürbar. Vermittle Deine Botschaft mit Klarheit und Selbstbewusstsein und lass Dein Gegenüber spüren, dass er Dir am Herzen liegt.",
+      "text_2": "Alle, die ihre Stimme und Präsenz stärken möchten und alle Berufsgruppen sind in meinen Einzeltrainings herzlich willkommen. Die Trainings sind individuell auf dich abgestimmt, direkt buchbar. Sie finden wahlweise persönlich in Präsenz oder online statt. ",
       "link": "Zu den Trainings"
     },
     "women": {
       "title": "Frauen",
-      "short": "- In Deinem Stimmklang und Deinem Auftreten werden Deine Kompetenzen Unmittelbar hörbar & spürbar. Trainiere Deine authentische, starke Stimme und Dein souveränes Auftreten. Mach es Dir einfach und lass Dein Publikum spüren, dass es Dir am Herzen liegt!",
+      "short": "In Deinem Stimmklang und Deinem Auftreten werden Deine Kompetenzen Unmittelbar hörbar & spürbar. Trainiere Deine authentische, starke Stimme und Dein souveränes Auftreten. Mach es Dir einfach und lass Dein Publikum spüren, dass es Dir am Herzen liegt!",
       "title_1": "Women, Voice & Leadership",
       "text_2": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
       "title_2": "Frauen mit starker Stimme in Führung",
@@ -88,37 +89,41 @@
     },
     "speaker": {
       "title": "Redner",
-      "short": "- Lege eine persönlichen Stärken als Redner frei, inspiriere Deine Zuhörer & verlasse Dich auf Deine Stimme und Präsenz. Mit gezieltem Training gewinnen Deine Botschaften Character & Wirkung.",
+      "short": "Lege Deine persönlichen Stärken als Redner frei, inspiriere Deine Zuhörer und lass Deine Worte präzise & kraftvoll werden. Trainiere Deine Stimme und Deine Präsenz. Verleihe Deinen Botschaften Character & Wirkung und werde prägnant!",
       "title_1": "Voice & Confidence",
       "title_2": "Frauen mit starker Stimme in Führung",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "manager": {
       "title": "Führungskräfte",
-      "short": "- Die eigene Expertise adäquat und überzeugend vermitteln, ist heute wichtiger denn je – und eine Kunst, die sich erlernen lässt. Ich zeige Dir, wie Du Deine Wirkung mit einfachen Techniken in kürzester Zeit effektiv verbesserst und Deinen Standpunkt auch in herausfordernden Situationen vertreten kannst.",
+      "short": "Deine Expertise vermittelt sich in Deiner Stimme und Deinem Auftreten unmittelbar. Überzeuge Dein Team und Deine Partner mit souveränem Auftreten und Präsenz. Mit gezielten Techniken stärkst Du Deine Wirkung und vertrittst Deinen Standpunkt auch in herausfordernden Situationen sicher und überzeugend.",
       "title_1": "Voice & Leadership",
       "title_2": "Führung mit klare & freundliche Stimme",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "singer": {
-      "title": "Sänger & Sprecher",
-      "short": "- Selbst bei starker Beanspruchung sollte Deine Stimme keinerlei Ermüdungserscheinungen zeigen. Ich zeige Dir, wie sich Deine Stimme mit Atem- und Stimmtechniken innerhalb kürzester Zeit regenerieren kann. Entdecke den Zauber der Mühelosigkeit für Deine Stimme & gewinne Sicherheit für ein freies, gesundes Singen & Sprechen.",
+      "title": "Sänger, Sprecher & Schauspieler",
+      "short": "Selbst bei starker Beanspruchung sollte Deine Stimme keine Ermüdungserscheinungen zeigen. Mit gezielten Atemund Stimmtechniken stärkst Du Deine Stimme und regenerierst sie schnell. Entdecke die Mühelosigkeit für Deine Stimme und gewinne Sicherheit für ein freies, gesundes Singen und Sprechen.",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "podcast": {
       "title": "Podcast Hosts",
-      "short": "- Ein inspirierender Podcast lebt von Deiner kraftvollen, warmen und lebendigen Stimme. An ihr entscheidet sich innerhalb von Millisekunden, ob Deine Hörer zuhören oder abschalten. Trainiere Deine Stimme und kreiere eine gewinnende Atmosphäre für Deine Zuhörer.",
+      "short": "Ein inspirierender Podcast lebt von Deiner kraftvollen, warmen und lebendigen Stimme. Dein Klang entscheidet in Millisekunden, ob Du Deine Hörer fesselst oder verlierst. Trainiere Deine Stimme & kreiere eine gewinnende Atmosphäre, in der Du Dich mit Deinen Hörern verbunden fühlst.",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "trainer": {
       "title": "Trainer & Berater",
-      "short": "- Die Essenz Deines Characters und Deiner Kompetenz vermittelt sich Deinem Stimmklang & Deinem Auftreten. Deine Klienten entscheiden in Millisekunden. Mit einem lebendigen Stimmklang & souveränen Auftreten schenkst Du Sicherheit und gewinnst Vertrauen. Die Basis für Eure gemeinsame Beziehung und Deine wertvolle Arbeit.",
+      "short": "Deine Expertise & Kompetenz vermittelst Du in Deinem Stimmklang und Deiner Präsenz. Ob Deine Klienten Dir ihr Vertrauen schenken, entscheiden sie in Bruchteilen von Sekunden. Trainiere Deine Stimme und Deine Präsenz und lass Deine Stärken in Deiner Persönlichkeit spürbar werden. Schenke Sicherheit und gewinne Vertrauen. Sie bilden die Basis Eurer gemeinsamen Arbeit.",
       "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
     },
     "link": "Mehr »"
   },
   "courses": {
-    "text": "- Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia a, voluptatem, amet rerum fuga tempore quidem aspernatur facere iusto aperiam itaque ea et, perferendis accusantium praesentium laudantium vel eum.",
+    "title_1": "Kurse",
+    "title_2": "Wachsen im Austausch mit anderen",
+    "text_1": "In meinen Kursen lernst Du, wie Du Deine Stimme kraftvoll und sicher einsetzt, Vertrauen gewinnst, Verbindung stärkst und andere überzeugst und inspirierst. Gemeinsam schaffen wir die Grundlage, auf der Du mit gutem Gefühl souverän, authentisch & lebendig auftreten kannst – mit Präsenz, Klarheit und Selbstbewusstsein.",
+    "text_2": "Die Dynamik eines Kurses bietet Dir die Möglichkeit in Übungen und Impulsen miteinander, und von anderen Teilnehmern zu lernen. Erlebe, wie schnell Du Fortschritte machst, wenn Du in einer unterstützenden und wertschätzenden Gruppe Deine Stimme und Präsenz entfaltest.",
+    "text_3": "Ob in meinen offenen Kursen oder inhouse für Dein Team – diese Erfahrung wird Dich nachhaltig stärken. Buche hier ein kostenfreies Kennenlerngespräch (link) und melde Dich hier (link)für meinen Newsletter an.",
     "link": "Zu den Kursen",
     "short": {
       "title": "Die Kursinhalte",
@@ -139,6 +144,13 @@
         "text_7": ""
       },
       "link": "Zur Buchung"
+    },
+    "offer": {
+      "title": "Angebot",
+      "place_1": "vor Ort in Berlin",
+      "place_2": "online",
+      "text": "Buche hier ein kostenfreies Kennenlerngespralach (link) und melde Dich hier (link)für meinen Newsletter an.",
+      "button": "Jetzt buchen"
     }
   },
   "profile": {
@@ -240,8 +252,10 @@
     "text_1": "Kostenfreies Erstgespräch",
     "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen.",
     "short": {
-      "header": "Ich freue mich, von Dir zu",
-      "span": "hören",
+      "header_1": "Ich freue mich, von Dir zu",
+      "span_1": "hören",
+      "header_2": "Hast du",
+      "span_2": "Fragen?",
       "box": "Wenn Du neugierig geworden bist, schreib mir gerne eine persönliche Nachricht, oder buch Dir einen Termin für Dein kostenfreies Ersgespräch. Ich freue mich auf Dich!",
       "button": "Gespräch vereinbaren"
     }
