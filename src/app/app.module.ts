@@ -26,6 +26,7 @@ import { BoxesComponent } from './boxes/boxes.component';
 import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
 import { BoxesWomenComponent } from './trainings/women/boxes-women/boxes-women.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { OfferComponent } from './offer/offer.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
@@ -108,6 +109,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SpeakerComponent,
     ManagerComponent,
     SingerComponent,
+    OfferComponent,
     PodcastComponent,
     TrainerComponent,
     ImpressumComponent,
