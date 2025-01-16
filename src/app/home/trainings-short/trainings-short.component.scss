@@ -13,7 +13,6 @@
   display: flex;
   flex-direction: row;
   width: min(90vw, 1100px);
-  // padding: 1rem;
   gap: 3rem;
 }
 
@@ -29,7 +28,7 @@
 
 h1 {
   font-family: 'Montserrat Thin', sans-serif;
-  font-size: 5.8rem;
+  font-size: 5.6rem;
   color: var(--color-light);
   writing-mode: vertical-lr;
   margin: 1rem auto 2rem 3rem;
