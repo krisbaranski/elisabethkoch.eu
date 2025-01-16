@@ -9,6 +9,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 import { WomenComponent } from './trainings/women/women.component';
 import { SpeakerComponent } from './trainings/speaker/speaker.component';
@@ -58,6 +59,11 @@ const routes: Routes = [
     path: 'privacy',
     component: PrivacyComponent,
     data: { animation: 'PrivacyPage' },
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
+    data: { animation: 'NotFoundPage' },
   },
 ];
 

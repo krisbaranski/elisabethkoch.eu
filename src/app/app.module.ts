@@ -42,6 +42,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactShortComponent } from './home/contact-short/contact-short.component';
 import { TidycalComponent } from './contact/tidycal/tidycal.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FormComponent } from './contact/form/form.component';
@@ -116,6 +117,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrivacyComponent,
     TidycalComponent,
     NewsletterComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
