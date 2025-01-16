@@ -73,15 +73,15 @@
         "title_1": "Die Kursinhalte"
       },
       "benefits": {
-        "title": "Der Benefit",
+        "title": "Benefits",
         "texte": {
-          "title_1": "Souveränität:",
+          "title_1": "Souveränität",
           "text_1": "Erreiche stimmliche Souveränität, mit der Du Dich in Deiner Kompetenz stark, unabhängig und gut fühlst.",
-          "title_2": "Selbstbewusstsein:",
+          "title_2": "Selbstbewusstsein",
           "text_2": "Entdecke Deine persönliche starke Stimme, die Dir in jeder Situation Sicherheit schenkt.",
-          "title_3": "Einflussnahme:",
+          "title_3": "Einflussnahme",
           "text_3": "Inspiriere andere über Deinen Stimmklang und nimm Einfluss.",
-          "title_4": "Lebendigkeit:",
+          "title_4": "Lebendigkeit",
           "text_4": "Lass auch Deine inneren Qualitäten in Deinem Stimmklang hörbar werden & gewinne die Herzen Deiner Zuhörer."
         },
         "link": "Zur Buchung"
@@ -119,6 +119,7 @@
     "link": "Mehr »"
   },
   "courses": {
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum et pariatur provident, quod assumenda recusandae numquam nostrum hic deleniti laudantium quibusdam sequi accusamus rerum neque facere dolore ad eligendi minima?",
     "title_1": "Kurse",
     "title_2": "Wachsen im Austausch mit anderen",
     "text_1": "In meinen Kursen lernst Du, wie Du Deine Stimme kraftvoll und sicher einsetzt, Vertrauen gewinnst, Verbindung stärkst und andere überzeugst und inspirierst. Gemeinsam schaffen wir die Grundlage, auf der Du mit gutem Gefühl souverän, authentisch & lebendig auftreten kannst – mit Präsenz, Klarheit und Selbstbewusstsein.",
@@ -126,7 +127,7 @@
     "text_3": "Ob in meinen offenen Kursen oder inhouse für Dein Team – diese Erfahrung wird Dich nachhaltig stärken. Buche hier ein kostenfreies Kennenlerngespräch (link) und melde Dich hier (link)für meinen Newsletter an.",
     "link": "Zu den Kursen",
     "short": {
-      "title": "Die Kursinhalte",
+      "title": "Kursinhalte",
       "texte": {
         "title_1": "Körper & Entspannungsübungen",
         "text_1": "",
