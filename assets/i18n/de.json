@@ -3,7 +3,7 @@
     "trainings": "Trainings",
     "courses": "Kurse",
     "offers": "Angebote",
-    "profile": "Profil",
+    "profile": "Über Mich",
     "blog": "Blog",
     "contact": "Kennenlernen",
     "policy": "Datenschutz"
@@ -34,6 +34,7 @@
     },
     "women": {
       "title": "Frauen",
+      "title_menu": "Women, Voice & Leadership",
       "short": "In Deinem Stimmklang und Deinem Auftreten werden Deine Kompetenzen Unmittelbar hörbar & spürbar. Trainiere Deine authentische, starke Stimme und Dein souveränes Auftreten. Mach es Dir einfach und lass Dein Publikum spüren, dass es Dir am Herzen liegt!",
       "title_1": "Women, Voice & Leadership",
       "text_2": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
@@ -258,7 +259,7 @@
       "span_1": "hören",
       "header_2": "Hast du",
       "span_2": "Fragen?",
-      "box": "Wenn Du neugierig geworden bist, schreib mir gerne eine persönliche Nachricht, oder buch Dir einen Termin für Dein kostenfreies Ersgespräch. Ich freue mich auf Dich!",
+      "box": "Bist Du neugierig geworden? Dann schreib mir gerne eine Nachricht oder buche Dir einen Termin für Dein kostenfreies Ersgespräch. Ich freue mich auf Dich!",
       "button": "Gespräch vereinbaren"
     }
   },
@@ -284,7 +285,7 @@
     "pagename_3": "A brilliant mind",
     "text_4": "„Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen.”",
     "author_4": "Martina S., selbständige Trainerin",
-    "text_5": "„Dank Elisabeths warmherzigem, konstruktiven Feedback konnte ich meine Stärken für meine öffentlichen Auftritte nutzen und in meinem authentischen Auftreten mühelos geltend machen.",
+    "text_5": "„Dank Elisabeths warmherzigem, konstruktiven Feedback konnte ich meine Stärken für meine öffentlichen Auftritte nutzen und trete nun mühelos selbstbewusst und authentisch auf.”",
     "author_5": "Daniel Aichinger / 50 Jahre / Schauspieler & Ernährungsberater",
     "link_5": "https://pieceofcake.coach/",
     "pagename_5": "piece of cake"
