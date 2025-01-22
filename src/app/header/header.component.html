@@ -22,16 +22,24 @@
         <div [class.darkLinks]="darkMode">
           <a
             mat-button
-            [matMenuTriggerFor]="trainings"
             class="top_menu_item"
             [routerLinkActive]="'active'"
+            routerLink="trainings"
             >{{ 'menu.trainings' | translate }}</a
           >
-          <mat-menu #trainings="matMenu">
-            <button mat-menu-item (click)="goToPart('trainings/women')">
-              {{ 'trainings.women.title' | translate }}
+
+          <a
+            mat-button
+            [matMenuTriggerFor]="courses"
+            class="top_menu_item"
+            [routerLinkActive]="'active'"
+            >{{ 'menu.courses' | translate }}</a
+          >
+          <mat-menu #courses="matMenu">
+            <button mat-menu-item (click)="goToPart('courses/women')">
+              {{ 'trainings.women.title_menu' | translate }}
             </button>
-            <button mat-menu-item (click)="goToPart('trainings/speaker')">
+            <!-- <button mat-menu-item (click)="goToPart('trainings/speaker')">
               {{ 'trainings.speaker.title' | translate }}
             </button>
             <button mat-menu-item (click)="goToPart('trainings/manager')">
@@ -45,25 +53,25 @@
             </button>
             <button mat-menu-item (click)="goToPart('trainings/trainer')">
               {{ 'trainings.trainer.title' | translate }}
-            </button>
+            </button> -->
           </mat-menu>
 
           <a
             mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
-            routerLink="courses"
-            >{{ 'menu.courses' | translate }}</a
+            routerLink="profile"
+            >{{ 'menu.profile' | translate }}</a
           >
 
-          <a
+          <!-- <a
             mat-button
             [matMenuTriggerFor]="profile"
             class="top_menu_item"
             [routerLinkActive]="'active'"
             >{{ 'menu.profile' | translate }}</a
-          >
-          <mat-menu #profile="matMenu">
+          > -->
+          <!-- <mat-menu #profile="matMenu">
             <button mat-menu-item (click)="goToPart('profile#aboutme')">
               {{ 'profile.aboutme.title' | translate }}
             </button>
@@ -73,15 +81,15 @@
             <button mat-menu-item (click)="goToPart('profile#facts')">
               {{ 'profile.facts.title' | translate }}
             </button>
-          </mat-menu>
+          </mat-menu> -->
 
-          <a
+          <!-- <a
             mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="blog"
             >{{ 'menu.blog' | translate }}</a
-          >
+          > -->
           <a
             mat-button
             class="top_menu_item"
@@ -139,18 +147,27 @@
       >
         <div class="sidebar_items">
           <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            (click)="navigateAndClose('trainings')"
+            [routerLinkActive]="'active'"
+            routerLink="trainings"
+            >{{ 'menu.trainings' | translate }}</a
+          >
+
+          <a
             mat-button
             (click)="onSidemenuClick($event)"
             [routerLinkActive]="'active'"
-            [matMenuTriggerFor]="trainings"
+            [matMenuTriggerFor]="courses"
             class="sidebar_item sublink"
             >{{ 'menu.trainings' | translate }}</a
           >
-          <mat-menu #trainings="matMenu">
-            <button mat-menu-item (click)="goToPart('trainings#women')">
-              {{ 'trainings.women.title' | translate }}
+          <mat-menu #courses="matMenu">
+            <button mat-menu-item (click)="goToPart('coursess#women')">
+              {{ 'trainings.women.title_menu' | translate }}
             </button>
-            <button mat-menu-item (click)="goToPart('trainings#speaker')">
+            <!-- <button mat-menu-item (click)="goToPart('trainings#speaker')">
               {{ 'trainings.speaker.title' | translate }}
             </button>
             <button mat-menu-item (click)="goToPart('trainings#manager')">
@@ -164,18 +181,19 @@
             </button>
             <button mat-menu-item (click)="goToPart('trainings#trainer')">
               {{ 'trainings.trainer.title' | translate }}
-            </button>
+            </button> -->
           </mat-menu>
 
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
-            (click)="navigateAndClose('courses')"
+            (click)="navigateAndClose('profile')"
             [routerLinkActive]="'active'"
-            routerLink="courses"
-            >{{ 'menu.courses' | translate }}</a
+            routerLink="profile"
+            >{{ 'menu.profile' | translate }}</a
           >
-          <a
+
+          <!-- <a
             mat-button
             (click)="onSidemenuClick($event)"
             [routerLinkActive]="'active'"
@@ -193,15 +211,15 @@
             <button mat-menu-item (click)="navigateAndClose('facts')">
               {{ 'profile.facts.title' | translate }}
             </button>
-          </mat-menu>
-          <a
+          </mat-menu> -->
+          <!-- <a
             class="sidebar_item"
             (click)="sidenav.close()"
             (click)="navigateAndClose('blog')"
             [routerLinkActive]="'active'"
             routerLink="blog"
             >{{ 'menu.blog' | translate }}</a
-          >
+          > -->
           <a
             class="sidebar_item"
             (click)="sidenav.close()"
