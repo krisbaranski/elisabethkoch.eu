@@ -1,0 +1,54 @@
+<div class="wrapper">
+  <div class="boxes">
+    <div class="box-frame box_2">
+      <h1 class="handwrite">
+        {{ 'trainings.women.boxes.box_1.title_1' | translate }}
+      </h1>
+      <h1>{{ 'trainings.women.boxes.box_1.title_2' | translate }}</h1>
+      <h1>{{ 'trainings.women.boxes.box_1.title_3' | translate }}</h1>
+      <h1>{{ 'trainings.women.boxes.box_1.title_4' | translate }}</h1>
+    </div>
+    <div class="box box_1">
+      <h2>{{ 'trainings.women.boxes.box_2.title' | translate }}</h2>
+      <p>
+        <b>
+          {{ 'trainings.women.boxes.box_2.title_1' | translate }}
+        </b>
+        {{ 'trainings.women.boxes.box_2.text_1' | translate }}
+      </p>
+      <p>
+        <b>
+          {{ 'trainings.women.boxes.box_2.title_2' | translate }}
+        </b>
+        {{ 'trainings.women.boxes.box_2.text_2' | translate }}
+      </p>
+      <p>
+        <b>
+          {{ 'trainings.women.boxes.box_2.title_3' | translate }}
+        </b>
+        {{ 'trainings.women.boxes.box_2.text_3' | translate }}
+      </p>
+      <p>
+        <b>
+          {{ 'trainings.women.boxes.box_2.title_4' | translate }}
+        </b>
+        {{ 'trainings.women.boxes.box_2.text_4' | translate }}
+      </p>
+    </div>
+
+    <div class="box box_3">
+      <img src="assets/img/woman_speaking.jpg" />
+    </div>
+    <div class="box box_4">
+      <h2>
+        {{ 'trainings.women.boxes.box_4.title' | translate }}
+      </h2>
+      <ul>
+        <li *ngFor="let text of text_1">
+          {{ text | translate }}
+        </li>
+      </ul>
+      <p>{{ 'trainings.women.boxes.box_4.text_2' | translate }}</p>
+    </div>
+  </div>
+</div>
