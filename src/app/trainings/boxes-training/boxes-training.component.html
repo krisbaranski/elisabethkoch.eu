@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <div class="boxes">
+    <div class="box box_1">
+      <h2>{{ 'trainings.main.boxes.box_2.title' | translate }}</h2>
+      <p>
+        {{ 'trainings.main.boxes.box_2.text_1' | translate }}
+      </p>
+      <p>
+        {{ 'trainings.main.boxes.box_2.text_2' | translate }}
+      </p>
+      <p>
+        {{ 'trainings.main.boxes.box_2.text_3' | translate }}
+      </p>
+      <p>
+        {{ 'trainings.main.boxes.box_2.text_4' | translate }}
+      </p>
+    </div>
+
+    <div class="box-frame box_2">
+      <h1 class="handwrite">
+        {{ 'trainings.main.boxes.box_1.title_1' | translate }}
+      </h1>
+      <h1>{{ 'trainings.main.boxes.box_1.title_2' | translate }}</h1>
+      <h1>{{ 'trainings.main.boxes.box_1.title_3' | translate }}</h1>
+    </div>
+
+    <div class="box box_3">
+      <img src="assets/img/trainings_bg.png" alt="elisabeths portrait" />
+    </div>
+
+    <div class="box box_4">
+      <h2>
+        {{ 'trainings.main.boxes.box_4.title' | translate }}
+      </h2>
+      <ul>
+        <li *ngFor="let text of text_1">
+          {{ text | translate }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
