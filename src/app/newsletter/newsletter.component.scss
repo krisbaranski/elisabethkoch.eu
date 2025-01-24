@@ -1,0 +1,37 @@
+.wrapper {
+  display: block;
+  width: 100%;
+  background-color: #123b45;
+  margin: auto;
+}
+
+.col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text {
+  color: var(--color-light);
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  text-align: center;
+  margin: 10rem 5rem;
+}
+
+h1 {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: var(--size-2);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+p {
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: var(--size--2);
+}
+
+@media screen and (max-width: 620px) {
+  .text {
+    margin: 5rem 1rem;
+  }
+}
