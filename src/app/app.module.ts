@@ -3,50 +3,50 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { SlideshowComponent } from './home/slideshow/slideshow.component';
-import { HeaderComponent } from './header/header.component';
+import { AppointmentHomeComponent } from './contact/appointment-home/appointment-home.component';
 import { AboutmeComponent } from './profile/aboutme/aboutme.component';
 import { AboutmeShortComponent } from './home/aboutme-short/aboutme-short.component';
-import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.component';
-import { SlideshowMeComponent } from './profile/slideshow-me/slideshow-me.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
-import { WorkComponent } from './profile/work/work.component';
-import { WorkWomenComponent } from './courses/women/work-women/work-women.component';
-import { FactsComponent } from './profile/facts/facts.component';
-import { FaqComponent } from './home/faq/faq.component';
-import { ProfileComponent } from './profile/profile.component';
-import { FooterComponent } from './footer/footer.component';
-import { TermineComponent } from './contact/termine/termine.component';
-import { HomeComponent } from './home/home.component';
+import { BenefitsShortComponent } from './courses/women/benefits-short/benefits-short.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
 import { BoxesWomenComponent } from './courses/women/boxes-women/boxes-women.component';
 import { BoxesTrainingComponent } from './trainings/boxes-training/boxes-training.component';
-import { ImpressumComponent } from './impressum/impressum.component';
-import { OfferComponent } from './offer/offer.component';
-import { PrivacyComponent } from './privacy/privacy.component';
-import { TrainingsComponent } from './trainings/trainings.component';
-import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
-import { HeroComponent } from './hero/hero.component';
-import { WomenComponent } from './courses/women/women.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactShortComponent } from './home/contact-short/contact-short.component';
-import { TidycalComponent } from './contact/tidycal/tidycal.component';
-import { NewsletterComponent } from './newsletter/newsletter.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
-import { FeedbackComponent } from './feedback/feedback.component';
-import { FormComponent } from './contact/form/form.component';
-import { AppointmentHomeComponent } from './contact/appointment-home/appointment-home.component';
-import { CourseContentComponent } from './courses/women/course-content/course-content.component';
-import { BenefitsShortComponent } from './courses/women/benefits-short/benefits-short.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesShortComponent } from './courses/courses-short/courses-short.component';
+import { CourseContentComponent } from './courses/women/course-content/course-content.component';
+import { FactsComponent } from './profile/facts/facts.component';
+import { FaqComponent } from './home/faq/faq.component';
+import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormComponent } from './contact/form/form.component';
+import { HeaderComponent } from './header/header.component';
+import { HeroComponent } from './hero/hero.component';
+import { HomeComponent } from './home/home.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { OfferComponent } from './offer/offer.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SlideshowComponent } from './home/slideshow/slideshow.component';
+import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.component';
+import { SlideshowMeComponent } from './profile/slideshow-me/slideshow-me.component';
+import { SingleTrainingComponent } from './trainings/single-training/single-training.component';
 import { SpacerComponent } from './spacer/spacer.component';
+import { TermineComponent } from './contact/termine/termine.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
+import { TidycalComponent } from './contact/tidycal/tidycal.component';
+import { TrainingsComponent } from './trainings/trainings.component';
+import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
+import { WomenComponent } from './courses/women/women.component';
+import { WorkComponent } from './profile/work/work.component';
+import { WorkWomenComponent } from './courses/women/work-women/work-women.component';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -87,27 +87,28 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     FormComponent,
     HeaderComponent,
-    HomeComponent,
-    HomeComponent,
-    SlideshowComponent,
-    ProfileComponent,
-    SlideAboutmeComponent,
-    SlideshowMeComponent,
-    SpacerComponent,
-    WorkComponent,
-    WorkWomenComponent,
-    TestimonialComponent,
-    TermineComponent,
-    TrainingsComponent,
-    TrainingsShortComponent,
     HeroComponent,
-    WomenComponent,
-    OfferComponent,
+    HomeComponent,
+    HomeComponent,
     ImpressumComponent,
-    PrivacyComponent,
-    TidycalComponent,
+    OfferComponent,
     NewsletterComponent,
     NotFoundComponent,
+    PrivacyComponent,
+    ProfileComponent,
+    SingleTrainingComponent,
+    SlideAboutmeComponent,
+    SlideshowMeComponent,
+    SlideshowComponent,
+    SpacerComponent,
+    TestimonialComponent,
+    TermineComponent,
+    TidycalComponent,
+    TrainingsComponent,
+    TrainingsShortComponent,
+    WomenComponent,
+    WorkComponent,
+    WorkWomenComponent,
   ],
   imports: [
     BrowserModule,
@@ -129,6 +130,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatMenuModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    SingleTrainingComponent,
   ],
   providers: [
     HttpClientModule,
