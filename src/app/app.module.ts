@@ -25,19 +25,14 @@ import { HomeComponent } from './home/home.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
 import { BoxesWomenComponent } from './courses/women/boxes-women/boxes-women.component';
+import { BoxesTrainingComponent } from './trainings/boxes-training/boxes-training.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { OfferComponent } from './offer/offer.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
-import { TrainingComponent } from './trainings/training/training.component';
-import { HeroComponent } from './trainings/hero/hero.component';
+import { HeroComponent } from './hero/hero.component';
 import { WomenComponent } from './courses/women/women.component';
-import { SpeakerComponent } from './trainings/speaker/speaker.component';
-import { ManagerComponent } from './trainings/manager/manager.component';
-import { SingerComponent } from './trainings/singer/singer.component';
-import { PodcastComponent } from './trainings/podcast/podcast.component';
-import { TrainerComponent } from './trainings/trainer/trainer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactShortComponent } from './home/contact-short/contact-short.component';
 import { TidycalComponent } from './contact/tidycal/tidycal.component';
@@ -79,6 +74,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BoxesComponent,
     BoxesHomeComponent,
     BoxesWomenComponent,
+    BoxesTrainingComponent,
     ContactComponent,
     ContactShortComponent,
     CourseContentComponent,
@@ -104,15 +100,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     TermineComponent,
     TrainingsComponent,
     TrainingsShortComponent,
-    TrainingComponent,
     HeroComponent,
     WomenComponent,
-    SpeakerComponent,
-    ManagerComponent,
-    SingerComponent,
     OfferComponent,
-    PodcastComponent,
-    TrainerComponent,
     ImpressumComponent,
     PrivacyComponent,
     TidycalComponent,
