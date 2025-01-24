@@ -26,6 +26,37 @@
     "button_offer": "Jetzt anfragen!"
   },
   "trainings": {
+    "main": {
+      "title_1": "Präsenz- und Stimmtraining",
+      "title_2": "Einzeltraining für souveränes Auftreten, Präsenz und guten Stimmklang",
+      "title_3": "Hier bist Du richtig, wenn Du das Gefühl hast, dass Deine kommunikativen Fähigkeiten nicht mit Deiner fachlichen Kompetenz mithalten können, und Dich beim Sprechen wohl, souverän und lebendig fühlen möchtest.",
+      "link": "Gib mir Stimme",
+      "boxes": {
+        "box_1": {
+          "title_1": "Auftreten",
+          "title_2": "Stimmklang",
+          "title_3": "Präsenz"
+        },
+        "box_2": {
+          "title": "Entfalte Deine Stimmpersönlichkeit",
+          "text_1": "Stell Dir vor Deine Stimme klingt genau so, wie Du es Dir wünschst. Du weißt, dass du Deine Gesprächspartner und Zuhörer mit deinen Worten und deiner Stimme überzeugen kannst!",
+          "text_2": "Wie klingt das für dich? Spürst du, dass da noch mehr für dich möglich ist?",
+          "text_3": "Natürlich zählen guter Inhalt und gute Argumente. Doch über Deinen Erfolg entscheidet Dein Klang, Dein Auftreten und Deine Präsenz.",
+          "text_4": "Wenn Deine Persönlichkeit in Deinem Stimmklang hörbar und spürbar wird, gewinnst Du auch das Vertrauen und die volle Aufmerksamkeit Deiner Zuhörer."
+        },
+        "box_3": "",
+        "box_4": {
+          "title": "Wünscht du dir...",
+          "text_1": [
+            "endlich gehört zu werden?",
+            "Aufmerksamkeit zu gewinnen?",
+            "auf den Punkt zu kommen?",
+            "Dein Lampenfieber in freudige Erwartung zu wandeln?",
+            "Dich gut zu fühlen beim Sprechen und zu überzeugen?"
+          ]
+        }
+      }
+    },
     "short": {
       "title": "Einzeltraining",
       "text_1": "Dein Stimmklang, Deine Körpersprache und Deine Präsenz machen Deine Kompetenzen unmittelbar hörbar und spürbar. Vermittle Deine Botschaft mit Klarheit und Selbstbewusstsein und lass Dein Gegenüber spüren, dass er Dir am Herzen liegt.",
