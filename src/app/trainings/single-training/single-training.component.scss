@@ -24,7 +24,7 @@
 
   h2 {
     font-family: 'Montserrat Light', sans-serif;
-    font-size: var(--size-1);
+    font-size: var(--size-0);
     color: var(--color-light);
     margin-bottom: 2rem;
   }
@@ -43,11 +43,11 @@
 }
 
 .box-frame {
-  border-left: 1px solid var(--color-light);
-  padding-left: 2rem;
-  margin-left: 1rem;
+  border-right: 1px solid var(--color-light);
+  padding-right: 2rem;
+  margin-right: 1rem;
   align-content: center;
-  text-align: left;
+  text-align: right;
   color: var(--color-light);
 
   h1 {
@@ -63,64 +63,68 @@
 }
 
 .offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  background-color: var(--color-dark);
+  color: #fff;
+  flex-direction: column;
+  border-radius: 3px;
+  margin: 2rem auto;
+  padding: 3rem 5rem;
+
+  h1 {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: var(--size-1);
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: var(--size-0);
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  p {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: var(--size--2);
+    color: #fff;
+    text-align: center;
+    margin: auto;
+  }
+
+  b {
+    padding-right: 0.5rem;
+  }
+
+  .button {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 400px;
-    background-color: var(--color-dark);
-    flex-direction: column;
-    border-radius: 3px;
-    margin: 2rem auto;
-    padding: 3rem;
-  
-    h1 {
-      font-family: 'Montserrat Bold', sans-serif;
-      font-size: var(--size-1);
-      text-align: center;
-      line-height: 1.6;
-    }
-  
-    h2 {
-      font-family: 'Montserrat Light', sans-serif;
-      font-size: var(--size-0);
-      text-align: center;
-      line-height: 1.6;
-    }
-  
-    p {
-      font-family: 'Montserrat Regular', sans-serif;
+    justify-content: flex-start;
+    margin-top: 2rem;
+
+    a {
+      background-color: var(--color-light);
+      color: #ffffff;
+      border: 1px solid var(--color-light);
+      border-radius: 3px;
+      padding: 1em 2em;
       font-size: var(--size--2);
       text-align: center;
-      margin: 0.5rem auto;
-    }
-  
-    b {
-      padding-right: 0.5rem;
-    }
-  
-    .button {
-      display: flex;
-      justify-content: flex-start;
-      margin-top: 2rem;
-  
-      a {
-        background-color: var(--color-light);
-        color: #ffffff;
-        border: 1px solid var(--color-light);
-        border-radius: 3px;
-        padding: 1em 2em;
-        font-size: var(--size--2);
-        text-align: center;
-        text-decoration: none;
-  
-        &:hover {
-          background-color: transparent;
-          color: var(--color-light);
-        }
+      text-decoration: none;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--color-light);
       }
     }
   }
+}
 
 //
 // MEDIA QUERIES

@@ -11,7 +11,7 @@ export class SingleTrainingComponent {
 
   constructor(public translate: TranslateService) {
     this.translate
-      .get('trainings.main.boxes.box_4.text_1')
+      .get('trainings.main.boxes_2.box_3.text_1')
       .subscribe((res: string[]) => {
         this.text_1 = res;
       });
