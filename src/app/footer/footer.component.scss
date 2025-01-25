@@ -7,7 +7,7 @@ footer {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-inline: auto;
   justify-items: center;
   align-items: start;
@@ -18,6 +18,10 @@ footer {
 .links {
   display: flex;
   flex-direction: column;
+
+  justify-self: center;
+  align-content: center;
+
   font-family: inherit;
   text-align: left;
   line-height: 1.6rem;
