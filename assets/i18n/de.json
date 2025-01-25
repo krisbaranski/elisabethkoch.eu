@@ -1,8 +1,8 @@
 {
   "menu": {
+    "home": "Home",
     "trainings": "Trainings",
     "courses": "Kurse",
-    "offers": "Angebote",
     "profile": "Über Mich",
     "blog": "Blog",
     "contact": "Kennenlernen",
@@ -31,7 +31,7 @@
       "title_2": "Einzeltraining für souveränes Auftreten, Präsenz und guten Stimmklang",
       "title_3": "Hier bist Du richtig, wenn Du das Gefühl hast, dass Deine kommunikativen Fähigkeiten nicht mit Deiner fachlichen Kompetenz mithalten können, und Dich beim Sprechen wohl, souverän und lebendig fühlen möchtest.",
       "link": "Gib mir Stimme",
-      "boxes": {
+      "boxes_1": {
         "box_1": {
           "title_1": "Auftreten",
           "title_2": "Stimmklang",
@@ -54,6 +54,42 @@
             "Dein Lampenfieber in freudige Erwartung zu wandeln?",
             "Dich gut zu fühlen beim Sprechen und zu überzeugen?"
           ]
+        }
+      },
+      "boxes_2": {
+        "box_1": {
+          "title_1": "Potential",
+          "title_2": "Superkraft",
+          "title_3": "Stimme"
+        },
+        "box_2": {
+          "title": "Deine Stimme - Deine Superkraft",
+          "text_1": "In meinem Stimmtraining sehe ich Dich immer in Deinem Potential und in Deiner Gesamtheit.",
+          "text_2.1": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du kennst Dich selbst am Besten. Und dann höre und schaue ich genau hin: was brauchen",
+          "text_2.2": "Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem,",
+          "text_2.3": "um stark zu werden?",
+          "text_3": "Gemeinsam finden wir die Weichen, die Deine Stimme stark und lebendig klingen lassen und Dein Auftreten kraftvoll, herzlich und authentisch machen.",
+          "text_4.1": "Du wirst sehen: ",
+          "text_4.2": "Die Sicherheit und Stärke,",
+          "text_4.3": " die dadurch in Dir wächst, wirst Du sofort spürst - und Deine Zuhörer auch. Es wird Dich begeistern!"
+        },
+        "box_3": {
+          "title": "Freu Dich auf:",
+          "text_1": [
+            "eine ausdruckstarke Stimme, mit der Du gehört und wahrgenommen wirst",
+            "souveränes Auftreten und Präsentieren",
+            "Freude am Sprechen",
+            "eine klare Sprache aus Deiner Mitte heraus",
+            "ein Sprechtempo, mit dem Du Dich gut fühlst",
+            "eine balancierte Atmung, die Dich zentriert",
+            "eine authentische Präsenz",
+            "Selbstbewusstes & präsentes Führen"
+          ],
+          "text_2": "Mit einer klaren, starken Sprache, kommt Deine Botschaft mit Leichtigkeit an!"
+        },
+        "box_4": {
+          "title": "Einzeltraining",
+          "text_1": "Online oder vor Ort"
         }
       }
     },
@@ -324,6 +360,10 @@
   "sentences": {
     "text_1": "„When your voice brings you joy, you're the best of yourself!”",
     "author_1": "Celine Dion"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "text": "Mit deiner Anmeldung willigst du in die Verarbeitung deiner Daten und den Empfang des Newsletters ein. Eine Abmeldung ist jederzeit möglich."
   },
   "faq": {
     "title": "Frequently Asked Questions",
