@@ -65,14 +65,24 @@ span {
 ///
 ///
 /// MEDIA QUERIES
-// @media (max-width: 1200px) {
-//   .text .title h1 {
-//     font-size: clamp(2.2rem, 4vw, 4rem);
-//     transform: rotate(0) translate(0, 0);
-//     margin: auto;
-//   }
-//   .frame {
-//     margin-left: 0;
-//     padding: 1rem;
-//   }
-// }
+@media (max-width: 1200px) {
+  .wrapper {
+    margin: 4rem auto;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .box {
+    width: 80vw;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    transform: rotate(270deg);
+    margin: auto;
+  }
+}

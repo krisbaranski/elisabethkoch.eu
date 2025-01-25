@@ -26,7 +26,6 @@
 }
 
 h1 {
-  margin: auto;
   font-family: 'Montserrat Thin', sans-serif;
   font-size: 8.5rem;
   color: var(--color-light);
@@ -68,14 +67,26 @@ span {
 ///
 ///
 /// MEDIA QUERIES
-// @media (max-width: 1200px) {
-//   .text .title h1 {
-//     font-size: clamp(2.2rem, 4vw, 4rem);
-//     transform: rotate(0) translate(0, 0);
-//     margin: auto;
-//   }
-//   .frame {
-//     margin-left: 0;
-//     padding: 1rem;
-//   }
-// }
+@media (max-width: 1200px) {
+  .wrapper {
+    margin: 4rem auto;
+  }
+
+  .box {
+    width: 80vw;
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    transform: rotate(270deg);
+    padding: 3rem;
+    margin: auto;
+  }
+}
