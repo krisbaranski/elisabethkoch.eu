@@ -130,7 +130,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatMenuModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    SingleTrainingComponent,
   ],
   providers: [
     HttpClientModule,
