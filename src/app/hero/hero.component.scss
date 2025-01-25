@@ -14,9 +14,11 @@
 
 .text {
   color: #ffffff;
-  max-width: 800px;
+  max-width: 1200px;
   text-align: center;
-  padding: 1rem;
+  margin: auto;
+  // align-content: center;
+  // padding: 1rem;
 
   h1 {
     font-family: 'Montserrat Bold', sans-serif;
@@ -27,12 +29,16 @@
   h2 {
     font-family: 'Montserrat Thin', sans-serif;
     font-size: var(--size-2);
+    max-width: 800px;
+    margin: auto;
     padding-bottom: 2rem;
   }
 
   p {
     font-family: 'Montserrat Regular', sans-serif;
     font-size: var(--size--1);
+    max-width: 700px;
+    margin: auto;
     line-height: 2;
     padding: 4rem 1rem;
   }
