@@ -6,7 +6,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { AppointmentHomeComponent } from './contact/appointment-home/appointment-home.component';
 import { AboutmeComponent } from './profile/aboutme/aboutme.component';
 import { AboutmeShortComponent } from './home/aboutme-short/aboutme-short.component';
 import { BenefitsShortComponent } from './courses/women/benefits-short/benefits-short.component';
@@ -24,7 +23,6 @@ import { FaqComponent } from './home/faq/faq.component';
 import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormComponent } from './contact/form/form.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
@@ -67,7 +65,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    AppointmentHomeComponent,
     AboutmeComponent,
     AboutmeShortComponent,
     BenefitsShortComponent,
@@ -85,7 +82,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     FeedbacksComponent,
     FeedbackComponent,
     FooterComponent,
-    FormComponent,
     HeaderComponent,
     HeroComponent,
     HomeComponent,
