@@ -1,9 +1,15 @@
 <div class="wrapper">
-  <div class="col">
-    <h1>{{ 'newsletter.title' | translate }}</h1>
-    <p>{{ 'newsletter.text' | translate }}</p>
-  </div>
-  <div class="col">
-    <!-- <app-form></app-form> -->
+  <div class="form">
+    <div class="col text">
+      <h1>{{ 'newsletter.title' | translate }}</h1>
+      <p>{{ 'newsletter.text' | translate }}</p>
+    </div>
+    <div class="col">
+      <div class="container">
+        <input type="text" placeholder="Name" name="name" required />
+        <input type="text" placeholder="Email" name="mail" required />
+        <input class="offer" type="submit" value="Senden" />
+      </div>
+    </div>
   </div>
 </div>

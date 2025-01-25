@@ -5,33 +5,73 @@
   margin: auto;
 }
 
+.form {
+  width: 1100px;
+  margin: auto;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 .col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text {
-  color: var(--color-light);
-  padding: 4rem 1rem;
-  max-width: 1200px;
-  text-align: center;
-  margin: 10rem 5rem;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: left;
+
+  h1 {
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: var(--size-1);
+  }
+
+  p {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: var(--size--2);
+  }
 }
 
-h1 {
-  font-family: 'Montserrat Light', sans-serif;
-  font-size: var(--size-2);
-  line-height: 1.6;
-  margin-bottom: 3rem;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+
+  input {
+    padding: 1rem 2rem;
+    border-radius: 3px;
+  }
+
+  input:focus {
+    // outline: none;
+    outline-color: var(--color-light);
+  }
+
+  .offer {
+    background-color: var(--color-light);
+    color: #ffffff;
+    outline: var(--color-light);
+    text-align: center;
+    text-decoration: none;
+    font-size: var(--size--2);
+
+    &:hover {
+      color: var(--color-light);
+      background-color: var(--color-dark);
+    }
+  }
 }
 
-p {
-  font-family: 'Montserrat Bold', sans-serif;
-  font-size: var(--size--2);
-}
-
-@media screen and (max-width: 620px) {
-  .text {
-    margin: 5rem 1rem;
+@media screen and (max-width: 1160px) {
+  .form {
+    flex-direction: column;
   }
 }
