@@ -16,7 +16,7 @@ import { BoxesTrainingComponent } from './trainings/boxes-training/boxes-trainin
 import { ContactComponent } from './contact/contact.component';
 import { ContactShortComponent } from './home/contact-short/contact-short.component';
 import { CoursesComponent } from './courses/courses.component';
-import { CoursesShortComponent } from './courses/courses-short/courses-short.component';
+import { CoursesShortComponent } from './home/courses-short/courses-short.component';
 import { CourseContentComponent } from './courses/women/course-content/course-content.component';
 import { FactsComponent } from './profile/facts/facts.component';
 import { FaqComponent } from './home/faq/faq.component';
