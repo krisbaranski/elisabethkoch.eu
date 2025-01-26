@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutmeComponent } from './profile/aboutme/aboutme.component';
 import { AboutmeShortComponent } from './home/aboutme-short/aboutme-short.component';
+import { AquaintmentComponent } from './contact/aquaintment/aquaintment.component';
 import { BenefitsShortComponent } from './courses/women/benefits-short/benefits-short.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
@@ -22,6 +23,7 @@ import { FactsComponent } from './profile/facts/facts.component';
 import { FaqComponent } from './home/faq/faq.component';
 import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { FirstAppointmentComponent } from './contact/first-appointment/first-appointment.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
@@ -37,9 +39,9 @@ import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.com
 import { SlideshowMeComponent } from './profile/slideshow-me/slideshow-me.component';
 import { SingleTrainingComponent } from './trainings/single-training/single-training.component';
 import { SpacerComponent } from './spacer/spacer.component';
-import { TermineComponent } from './contact/termine/termine.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
-import { TidycalComponent } from './contact/tidycal/tidycal.component';
+import { Tidycal30Component } from './contact/tidycal-30/tidycal-30.component';
+import { Tidycal60Component } from './contact/tidycal-60/tidycal-60.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
 import { WomenComponent } from './courses/women/women.component';
@@ -67,6 +69,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     AboutmeComponent,
     AboutmeShortComponent,
+    AquaintmentComponent,
     BenefitsShortComponent,
     BoxesComponent,
     BoxesHomeComponent,
@@ -81,6 +84,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FaqComponent,
     FeedbacksComponent,
     FeedbackComponent,
+    FirstAppointmentComponent,
     FooterComponent,
     HeaderComponent,
     HeroComponent,
@@ -98,8 +102,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SlideshowComponent,
     SpacerComponent,
     TestimonialComponent,
-    TermineComponent,
-    TidycalComponent,
+    Tidycal30Component,
+    Tidycal60Component,
     TrainingsComponent,
     TrainingsShortComponent,
     WomenComponent,

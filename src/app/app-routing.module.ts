@@ -12,6 +12,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { WomenComponent } from './courses/women/women.component';
+import { AquaintmentComponent } from './contact/aquaintment/aquaintment.component';
+import { FirstAppointmentComponent } from './contact/first-appointment/first-appointment.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'HomePage' } },
@@ -38,6 +40,11 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+    children: [
+      { path: 'aquaintment', component: AquaintmentComponent },
+      { path: 'first-appointment', component: FirstAppointmentComponent },
+      { path: '', redirectTo: 'women', pathMatch: 'full' }, // Default child route
+    ],
     data: { animation: 'ContactPage' },
   },
   {

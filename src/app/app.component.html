@@ -5,11 +5,10 @@
     router.url !== '/courses' &&
     router.url !== '/courses/women' &&
     router.url !== '/profile' &&
-    router.url !== '/profile#aboutme' &&
-    router.url !== '/profile#work' &&
-    router.url !== '/profile#facts' &&
     router.url !== '/blog' &&
-    router.url !== '/contact'
+    router.url !== '/contact' &&
+    router.url !== '/contact/aquaintment' &&
+    router.url !== '/contact/first-appointment'
   "
 ></app-header>
 <div [class.container]="router.url" [@routeAnimations]="prepareRoute(outlet)">
