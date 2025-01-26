@@ -90,13 +90,33 @@
             routerLink="blog"
             >{{ 'menu.blog' | translate }}</a
           > -->
-          <a
+          <!-- <a
             mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="contact/aquaintment"
             >{{ 'menu.contact' | translate }}</a
+          > -->
+
+          <a
+            mat-button
+            (click)="onSidemenuClick($event)"
+            [routerLinkActive]="'active'"
+            [matMenuTriggerFor]="contact"
+            class="sidebar_item sublink"
+            >{{ 'menu.contact' | translate }}</a
           >
+          <mat-menu #contact="matMenu">
+            <button mat-menu-item (click)="goToPart('contact/aquaintment')">
+              {{ 'contact.link_1' | translate }}
+            </button>
+            <button
+              mat-menu-item
+              (click)="goToPart('contact/first-appointment')"
+            >
+              {{ 'contact.link_2' | translate }}
+            </button>
+          </mat-menu>
         </div>
 
         <!-- Spacer -->
@@ -164,7 +184,7 @@
             >{{ 'menu.courses' | translate }}</a
           >
           <mat-menu #courses="matMenu">
-            <button mat-menu-item (click)="goToPart('coursess#women')">
+            <button mat-menu-item (click)="goToPart('courses/women')">
               {{ 'trainings.women.title_menu' | translate }}
             </button>
             <!-- <button mat-menu-item (click)="goToPart('trainings#speaker')">
@@ -220,14 +240,33 @@
             routerLink="blog"
             >{{ 'menu.blog' | translate }}</a
           > -->
-          <a
+          <!-- <a
             class="sidebar_item"
             (click)="sidenav.close()"
             (click)="navigateAndClose('contact')"
             [routerLinkActive]="'active'"
             routerLink="contact/aquaintment"
             >{{ 'menu.contact' | translate }}</a
+          > -->
+          <a
+            mat-button
+            (click)="onSidemenuClick($event)"
+            [routerLinkActive]="'active'"
+            [matMenuTriggerFor]="contact"
+            class="sidebar_item sublink"
+            >{{ 'menu.contact' | translate }}</a
           >
+          <mat-menu #contact="matMenu">
+            <button mat-menu-item (click)="goToPart('contact/aquaintment')">
+              {{ 'contact.link_1' | translate }}
+            </button>
+            <button
+              mat-menu-item
+              (click)="goToPart('contact/first-appointment')"
+            >
+              {{ 'contact.link_2' | translate }}
+            </button>
+          </mat-menu>
         </div>
 
         <!-- Spacer -->
