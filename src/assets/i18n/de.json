@@ -88,7 +88,7 @@
           "text_2": "Mit einer klaren, starken Sprache, kommt Deine Botschaft mit Leichtigkeit an!"
         },
         "box_4": {
-          "title": "Einzeltraining",
+          "title": "Ersttermin",
           "text_1": "Online oder vor Ort"
         }
       }
@@ -338,9 +338,16 @@
     "title_5": "Artikel 5"
   },
   "contact": {
-    "title": "Lass uns darüber sprechen was dich bewegt",
-    "text_1": "Kostenfreies Erstgespräch",
-    "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen.",
+    "aquaintment": {
+      "title": "Lass uns darüber sprechen was dich bewegt",
+      "text_1": "Kostenfreies Erstgespräch",
+      "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen."
+    },
+    "first-appointment": {
+      "title": "Lass uns darüber sprechen was dich bewegt",
+      "text_1": "Ersttermin",
+      "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen."
+    },
     "short": {
       "header_1": "Ich freue mich, von Dir zu",
       "span_1": "hören",
