@@ -12,6 +12,7 @@ export class HeroComponent {
   @Input() text = '';
   @Input() link = '';
   @Input() button = '';
+  @Input() showButton: boolean = true; // Control visibility
 
   constructor(private router: Router) {}
 
