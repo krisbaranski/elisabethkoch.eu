@@ -5,7 +5,7 @@
     "courses": "Kurse",
     "profile": "Über Mich",
     "blog": "Blog",
-    "contact": "Kennenlernen",
+    "contact": "Termine",
     "policy": "Datenschutz"
   },
   "home": {
@@ -344,9 +344,9 @@
       "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen."
     },
     "first-appointment": {
-      "title": "Lass uns darüber sprechen was dich bewegt",
-      "text_1": "Ersttermin",
-      "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen."
+      "title": "Kostprobe dessen, wie Du deine Stimme zu Deinem Juwelen machen kannst",
+      "text_1": "Erstes Termin mit mir",
+      "text_2": "Hier kannst Du Dich anmelden und Dein erstes Termin auswählen."
     },
     "short": {
       "header_1": "Ich freue mich, von Dir zu",
