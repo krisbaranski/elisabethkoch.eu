@@ -100,10 +100,9 @@
 
           <a
             mat-button
-            (click)="onSidemenuClick($event)"
-            [routerLinkActive]="'active'"
             [matMenuTriggerFor]="contact"
-            class="sidebar_item sublink"
+            [routerLinkActive]="'active'"
+            class="top_menu_item"
             >{{ 'menu.contact' | translate }}</a
           >
           <mat-menu #contact="matMenu">
