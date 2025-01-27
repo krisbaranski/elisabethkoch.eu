@@ -24,7 +24,7 @@
   color: #ffffff;
   padding: 1rem;
   text-align: left;
-  text-wrap: balance;
+  // text-wrap: balance;
 
   h1 {
     font-family: 'Montserrat Light', sans-serif;
@@ -48,7 +48,8 @@
   input {
     padding: 1rem;
     border-radius: 3px;
-    border: none;
+    // border: none;
+    border: 3px solid var(--color-light);
   }
 
   input:focus {
@@ -56,11 +57,21 @@
     outline-offset: -3px;
   }
 
+  // input:required:invalid {
+  //   border: 3px solid red;
+  // }
+
+  // input:required:valid {
+  //   border: 3px solid var(--color-light);
+  // }
+
   .offer {
     background-color: var(--color-light);
     color: #ffffff;
     padding: 1rem 2rem;
-    border: none;
+    border: 3px solid var(--color-light);
+    border-radius: 3px;
+    // border: none;
     text-align: center;
     text-decoration: none;
     font-size: var(--size--2);

@@ -90,15 +90,15 @@
             routerLink="blog"
             >{{ 'menu.blog' | translate }}</a
           > -->
-          <!-- <a
+          <a
             mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="contact/aquaintment"
             >{{ 'menu.contact' | translate }}</a
-          > -->
+          >
 
-          <a
+          <!-- <a
             mat-button
             [matMenuTriggerFor]="contact"
             [routerLinkActive]="'active'"
@@ -115,7 +115,7 @@
             >
               {{ 'contact.link_2' | translate }}
             </button>
-          </mat-menu>
+          </mat-menu> -->
         </div>
 
         <!-- Spacer -->
@@ -239,15 +239,15 @@
             routerLink="blog"
             >{{ 'menu.blog' | translate }}</a
           > -->
-          <!-- <a
+          <a
             class="sidebar_item"
             (click)="sidenav.close()"
             (click)="navigateAndClose('contact')"
             [routerLinkActive]="'active'"
             routerLink="contact/aquaintment"
             >{{ 'menu.contact' | translate }}</a
-          > -->
-          <a
+          >
+          <!-- <a
             mat-button
             (click)="onSidemenuClick($event)"
             [routerLinkActive]="'active'"
@@ -265,7 +265,7 @@
             >
               {{ 'contact.link_2' | translate }}
             </button>
-          </mat-menu>
+          </mat-menu> -->
         </div>
 
         <!-- Spacer -->

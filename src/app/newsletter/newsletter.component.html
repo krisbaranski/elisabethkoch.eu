@@ -1,4 +1,4 @@
-<div class="wrapper">
+<!-- <div class="wrapper">
   <div class="form">
     <div class="col text">
       <h1>{{ 'newsletter.title' | translate }}</h1>
@@ -6,15 +6,31 @@
     </div>
     <div class="col">
       <form
-        action="https://assets.mailerlite.com/js/universal.js"
+        (ngSubmit)="onSubmit()"
         class="container ml-embedded"
+        action="https://assets.mailerlite.com/js/universal.js"
         data-form="B5Ub9g"
         method="POST"
+        novalidate
       >
-        <input type="text" placeholder="Name" name="name" required />
-        <input type="email" placeholder="Email" name="email" required />
-        <input class="offer" type="submit" value="Senden" />
+        <input
+          type="text"
+          placeholder="Name"
+          [(ngModel)]="name"
+          name="name"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          [(ngModel)]="email"
+          name="email"
+          required
+        />
+        <button class="offer" type="submit">Senden</button>
       </form>
     </div>
   </div>
 </div>
+-->
+<div class="ml-embedded" data-form="B5Ub9g"></div>
