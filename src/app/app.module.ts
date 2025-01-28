@@ -20,6 +20,7 @@ import { ContactShortComponent } from './home/contact-short/contact-short.compon
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesShortComponent } from './home/courses-short/courses-short.component';
 import { CourseContentComponent } from './courses/women/course-content/course-content.component';
+import { EducationComponent } from './profile/education/education.component';
 import { FactsComponent } from './profile/facts/facts.component';
 import { FaqComponent } from './home/faq/faq.component';
 import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
@@ -36,8 +37,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SlideshowComponent } from './home/slideshow/slideshow.component';
-import { SlideAboutmeComponent } from './profile/slide-aboutme/slide-aboutme.component';
-import { SlideshowMeComponent } from './profile/slideshow-me/slideshow-me.component';
 import { SingleTrainingComponent } from './trainings/single-training/single-training.component';
 import { SpacerComponent } from './spacer/spacer.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
@@ -81,6 +80,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CourseContentComponent,
     CoursesComponent,
     CoursesShortComponent,
+    EducationComponent,
     FactsComponent,
     FaqComponent,
     FeedbacksComponent,
@@ -98,8 +98,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrivacyComponent,
     ProfileComponent,
     SingleTrainingComponent,
-    SlideAboutmeComponent,
-    SlideshowMeComponent,
     SlideshowComponent,
     SpacerComponent,
     TestimonialComponent,
