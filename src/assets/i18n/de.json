@@ -95,6 +95,35 @@
     },
     "short": {
       "title": "Einzeltraining",
+      "speaker": {
+        "title": "Redner",
+        "short": "Lege Deine persönlichen Stärken als Redner frei, inspiriere Deine Zuhörer und lass Deine Worte präzise & kraftvoll werden. Trainiere Deine Stimme und Deine Präsenz. Verleihe Deinen Botschaften Character & Wirkung und werde prägnant!",
+        "title_1": "Voice & Confidence",
+        "title_2": "Frauen mit starker Stimme in Führung",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
+      "manager": {
+        "title": "Führungskräfte",
+        "short": "Deine Expertise vermittelt sich in Deiner Stimme und Deinem Auftreten unmittelbar. Überzeuge Dein Team und Deine Partner mit souveränem Auftreten und Präsenz. Mit gezielten Techniken stärkst Du Deine Wirkung und vertrittst Deinen Standpunkt auch in herausfordernden Situationen sicher und überzeugend.",
+        "title_1": "Voice & Leadership",
+        "title_2": "Führung mit klare & freundliche Stimme",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
+      "singer": {
+        "title": "Sänger, Sprecher & Schauspieler",
+        "short": "Selbst bei starker Beanspruchung sollte Deine Stimme keine Ermüdungserscheinungen zeigen. Mit gezielten Atemund Stimmtechniken stärkst Du Deine Stimme und regenerierst sie schnell. Entdecke die Mühelosigkeit für Deine Stimme und gewinne Sicherheit für ein freies, gesundes Singen und Sprechen.",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
+      "podcast": {
+        "title": "Podcast Hosts",
+        "short": "Ein inspirierender Podcast lebt von Deiner kraftvollen, warmen und lebendigen Stimme. Dein Klang entscheidet in Millisekunden, ob Du Deine Hörer fesselst oder verlierst. Trainiere Deine Stimme & kreiere eine gewinnende Atmosphäre, in der Du Dich mit Deinen Hörern verbunden fühlst.",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
+      "trainer": {
+        "title": "Trainer & Berater",
+        "short": "Deine Expertise & Kompetenz vermittelst Du in Deinem Stimmklang und Deiner Präsenz. Ob Deine Klienten Dir ihr Vertrauen schenken, entscheiden sie in Bruchteilen von Sekunden. Trainiere Deine Stimme und Deine Präsenz und lass Deine Stärken in Deiner Persönlichkeit spürbar werden. Schenke Sicherheit und gewinne Vertrauen. Sie bilden die Basis Eurer gemeinsamen Arbeit.",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
       "text_1": "Dein Stimmklang, Deine Körpersprache und Deine Präsenz machen Deine Kompetenzen unmittelbar hörbar und spürbar. Vermittle Deine Botschaft mit Klarheit und Selbstbewusstsein und lass Dein Gegenüber spüren, dass er Dir am Herzen liegt.",
       "text_2": "Alle, die ihre Stimme und Präsenz stärken möchten und alle Berufsgruppen sind in meinen Einzeltrainings herzlich willkommen. Die Trainings sind individuell auf dich abgestimmt, direkt buchbar. Sie finden wahlweise persönlich in Präsenz oder online statt. ",
       "link": "Zu den Trainings"
