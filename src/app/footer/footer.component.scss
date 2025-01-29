@@ -1,7 +1,7 @@
 footer {
   background: var(--color-dark);
   font-family: 'Montserrat Regular', sans-serif;
-  padding: 3rem 0;
+  padding-top: 3rem;
   z-index: 1;
 }
 
@@ -82,7 +82,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin: auto;
   padding-top: 3rem;
   border-top: 1px solid #aaa;
 }
@@ -92,29 +92,13 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  img {
-    height: 50px;
-    object-fit: contain;
-  }
-}
-
-.logo {
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.7;
-  }
 }
 
 .copyright {
-  font-family: inherit;
+  font-family: 'Montserrat Light', sans-serif;
   font-size: var(--size--2);
-  font-weight: 300;
   color: #fff;
-  display: flex;
-  padding: 50px 20px;
-  margin-left: 0.6rem;
+  padding: 1rem;
 }
 
 //
