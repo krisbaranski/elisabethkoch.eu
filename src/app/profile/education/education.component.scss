@@ -19,6 +19,7 @@
   max-width: 450px;
   height: auto;
   padding: 2rem;
+  padding-left: 0;
   align-content: center;
 
   h2 {
@@ -117,11 +118,9 @@
     grid-template-columns: 1fr; /* 1 column */
     grid-template-rows: auto; /* Automatic row heights */
     grid-template-areas:
-      'box2'
       'box1'
-      'box3'
-      'box4';
-    row-gap: 2rem;
+      'box2';
+    // row-gap: 2rem;
   }
 
   .box_1 {
@@ -130,15 +129,10 @@
   .box_2 {
     grid-area: box2;
   }
-  .box_3 {
-    grid-area: box3;
-  }
-  .box_4 {
-    grid-area: box4;
-  }
 
   .box {
     flex: 0 1 80vw;
+    margin: auto;
   }
 
   .box-frame {
@@ -154,5 +148,9 @@
     .handwrite {
       font-size: clamp(5rem, 9vw, 9rem);
     }
+  }
+
+  .offer {
+    padding: 3rem;
   }
 }
