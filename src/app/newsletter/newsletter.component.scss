@@ -89,6 +89,12 @@
   }
 }
 
+.success {
+  border-radius: 3px;
+  color: var(--color-light);
+  background-color: #fff;
+}
+
 @media screen and (max-width: 1160px) {
   .form {
     width: 80vw;

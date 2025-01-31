@@ -4,33 +4,117 @@
       <h1>{{ 'newsletter.title' | translate }}</h1>
       <p>{{ 'newsletter.text' | translate }}</p>
     </div>
-    <!-- <div class="col ml-embedded" data-form="B5Ub9g"></div> -->
+    <div
+      id="mlb2-22029023"
+      class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-22029023"
+    >
+      <div class="ml-form-align-center">
+        <div class="ml-form-embedWrapper embedForm">
+          <div
+            class="ml-form-embedBody ml-form-embedBodyHorizontal row-form"
+            style="display: none"
+          >
+            <div class="ml-form-embedContent" style="margin-bottom: 0px"></div>
 
-    <div class="col">
-      <form
-        (ngSubmit)="onSubmit()"
-        class="container ml-embedded"
-        action="https://dashboard.mailerlite.com/forms/1264344/144685679533622555/share"
-        data-form="B5Ub9g"
-        method="POST"
-        novalidate
-      >
-        <input
-          type="text"
-          placeholder="Name"
-          [(ngModel)]="name"
-          name="name"
-          required
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          [(ngModel)]="email"
-          name="email"
-          required
-        />
-        <button class="offer" type="submit">Senden</button>
-      </form>
+            <form
+              class="ml-block-form"
+              action="https://assets.mailerlite.com/jsonp/1264344/forms/144685679533622555/subscribe"
+              data-code=""
+              method="post"
+              target="_blank"
+            >
+              <div class="ml-form-formContent horozintalForm">
+                <div class="ml-form-horizontalRow">
+                  <div class="ml-input-horizontal">
+                    <div style="width: 50%" class="horizontal-fields">
+                      <div class="ml-field-group ml-field-name">
+                        <!-- input -->
+                        <input
+                          type="text"
+                          class="form-control"
+                          data-inputmask=""
+                          name="fields[name]"
+                          placeholder="Name"
+                          autocomplete="given-name"
+                          aria-invalid="false"
+                        />
+                        <!-- /input -->
+                      </div>
+                    </div>
+                    <div style="width: 50%" class="horizontal-fields">
+                      <div
+                        class="ml-field-group ml-field-email ml-validate-email ml-validate-required"
+                      >
+                        <!-- input -->
+                        <input
+                          type="email"
+                          class="form-control"
+                          data-inputmask=""
+                          name="fields[email]"
+                          placeholder="Email"
+                          autocomplete="email"
+                          aria-invalid="false"
+                        />
+                        <!-- /input -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ml-button-horizontal primary">
+                    <button type="submit" class="primary" style="">
+                      Absenden
+                    </button>
+
+                    <button
+                      disabled="disabled"
+                      style="display: none"
+                      type="button"
+                      class="loading"
+                    >
+                      <div class="ml-form-embedSubmitLoad"></div>
+                      <span class="sr-only">Loading...</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <input
+                type="hidden"
+                name="ml-submit"
+                value="1"
+                aria-invalid="false"
+              />
+
+              <div class="ml-mobileButton-horizontal">
+                <button type="submit" class="primary" style="">Absenden</button>
+                <button
+                  disabled="disabled"
+                  style="display: none"
+                  type="button"
+                  class="loading"
+                >
+                  <div class="ml-form-embedSubmitLoad"></div>
+                  <span class="sr-only">Loading...</span>
+                </button>
+              </div>
+              <input
+                type="hidden"
+                name="anticsrf"
+                value="true"
+                aria-invalid="false"
+              />
+            </form>
+          </div>
+
+          <div class="ml-form-successBody row-success text success">
+            <div class="ml-form-successContent">
+              <h1>{{ 'newsletter.success_1' | translate }}</h1>
+
+              <p>{{ 'newsletter.success_2' | translate }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
