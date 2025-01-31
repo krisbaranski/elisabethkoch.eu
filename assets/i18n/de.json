@@ -29,7 +29,7 @@
     "main": {
       "title_1": "Präsenz- und Stimmtraining",
       "title_2": "Einzeltraining für souveränes Auftreten, Präsenz und guten Stimmklang",
-      "title_3": "Hier bist Du richtig, wenn Du Dich souverän und lebendig fühlen möchtest.",
+      "title_3": "Hier bist Du richtig, wenn Du Dich beim sprechen wohl, souverän und lebendig fühlen möchtest.",
       "link": "Jetzt anfragen!",
       "boxes_1": {
         "box_1": {
@@ -186,7 +186,6 @@
     "link": "Mehr »"
   },
   "courses": {
-    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum et pariatur provident, quod assumenda recusandae numquam nostrum hic deleniti laudantium quibusdam sequi accusamus rerum neque facere dolore ad eligendi minima?",
     "title_1": "Kurse",
     "title_2": "Wachsen im Austausch mit anderen",
     "text_1": "In meinen Kursen lernst Du, wie Du Deine Stimme kraftvoll und sicher einsetzt, Vertrauen gewinnst, Verbindung stärkst und andere überzeugst und inspirierst. Gemeinsam schaffen wir die Grundlage, auf der Du mit gutem Gefühl souverän, authentisch & lebendig auftreten kannst – mit Präsenz, Klarheit und Selbstbewusstsein.",
@@ -381,7 +380,9 @@
   },
   "newsletter": {
     "title": "Newsletter",
-    "text": "Mit deiner Anmeldung willigst du in die Verarbeitung deiner Daten und den Empfang des Newsletters ein. Eine Abmeldung ist jederzeit möglich."
+    "text": "Mit deiner Anmeldung willigst du in die Verarbeitung deiner Daten und den Empfang des Newsletters ein. Eine Abmeldung ist jederzeit möglich.",
+    "success_1": "Dankeschön!",
+    "success_2": "Du hast Dich erfolgreich zum Newsletter angemeldet."
   },
   "faq": {
     "title": "Frequently Asked Questions",
