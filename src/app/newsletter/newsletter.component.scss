@@ -1303,10 +1303,6 @@
   }
 }
 
-////
-/// ///
-/// ///
-
 .wrapper {
   display: block;
   width: 100%;
@@ -1329,11 +1325,6 @@
   justify-content: center;
   flex: 1 1 50%;
 }
-
-// .ml-embedded {
-//   background-color: #123b45;
-//   color: #ffffff;
-// }
 
 .text {
   color: #ffffff;
@@ -1371,14 +1362,6 @@
     outline: 3px solid var(--color-light);
     outline-offset: -3px;
   }
-
-  // input:required:invalid {
-  //   border: 3px solid red;
-  // }
-
-  // input:required:valid {
-  //   border: 3px solid var(--color-light);
-  // }
 
   .offer {
     background-color: var(--color-light);
