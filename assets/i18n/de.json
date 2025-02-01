@@ -10,7 +10,7 @@
   },
   "home": {
     "title_1": "Frei sprechen, kraftvoll auftreten!",
-    "title_2": "Entfalte dein Stimmpotenzial!",
+    "title_2": "Entfalte Dein Stimmpotenzial!",
     "box_1": "Stimme",
     "box_2": "Vertrauen",
     "box_3": "Präsenz",
@@ -38,7 +38,7 @@
           "title_3": "Präsenz"
         },
         "box_2": {
-          "title": "Entfalte Deine Persönlichkeit",
+          "title": "Entfalte Deine Stimme",
           "text_1": "Stell Dir vor, Deine Stimme klingt genau so, wie Du es Dir wünschst. Du weißt, dass Du Deine Gesprächspartner und Zuhörer überzeugen kannst!",
           "text_2": "Natürlich zählen guter Inhalt und gute Argumente. Doch über Deinen Erfolg entscheiden Dein Klang, Dein Auftreten und Deine Präsenz.",
           "text_3": "Wenn Deine Persönlichkeit in Deinem Stimmklang hörbar und spürbar wird, gewinnst Du auch das Vertrauen und die volle Aufmerksamkeit Deiner Zuhörer."
@@ -90,6 +90,29 @@
           "title": "Ersttermin",
           "text_1": "Online oder vor Ort"
         }
+      },
+      "boxes_3": {
+        "title": "Wir arbeiten an",
+        "text_1_1": "Atmung und Stimmklang",
+        "text_1_2": "Wie stärkt Deine Atmung Deinen Stimmklang und wie werden sie zu starken Verbündeten?",
+        "text_2_1": "Innere Haltung",
+        "text_2_2": "In welcher Wechselwirkung stehen Deine innere Haltung und die Wirksamkeit Deiner Sprache zueinander?",
+        "text_3_1": "Stimmlage und Stimmfarbe",
+        "text_3_2": "Wie findest Du Deine individuelle, natürliche Stimmlage & Stimmfarbe, in der Deine Persönlichkeit zum Ausdruck kommt.",
+        "text_4_1": "Sprechtempo & Verständlichkeit",
+        "text_4_2": "Wie trainierst Du eine klare Aussprache, gewinnst Vertrauen und vermittelst Deine Kompetenz auf natürliche Weise?",
+        "text_5_1": "Aussprache & Dialektreduktion",
+        "text_5_2": "Wie erreichst Du eine klare, gute Verständlichkeit und behältst dabei Deine Authentizität und Persönlichkeit?",
+        "text_6_1": "Stimmgesundheit",
+        "text_6_2": "Was kannst Du sonst noch tun, damit Deine Stimme gesund & stark bleibt.",
+        "text_7_1": "Körpersprache",
+        "text_7_2": "Wie entwickelst Du eine Körpersprache, mit der Du das, was Dir wichtig ist souverän und verbindlich vermittelst?",
+        "text_8_1": "Präsentieren und Auftreten",
+        "text_8_2": "Wie kannst Du Deine Selbstsicherheit und Überzeugungskraftbeeinflussen und souverän auftreten und präsentieren?",
+        "text_9_1": "Lampenfieber",
+        "text_9_2": "Was ist Lampenfieber, welche Funktion hat es und wie kannst Du es in freudige Erwartung wandeln?",
+        "text_10_1": "Selbstbewusstsein & Präsenz",
+        "text_10_2": "Wie kannst Du Dich Anderen sicher & selbstbewusst zuwenden? Im Alltag und vor Publikum."
       }
     },
     "short": {
