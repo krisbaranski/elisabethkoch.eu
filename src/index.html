@@ -30,6 +30,14 @@
       ml('initializeEmbeddedForm', '144685679533622555');
       ml('enablePopups', false);
     </script>
+    <script
+      type="text/javascript"
+      src="https://assets.mlcdn.com/ml/ajax/libs/jquery/3.7.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://assets.mlcdn.com/gr/js/w/ml_jQuery.inputmask.bundle.min.js?v3.3.1"
+    ></script>
   </head>
   <body class="mat-typography">
     <app-root></app-root>
@@ -37,18 +45,13 @@
 
     <!-- Load MailerLite AFTER jQuery -->
     <script src="https://assets.mailerlite.com/js/universal.js"></script>
-
-    <!-- Your function (after both scripts are loaded) -->
-    <script>
-      function ml_webform_success_22029023() {
-        var $ = window.jQuery;
-        if (!$) {
-          console.warn('jQuery is still not available.');
-          return;
-        }
-        $('.ml-subscribe-form-22029023 .row-success').show();
-        $('.ml-subscribe-form-22029023 .row-form').hide();
-      }
-    </script>
   </body>
+  <!-- Your function (after both scripts are loaded) -->
+  <script>
+    function ml_webform_success_22029023() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-22029023 .row-success').show();
+      $('.ml-subscribe-form-22029023 .row-form').hide();
+    }
+  </script>
 </html>
