@@ -44,6 +44,7 @@ import { Tidycal30Component } from './contact/tidycal-30/tidycal-30.component';
 import { Tidycal60Component } from './contact/tidycal-60/tidycal-60.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
+import { WeWorkComponent } from './trainings/we-work/we-work.component';
 import { WomenComponent } from './courses/women/women.component';
 import { WorkComponent } from './profile/work/work.component';
 import { WorkWomenComponent } from './courses/women/work-women/work-women.component';
@@ -105,6 +106,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     Tidycal60Component,
     TrainingsComponent,
     TrainingsShortComponent,
+    WeWorkComponent,
     WomenComponent,
     WorkComponent,
     WorkWomenComponent,
