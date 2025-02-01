@@ -93,6 +93,11 @@
   border-radius: 3px;
   color: var(--color-light);
   background-color: #fff;
+
+  h1 {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: var(--size-0);
+  }
 }
 
 @media screen and (max-width: 1160px) {
