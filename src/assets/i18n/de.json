@@ -279,7 +279,7 @@
     "work": {
       "title": "Warum ein Stimm- und Präsenztraining mit mir?",
       "title_1": "Your „Kings Speech”",
-      "text_1": "Ich weiß, was es bedeutet und braucht, vor Menschen zu sprechen und zu singen. Und ich weiß auch, was es bedeutet, hierfür an sich zu arbeiten. Ich habe selbst lange geübt, trainiert, gezweifelt, hinterfragt und dabei die Kunst des Redens von vielen Seiten her durchdrungen. Ich bin überzeugt: Jeder kann es lernen und alle großen Redner haben irgendwann mit ihrem ersten Mal begonnen. Es mir eine Freude und eine Ehre, Dich als Expertin begleiten zu dürfen. Damit Du Dich in jeder Situation zuhause und sicher fühlst.",
+      "text_1": "Ich weiß, was es bedeutet und braucht, vor Menschen zu sprechen und zu singen. Und ich weiß auch, was es bedeutet, hierfür an sich zu arbeiten. Ich habe selbst lange geübt, trainiert, gezweifelt, hinterfragt und dabei die Kunst des Redens von vielen Seiten her durchdrungen. Ich bin überzeugt: Jeder kann es lernen und alle großen Redner haben irgendwann mit ihrem ersten Mal begonnen. Es mir eine Freude, Dich als Expertin begleiten zu dürfen. Damit Du Dich in jeder Situation zuhause und sicher fühlst.",
       "title_2": "Den Unterschied machen",
       "text_2": "Die Veränderung soll für Dich unmittelbar spürbar werden. Hochwirksam und direkt. Darum wähle ich nur die Übungen, die Dich direkt an Dein Ziel bringen. Du lernst handfeste Strategien kennen, mit denen Du Deine Selbstsicherheit und Überzeugungskraft ganz entscheidend beeinflussen kannst.",
       "title_3": "Stimme ist die Königsdisziplin der Rhetorik",
@@ -402,7 +402,8 @@
     "author_6": "Celine Dion"
   },
   "newsletter": {
-    "title": "Newsletter",
+    "title_1": "Komm in den",
+    "title_2": "Newsletter",
     "text": "Mit deiner Anmeldung willigst du in die Verarbeitung deiner Daten und den Empfang des Newsletters ein. Eine Abmeldung ist jederzeit möglich.",
     "success_1": "Dankeschön!",
     "success_2": "Du hast Dich erfolgreich zum Newsletter angemeldet."
