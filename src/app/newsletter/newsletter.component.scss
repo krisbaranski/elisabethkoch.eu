@@ -1333,8 +1333,15 @@
   // text-wrap: balance;
 
   h1 {
+    // font-family: 'Montserrat Light', sans-serif;
     font-family: 'Montserrat Light', sans-serif;
-    font-size: var(--size-1);
+    font-size: var(--size-2);
+  }
+
+  span {
+    font-family: 'Funky-signature', sans-serif;
+    font-size: var(--size-4);
+    color: var(--color-light);
   }
 
   p {
