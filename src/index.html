@@ -14,39 +14,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <base href="/" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <style type="text/css">
+      @import url("https://assets.mlcdn.com/fonts.css?version=1738316");
+    </style>
     <script
       src="https://assets.mailerlite.com/js/universal.js"
       type="text/javascript"
-    ></script>
-    <script>
-      window.ml = function () {
-        ;(window.ml.q = window.ml.q || []).push(arguments)
-      }
-      ml("account", 1264344)
-      ml("initializeEmbeddedForm", "144685679533622555")
-      ml("enablePopups", false)
-    </script>
-    <script
-      src="https://assets.mailerlite.com/jsonp/1264344/forms/144685679533622555/takel?cache=173859919282931184211676878"
-      async="true"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://assets.mlcdn.com/ml/ajax/libs/jquery/3.7.1/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://assets.mlcdn.com/gr/js/w/ml_jQuery.inputmask.bundle.min.js?v3.3.1"
     ></script>
   </head>
   <body class="mat-typography">
     <app-root></app-root>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Load MailerLite AFTER jQuery -->
-    <script src="https://assets.mailerlite.com/js/universal.js"></script>
-    <!-- Your function (after both scripts are loaded) -->
     <script>
       function ml_webform_success_22029023() {
         var $ = ml_jQuery || jQuery
@@ -54,9 +32,15 @@
         $(".ml-subscribe-form-22029023 .row-form").hide()
       }
     </script>
+
     <script
       src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024"
       type="text/javascript"
     ></script>
+    <script>
+      fetch(
+        "https://assets.mailerlite.com/jsonp/1264344/forms/144685679533622555/takel"
+      )
+    </script>
   </body>
 </html>
