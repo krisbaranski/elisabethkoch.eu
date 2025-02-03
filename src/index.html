@@ -24,11 +24,11 @@
     ></script>
     <script>
       window.ml = function () {
-        (window.ml.q = window.ml.q || []).push(arguments);
-      };
-      ml('account', 1264344);
-      ml('initializeEmbeddedForm', '144685679533622555');
-      ml('enablePopups', false);
+        ;(window.ml.q = window.ml.q || []).push(arguments)
+      }
+      ml("account", 1264344)
+      ml("initializeEmbeddedForm", "144685679533622555")
+      ml("enablePopups", false)
     </script>
     <script
       type="text/javascript"
@@ -45,13 +45,13 @@
 
     <!-- Load MailerLite AFTER jQuery -->
     <script src="https://assets.mailerlite.com/js/universal.js"></script>
+    <!-- Your function (after both scripts are loaded) -->
+    <script>
+      function ml_webform_success_22029023() {
+        var $ = ml_jQuery || jQuery
+        $(".ml-subscribe-form-22029023 .row-success").show()
+        $(".ml-subscribe-form-22029023 .row-form").hide()
+      }
+    </script>
   </body>
-  <!-- Your function (after both scripts are loaded) -->
-  <script>
-    function ml_webform_success_22029023() {
-      var $ = ml_jQuery || jQuery;
-      $('.ml-subscribe-form-22029023 .row-success').show();
-      $('.ml-subscribe-form-22029023 .row-form').hide();
-    }
-  </script>
 </html>
