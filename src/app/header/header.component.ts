@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
     // Check if user is scrolling down
     if (
       currentScrollPosition > this.previousScrollPosition &&
-      currentScrollPosition > 300
+      currentScrollPosition > 100
     ) {
       this.isSticky = true; // Hide sticky menu when scrolling up
       this.isOpen = false;
