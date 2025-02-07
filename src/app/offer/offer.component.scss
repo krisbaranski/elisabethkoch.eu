@@ -24,57 +24,84 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 440px;
   background-color: var(--color-dark);
   flex-direction: column;
   border-radius: 3px;
   margin: 2rem auto;
   padding: 3rem;
+  text-align: center;
+  line-height: 1.6;
+}
 
-  h1 {
-    font-family: 'Montserrat Bold', sans-serif;
-    font-size: var(--size-1);
-    text-align: center;
-    line-height: 1.6;
+h1 {
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: var(--size-1);
+}
+
+h2 {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: var(--size-0);
+  margin-bottom: 2.4rem;
+}
+
+h6 {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: var(--size--1);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: 'Montserrat Regular', sans-serif;
+  font-size: var(--size--2);
+  // margin: 0.5rem auto;
+}
+
+b {
+  padding-right: 0.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: space-between;
+  // flex: 5;
+  text-align: left;
+  margin: 1rem auto;
+  padding: 0;
+
+  .days {
+    margin: 0;
+    padding: 0;
   }
+  // ul li {
+  //   display: flex;
+  //   justify-content: flex-start;
+  //   flex-direction: row;
+  // }
+}
 
-  h2 {
-    font-family: 'Montserrat Light', sans-serif;
-    font-size: var(--size-0);
-    text-align: center;
-    line-height: 1.6;
-  }
+.offer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
 
-  p {
-    font-family: 'Montserrat Regular', sans-serif;
+  a {
+    background-color: var(--color-light);
+    color: #ffffff;
+    border: 1px solid var(--color-light);
+    border-radius: 3px;
+    padding: 1em 2em;
     font-size: var(--size--2);
     text-align: center;
-    margin: 0.5rem auto;
-  }
+    text-decoration: none;
 
-  b {
-    padding-right: 0.5rem;
-  }
-
-  .offer {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 2rem;
-
-    a {
-      background-color: var(--color-light);
-      color: #ffffff;
-      border: 1px solid var(--color-light);
-      border-radius: 3px;
-      padding: 1em 2em;
-      font-size: var(--size--2);
-      text-align: center;
-      text-decoration: none;
-
-      &:hover {
-        background-color: transparent;
-        color: var(--color-light);
-      }
+    &:hover {
+      background-color: transparent;
+      color: var(--color-light);
     }
   }
 }
@@ -100,6 +127,15 @@
     .offer {
       margin: 2rem auto;
     }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
   }
 }
 
