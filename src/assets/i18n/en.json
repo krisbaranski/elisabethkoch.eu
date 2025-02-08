@@ -1,117 +1,316 @@
 {
   "menu": {
+    "home": "Home",
     "trainings": "Trainings",
     "courses": "Courses",
-    "offers": "Offers",
-    "profile": "Profile",
+    "profile": "About Me",
     "blog": "Blog",
     "contact": "Contact",
     "policy": "Privacy Policy"
   },
   "home": {
-    "slide_1": "speak freely, perform strong",
-    "slide_2": "win the hearts of your listeners",
-    "slide_3": "inspire with your energy",
-    "box_1": "VOICE",
-    "box_2": "CONFINENCE",
-    "box_3": "PRESENCE",
-    "button_offer": "make appointment »"
+    "title_1": "Speak freely, appear powerful!",
+    "title_2": "Unleash your vocal potential!",
+    "box_1": "Voice",
+    "box_2": "Confidence",
+    "box_3": "Presence",
+    "text_title_1": "Win the hearts of your audience",
+    "text_title_2": "Inspire with your energy",
+    "text_1": "Do you sometimes feel uncomfortable or insecure when speaking? Or do you not like your voice?",
+    "text_2": "Imagine feeling confident, composed, and inspiring people with your message.",
+    "text_3": "Your vocal tone is the key to a confident presence and a successful appearance.",
+    "text_4": "Your voice enables you to appear authentic and competent, helping you gain the trust and attention of your audience.",
+    "text_5": "I will show you how to bring out your lively, powerful voice and strengthen and improve your presence in no time:",
+    "text_6": "With practical knowledge on using your voice, posture, breathing, and individual resources effectively.",
+    "text_7": "So you can engage with others confidently and authentically on equal footing. So you can make an impact in your profession with strength and confidence.",
+    "button_offer": "Request now!"
   },
   "trainings": {
-    "title": "Trainings",
-    "text": "",
-    "title_1": "Women",
-    "text_1": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
-    "title_2": "Managers",
-    "text_2": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "title_3": "Speaker",
-    "text_3": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "title_4": "Actors and Singer",
-    "text_4": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "title_5": "Podcaster",
-    "text_5": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "title_6": "Consultant",
-    "text_6": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen.",
-    "link": "More »"
+    "main": {
+      "title_1": "Presence and Voice Training",
+      "title_2": "Individual training for confident appearance, presence, and good vocal tone",
+      "title_3": "This is the right place if you want to communicate your competence clearly, confidently, and dynamically.",
+      "link": "Request now!",
+      "boxes_1": {
+        "box_1": {
+          "title_1": "Appearance",
+          "title_2": "Vocal Tone",
+          "title_3": "Presence"
+        },
+        "box_2": {
+          "title": "Unleash Your Voice",
+          "text_1": "Imagine your voice sounding exactly as you want it to. You know you can convince your conversation partners and audience!",
+          "text_2": "Of course, good content and strong arguments matter. But your success is determined by your sound, your presence, and your appearance.",
+          "text_3": "When your personality becomes audible and tangible in your vocal tone, you will also gain the trust and full attention of your audience."
+        },
+        "box_3": "",
+        "box_4": {
+          "title": "Do you want to...",
+          "text_1": [
+            "be heard?",
+            "gain attention?",
+            "get straight to the point?",
+            "turn stage fright into excited anticipation?",
+            "feel good when speaking and be persuasive?"
+          ]
+        }
+      },
+      "boxes_2": {
+        "box_1": {
+          "title_1": "Potential",
+          "title_2": "Superpower",
+          "title_3": "Voice"
+        },
+        "box_2": {
+          "title": "Your Voice - Your Superpower",
+          "text_1": "In my voice training, I always see you in your full potential and entirety.",
+          "text_2.1": "What you tell me about your voice, your appearance, and your challenges is important to me because you know yourself best. Then I listen and observe carefully: what do your",
+          "text_2.2": "voice, body, breathing, and nervous system need",
+          "text_2.3": "to become strong?",
+          "text_3": "Together we will find the key elements that make your voice strong and vibrant while making your presence powerful, warm, and authentic.",
+          "text_4.1": "You will see: ",
+          "text_4.2": "The confidence and strength",
+          "text_4.3": "that grow within you will be immediately noticeable – to you and your audience. It will inspire you!"
+        },
+        "box_3": {
+          "title": "Freu Dich auf:",
+          "text_1": [
+            "eine ausdruckstarke Stimme, mit der Du gehört und wahrgenommen wirst",
+            "souveränes Auftreten und Präsentieren",
+            "Freude am Sprechen",
+            "eine klare Sprache aus Deiner Mitte heraus",
+            "ein Sprechtempo, mit dem Du Dich gut fühlst",
+            "eine balancierte Atmung, die Dich zentriert",
+            "eine authentische Präsenz",
+            "Selbstbewusstes & präsentes Führen"
+          ],
+          "text_2": "Mit einer klaren, starken Sprache, kommt Deine Botschaft mit Leichtigkeit an!"
+        },
+        "box_4": {
+          "title": "Ersttermin",
+          "text_1": "Online oder vor Ort"
+        }
+      },
+      "boxes_3": {
+        "title": "Wir arbeiten an",
+        "text_1_1": "Atmung und Stimmklang",
+        "text_1_2": "Wie stärkt Deine Atmung Deinen Stimmklang und wie werden sie zu starken Verbündeten?",
+        "text_2_1": "Innere Haltung",
+        "text_2_2": "In welcher Wechselwirkung stehen Deine innere Haltung und die Wirksamkeit Deiner Sprache zueinander?",
+        "text_3_1": "Stimmlage und Stimmfarbe",
+        "text_3_2": "Wie findest Du Deine individuelle, natürliche Stimmlage & Stimmfarbe, in der Deine Persönlichkeit zum Ausdruck kommt.",
+        "text_4_1": "Sprechtempo & Verständlichkeit",
+        "text_4_2": "Wie trainierst Du eine klare Aussprache, gewinnst Vertrauen und vermittelst Deine Kompetenz auf natürliche Weise?",
+        "text_5_1": "Aussprache & Dialektreduktion",
+        "text_5_2": "Wie erreichst Du eine klare, gute Verständlichkeit und behältst dabei Deine Authentizität und Persönlichkeit?",
+        "text_6_1": "Stimmgesundheit",
+        "text_6_2": "Was kannst Du sonst noch tun, damit Deine Stimme gesund & stark bleibt.",
+        "text_7_1": "Körpersprache",
+        "text_7_2": "Wie entwickelst Du eine Körpersprache, mit der Du das, was Dir wichtig ist souverän und verbindlich vermittelst?",
+        "text_8_1": "Präsentieren und Auftreten",
+        "text_8_2": "Wie kannst Du Deine Selbstsicherheit und Überzeugungskraftbeeinflussen und souverän auftreten und präsentieren?",
+        "text_9_1": "Lampenfieber",
+        "text_9_2": "Was ist Lampenfieber, welche Funktion hat es und wie kannst Du es in freudige Erwartung wandeln?",
+        "text_10_1": "Selbstbewusstsein & Präsenz",
+        "text_10_2": "Wie kannst Du Dich Anderen sicher & selbstbewusst zuwenden? Im Alltag und vor Publikum."
+      }
+    },
+    "short": {
+      "title": "Einzeltraining",
+      "speaker": {
+        "title": "Redner",
+        "short": "Lege Deine persönlichen Stärken als Redner frei, inspiriere Deine Zuhörer und lass Deine Worte präzise & kraftvoll werden. Trainiere Deine Stimme und Deine Präsenz. Verleihe Deinen Botschaften Character & Wirkung und werde prägnant!",
+        "title_1": "Voice & Confidence",
+        "title_2": "Frauen mit starker Stimme in Führung",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
+      "manager": {
+        "title": "Führungskräfte",
+        "short": "Deine Expertise vermittelt sich in Deiner Stimme und Deinem Auftreten unmittelbar. Überzeuge Dein Team und Deine Partner mit Präsenz und souveränem Auftreten. Mit gezielten Techniken stärkst Du Deine Wirkung und vertrittst Deinen Standpunkt auch in herausfordernden Situationen sicher und überzeugend.",
+        "title_1": "Voice & Leadership",
+        "title_2": "Führung mit klare & freundliche Stimme",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
+      "singer": {
+        "title": "Sänger, Sprecher & Schauspieler",
+        "short": "Selbst bei starker Beanspruchung sollte Deine Stimme keine Ermüdungserscheinungen zeigen. Mit gezielten Atemund Stimmtechniken stärkst Du Deine Stimme und regenerierst sie schnell. Entdecke die Mühelosigkeit für Deine Stimme und gewinne Sicherheit für ein freies, gesundes Singen und Sprechen.",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
+      "podcast": {
+        "title": "Podcast Hosts",
+        "short": "Ein inspirierender Podcast lebt von Deiner kraftvollen, warmen und lebendigen Stimme. Dein Klang entscheidet in Millisekunden, ob Du Deine Hörer fesselst oder verlierst. Trainiere Deine Stimme & kreiere eine gewinnende Atmosphäre, in der Du Dich mit Deinen Hörern verbunden fühlst.",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
+      "trainer": {
+        "title": "Trainer & Berater",
+        "short": "Deine Expertise & Kompetenz vermittelst Du in Deinem Stimmklang und Deiner Präsenz. Ob Deine Klienten Dir ihr Vertrauen schenken, entscheiden sie in Bruchteilen von Sekunden. Trainiere Deine Stimme und Deine Präsenz und lass Deine Stärken in Deiner Persönlichkeit spürbar werden. Schenke Sicherheit und gewinne Vertrauen. Sie bilden die Basis Eurer gemeinsamen Arbeit.",
+        "text_1": "Eine aufgewärmte Stimme klingt gleich lebendiger, fliessender und klarer. Und fühlt sich auch so an. Ein paar Minuten, die für Deine Stimme entscheidend sind. Zusammen finden wir raus, wie und wo die Übungen in Deinen Alltag passen."
+      },
+      "text_1": "Dein Stimmklang, Deine Körpersprache und Deine Präsenz machen Deine Kompetenzen unmittelbar hörbar und spürbar. Vermittle Deine Botschaft mit Klarheit und Selbstbewusstsein und lass Dein Gegenüber spüren, dass er Dir am Herzen liegt.",
+      "text_2": "Alle, die ihre Stimme und Präsenz stärken möchten und alle Berufsgruppen sind in meinen Einzeltrainings herzlich willkommen. Die Trainings sind individuell auf Dich abgestimmt und direkt buchbar. Sie finden wahlweise persönlich, in Präsenz oder online statt. ",
+      "link": "Zu den Trainings"
+    },
+    "women": {
+      "title": "Frauen",
+      "title_menu": "Women, Voice & Leadership",
+      "short": "In Deinem Stimmklang und Deinem Auftreten werden Deine Kompetenzen Unmittelbar hörbar & spürbar. Trainiere Deine authentische, starke Stimme und Dein souveränes Auftreten. Mach es Dir einfach und lass Dein Publikum spüren, dass es Dir am Herzen liegt!",
+      "title_1": "Women, Voice & Leadership",
+      "text_2": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
+      "title_2": "Frauen mit starker Stimme in Führung",
+      "text_1": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, das Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: In Meetings und Präsentationen sowie in der täglichen Kommunikation",
+      "boxes": {
+        "box_1": {
+          "title_1": "Souverän",
+          "title_2": "Kraftvoll",
+          "title_3": "Authentisch",
+          "title_4": "Leicht"
+        },
+        "box_2": {
+          "title": "Entfalte Deine Führungsstimme",
+          "title_1": "Stimmliche Präsenz entwickeln:",
+          "text_1": "Lerne Techniken, die Deine Stimme & Sprache kraftvoll, klar und souverän klingen lassen.",
+          "title_2": "Authentizität in der Kommunikation:",
+          "text_2": "Finde Deinen natürlichen Stimmklang, der Deine Persönlichkeit unterstreicht und Authentizität vermittelt.",
+          "title_3": "Umgang mit Nervosität & Lampenfieber:",
+          "text_3": "Wandle Nervosität in freudige Erwartung. Fühl Dich mit Deiner Stimme auch in herausfordernden Situationen zentriert, sicher & wohl.",
+          "title_4": "Führungsstärke durch Stimme:.",
+          "text_4": "Entwickle einen lebendigen Stimmklang in dem Deine Qualitäten zum klingen kommen. Schenke Sicherheit und werde gehört."
+        },
+        "box_3": "",
+        "box_4": {
+          "title": "Dieser Kurs ist genau das Richtige für Dich, wenn Du:",
+          "text_1": [
+            "endlich gehört werden willst",
+            "den nächsten Schritt in deiner Karriere gehen möchtest",
+            "Führungsverantwortung übernehmen willst",
+            "bereits Führungskraft bist oder auf dem Weg dorthin"
+          ],
+          "text_2": "Damit Deine Führungsqualitäten auch in Deinem Stimmklang lebendig werden, Du souverän & kraftvoll aus Deiner Mitte heraus wirken und kommunizieren kannst."
+        }
+      },
+      "work": {
+        "title_1": "Die Kursinhalte"
+      },
+      "benefits": {
+        "title": "Benefits",
+        "texte": {
+          "title_1": "Souveränität",
+          "text_1": "Erreiche stimmliche Souveränität, mit der Du Dich in Deiner Kompetenz stark, unabhängig und gut fühlst.",
+          "title_2": "Selbstbewusstsein",
+          "text_2": "Entdecke Deine persönliche starke Stimme, die Dir in jeder Situation Sicherheit schenkt.",
+          "title_3": "Einflussnahme",
+          "text_3": "Inspiriere andere über Deinen Stimmklang und nimm Einfluss.",
+          "title_4": "Lebendigkeit",
+          "text_4": "Lass auch Deine inneren Qualitäten in Deinem Stimmklang hörbar werden & gewinne die Herzen Deiner Zuhörer."
+        },
+        "link": "Zur Buchung"
+      }
+    },
+    "link": "Mehr »"
+  },
+  "courses": {
+    "title_1": "Kurse",
+    "title_2": "Wachsen im Austausch mit anderen",
+    "text_1": "In meinen Kursen lernst Du, wie Du Deine Stimme kraftvoll und sicher einsetzt, Vertrauen gewinnst, Verbindung stärkst und andere überzeugst und inspirierst. Gemeinsam schaffen wir die Grundlage, auf der Du mit gutem Gefühl souverän, authentisch & lebendig auftreten kannst – mit Präsenz, Klarheit und Selbstbewusstsein.",
+    "text_2": "Die Dynamik eines Kurses bietet Dir die Möglichkeit in Übungen und Impulsen miteinander, und von anderen Teilnehmern zu lernen. Erlebe, wie schnell Du Fortschritte machst, wenn Du in einer unterstützenden und wertschätzenden Gruppe Deine Stimme und Präsenz entfaltest.",
+    "text_3": "Ob in meinen offenen Kursen oder inhouse für Dein Team – diese Erfahrung wird Dich nachhaltig stärken.",
+    "text_4": "Buche ein kostenfreies Kennenlerngespräch und melde Dich für meinen Newsletter an.",
+    "link": "Zu den Kursen",
+    "short": {
+      "title": "Kursinhalte",
+      "texte": {
+        "title_1": "Stimmliche Präsenz entwickeln: ",
+        "text_1": "Lerne Techniken, die Deine Stimme & Sprache kraftvoll, klar und souverän klingen lassen.",
+        "title_2": "Authentizität in der Kommunikation: ",
+        "text_2": "Finde Deinen natürlichen Stimmklang, der Deine Persönlichkeit unterstreicht und Authentizität vermittelt.",
+        "title_3": "Umgang mit Nervosität & Lampenfieber: ",
+        "text_3": "Wandle Nervosität in freudige Erwartung. Fühl Dich mit Deiner Stimme auch in herausfordernden Situationen zentriert, sicher & wohl.",
+        "title_4": "Führungsstärke durch Stimme: ",
+        "text_4": "Entwickle einen lebendigen Stimmklang in dem Deine Qualitäten zum klingen kommen. Schenke Sicherheit und werde gehört.",
+        "title_5": " Selbstbewusstsein & Präsenz: ",
+        "text_5": "Entwickle eine selbstbewusste Präsenz. Stimmlich und persönlich. Im Alltag und vor Publikum. ",
+        "title_6": "Präsentieren und Auftreten: ",
+        "text_6": "Wie kannst Du souverän auftreten und präsentieren, Deine Selbstsicherheit und Überzeugungskraft beeinflussen und hierdurch wirklich Berührendes schaffen? "
+      },
+      "link": "Zur Buchung"
+    },
+    "offer": {
+      "title": "Angebot",
+      "place_1": "vor Ort in Berlin",
+      "place_2": "online",
+      "text": "Buche hier ein kostenfreies Kennenlerngespralach (link) und melde Dich hier (link)für meinen Newsletter an.",
+      "button": "Jetzt buchen",
+      "footer": "In meinen Live-Seminaren sind mir intensiver Austausch und individuelles Coaching wichtig. Darum beschränke ich die Teilnehmerzahl auf 8 Personen."
+    }
   },
   "profile": {
     "aboutme": {
-      "title": "About me",
-      "slide_1": "your professional coaching",
-      "slide_2": "brings you to the top",
-      "text_1.1": [
-        "My name is Elisabeth Koch. I have always been fascinated by speakers and the diversity of their expressions. I have listened intently to their voices and observed their body language."
-      ],
-      "text_1.2": [
-        "I have had plenty of opportunities to do this, because my family was teeming with educated people who were keen to discuss and talk and who vied for attention in fascinatingly different ways. And on Sundays we went to church. There was a lot for me to observe, because our pastor was a rhetorical genius. A pleasure for me."
-      ],
-      "text_2_title": "From a carpenter to voice expert",
-      "text_2.1": [
-        "After finishing school, I became a carpenter. With tools and wood in my hands, I got in touch with my physical strength and balance. As my final project, I built a Lectern as a journeyman's piece."
-      ],
-      "text_2.2": [
-        "Simply because I thought this is an exciting piece of furniture. I used it to express my passion for communication and speech and became a speech therapist and actress."
-      ],
-      "text_3_title": "My current work",
-      "text_3.1": [
-        "Today I am an expert in voice and successful performance and work as a trainer and coach at the junctions of voice, personal development, communication and relationship building."
-      ],
-      "text_3.2": [
-        "With more than two decades of experience, I assist my clients in developing their lively vocal power, their personal impact and their pleasant presence and communication."
-      ],
-      "text_3.3": [
-        "With sensitivity and humor, I create an atmosphere full of lightness and clarity in which trying out and integrating new things into my clients work and private lives becomes their basis for their success and well-being."
-      ],
-      "text_3.4": [
-        "My further training as a voice coach, singer, systemic coach and breathing expert enables me to work holistically, individually and in depth."
-      ],
-      "text_3.5": [
-        "My work is continuously expanded and inspired by collaboration with colleagues in related fields. I look forward to accompanying you in your vocal, personal and professional development."
-      ],
-      "end": "Cordially, \n Elisabeth Koch"
+      "name": "Elisabeth Koch",
+      "passion": "Expertin für Stimme & Auftritt",
+      "text_title": "Deine Stimme, deine Superkraft",
+      "text": "Gemeinsam bringen wir Deine Stimme stark und lebendig zum klingen und lassen Dein Auftreten kraftvoll, herzlich und warm werden!",
+      "short": {
+        "title": "Von der Schreinerin zur",
+        "handwrite": "Stimmexpertin",
+        "text_1": "Nach der Schule wurde ich Schreinerin. Mit Werkzeug und Holz in meinen Händen kam ich in Verbindung zu meiner körperlichen Kraft und Balance. Als Gesellenstück baute ich ein Rednerpult. Einfach, weil ich fand, dass es ein spannendes Möbel sei. Mit diesem verlieh ich meiner Leidenschaft für Kommunikation und Sprache Ausdruck und wurde Logopädin und Schauspielerin.",
+        "text_2": "Heute bin ich Expertin für Stimme und gelungenen Auftritt und arbeite als Trainerin und Coach an den Schnittstellen zwischen Stimme, Persönlichkeitsentwicklung, Kommunikation und Beziehungsgestaltung."
+      },
+      "boxes": {
+        "box_1": {
+          "text_1": "Schon als Kind faszinierten mich Redner in der Vielfalt ihres Ausdrucks. Gespannt lauschte ich ihren Stimmen und beobachtete ihre Körpersprache.",
+          "text_2": "Dazu hatte ich reichlich Gelegenheit: In meiner Familie wimmelt es von gebildeten diskussions- und redefreudigen Menschen, die in faszinierender Unterschiedlichkeit um Aufmerksamkeit warben. Meine ersten Feldstudien erhob ich in der Kirche, denn unser Pfarrer war ein rhetorisches Genie. Vom Inhalt verstand ich wenig - umso mehr Kapazitäten blieben mir fürs hören und beobachten.",
+          "text_3": "Nach der Schule wurde ich Schreinerin. Mit Werkzeug und schweren Holzbohlen in meinen Händen balancierte ich meine Körperkraft aus. Als Gesellenstück baute ich ein Rednerpult. Einfach, weil ich fand, dass es ein spannendes Möbel sei.",
+          "text_4": "Mit diesem verlieh ich meiner Leidenschaft für Kommunikation und Sprache Ausdruck, wurde Logopädin und stand als Schauspielerin auf der Bühne."
+        },
+        "box_2": "",
+        "box_3": {
+          "title_1": "Ausdruck",
+          "title_2": "Feingefühl",
+          "title_3": "Humor"
+        },
+        "box_4": {
+          "title": "Meine Arbeit heute",
+          "text_1": "Heute bin ich Expertin für Stimme und gelungenen Auftritt und arbeite als Trainerin und Coach an den Schnittstellen zwischen Stimme, Persönlichkeitsentwicklung, Kommunikation und Beziehungsgestaltung.",
+          "text_2": "Mit mehr als 20 Jahren Erfahrung assistiere ich meinen Klienten in der Entwicklung ihrer lebendigen Stimmkraft, ihrer persönlichen Wirkung sowie ihrer angenehmen Präsenz und Kommunikation.",
+          "text_3": "Mit Feingefühl und Humor kreiere ich eine Atmosphäre voller Leichtigkeit und Klarheit, in der das Ausprobieren und Integrieren von Neuem in das Arbeits- und Privatleben gelingt."
+        }
+      }
     },
-
     "work": {
-      "title": "How I work",
-      "title_1": "Vocalcoaching - how does it work?",
-      "text_1": "What you tell me about your voice, your appearance and its sticking points is important to me, because you are the expert. And then I listen and look closely at what your voice, your body, your breathing and your nervous system need to become strong.",
-      "title_2": "Warming up your voice first",
-      "text_2": "A warmed-up voice immediately sounds livelier, more flowing and clearer. And it feels that way too. A few minutes that are crucial for your voice. Together we will find out how and where the exercises fit into your everyday life.",
-      "title_3": "I work holistically",
-      "text_3": "You will explore, deepen, expand and rebalance your breathing. So that it pulsates flexibly and agilely within you and strengthens you from within.",
-      "title_4": "",
-      "text_4": "You will revitalize your resonance spaces that have been dormant. You will feel your voice anew and revitalize your body. Together we will anchor all the new facets in you so that they strengthen you.",
-      "title_5": "",
-      "text_5": "We will also look at how you can remain calm and good mood under stress and in challenging situations. How to make your personality and presence shine and win the hearts of your listeners.",
-      "title_6": "Your voice - your superpower",
-      "text_6": "Together we will find the switch points that make the sound of your voice strong and lively and make your performance powerful, warm and welcoming. You will immediately feel the confidence and strength that grows within you, and so will your listeners. You will love it!",
-      "title_7": "What do you need for this?",
-      "text_7": [
-        "curiosity and courage",
-        "openness",
-        "willingness to experiment"
-      ],
-      "title_8": "You gain",
-      "text_8": [
-        "a confident appearance and presentation that makes you feel safe and comfortable",
-        "a self-confident sound from your center",
-        "an expressive voice with which you are heard and noticed",
-        "an authentic presence",
-        "your strong, natural leadership character"
-      ],
-      "title_9": "Voice is the supreme discipline of rhetoric!",
-      "text_9": "With a strong and convincing voice, your message comes across effectively and with ease.",
-      "title_10": "Does that sound good to you? Would you like that too?",
-      "text_10": "Then make an appointment here (link) for a free initial consultation",
-      "text_11": "I look forward to hearing from you!"
+      "title": "Warum ein Stimm- und Präsenztraining mit mir?",
+      "title_1": "Your „Kings Speech”",
+      "text_1": "Ich weiß, was es bedeutet und braucht, vor Menschen zu sprechen und zu singen. Und ich weiß auch, was es bedeutet, hierfür an sich zu arbeiten. Ich habe selbst lange geübt, trainiert, gezweifelt, hinterfragt und dabei die Kunst des Redens von vielen Seiten her durchdrungen. Ich bin überzeugt: Jeder kann es lernen und alle großen Redner haben irgendwann mit ihrem ersten Mal begonnen. Es mir eine Freude, Dich als Expertin begleiten zu dürfen. Damit Du Dich in jeder Situation zuhause und sicher fühlst.",
+      "title_2": "Den Unterschied machen",
+      "text_2": "Die Veränderung soll für Dich unmittelbar spürbar werden. Hochwirksam und direkt. Darum wähle ich nur die Übungen, die Dich direkt an Dein Ziel bringen. Du lernst handfeste Strategien kennen, mit denen Du Deine Selbstsicherheit und Überzeugungskraft ganz entscheidend beeinflussen kannst.",
+      "title_3": "Stimme ist die Königsdisziplin der Rhetorik",
+      "text_3": "Als Trainerin und Coach arbeite ich an den Schnittstellen zwischen Stimme, Persönlichkeitsentwicklung, Kommunikation un Beziehungsgestaltung. Vom Stimm-, Rhetorik, Kommunikations- und Auftrittstraining bis zur Führungskräfte- & Persönlichkeitsentwicklung biete ich in meinen offenen & inhouse Trainings viele spannende Themen an.",
+      "title_4": "Mit Feingefühl und Humor",
+      "text_4": "Mit Feingefühl und Humor kreiere ich eine Atmosphäre voller Leichtigkeit und Klarheit, in der das Ausprobieren und Integrieren von Neuem in das Arbeits- und Privatleben Spaß macht und gelingt.",
+      "title_5": "Wir machen das zusammen",
+      "text_5": "Auch nach unseren Coachings bleibe ich gerne mit Dir in Kontakt. Wenn Fragen auftauchen, kannst Du mich per SMS oder E- Mail erreichen – und selbstverständlich sind auch Follow-Up-Trainings möglich",
+      "boxes": {
+        "title": "Meine Ausbildungen",
+        "text_1": [
+          "Diplom Logopädin (1999-2002 Universität Regensburg)",
+          "Schauspielerin (2001-2004 Stadtmaus Regensburg, Hubertus Hinse)",
+          "Private Gesangsausbildung (2008-13 Romeo Alavi kia & Martin Netter, Berlin)",
+          "Integrative Stimmtrainerin (2010-13 Institut für Integratives Stimmtraining, Wien)",
+          "Train the Trainer (2009 Business Trend Academy, Berlin)",
+          "Systemischer Gesundheitscoach (Institut Knuth&Team, Anja Knuth )",
+          "Kommunikationstrainerin (2018-2024 Ausbildung & Supervision bei Wiebke Wiedeck)",
+          "Synchronprecherin (2023 Fritzton GmbH Peter Minges)",
+          "Schreinerin (1995-98 Schreinerei H. Zehnder, Abtswind) "
+        ],
+        "text_2": "Online oder telefonisch"
+      }
     },
     "facts": {
-      "title": "Facts",
+      "title": "Fakten",
       "title_1": "Expertin für Stimme und gelungenen Auftritt",
       "text_1": "Integrative Stimmtrainerin, Diplom Logopädin, Systemischer Coach & Trainerin",
-      "title_2": "What i do:",
+      "title_2": "Was ich tue:",
       "text_2": [
-        "I teach Redner & Politiker in der Entwicklung ihres individuellen und starken Auftritts.",
+        "Ich schule Redner & Politiker in der Entwicklung ihres individuellen und starken Auftritts.",
         "Ich biete Präsenztraining für Führungskräfte und zeige ihnen, wie sie souverän & sicher auftreten.",
         "Ich begleite Podcast-Hosts und Journalisten in der Entwicklung ihres kraftvollen, warmen Stimmklangs, in dem ihre Professionalität, Expertise & Erfahrung auditiv greifbar werden.",
         "Ich begleite Trainer, Berater & Coaches in der Entfaltung ihres Stimmpotentials für den Gewinn an Sicherheit und innere Ruhe für die Arbeit mit ihren Klienten.",
@@ -119,7 +318,7 @@
         " Ich führe Sänger und Sprecher aus ihrer Kehlkopfentzündung heraus in eine gesunde Stimme.",
         "Ich begleite Schnellsprecher auf dem Weg zur klaren & freien Kommunikation."
       ],
-      "title_3": "My Clients:",
+      "title_3": "Meine Kundengruppen:",
       "text_3": [
         "Führungskräfte & alle, die es werden wollen",
         "Frauen",
@@ -129,7 +328,7 @@
         "Trainer, Berater & Coaches",
         "Sänger, Sprecher & Schauspieler"
       ],
-      "title_4": "Education and Knowledge:",
+      "title_4": "Ausbildung und Wissen:",
       "text_4": [
         "Diplom Logopädin, Schauspielerin & Sängerin",
         "Integrative Stimmtrainerin & Atemexpertin",
@@ -143,20 +342,87 @@
       ]
     }
   },
+  "blog": {
+    "title_1": "Artikel 1",
+    "title_2": "Artikel 2",
+    "title_3": "Artikel 3",
+    "title_4": "Artikel 4",
+    "title_5": "Artikel 5"
+  },
   "contact": {
-    "title": "Contact",
-    "text_1.1": ["Are you curious?"],
-    "text_1.2": [
-      "Here you can write me a personal message, register or choose an appointment for your free initial consultation by phone."
-    ],
-    "text_1.3": ["I look forward to meeting you!"]
+    "link_1": "Kennenlernen",
+    "link_2": "Erster Termin",
+    "aquaintment": {
+      "title": "Lass uns darüber sprechen was dich bewegt",
+      "text_1": "Kostenfreies Erstgespräch",
+      "text_2": "Hier kannst Du Dich anmelden und einen Termin für Dein kostenfreies Erstgespräch auswählen."
+    },
+    "first-appointment": {
+      "title": "Kostprobe dessen, wie Du deine Stimme zu Deinem Juwelen machen kannst",
+      "text_1": "Erstes Termin mit mir",
+      "text_2": "Hier kannst Du Dich anmelden und Dein erstes Termin auswählen."
+    },
+    "short": {
+      "header_1": "Ich freue mich, von Dir zu",
+      "span_1": "hören",
+      "header_2": "Hast Du",
+      "span_2": "Fragen?",
+      "box": "Bist Du neugierig geworden? Dann schreib mir gerne eine Nachricht oder buche Dir einen Termin für Dein kostenfreies Ersgespräch. Ich freue mich auf Dich!",
+      "button": "Gespräch vereinbaren"
+    }
+  },
+  "testimonials": {
+    "title": "Kundenstimmen",
+    "text": "„When your voice brings you joy, you're the best of yourself!”",
+    "author": "Celine Dion",
+    "text_1": " „Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! ”",
+    "author_1": "Karina F.",
+    "text_2_1": " „Die Arbeit mit Elisabeth hat mir eine solide Basis für mein Instrument Stimme geschenkt. Ich nehme meine Stimme viel bewusster wahr, kann mit ihr spielen und mich auf ihre Wirkung verlassen.”",
+    "text_2_2": " „Ich habe mich an Elisabeth gewandt, weil ich auf der Suche nach mehr Sicherheit in meinem Auftreten und meiner Rede war. Das Stimmtraining hat mir geholfen, meine Stimme bewusster wahrzunehmen, mit ihr zu spielen und mich im Laufe der Zeit immer mehr auf ihre Wirkung verlassen zu können.”",
+    "text_2_3": " „Das Coaching mit Elisabeth hat mir geholfen, meine Schüchternheit und Unsicherheit, auch im Bezug auf meinen österreichischen Akzent, hinter mir zu lassen. Heute betreibe ich mit Freude einen Podcast, in dem ich meine Stimme gerne höre und einsetze.”",
+    "author_2": "Ursula Feuerherdt / selbstständig 43 Jahre / Gründerin der Jadeflower Academy",
+    "link_2": "https://jadeflower.academy/",
+    "pagename_2": "Jadeflower Academy",
+    "text_3_1": " „Elisabeth verfügt als Trainerin für Rhetorik und Redekunst über bemerkenswerte Fachkenntnisse. Innerhalb weniger Wochen hat sich meine Verwendung von Füllwörtern in meinen wissenschaftlichen Präsentationen deutlich reduziert. Ein Fortschritt, den ich zuvor für nahezu unmöglich gehalten hatte.”",
+    "text_3_2": " „Elisabeth besitzt eine einzigartige Kombination aus beruflicher Kompetenz und persönlicher Wärme. Sie ist eine ermutigende Trainerin, die eine positive und unterstützende Atmosphäre schafft, was das Lernen und Integrieren von Neuem, im persönlichen Ausdruck & der Stimme, leicht macht.”",
+    "text_3_3": " „Elisabeth hat meine Erwartungen übertroffen und zu einer signifikanten Qualitätsverbesserung meiner Präsentationen und Videos auf meinem Blog beigetragen.”",
+    "text_3_4": " „Elisabeths Professionalität und ihr Engagement brachten mir spürbare Verbesserungen meiner Aussprache sowie insgesamt meines Selbstvertrauens im öffentlichen Sprechen.”",
+    "text_3_5": " „Elisabeths ganzheitlicher Coaching-Ansatz, ihre ausgezeichneten zwischenmenschlichen Fähigkeiten und ihre Hingabe an den Erfolg ihrer Kunden heben sie in ihrem Fachgebiet hervor.”",
+    "text_3_6": " „Walk what you talk - Elisabeth lebt das, was sie trainiert und verfügt als Trainerin für Rhetorik und Redekunst über bemerkenswerte Fachkenntnisse.”",
+    "author_3": "Dr. Gayannée Kedia / Department of Psychology /Karl-Franzens-Universität Graz",
+    "link_3": "https://abrilliantmind.blog",
+    "pagename_3": "A brilliant mind",
+    "text_4": "„Meine Beziehung zu meiner Stimme ist richtig gut geworden. Ich fühl mich selbstbewusster, ausdrucksstark & mutig. Ich kann mich auf den Ausdruck und die Wirkung meiner Stimme verlassen.”",
+    "author_4": "Martina S., selbständige Trainerin",
+    "text_5": "„Dank Elisabeths warmherzigem, konstruktiven Feedback konnte ich meine Stärken für meine öffentlichen Auftritte nutzen und trete nun mühelos selbstbewusst und authentisch auf.”",
+    "author_5": "Daniel Aichinger / 50 Jahre / Schauspieler & Ernährungsberater",
+    "link_5": "https://pieceofcake.coach/",
+    "pagename_5": "piece of cake",
+    "text_6": "„When your voice brings you joy, you're the best of yourself!”",
+    "author_6": "Celine Dion"
+  },
+  "newsletter": {
+    "title_1": "Komm in den",
+    "title_2": "Newsletter",
+    "text": "Mit deiner Anmeldung willigst du in die Verarbeitung deiner Daten und den Empfang des Newsletters ein. Eine Abmeldung ist jederzeit möglich.",
+    "success_1": "Dankeschön!",
+    "success_2": "Du hast Dich erfolgreich zum Newsletter angemeldet."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "text": "Hier findest Du Antworten auf die wichtigsten Fragen. Wenn Du weitere Fragen hast, kannst Du Dich gerne an mich wenden.",
+    "question_1": "Was ist ein Stimmtraining?",
+    "answer_1": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten.",
+    "question_2": "Was ist ein Stimmtraining?",
+    "answer_2": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten.",
+    "question_3": "Was ist ein Stimmtraining?",
+    "answer_3g": "Ein Stimmtraining ist ein kraftvolles Werkzeug, das Deine Qualitaten in Deinem Stimmklang hörbar macht und Deine Präsenz auf herausfordende Situationen vorbereiten."
   },
   "footer": {
-    "title": "Contact",
-    "link_train": "Trainings",
-    "link_work": "Courses",
-    "link_profile": "About Me",
-    "link_blog": "Blog",
-    "link_policy": "Privacy Policy"
+    "name": "Elisabeth Koch",
+    "adress_11": "Behaimstraße 27",
+    "adress_12": "13086 Berlin",
+    "adress_21": "+49 0176 72173650",
+    "adress_22": "mail(at)elisabethkoch.eu"
   }
 }
