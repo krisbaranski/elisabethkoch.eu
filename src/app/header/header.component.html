@@ -66,25 +66,6 @@
 
           <!-- <a
             mat-button
-            [matMenuTriggerFor]="profile"
-            class="top_menu_item"
-            [routerLinkActive]="'active'"
-            >{{ 'menu.profile' | translate }}</a
-          > -->
-          <!-- <mat-menu #profile="matMenu">
-            <button mat-menu-item (click)="goToPart('profile#aboutme')">
-              {{ 'profile.aboutme.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="goToPart('profile#work')">
-              {{ 'profile.work.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="goToPart('profile#facts')">
-              {{ 'profile.facts.title' | translate }}
-            </button>
-          </mat-menu> -->
-
-          <!-- <a
-            mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="blog"
@@ -97,34 +78,15 @@
             routerLink="contact"
             >{{ 'menu.contact' | translate }}</a
           >
-
-          <!-- <a
-            mat-button
-            [matMenuTriggerFor]="contact"
-            [routerLinkActive]="'active'"
-            class="top_menu_item"
-            >{{ 'menu.contact' | translate }}</a
-          >
-          <mat-menu #contact="matMenu">
-            <button mat-menu-item (click)="goToPart('contact/aquaintment')">
-              {{ 'contact.link_1' | translate }}
-            </button>
-            <button
-              mat-menu-item
-              (click)="goToPart('contact/first-appointment')"
-            >
-              {{ 'contact.link_2' | translate }}
-            </button>
-          </mat-menu> -->
         </div>
 
-        <!-- Spacer -->
+        <!-- // Spacer
         <div class="spacer">
           <p>|</p>
         </div>
-        <!-- Translation links -->
+        // Translation links
         <div class="translate" [class.darkLinks]="darkMode">
-          <!-- Show German link only if the current language is not German -->
+          // Show German link only if the current language is not German
           <a
             *ngIf="currentLanguage !== 'de'"
             class="langLink top_menu_item"
@@ -132,14 +94,14 @@
             >DE</a
           >
 
-          <!-- Show English link only if the current language is not English -->
+          // Show English link only if the current language is not English
           <a
             *ngIf="currentLanguage !== 'en'"
             class="langLink top_menu_item"
             (click)="changeLanguage('en')"
             >EN</a
           >
-        </div>
+        </div> -->
       </div>
 
       <!-- MOBILE MENU HAMBURGER  -->
@@ -211,26 +173,6 @@
             routerLink="profile"
             >{{ 'menu.profile' | translate }}</a
           >
-
-          <!-- <a
-            mat-button
-            (click)="onSidemenuClick($event)"
-            [routerLinkActive]="'active'"
-            [matMenuTriggerFor]="profile"
-            class="sidebar_item sublink"
-            >{{ 'menu.profile' | translate }}</a
-          >
-          <mat-menu #profile="matMenu">
-            <button mat-menu-item (click)="navigateAndClose('aboutme')">
-              {{ 'profile.aboutme.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="navigateAndClose('work')">
-              {{ 'profile.work.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="navigateAndClose('facts')">
-              {{ 'profile.facts.title' | translate }}
-            </button>
-          </mat-menu> -->
           <!-- <a
             class="sidebar_item"
             (click)="sidenav.close()"
@@ -247,30 +189,12 @@
             routerLink="contact"
             >{{ 'menu.contact' | translate }}</a
           >
-          <!-- <a
-            mat-button
-            (click)="onSidemenuClick($event)"
-            [routerLinkActive]="'active'"
-            [matMenuTriggerFor]="contact"
-            class="sidebar_item sublink"
-            >{{ 'menu.contact' | translate }}</a
-          >
-          <mat-menu #contact="matMenu">
-            <button mat-menu-item (click)="goToPart('contact/aquaintment')">
-              {{ 'contact.link_1' | translate }}
-            </button>
-            <button
-              mat-menu-item
-              (click)="goToPart('contact/first-appointment')"
-            >
-              {{ 'contact.link_2' | translate }}
-            </button>
-          </mat-menu> -->
         </div>
 
-        <!-- Spacer -->
+        // Spacer
         <div class="spacer"></div>
 
+        <!--
         <div class="translate_sidebar">
           <a
             class="langLink sidebar_item"
@@ -284,7 +208,7 @@
             (click)="changeLanguage('en')"
             >EN</a
           >
-        </div>
+        </div> -->
 
         <!-- Social links -->
         <div class="social_sidebar">
