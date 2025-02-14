@@ -1,8 +1,5 @@
-<header
-  [ngClass]="{ 'sticky-menu': isSticky, 'open-menu': isOpen }"
-  [class.headerDark]="darkMode"
->
-  <menu [class.headerDark]="darkMode">
+<header [ngClass]="{ 'sticky-menu': isSticky, 'open-menu': isOpen }">
+  <menu>
     <mat-toolbar>
       <div class="logo">
         <img src="assets/img/logo_darkblue.svg" alt="logo" routerLink="/" />
@@ -19,7 +16,7 @@
         /> -->
       </div>
       <div class="menu">
-        <div [class.darkLinks]="darkMode">
+        <div>
           <a
             mat-button
             class="top_menu_item"
@@ -32,7 +29,9 @@
             mat-button
             [matMenuTriggerFor]="courses"
             class="top_menu_item"
+            [routerLink]="'/courses'"
             [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: false }"
             >{{ 'menu.courses' | translate }}</a
           >
           <mat-menu #courses="matMenu">

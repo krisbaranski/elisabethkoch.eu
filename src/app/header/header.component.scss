@@ -7,7 +7,6 @@ header {
   font-family: 'Montserrat', sans-serif;
   z-index: 1000;
   transition: all 0.3s ease;
-  // backdrop-filter: blur(2rem);
 
   .logo {
     cursor: pointer;
@@ -27,20 +26,23 @@ header {
 
 .open-menu {
   top: 0rem;
-  background-color: #fff;
+  background-color: var(--color-white);
 
   menu {
     a,
     .top_menu_item {
       color: var(--color-dark);
+      border-bottom: 1px solid transparent;
 
       &:hover,
       &.active {
+        border-radius: 0;
+        background-color: transparent;
         color: var(--color-dark);
-        border: 1px solid var(--color-dark);
-        border-radius: 6px;
+        border-bottom: 1px solid var(--color-dark);
       }
     }
+
     .translate,
     .spacer {
       display: flex;
@@ -57,17 +59,15 @@ header {
 }
 
 .mat-toolbar {
-  box-sizing: border-box;
   width: 100%;
-  background-color: transparent;
   display: flex;
   justify-content: space-between;
+  background-color: transparent;
 }
 
 menu {
-  box-sizing: border-box;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: min(1600px, 90% - 4rem);
   height: 5rem;
@@ -80,21 +80,25 @@ menu {
   }
 
   a,
-  .top_menu_item {
-    box-sizing: border-box;
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #fff;
+  .top_menu_item,
+  mat-button,
+  mat-menu-item {
+    background-color: transparent;
+    color: var(--color-white);
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
     text-decoration: none;
-    border: 1px solid transparent;
-    margin-left: 2px;
-    padding: 10px 14px;
+    padding: 0 0.8em;
+    // padding: 0;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
 
     &:hover,
-    &.active {
-      color: #fff;
-      border: 1px solid #fff;
-      border-radius: 6px;
+    &.active,
+    .top_menu_item.active {
+      color: var(--color-white);
+      border-bottom: 1px solid var(--color-white);
     }
   }
 
@@ -108,7 +112,7 @@ menu {
     display: flex;
     align-items: center;
     margin-left: 30px;
-    color: #fff;
+    color: var(--color-white);
   }
 
   p {
@@ -125,27 +129,6 @@ menu {
   font-weight: 600;
   cursor: pointer;
 }
-
-// .headerDark {
-//   background-color: #fff;
-// }
-
-// .darkLinks {
-//   a {
-//     color: var(--color-dark);
-
-//     &:hover {
-//       font-weight: 300;
-//       border-bottom: 1px solid var(--color-dark);
-//     }
-
-//     &:active {
-//       font-weight: 300;
-//       color: var(--color-dark);
-//       border-bottom: 1px solid var(--color-dark);
-//     }
-//   }
-// }
 
 .social {
   display: flex;
@@ -200,13 +183,13 @@ menu {
         padding: 10px 15px;
         width: auto;
         font-size: 0.9rem;
-        color: white;
+        color: var(--color-white);
         margin: 8px;
 
         &:hover,
         &.active {
           color: var(--color-dark);
-          background-color: #cfdfffb9;
+          // background-color: #cfdfffb9;
           border-radius: 6px;
         }
       }
@@ -256,7 +239,7 @@ menu {
       align-items: center;
 
       .spacer {
-        border-top: 1px solid #fff;
+        border-top: 1px solid var(--color-white);
         margin: auto;
         margin-top: 4rem;
         margin-bottom: 0;
@@ -276,7 +259,7 @@ menu {
       width: fit-content;
       z-index: 5;
       margin: auto;
-      color: white;
+      color: var(--color-white);
       font-weight: 300;
       transform: translateY(35px);
 
@@ -319,12 +302,12 @@ menu {
 .open-menu {
   menu {
     a {
-      color: #fff;
+      color: var(--color-white);
 
       &:hover,
       &.active {
-        color: #fff;
-        border: 1px solid #fff;
+        color: var(--color-white);
+        border: 1px solid var(--color-white);
         border-radius: 6px;
       }
     }
