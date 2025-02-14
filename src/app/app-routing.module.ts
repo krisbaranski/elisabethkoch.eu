@@ -27,7 +27,7 @@ const routes: Routes = [
     component: CoursesComponent,
     children: [
       { path: 'women', component: WomenComponent },
-      { path: '', redirectTo: 'women', pathMatch: 'full' }, // Default child route
+      // { path: '', redirectTo: 'women', pathMatch: 'full' }, // Default child route
     ],
     data: { animation: 'CoursesPage' },
   },
