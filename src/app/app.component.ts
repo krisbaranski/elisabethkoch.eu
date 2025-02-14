@@ -35,7 +35,6 @@ import {
 })
 export class AppComponent {
   title: String = 'title name';
-  @Input() darkMode = true;
 
   // Transtale constructor
   constructor(
