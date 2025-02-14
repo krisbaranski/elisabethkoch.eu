@@ -343,6 +343,10 @@
     }
   },
   "blog": {
+    "hero": {
+      "title": "Blog",
+      "text": "Artikel zu stimme und gelungener Auftritt"
+    },
     "title_1": "Artikel 1",
     "title_2": "Artikel 2",
     "title_3": "Artikel 3",
