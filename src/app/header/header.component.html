@@ -29,11 +29,20 @@
             mat-button
             [matMenuTriggerFor]="courses"
             class="top_menu_item"
-            [routerLink]="'/courses'"
             [routerLinkActive]="'active'"
             [routerLinkActiveOptions]="{ exact: false }"
             >{{ 'menu.courses' | translate }}</a
           >
+          <!-- <a
+            mat-button
+            (click)="$event.preventDefault()"
+            [matMenuTriggerFor]="courses"
+            [routerLink]="'/courses'"
+            class="top_menu_item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: false }"
+            >{{ 'menu.courses' | translate }}</a
+          > -->
           <mat-menu #courses="matMenu">
             <button mat-menu-item (click)="goToPart('courses/women')">
               {{ 'trainings.women.title_menu' | translate }}
@@ -41,18 +50,7 @@
             <!-- <button mat-menu-item (click)="goToPart('trainings/speaker')">
               {{ 'trainings.speaker.title' | translate }}
             </button>
-            <button mat-menu-item (click)="goToPart('trainings/manager')">
-              {{ 'trainings.manager.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="goToPart('trainings/singer')">
-              {{ 'trainings.singer.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="goToPart('trainings/podcast')">
-              {{ 'trainings.podcast.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="goToPart('trainings/trainer')">
-              {{ 'trainings.trainer.title' | translate }}
-            </button> -->
+             -->
           </mat-menu>
 
           <a
@@ -79,7 +77,8 @@
           >
         </div>
 
-        <!-- // Spacer
+        <!-- Spacer -->
+        <!-- 
         <div class="spacer">
           <p>|</p>
         </div>
@@ -113,6 +112,7 @@
         <mat-icon>|||</mat-icon>
       </button>
     </mat-toolbar>
+
     <!-- SIDEMENU MOBILE -->
     <mat-sidenav-container class="sidenav">
       <mat-sidenav
@@ -138,9 +138,9 @@
           <a
             mat-button
             (click)="onSidemenuClick($event)"
-            [routerLinkActive]="'active'"
             [matMenuTriggerFor]="courses"
             class="sidebar_item sublink"
+            [routerLinkActive]="'active'"
             >{{ 'menu.courses' | translate }}</a
           >
           <mat-menu #courses="matMenu">
@@ -150,18 +150,7 @@
             <!-- <button mat-menu-item (click)="goToPart('trainings#speaker')">
               {{ 'trainings.speaker.title' | translate }}
             </button>
-            <button mat-menu-item (click)="goToPart('trainings#manager')">
-              {{ 'trainings.manager.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="goToPart('trainings#singer')">
-              {{ 'trainings.singer.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="goToPart('trainings#podcast')">
-              {{ 'trainings.podcast.title' | translate }}
-            </button>
-            <button mat-menu-item (click)="goToPart('trainings#trainer')">
-              {{ 'trainings.trainer.title' | translate }}
-            </button> -->
+            -->
           </mat-menu>
 
           <a
@@ -190,7 +179,7 @@
           >
         </div>
 
-        // Spacer
+        <!-- Spacer -->
         <div class="spacer"></div>
 
         <!--
