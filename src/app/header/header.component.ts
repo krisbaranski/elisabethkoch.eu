@@ -81,6 +81,10 @@ export class HeaderComponent implements OnInit {
   //   this.overlayContainer.getContainerElement().classList.remove('no-scroll');
   // }
 
+  isActive(route: string): boolean {
+    return this.router.url.startsWith(route);
+  }
+
   goToPart(fragment: string) {
     const [path, anchor] = fragment.split('#');
     this.router.navigate([path], { fragment: anchor }).then(() => {

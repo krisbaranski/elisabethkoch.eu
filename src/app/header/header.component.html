@@ -29,6 +29,7 @@
             mat-button
             [matMenuTriggerFor]="courses"
             class="top_menu_item"
+            [ngClass]="{ active: isActive('/courses') }"
             [routerLinkActive]="'active'"
             [routerLinkActiveOptions]="{ exact: false }"
             >{{ 'menu.courses' | translate }}</a
