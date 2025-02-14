@@ -18,7 +18,6 @@
       <div class="menu">
         <div>
           <a
-            mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="trainings"
@@ -26,36 +25,20 @@
           >
 
           <a
-            mat-button
             [matMenuTriggerFor]="courses"
-            class="top_menu_item"
+            class="top_menu_item title-sublinks"
             [ngClass]="{ active: isActive('/courses') }"
             [routerLinkActive]="'active'"
             [routerLinkActiveOptions]="{ exact: false }"
             >{{ 'menu.courses' | translate }}</a
           >
-          <!-- <a
-            mat-button
-            (click)="$event.preventDefault()"
-            [matMenuTriggerFor]="courses"
-            [routerLink]="'/courses'"
-            class="top_menu_item"
-            [routerLinkActive]="'active'"
-            [routerLinkActiveOptions]="{ exact: false }"
-            >{{ 'menu.courses' | translate }}</a
-          > -->
           <mat-menu #courses="matMenu">
-            <button mat-menu-item (click)="goToPart('courses/women')">
+            <div class="menu-item" (click)="goToPart('courses/women')">
               {{ 'trainings.women.title_menu' | translate }}
-            </button>
-            <!-- <button mat-menu-item (click)="goToPart('trainings/speaker')">
-              {{ 'trainings.speaker.title' | translate }}
-            </button>
-             -->
+            </div>
           </mat-menu>
 
           <a
-            mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="profile"
@@ -63,14 +46,12 @@
           >
 
           <!-- <a
-            mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="blog"
             >{{ 'menu.blog' | translate }}</a
           > -->
           <a
-            mat-button
             class="top_menu_item"
             [routerLinkActive]="'active'"
             routerLink="contact"
@@ -137,21 +118,16 @@
           >
 
           <a
-            mat-button
             (click)="onSidemenuClick($event)"
             [matMenuTriggerFor]="courses"
-            class="sidebar_item sublink"
+            class="sidebar_item"
             [routerLinkActive]="'active'"
             >{{ 'menu.courses' | translate }}</a
           >
           <mat-menu #courses="matMenu">
-            <button mat-menu-item (click)="goToPart('courses/women')">
+            <div (click)="goToPart('courses/women')">
               {{ 'trainings.women.title_menu' | translate }}
-            </button>
-            <!-- <button mat-menu-item (click)="goToPart('trainings#speaker')">
-              {{ 'trainings.speaker.title' | translate }}
-            </button>
-            -->
+            </div>
           </mat-menu>
 
           <a
