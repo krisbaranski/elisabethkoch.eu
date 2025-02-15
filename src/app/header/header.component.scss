@@ -209,6 +209,7 @@ menu {
       &:hover,
       &.active,
       .sidebar_item.active {
+        background-color: #ffffff10;
         color: var(--color-white);
         border-bottom: 1px solid var(--color-white);
         border-radius: 0;
@@ -255,11 +256,11 @@ menu {
     align-items: center;
 
     .spacer {
-      border-top: 1px solid var(--color-white);
+      border-top: 1px solid #ffffff10;
       margin: auto;
       margin-top: 4rem;
       margin-bottom: 0;
-      width: 5rem;
+      width: 120vw;
     }
   }
 
