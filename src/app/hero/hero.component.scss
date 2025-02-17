@@ -43,38 +43,44 @@
     padding: 4rem 1rem;
   }
 
-  .offer a {
-    font-family: 'Montserrat regular', sans-serif;
-    border-radius: 3px;
-    backdrop-filter: blur(0.5rem);
-    background-color: var(--color-light);
-    padding: 1em 2em;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    font-size: var(--size--2);
-    font-weight: 400;
+  .offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &:hover {
+    a {
+      position: relative;
       background-color: var(--color-light);
-      color: var(--color-light);
-      scale: 0.95;
-    }
-
-    &::after {
-      content: '';
-      background: var(--color-dark);
+      color: #ffffff;
+      border: 1px solid var(--color-light);
       border-radius: 3px;
-      width: 0;
-      height: 100%;
-      position: absolute;
-      inset: 0;
-      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-      z-index: -1;
-    }
+      padding: 1em 2em;
+      font-size: var(--size--2);
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.2s linear;
 
-    &:hover::after {
-      width: 100%;
+      &:hover {
+        background-color: var(--color-light);
+        color: var(--color-light);
+        scale: 0.95;
+      }
+
+      &::after {
+        content: '';
+        background: var(--color-dark);
+        border-radius: 3px;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        z-index: -1;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
 }
