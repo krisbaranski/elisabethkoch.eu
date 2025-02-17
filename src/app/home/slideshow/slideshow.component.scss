@@ -150,12 +150,16 @@
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
-    transform: translateX(10vw);
+    transform: translateX(5vw);
 
     h1,
     h2 {
       margin: 0.3rem 0;
       line-height: 1.2;
+    }
+
+    h1 {
+      font-size: var(--size-2);
     }
 
     p {
