@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-single-training',
-  templateUrl: './single-training.component.html',
-  styleUrl: './single-training.component.scss',
+    selector: 'app-single-training',
+    templateUrl: './single-training.component.html',
+    styleUrl: './single-training.component.scss',
+    standalone: false
 })
 export class SingleTrainingComponent {
   text_1: string[];

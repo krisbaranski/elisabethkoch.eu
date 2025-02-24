@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrl: './education.component.scss',
+    selector: 'app-education',
+    templateUrl: './education.component.html',
+    styleUrl: './education.component.scss',
+    standalone: false
 })
 export class EducationComponent {
   text_1: string[];

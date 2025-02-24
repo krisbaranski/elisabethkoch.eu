@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-women',
-  templateUrl: './women.component.html',
-  styleUrl: './women.component.scss',
+    selector: 'app-women',
+    templateUrl: './women.component.html',
+    styleUrl: './women.component.scss',
+    standalone: false
 })
 export class WomenComponent {
   @Input() darkMode = true;

@@ -11,27 +11,26 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  animations: [
-    trigger('routeAnimations', [
-      transition('* <=> *', [
-        // Start state of new page
-        query(':enter', [style({ opacity: 0 })], { optional: true }),
-
-        // Leave the old page
-        query(':leave', [animate('100ms ease-out', style({ opacity: 0 }))], {
-          optional: true,
-        }),
-
-        // Enter the new page
-        query(':enter', [animate('100ms ease-in', style({ opacity: 1 }))], {
-          optional: true,
-        }),
-      ]),
-    ]),
-  ],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    animations: [
+        trigger('routeAnimations', [
+            transition('* <=> *', [
+                // Start state of new page
+                query(':enter', [style({ opacity: 0 })], { optional: true }),
+                // Leave the old page
+                query(':leave', [animate('100ms ease-out', style({ opacity: 0 }))], {
+                    optional: true,
+                }),
+                // Enter the new page
+                query(':enter', [animate('100ms ease-in', style({ opacity: 1 }))], {
+                    optional: true,
+                }),
+            ]),
+        ]),
+    ],
+    standalone: false
 })
 export class AppComponent {
   title: String = 'title name';

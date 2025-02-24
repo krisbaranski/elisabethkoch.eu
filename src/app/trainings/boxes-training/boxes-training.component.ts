@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-boxes-training',
-  templateUrl: './boxes-training.component.html',
-  styleUrl: './boxes-training.component.scss',
+    selector: 'app-boxes-training',
+    templateUrl: './boxes-training.component.html',
+    styleUrl: './boxes-training.component.scss',
+    standalone: false
 })
 export class BoxesTrainingComponent {
   text_1: string[];

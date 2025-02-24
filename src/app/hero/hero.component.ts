@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-hero',
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss',
+    selector: 'app-hero',
+    templateUrl: './hero.component.html',
+    styleUrl: './hero.component.scss',
+    standalone: false
 })
 export class HeroComponent {
   @Input() titleMedium = '';

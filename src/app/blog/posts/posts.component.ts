@@ -3,9 +3,10 @@ import { BlogService } from '../../blog.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrl: './posts.component.scss',
+    selector: 'app-posts',
+    templateUrl: './posts.component.html',
+    styleUrl: './posts.component.scss',
+    standalone: false
 })
 export class PostsComponent implements OnInit {
   blogPosts: any;

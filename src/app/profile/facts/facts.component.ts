@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-facts',
-  templateUrl: './facts.component.html',
-  styleUrl: './facts.component.scss',
+    selector: 'app-facts',
+    templateUrl: './facts.component.html',
+    styleUrl: './facts.component.scss',
+    standalone: false
 })
 export class FactsComponent {
   text_2: string[];

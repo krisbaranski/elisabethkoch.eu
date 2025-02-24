@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-boxes-women',
-  templateUrl: './boxes-women.component.html',
-  styleUrl: './boxes-women.component.scss',
+    selector: 'app-boxes-women',
+    templateUrl: './boxes-women.component.html',
+    styleUrl: './boxes-women.component.scss',
+    standalone: false
 })
 export class BoxesWomenComponent {
   text_1: string[];
