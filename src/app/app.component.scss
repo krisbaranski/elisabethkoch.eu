@@ -1,9 +1,9 @@
 /* Montserrat Thin */
 @font-face {
-  font-family: 'Montserrat Thin';
+  font-family: 'Montserrat ExtraLight';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/Montserrat/Montserrat-Thin.woff') format('woff');
+  src: url('/assets/fonts/Montserrat/Montserrat-ExtraLight.woff') format('woff');
 }
 
 /* Montserrat Light */
@@ -24,10 +24,10 @@
 
 /* Montserrat Bold */
 @font-face {
-  font-family: 'Montserrat Bold';
+  font-family: 'Montserrat Medium';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+  src: url('/assets/fonts/Montserrat/Montserrat-Medium.woff') format('woff');
 }
 
 /* Handwrite Testimonia Regular (default weight 400) */
@@ -39,19 +39,6 @@
     format('woff');
 }
 
-/* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1240,22,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
-// :root {
-//   --step--2: clamp(0.7901rem, 0.7589rem + 0.1563vw, 0.88rem);
-//   --step--1: clamp(0.8889rem, 0.8155rem + 0.3671vw, 1.1rem);
-//   --step-0: clamp(1rem, 0.8696rem + 0.6522vw, 1.375rem);
-//   --step-1: clamp(1.125rem, 0.9185rem + 1.0326vw, 1.7188rem);
-//   --step-2: clamp(1.2656rem, 0.9586rem + 1.5353vw, 2.1484rem);
-//   --step-3: clamp(1.4238rem, 0.985rem + 2.1943vw, 2.6855rem);
-//   --step-4: clamp(1.6018rem, 0.9913rem + 3.0524vw, 3.3569rem);
-//   --step-5: clamp(1.802rem, 0.9693rem + 4.1637vw, 4.1962rem);
-// }
-
 *,
 *::before,
 *::after {
@@ -59,10 +46,12 @@
   font-family: 'Montserrat-regular', sans-serif;
 
   // Font color
+  --color-white: #ffffff;
   --color-light: #b18724;
   --color-dark: #052a33;
 
   // Font size
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1240,22,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --size--2: clamp(0.7901rem, 0.7589rem + 0.1563vw, 0.88rem);
   --size--1: clamp(0.8889rem, 0.8155rem + 0.3671vw, 1.1rem);
   --size-0: clamp(1rem, 0.8696rem + 0.6522vw, 1.375rem);
