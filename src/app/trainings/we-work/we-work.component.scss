@@ -26,10 +26,10 @@
 
 h1 {
   font-family: 'Montserrat ExtraLight', sans-serif;
-  font-size: 5.4rem;
+  font-size: 3.1rem;
   color: var(--color-light);
   writing-mode: vertical-lr;
-  margin: 0 2rem 0 3rem;
+  margin: 1rem 2rem 2rem 2rem;
   transform: rotate(180deg);
 }
 
@@ -81,7 +81,7 @@ span {
     padding: 0;
 
     h1 {
-      font-size: clamp(2.2rem, 4vw, 4rem);
+      font-size: var(--size-4);
       transform: rotate(0deg);
       writing-mode: horizontal-tb;
       margin: 5rem auto;
