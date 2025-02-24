@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
@@ -34,9 +34,11 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { OfferComponent } from './offer/offer.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PostsComponent } from './blog/posts/posts.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SlideshowComponent } from './home/slideshow/slideshow.component';
+import { SinglePostComponent } from './blog/single-post/single-post.component';
 import { SingleTrainingComponent } from './trainings/single-training/single-training.component';
 import { SpacerComponent } from './spacer/spacer.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
@@ -59,6 +61,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { BlogService } from './blog.service';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -96,8 +100,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     OfferComponent,
     NewsletterComponent,
     NotFoundComponent,
+    PostsComponent,
     PrivacyComponent,
     ProfileComponent,
+    SinglePostComponent,
     SingleTrainingComponent,
     SlideshowComponent,
     SpacerComponent,
@@ -132,11 +138,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatMenuModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    NgxSpinnerModule,
   ],
   providers: [
     HttpClientModule,
+    BlogService,
     { provide: LocationStrategy, useClass: HashLocationStrategy },
   ],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
