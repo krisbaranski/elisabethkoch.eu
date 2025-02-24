@@ -53,7 +53,7 @@ import { WorkWomenComponent } from './courses/women/work-women/work-women.compon
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -122,7 +122,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {
@@ -141,7 +140,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     NgxSpinnerModule,
   ],
   providers: [
-    HttpClientModule,
     BlogService,
     { provide: LocationStrategy, useClass: HashLocationStrategy },
   ],
