@@ -5,16 +5,32 @@ import {
   ViewChild,
   HostListener,
 } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { Router } from '@angular/router';
-import { MatSidenav } from '@angular/material/sidenav';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { Router, RouterLinkActive } from '@angular/router';
+import { MatSidenav, MatSidenavContainer } from '@angular/material/sidenav';
 import { OverlayContainer } from '@angular/cdk/overlay';
+import { MatToolbar } from '@angular/material/toolbar';
+import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
+import { MatIcon } from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.scss'],
-    standalone: false
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
+  imports: [
+    TranslateModule,
+    CommonModule,
+    MatSidenav,
+    MatToolbar,
+    MatMenuModule,
+    MatMenuTrigger,
+    MatIcon,
+    MatSidenavContainer,
+    RouterLinkActive,
+  ],
+  providers: [TranslateService],
+  standalone: true,
 })
 export class HeaderComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;

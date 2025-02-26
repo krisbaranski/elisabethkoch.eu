@@ -1,9 +1,10 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideServerRendering } from '@angular/platform-server';
-import { AppServerModule } from './app/app.server.module';
+import { AppComponent } from './app/app.component';
+import { APP_ROUTER_PROVIDERS } from './app/app.routes';
 
-// ✅ Correctly export bootstrap function
-export default () =>
-  bootstrapApplication(AppServerModule, {
-    providers: [provideServerRendering()],
-  });
+const bootstrap = () =>
+  bootstrapApplication(AppComponent, {
+    providers: [APP_ROUTER_PROVIDERS],
+  }).catch((err) => console.error(err));
+
+export default bootstrap;

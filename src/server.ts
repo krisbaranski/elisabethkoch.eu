@@ -1,3 +1,4 @@
+import 'zone.js/node';
 import {
   AngularNodeAppEngine,
   createNodeRequestHandler,
@@ -7,60 +8,84 @@ import {
 import express from 'express';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { existsSync } from 'fs';
+import { join } from 'path';
 
-const serverDistFolder = dirname(fileURLToPath(import.meta.url));
-const browserDistFolder = resolve(serverDistFolder, '../browser');
+export function app(): express.Express {
+  const server = express();
+  const serverDistFolder = dirname(fileURLToPath(import.meta.url));
+  const browserDistFolder = resolve(serverDistFolder, '../browser');
 
-const app = express();
-const angularApp = new AngularNodeAppEngine();
+  // Here, we now use the `AngularNodeAppEngine` instead of the `CommonEngine`
+  const angularNodeAppEngine = new AngularNodeAppEngine();
 
-/**
- * Example Express Rest API endpoints can be defined here.
- * Uncomment and define endpoints as necessary.
- *
- * Example:
- * ```ts
- * app.get('/api/**', (req, res) => {
- *   // Handle API request
- * });
- * ```
- */
+  const app = express();
+  const distFolder = join(process.cwd(), 'dist/elisabethkoch.eu/browser');
+  const indexHtml = existsSync(join(distFolder, 'index.original.html'))
+    ? 'index.original.html'
+    : 'index.html';
 
-/**
- * Serve static files from /browser
- */
-app.use(
-  express.static(browserDistFolder, {
-    maxAge: '1y',
-    index: false,
-    redirect: false,
-  }),
-);
+  // ✅ Add CSP headers before handling requests
+  app.use((req, res, next) => {
+    res.setHeader(
+      'Content-Security-Policy',
+      "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';"
+    );
+    next();
+  });
 
-/**
- * Handle all other requests by rendering the Angular application.
- */
-app.use('/**', (req, res, next) => {
-  angularApp
-    .handle(req)
-    .then((response) =>
-      response ? writeResponseToNodeResponse(response, res) : next(),
-    )
-    .catch(next);
-});
+  // ✅ Serve static files
+  app.use(express.static(distFolder, { maxAge: '1y' }));
 
-/**
- * Start the server if this module is the main entry point.
- * The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
- */
+  // ✅ Handle all routes
+  app.get('*', (req, res) => {
+    res.sendFile(join(distFolder, indexHtml));
+  });
+
+  // ✅ Start server
+  app.listen(4000, () => {
+    console.log(`Node Express server listening on http://localhost:4000`);
+  });
+
+  server.use('/api/**', (req, res) => res.json({ hello: 'foo' }));
+
+  server.get(
+    '**',
+    express.static(browserDistFolder, {
+      maxAge: '1y',
+      index: 'index.html',
+    })
+  );
+
+  // With this config, /404 will not reach the Angular app
+  server.get('/404', (req, res, next) => {
+    res.send('Express is serving this server only error');
+  });
+
+  server.get('**', (req, res, next) => {
+    // Yes, this is executed in devMode via the Vite DevServer
+    console.log('request', req.url, res.status);
+
+    angularNodeAppEngine
+      .handle(req, { server: 'express' })
+      .then((response) =>
+        response ? writeResponseToNodeResponse(response, res) : next()
+      )
+      .catch(next);
+  });
+
+  return server;
+}
+
+const server = app();
 if (isMainModule(import.meta.url)) {
   const port = process.env['PORT'] || 4000;
-  app.listen(port, () => {
-    console.log(`Node Express server listening on http://localhost:${port}`);
+  server.listen(port, () => {
+    console.log(`Node Express server listening on http://localhost:\${port}`);
   });
 }
 
-/**
- * Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.
- */
-export const reqHandler = createNodeRequestHandler(app);
+console.warn('Node Express server started');
+
+// This exposes the RequestHandler
+export const reqHandler = createNodeRequestHandler(server);

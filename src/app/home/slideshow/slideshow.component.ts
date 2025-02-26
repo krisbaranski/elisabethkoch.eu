@@ -1,13 +1,19 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-slideshow',
-    templateUrl: './slideshow.component.html',
-    styleUrls: ['./slideshow.component.scss'],
-    standalone: false
+  selector: 'app-slideshow',
+  templateUrl: './slideshow.component.html',
+  styleUrls: ['./slideshow.component.scss'],
+  imports: [TranslateModule, CommonModule],
+  providers: [TranslateService],
+  standalone: true,
 })
 export class SlideshowComponent implements OnInit {
-  constructor() {}
+  constructor(private translate: TranslateService) {
+    this.translate.use('en');
+  }
   images = ['aboutme1.jpg'];
   text_big = ['home.title_1'];
   headline = ['home.title_2'];

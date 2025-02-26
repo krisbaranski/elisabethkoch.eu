@@ -1,11 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-single-training',
-    templateUrl: './single-training.component.html',
-    styleUrl: './single-training.component.scss',
-    standalone: false
+  selector: 'app-single-training',
+  templateUrl: './single-training.component.html',
+  styleUrl: './single-training.component.scss',
+  imports: [TranslateModule, CommonModule],
+  providers: [TranslateService],
+  standalone: true,
 })
 export class SingleTrainingComponent {
   text_1: string[];

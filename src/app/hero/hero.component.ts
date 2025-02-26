@@ -1,11 +1,15 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'app-hero',
-    templateUrl: './hero.component.html',
-    styleUrl: './hero.component.scss',
-    standalone: false
+  selector: 'app-hero',
+  templateUrl: './hero.component.html',
+  styleUrl: './hero.component.scss',
+  imports: [TranslateModule, CommonModule],
+  providers: [TranslateService],
+  standalone: true,
 })
 export class HeroComponent {
   @Input() titleMedium = '';
@@ -15,22 +19,7 @@ export class HeroComponent {
   @Input() button = '';
   @Input() showButton: boolean = true; // Control visibility
 
-  constructor(private router: Router) {}
-
-  // goToPart(fragment: string) {
-  //   const [path, anchor] = fragment.split('#');
-  //   this.router.navigate([path], { fragment: anchor }).then(() => {
-  //     // Wait a short period for navigation to complete before trying to scroll
-  //     setTimeout(() => {
-  //       const element = document.getElementById(anchor);
-  //       if (element) {
-  //         element.scrollIntoView({
-  //           behavior: 'smooth',
-  //           block: 'start',
-  //           inline: 'nearest',
-  //         });
-  //       }
-  //     }, 200); // Delay ensures content is loaded
-  //   });
-  // }
+  constructor(private router: Router, private translate: TranslateService) {
+    this.translate.use('en');
+  }
 }
