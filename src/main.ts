@@ -8,6 +8,7 @@ import {
 } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 // Function to create a translation loader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -22,6 +23,6 @@ bootstrapApplication(AppComponent, {
       provide: TranslateLoader,
       useFactory: HttpLoaderFactory,
       deps: [HttpClient],
-    },
+    }, provideAnimationsAsync(),
   ],
 });
