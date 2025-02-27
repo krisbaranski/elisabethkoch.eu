@@ -19,7 +19,7 @@
 .box {
   max-width: 450px;
   height: auto;
-  padding: 2rem;
+  padding: 2rem auto;
   align-content: center;
 
   h2 {
@@ -149,7 +149,7 @@
 //
 @media only screen and (max-width: 1024px) {
   .wrapper {
-    margin: 3rem auto;
+    margin: 4rem auto;
   }
 
   .boxes {
@@ -160,7 +160,7 @@
       'box1'
       'box3'
       'box4';
-    row-gap: 2rem;
+    row-gap: 1rem;
   }
 
   .box_1 {
@@ -181,10 +181,11 @@
   }
 
   .box-frame {
+    border-left: 1px solid var(--color-light);
     border-right: none;
-    margin: 2rem 1rem;
-    padding: 0;
-    text-align: center;
+    margin: 0 2rem;
+    padding-left: 3rem;
+    text-align: left;
 
     h1 {
       font-size: var(--size-5);

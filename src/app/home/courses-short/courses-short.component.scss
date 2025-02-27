@@ -110,8 +110,9 @@ span {
 
   h1 {
     font-size: clamp(2.2rem, 4vw, 4rem);
-    transform: rotate(270deg);
-    padding: 3rem;
-    margin: auto;
+    transform: none;
+    writing-mode: horizontal-tb;
+    margin: 3rem auto;
+    padding: 0;
   }
 }

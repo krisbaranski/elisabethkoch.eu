@@ -109,10 +109,9 @@ img {
   }
 
   .box-frame {
-    border-left: none;
     margin: 2rem 1rem;
-    padding: 0;
-    text-align: center;
+    padding-left: 3rem;
+    text-align: left;
 
     h1 {
       font-size: var(--size-5);
