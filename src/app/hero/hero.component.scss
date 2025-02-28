@@ -8,7 +8,7 @@
   background-image: url('../../assets/img/contact_bg.png');
   background-size: cover;
   background-position: center;
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
   padding-top: 4rem;
 }
 
@@ -23,6 +23,7 @@
   h1 {
     font-family: 'Montserrat Medium', sans-serif;
     font-size: var(--size-4);
+    padding: 0 1rem;
     line-height: 1.2;
   }
 
