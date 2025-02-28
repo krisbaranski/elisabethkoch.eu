@@ -1,9 +1,9 @@
 /* Montserrat Thin */
 @font-face {
-  font-family: 'Montserrat Thin';
+  font-family: 'Montserrat ExtraLight';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/Montserrat/Montserrat-Thin.woff') format('woff');
+  src: url('/assets/fonts/Montserrat/Montserrat-ExtraLight.woff') format('woff');
 }
 
 /* Montserrat Light */
@@ -24,10 +24,10 @@
 
 /* Montserrat Bold */
 @font-face {
-  font-family: 'Montserrat Bold';
+  font-family: 'Montserrat Medium', sans-serif;
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+  src: url('/assets/fonts/Montserrat/Montserrat-Meduim.woff') format('woff');
 }
 
 /* Handwrite Testimonia Regular (default weight 400) */
@@ -56,7 +56,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Montserrat-regular', sans-serif;
+  font-family: 'Montserrat Regular', sans-serif;
 
   // Font color
   --color-white: #ffffff;
