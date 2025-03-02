@@ -2,7 +2,6 @@
   display: flex;
   width: 100%;
   margin: auto;
-  font-family: 'Montserrat Regular', sans-serif;
   line-height: 1.5;
   z-index: 1;
 }
@@ -10,9 +9,10 @@
 .text {
   display: flex;
   flex-direction: column;
-  width: min(80vw - 2rem, 1100px);
+  width: min(90vw - 2rem, 1100px);
   justify-content: flex-start;
-  margin: 4rem auto 1rem;
+  margin: 4rem auto;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -58,6 +58,11 @@
 ///
 /// MEDIA QUERIES
 @media (max-width: 1280px) {
+  .contain {
+    width: 90vw;
+    // margin: 0;
+    // padding: 0;
+  }
   .title {
     h1 {
       font-size: var(--size-5);

@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  // font-family: 'Montserrat Regular', sans-serif;
   margin: 6rem auto;
 }
 
@@ -17,6 +16,9 @@
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 450px;
   height: auto;
   padding: 2rem;
@@ -25,13 +27,13 @@
     font-family: 'Montserrat Light', sans-serif;
     font-size: var(--size-1);
     color: var(--color-light);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   p {
     font-family: 'Montserrat Regular', sans-serif;
-    color: var(--color-dark);
     font-size: var(--size--2);
+    color: var(--color-dark);
     text-align: left;
     margin: 0.5rem auto;
   }
@@ -40,7 +42,7 @@
 .box-frame {
   border-right: 1px solid var(--color-light);
   padding-right: 2rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   align-content: center;
   text-align: right;
   color: var(--color-light);
@@ -53,7 +55,7 @@
 
   .handwrite {
     font-family: 'Funky-signature';
-    font-size: 8rem;
+    font-size: 9rem;
   }
 }
 
@@ -70,6 +72,7 @@ img {
 @media only screen and (max-width: 1024px) {
   .wrapper {
     margin: 3rem auto;
+    width: 90vw;
   }
 
   .boxes {
@@ -98,12 +101,13 @@ img {
 
   .box {
     flex: 0 1 80vw;
+    padding: 1rem;
   }
 
   .box-frame {
     border-right: none;
     border-left: 1px solid var(--color-light);
-    margin: 0 2rem;
+    margin: 2rem 1rem;
     padding-left: 3rem;
     text-align: left;
 
@@ -112,7 +116,7 @@ img {
     }
 
     .handwrite {
-      font-size: clamp(5rem, 9vw, 9rem);
+      font-size: clamp(4rem, 9vw, 8rem);
     }
   }
 }

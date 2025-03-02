@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  // font-family: 'Montserrat Regular', sans-serif;
   margin: 6rem auto;
 }
 
@@ -45,6 +44,7 @@
   padding-left: 2rem;
   margin-left: 2rem;
   align-content: center;
+  text-align: left;
   color: var(--color-light);
 
   h1 {
@@ -118,7 +118,7 @@ img {
     }
 
     .handwrite {
-      font-size: clamp(6rem, 9vw, 9rem);
+      font-size: clamp(5rem, 9vw, 8rem);
     }
   }
 }
