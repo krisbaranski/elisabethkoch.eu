@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  // font-family: 'Montserrat Regular', sans-serif;
   margin: 6rem auto;
 }
 
@@ -93,7 +92,8 @@ span {
 /// MEDIA QUERIES
 @media (max-width: 1200px) {
   .wrapper {
-    margin: 4rem auto;
+    margin: 2rem auto;
+    margin-bottom: 4rem;
   }
 
   .box {
