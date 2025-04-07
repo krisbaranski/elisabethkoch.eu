@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
+  standalone: true,
   selector: 'app-course-content',
   templateUrl: './course-content.component.html',
   styleUrl: './course-content.component.scss',
+  imports: [TranslateModule],
 })
 export class CourseContentComponent {
   constructor(private router: Router) {}

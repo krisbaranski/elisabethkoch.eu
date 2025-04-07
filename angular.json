@@ -15,23 +15,17 @@
       "prefix": "app",
       "architect": {
         "prerender": {
-          "builder": "@nguniversal/builders:prerender",
+          "builder": "@angular-devkit/build-angular:prerender",
           "options": {
-            "browserTarget": "elisabethkoch.eu:build:production",
-            "routes": [
-              "/",
-              "/trainings",
-              "/courses",
-              "/profile",
-              "/blog",
-              "/contact"
-            ]
+            "browserTarget": "elisabethkoch.eu:build",
+            "serverTarget": "elisabethkoch.eu:server",
+            "routes": ["/"]
           }
         },
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/elisabethkoch.eu",
+            "outputPath": "dist/elisabethkoch.eu/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -113,6 +107,51 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/elisabethkoch.eu/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "options": {
+            "browserTarget": "elisabethkoch.eu:build",
+            "serverTarget": "elisabethkoch.eu:server"
+          },
+          "configurations": {
+            "development": {
+              "browserTarget": "elisabethkoch.eu:build:development",
+              "serverTarget": "elisabethkoch.eu:server:development"
+            },
+            "production": {
+              "browserTarget": "elisabethkoch.eu:build:production",
+              "serverTarget": "elisabethkoch.eu:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
         }
       }
     }

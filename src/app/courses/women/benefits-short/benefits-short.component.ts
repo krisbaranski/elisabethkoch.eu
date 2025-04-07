@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
+  standalone: true,
   selector: 'app-benefits-short',
   templateUrl: './benefits-short.component.html',
   styleUrl: './benefits-short.component.scss',
+  imports: [TranslateModule],
 })
 export class BenefitsShortComponent {
   constructor(private router: Router) {}

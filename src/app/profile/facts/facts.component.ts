@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
+  standalone: true,
   selector: 'app-facts',
   templateUrl: './facts.component.html',
   styleUrl: './facts.component.scss',

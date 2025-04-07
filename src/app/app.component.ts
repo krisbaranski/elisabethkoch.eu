@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Router, RouterOutlet } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import {
   trigger,
   transition,
@@ -9,11 +10,22 @@ import {
   animate,
   query,
 } from '@angular/animations';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  imports: [
+    HeaderComponent,
+    FooterComponent,
+    CommonModule,
+    RouterOutlet,
+    RouterModule,
+    TranslateModule,
+  ],
   animations: [
     trigger('routeAnimations', [
       transition('* <=> *', [
@@ -34,7 +46,7 @@ import {
   ],
 })
 export class AppComponent {
-  title: String = 'title name';
+  title: String = 'Elisabeth Koch - Stimme und gelungener Auftritt';
 
   // Transtale constructor
   constructor(

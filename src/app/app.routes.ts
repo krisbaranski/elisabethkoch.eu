@@ -1,4 +1,3 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
@@ -10,12 +9,11 @@ import { ContactComponent } from './contact/contact.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-
 import { WomenComponent } from './courses/women/women.component';
 import { AquaintmentComponent } from './contact/aquaintment/aquaintment.component';
 import { FirstAppointmentComponent } from './contact/first-appointment/first-appointment.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'HomePage' } },
   {
     path: 'trainings',
@@ -25,10 +23,7 @@ const routes: Routes = [
   {
     path: 'courses',
     component: CoursesComponent,
-    children: [
-      { path: 'women', component: WomenComponent },
-      // { path: '', redirectTo: 'women', pathMatch: 'full' }, // Default child route
-    ],
+    children: [{ path: 'women', component: WomenComponent }],
     data: { animation: 'CoursesPage' },
   },
   {
@@ -43,7 +38,6 @@ const routes: Routes = [
     children: [
       { path: 'aquaintment', component: AquaintmentComponent },
       { path: 'first-appointment', component: FirstAppointmentComponent },
-      { path: '', redirectTo: 'women', pathMatch: 'full' }, // Default child route
     ],
     data: { animation: 'ContactPage' },
   },
@@ -69,13 +63,4 @@ const routerOptions: ExtraOptions = {
   anchorScrolling: 'disabled',
 };
 
-// const routerOptions: ExtraOptions = {
-//   anchorScrolling: 'enabled',
-//   scrollPositionRestoration: 'enabled',
-// };
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes, routerOptions)],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}
+export class AppRoutes {}

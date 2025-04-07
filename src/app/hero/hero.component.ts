@@ -1,10 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
+  imports: [TranslateModule, CommonModule],
 })
 export class HeroComponent {
   @Input() titleMedium = '';

@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-slideshow',
   templateUrl: './slideshow.component.html',
   styleUrls: ['./slideshow.component.scss'],
+  imports: [TranslateModule, CommonModule],
 })
 export class SlideshowComponent implements OnInit {
   constructor() {}

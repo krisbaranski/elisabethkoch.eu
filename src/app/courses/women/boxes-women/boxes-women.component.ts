@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-boxes-women',
   templateUrl: './boxes-women.component.html',
   styleUrl: './boxes-women.component.scss',
+  imports: [TranslateModule, CommonModule],
 })
 export class BoxesWomenComponent {
   text_1: string[];

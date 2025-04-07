@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-education',
   templateUrl: './education.component.html',
   styleUrl: './education.component.scss',
+  imports: [TranslateModule, CommonModule],
 })
 export class EducationComponent {
   text_1: string[];
