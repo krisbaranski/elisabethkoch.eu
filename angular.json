@@ -14,29 +14,34 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
-        "prerender": {
-          "builder": "@angular-devkit/build-angular:prerender",
-          "options": {
-            "browserTarget": "elisabethkoch.eu:build",
-            "serverTarget": "elisabethkoch.eu:server",
-            "routes": ["/"]
-          }
-        },
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/elisabethkoch.eu/browser",
+            "outputPath": {
+              "base": "dist/elisabethkoch.eu"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "src/polyfills.ts"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets", "src/404.html"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/404.html"
+            ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "browser": "src/main.ts",
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -61,9 +66,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -107,51 +110,6 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/elisabethkoch.eu/server",
-            "main": "src/main.server.ts",
-            "tsConfig": "tsconfig.server.json"
-          },
-          "configurations": {
-            "production": {
-              "outputHashing": "media",
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ]
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "sourceMap": true,
-              "extractLicenses": false,
-              "vendorChunk": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve-ssr": {
-          "builder": "@angular-devkit/build-angular:ssr-dev-server",
-          "options": {
-            "browserTarget": "elisabethkoch.eu:build",
-            "serverTarget": "elisabethkoch.eu:server"
-          },
-          "configurations": {
-            "development": {
-              "browserTarget": "elisabethkoch.eu:build:development",
-              "serverTarget": "elisabethkoch.eu:server:development"
-            },
-            "production": {
-              "browserTarget": "elisabethkoch.eu:build:production",
-              "serverTarget": "elisabethkoch.eu:server:production"
-            }
-          },
-          "defaultConfiguration": "development"
         }
       }
     }
