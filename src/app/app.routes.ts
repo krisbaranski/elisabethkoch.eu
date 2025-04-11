@@ -62,5 +62,3 @@ const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'top',
   anchorScrolling: 'disabled',
 };
-
-export class AppRoutes {}
