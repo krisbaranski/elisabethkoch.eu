@@ -57,11 +57,11 @@ import { fileURLToPath } from 'node:url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Dynamic import of SSR entry (because it's ESM too!)
-const { render } = await import('./src/main.server.js');
-
 const distFolder = join(__dirname, '../elisabethkoch.eu/browser');
 const indexHtml = readFileSync(join(distFolder, 'index.html'), 'utf-8');
+
+// Dynamic import of SSR entry (because it's ESM too!)
+const { render } = await import('./src/main.server.js');
 
 const server = createServer(async (req, res) => {
   try {

@@ -10,13 +10,7 @@
     "esModuleInterop": true
   },
   "include": ["server.ts", "src/**/*.ts"],
-  "exclude": [
-    "**/*.spec.ts",
-    "src/test.ts",
-    "src/main.ts",
-    "src/polyfills.ts",
-    "src/environments/**"
-  ],
+  "exclude": ["**/*.spec.ts", "src/test.ts"],
   "angularCompilerOptions": {
     "enableIvy": true
   }
