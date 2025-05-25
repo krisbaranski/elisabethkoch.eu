@@ -1,7 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { MatDialog } from '@angular/material/dialog';
+import { PopupComponent } from './popup/popup.component';
 import {
   trigger,
   transition,
@@ -40,6 +42,7 @@ export class AppComponent {
   constructor(
     public router: Router,
     public translate: TranslateService,
+    private dialog: MatDialog,
     private http: HttpClient
   ) {
     // this language will be used as a fallback when a translation isn't found in the current language
@@ -56,5 +59,14 @@ export class AppComponent {
       outlet.activatedRouteData &&
       outlet.activatedRouteData['animation']
     );
+  }
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.dialog.open(PopupComponent, {
+        maxWidth: '400px',
+        disableClose: true,
+      });
+    }, 4000);
   }
 }

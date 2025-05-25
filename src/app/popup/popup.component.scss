@@ -1,0 +1,142 @@
+:root,
+html,
+body,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Montserrat Regular', sans-serif;
+
+  // Font color
+  --color-white: #ffffff;
+  --color-light: #b18724;
+  --color-dark: #052a33;
+
+  // Font size
+  --size--2: clamp(0.7901rem, 0.7589rem + 0.1563vw, 0.88rem);
+  --size--1: clamp(0.8889rem, 0.8155rem + 0.3671vw, 1.1rem);
+  --size-0: clamp(1rem, 0.8696rem + 0.6522vw, 1.375rem);
+  --size-1: clamp(1.125rem, 0.9185rem + 1.0326vw, 1.7188rem);
+  --size-2: clamp(1.2656rem, 0.9586rem + 1.5353vw, 2.1484rem);
+  --size-3: clamp(1.4238rem, 0.985rem + 2.1943vw, 2.6855rem);
+  --size-4: clamp(1.6018rem, 0.9913rem + 3.0524vw, 3.3569rem);
+  --size-5: clamp(1.802rem, 0.9693rem + 4.1637vw, 4.1962rem);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-container {
+  position: relative;
+  padding: 2rem;
+  border-radius: 3px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  h1 {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: var(--size-1);
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: var(--size--1);
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  p {
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: var(--size--2);
+    // color: #b18724;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  /* Popup Box */
+  .popup {
+    padding: 2rem;
+    border-radius: 3px;
+  }
+
+  /* Close Button */
+  mat-button {
+    background-color: transparent;
+  }
+  // mat-button .popup .close-btn {
+  //   position: absolute;
+  //   top: 1rem;
+  //   right: 1rem;
+  //   color: var(--color-white);
+  //   font-size: var(--size-0);
+  // }
+
+  /* Show popup using animation delay */
+  .popup-overlay.show {
+    display: flex;
+    animation: fadeIn 0.5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+    a {
+      position: relative;
+      background-color: var(--color-light);
+      color: #ffffff;
+      border: 1px solid var(--color-light);
+      border-radius: 3px;
+      padding: 1em 2em;
+      font-size: var(--size--2);
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.2s linear;
+
+      &:hover {
+        background-color: var(--color-light);
+        color: var(--color-light);
+        scale: 1;
+      }
+
+      &::after {
+        content: '';
+        background: var(--color-dark);
+        border-radius: 3px;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        z-index: -1;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
