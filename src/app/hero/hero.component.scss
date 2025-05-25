@@ -30,9 +30,11 @@
   h2 {
     font-family: 'Montserrat ExtraLight', sans-serif;
     font-size: var(--size-2);
-    max-width: 800px;
+    max-width: 640px;
     margin: auto;
-    padding-bottom: 2rem;
+    padding: 2rem;
+    line-height: 1.4;
+    // text-wrap: pretty;
   }
 
   p {

@@ -10,4 +10,3 @@ declare var ml_webform_success_22029023: any; // Reference global function
 export class NewsletterComponent {
   constructor() {}
 }
-
