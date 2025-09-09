@@ -59,7 +59,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { PopupComponent } from './popup/popup.component';
+// import { PopupComponent } from './popup/popup.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -97,7 +97,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     OfferComponent,
     NewsletterComponent,
     NotFoundComponent,
-    PopupComponent,
+    // PopupComponent,
     PrivacyComponent,
     ProfileComponent,
     SingleTrainingComponent,

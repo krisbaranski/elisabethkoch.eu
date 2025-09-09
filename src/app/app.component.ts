@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
-import { PopupComponent } from './popup/popup.component';
+// import { PopupComponent } from './popup/popup.component';
 import {
   trigger,
   transition,
@@ -61,12 +61,12 @@ export class AppComponent {
     );
   }
 
-  ngOnInit(): void {
-    setTimeout(() => {
-      this.dialog.open(PopupComponent, {
-        maxWidth: '400px',
-        disableClose: true,
-      });
-    }, 4000);
-  }
+  // ngOnInit(): void {
+  //   setTimeout(() => {
+  //     this.dialog.open(PopupComponent, {
+  //       maxWidth: '400px',
+  //       disableClose: true,
+  //     });
+  //   }, 4000);
+  // }
 }
