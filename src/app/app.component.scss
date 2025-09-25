@@ -22,12 +22,20 @@
   src: url('/assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff');
 }
 
-/* Montserrat Bold */
+/* Montserrat Medium */
 @font-face {
   font-family: 'Montserrat Medium', sans-serif;
   font-style: normal;
   font-weight: normal;
   src: url('/assets/fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+}
+
+/* Montserrat Bold */
+@font-face {
+  font-family: 'Montserrat Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
 }
 
 /* Handwrite Testimonia Regular (default weight 400) */
