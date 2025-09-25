@@ -213,6 +213,35 @@
         "link": "Zur Buchung"
       }
     },
+
+    "link": "Mehr »"
+  },
+  "courses": {
+    "title_1": "Kurse",
+    "title_2": "Wachsen im Austausch mit anderen",
+    "text_1": "In meinen Kursen lernst Du, wie Du Deine Stimme kraftvoll und sicher einsetzt, Vertrauen gewinnst, Verbindung stärkst und andere überzeugst und inspirierst. Gemeinsam schaffen wir die Grundlage, auf der Du mit gutem Gefühl souverän, authentisch & lebendig auftreten kannst – mit Präsenz, Klarheit und Selbstbewusstsein.",
+    "text_2": "Die Dynamik eines Kurses bietet Dir die Möglichkeit in Übungen und Impulsen miteinander, und von anderen Teilnehmern zu lernen. Erlebe, wie schnell Du Fortschritte machst, wenn Du in einer unterstützenden und wertschätzenden Gruppe Deine Stimme und Präsenz entfaltest.",
+    "text_3": "Ob in meinen offenen Kursen oder inhouse für Dein Team – diese Erfahrung wird Dich nachhaltig stärken.",
+    "text_4": "Buche ein kostenfreies Kennenlerngespräch und melde Dich für meinen Newsletter an.",
+    "link": "Zu den Kursen",
+    "short": {
+      "title": "Kursinhalte",
+      "texte": {
+        "title_1": "Stimmliche Präsenz entwickeln: ",
+        "text_1": "Lerne Techniken, die Deine Stimme & Sprache kraftvoll, klar und souverän klingen lassen.",
+        "title_2": "Authentizität in der Kommunikation: ",
+        "text_2": "Finde Deinen natürlichen Stimmklang, der Deine Persönlichkeit unterstreicht und Authentizität vermittelt.",
+        "title_3": "Umgang mit Nervosität & Lampenfieber: ",
+        "text_3": "Wandle Nervosität in freudige Erwartung. Fühl Dich mit Deiner Stimme auch in herausfordernden Situationen zentriert, sicher & wohl.",
+        "title_4": "Führungsstärke durch Stimme: ",
+        "text_4": "Entwickle einen lebendigen Stimmklang in dem Deine Qualitäten zum klingen kommen. Schenke Sicherheit und werde gehört.",
+        "title_5": " Selbstbewusstsein & Präsenz: ",
+        "text_5": "Entwickle eine selbstbewusste Präsenz. Stimmlich und persönlich. Im Alltag und vor Publikum. ",
+        "title_6": "Präsentieren und Auftreten: ",
+        "text_6": "Wie kannst Du souverän auftreten und präsentieren, Deine Selbstsicherheit und Überzeugungskraft beeinflussen und hierdurch wirklich Berührendes schaffen? "
+      },
+      "link": "Zur Buchung"
+    },
     "colour": {
       "title": "Colour",
       "title_menu": "Colour Your Voice",
@@ -267,34 +296,6 @@
         },
         "link": "Zur Buchung"
       }
-    },
-    "link": "Mehr »"
-  },
-  "courses": {
-    "title_1": "Kurse",
-    "title_2": "Wachsen im Austausch mit anderen",
-    "text_1": "In meinen Kursen lernst Du, wie Du Deine Stimme kraftvoll und sicher einsetzt, Vertrauen gewinnst, Verbindung stärkst und andere überzeugst und inspirierst. Gemeinsam schaffen wir die Grundlage, auf der Du mit gutem Gefühl souverän, authentisch & lebendig auftreten kannst – mit Präsenz, Klarheit und Selbstbewusstsein.",
-    "text_2": "Die Dynamik eines Kurses bietet Dir die Möglichkeit in Übungen und Impulsen miteinander, und von anderen Teilnehmern zu lernen. Erlebe, wie schnell Du Fortschritte machst, wenn Du in einer unterstützenden und wertschätzenden Gruppe Deine Stimme und Präsenz entfaltest.",
-    "text_3": "Ob in meinen offenen Kursen oder inhouse für Dein Team – diese Erfahrung wird Dich nachhaltig stärken.",
-    "text_4": "Buche ein kostenfreies Kennenlerngespräch und melde Dich für meinen Newsletter an.",
-    "link": "Zu den Kursen",
-    "short": {
-      "title": "Kursinhalte",
-      "texte": {
-        "title_1": "Stimmliche Präsenz entwickeln: ",
-        "text_1": "Lerne Techniken, die Deine Stimme & Sprache kraftvoll, klar und souverän klingen lassen.",
-        "title_2": "Authentizität in der Kommunikation: ",
-        "text_2": "Finde Deinen natürlichen Stimmklang, der Deine Persönlichkeit unterstreicht und Authentizität vermittelt.",
-        "title_3": "Umgang mit Nervosität & Lampenfieber: ",
-        "text_3": "Wandle Nervosität in freudige Erwartung. Fühl Dich mit Deiner Stimme auch in herausfordernden Situationen zentriert, sicher & wohl.",
-        "title_4": "Führungsstärke durch Stimme: ",
-        "text_4": "Entwickle einen lebendigen Stimmklang in dem Deine Qualitäten zum klingen kommen. Schenke Sicherheit und werde gehört.",
-        "title_5": " Selbstbewusstsein & Präsenz: ",
-        "text_5": "Entwickle eine selbstbewusste Präsenz. Stimmlich und persönlich. Im Alltag und vor Publikum. ",
-        "title_6": "Präsentieren und Auftreten: ",
-        "text_6": "Wie kannst Du souverän auftreten und präsentieren, Deine Selbstsicherheit und Überzeugungskraft beeinflussen und hierdurch wirklich Berührendes schaffen? "
-      },
-      "link": "Zur Buchung"
     },
     "offer": {
       "title": "Angebot",
