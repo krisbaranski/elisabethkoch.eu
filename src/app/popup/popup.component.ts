@@ -37,7 +37,7 @@ export class PopupComponent {
             inline: 'nearest',
           });
         }
-      }, 200); // Delay ensures content is loaded
+      }, 500); // Delay ensures content is loaded
     });
   }
 

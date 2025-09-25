@@ -4,7 +4,9 @@
     <h2>{{ titleMedium | translate }}</h2>
     <p>{{ text | translate }}</p>
     <span class="offer" *ngIf="showButton">
-      <a href="#/{{ link }}">{{ button | translate }}</a>
+      <a (click)="goToPart('courses/colour#booking')">{{
+        button | translate
+      }}</a>
     </span>
   </div>
 </div>

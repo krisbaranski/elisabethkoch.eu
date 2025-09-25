@@ -12,7 +12,7 @@
     <h1>{{ 'popup.title' | translate }}</h1>
     <p>{{ 'popup.date' | translate }}</p>
     <span class="offer">
-      <a href="#/courses/colour" (click)="closePopup()">{{
+      <a (click)="goToPart('courses/colour#booking')" (click)="closePopup()">{{
         'popup.button' | translate
       }}</a>
     </span>
