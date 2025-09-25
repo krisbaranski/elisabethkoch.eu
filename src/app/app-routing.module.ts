@@ -12,6 +12,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { WomenComponent } from './courses/women/women.component';
+import { ColourComponent } from './courses/colour/colour.component';
 import { AquaintmentComponent } from './contact/aquaintment/aquaintment.component';
 import { FirstAppointmentComponent } from './contact/first-appointment/first-appointment.component';
 
@@ -26,6 +27,7 @@ const routes: Routes = [
     path: 'courses',
     component: CoursesComponent,
     children: [
+      { path: 'colour', component: ColourComponent },
       { path: 'women', component: WomenComponent },
       // { path: '', redirectTo: 'women', pathMatch: 'full' }, // Default child route
     ],

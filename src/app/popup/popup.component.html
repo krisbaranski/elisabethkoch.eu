@@ -1,18 +1,20 @@
-<!-- <div class="popup-overlay" id="coursesPopup"></div>
-<div class="popup-container">
-  <button
-    class="close-btn"
-    (click)="closePopup()"
-    onclick="document.getElementById('coursesPopup').style.display='none'"
-  >
-    ✖
-  </button>
-  <h2>{{ 'popup.header' | translate }}</h2>
-  <h1>{{ 'popup.title' | translate }}</h1>
-  <p>{{ 'popup.date' | translate }}</p>
-  <span class="offer">
-    <a href="#/courses/women" (click)="closePopup()">{{
-      'popup.button' | translate
-    }}</a>
-  </span>
-</div> -->
+<div class="popup-overlay" id="coursesPopup"></div>
+<div class="wrapper">
+  <div class="popup-container">
+    <button
+      class="close-btn"
+      (click)="closePopup()"
+      onclick="document.getElementById('coursesPopup').style.display='none'"
+    >
+      ✖
+    </button>
+    <h2>{{ 'popup.header' | translate }}</h2>
+    <h1>{{ 'popup.title' | translate }}</h1>
+    <p>{{ 'popup.date' | translate }}</p>
+    <span class="offer">
+      <a href="#/courses/colour" (click)="closePopup()">{{
+        'popup.button' | translate
+      }}</a>
+    </span>
+  </div>
+</div>

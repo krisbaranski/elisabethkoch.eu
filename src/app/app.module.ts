@@ -14,7 +14,9 @@ import { BenefitsShortComponent } from './courses/women/benefits-short/benefits-
 import { BoxesComponent } from './boxes/boxes.component';
 import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
 import { BoxesWomenComponent } from './courses/women/boxes-women/boxes-women.component';
+import { BoxesColourComponent } from './courses/colour/boxes-colour/boxes-colour.component';
 import { BoxesTrainingComponent } from './trainings/boxes-training/boxes-training.component';
+import { ColourComponent } from './courses/colour/colour.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactShortComponent } from './home/contact-short/contact-short.component';
 import { CoursesComponent } from './courses/courses.component';
@@ -29,6 +31,7 @@ import { FirstAppointmentComponent } from './contact/first-appointment/first-app
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
+import { HeroColourComponent } from './courses/colour/hero-colour/hero-colour.component';
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { OfferComponent } from './offer/offer.component';
@@ -59,7 +62,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatFormFieldModule } from '@angular/material/form-field';
-// import { PopupComponent } from './popup/popup.component';
+import { PopupComponent } from './popup/popup.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -76,7 +79,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     BoxesComponent,
     BoxesHomeComponent,
     BoxesWomenComponent,
+    BoxesColourComponent,
     BoxesTrainingComponent,
+    ColourComponent,
     ContactComponent,
     ContactShortComponent,
     CourseContentComponent,
@@ -91,13 +96,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     HeaderComponent,
     HeroComponent,
+    HeroColourComponent,
     HomeComponent,
     HomeComponent,
     ImpressumComponent,
     OfferComponent,
     NewsletterComponent,
     NotFoundComponent,
-    // PopupComponent,
+    PopupComponent,
     PrivacyComponent,
     ProfileComponent,
     SingleTrainingComponent,

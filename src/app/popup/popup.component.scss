@@ -35,16 +35,25 @@ body,
   z-index: 1000;
 }
 
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-inline: auto;
+  width: 100%;
+  height: auto;
+}
+
 .popup-container {
-  position: relative;
   padding: 2rem;
   border-radius: 3px;
-  background-color: var(--color-dark);
-  color: var(--color-light);
+  background: url('../../assets/img/three_muses.jpg');
+  background-position: center;
+  color: var(--color-dark);
 
   h1 {
-    font-family: 'Montserrat Regular', sans-serif;
-    font-size: var(--size-1);
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: var(--size-3);
     text-align: center;
     line-height: 1.6;
   }
@@ -57,8 +66,8 @@ body,
   }
 
   p {
-    font-family: 'Montserrat Light', sans-serif;
-    font-size: var(--size--2);
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: var(--size-0);
     // color: #b18724;
     text-align: center;
     line-height: 1.6;

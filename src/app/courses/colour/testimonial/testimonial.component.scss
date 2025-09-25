@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url('../../assets/img/bg_dark.jpg');
+  background-size: cover;
+  background-position: center;
+  text-wrap: balance;
+}
+
+.text {
+  color: var(--color-light);
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  text-align: center;
+  margin: 8rem 4rem;
+}
+
+h1 {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: var(--size-1);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+p {
+  font-family: 'Montserrat Medium', sans-serif;
+  font-size: var(--size--2);
+}
+
+@media screen and (max-width: 620px) {
+  .text {
+    margin: 5rem 1rem;
+  }
+}
