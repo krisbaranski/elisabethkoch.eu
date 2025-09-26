@@ -12,7 +12,7 @@ import {
   styleUrl: './tidycal-30.component.scss',
 })
 export class Tidycal30Component implements AfterViewInit {
-  @ViewChild('tidycalFrame', { static: true })
+  @ViewChild('tidycalFrame', { static: false })
   tidycalFrame!: ElementRef<HTMLIFrameElement>;
 
   private lastHeight = 0;
