@@ -76,25 +76,8 @@ export class Tidycal30Component implements AfterViewInit, OnDestroy {
   }
 
   private onMessage(event: MessageEvent) {
-    // Be conservative: ignore messages that are not strings
-    try {
-      const data = event.data;
-      if (!data) return;
-
-      // heuristics: many widgets send booking-related strings; adapt if necessary
-      const asString = typeof data === 'string' ? data : JSON.stringify(data);
-      const lower = asString.toLowerCase();
-
-      if (
-        lower.includes('booking') ||
-        lower.includes('form') ||
-        lower.includes('submit')
-      ) {
-        // TidyCal form likely opened
-        this.expandAndScroll('postmessage');
-      }
-    } catch (err) {
-      // ignore parse errors
+    if (typeof event.data === 'string' && event.data.includes('booking-form')) {
+      this.scrollToIframeTop();
     }
   }
 
@@ -147,6 +130,9 @@ export class Tidycal30Component implements AfterViewInit, OnDestroy {
     const iframeEl = this.tidycalFrame.nativeElement;
     const rect = iframeEl.getBoundingClientRect();
     const absoluteTop = rect.top + window.scrollY; // distance from document top
+
+    window.scrollTo({ top: absoluteTop + 1, behavior: 'auto' });
+    window.scrollTo({ top: absoluteTop - 10, behavior: 'smooth' });
 
     // Scroll to very top of the iframe, not where the tap was
     window.scrollTo({
