@@ -108,7 +108,7 @@ export class Tidycal30Component implements AfterViewInit, OnDestroy {
         this.expandAndScroll('interaction');
       } else {
         // On desktop maybe we only need to scroll
-        this.scrollToIframe();
+        this.scrollToIframeTop();
       }
     }, 600); // 600ms is a good compromise on mobile devices
   }
@@ -127,7 +127,7 @@ export class Tidycal30Component implements AfterViewInit, OnDestroy {
       this.expanded = true;
     }
 
-    this.scrollToIframe();
+    this.scrollToIframeTop();
 
     // If expansion doesn't work for some reason, show manual button
     // showManualButton gives user a reliable fallback
@@ -141,21 +141,18 @@ export class Tidycal30Component implements AfterViewInit, OnDestroy {
     el.style.height = px + 'px';
   }
 
-  private scrollToIframe() {
-    if (!this.tidycalFrame || !this.tidycalFrame.nativeElement) return;
+  private scrollToIframeTop(): void {
+    if (!this.tidycalFrame) return;
 
-    // Use boundingClientRect + pageYOffset for better cross-browser/iOS reliability
-    const rect = this.tidycalFrame.nativeElement.getBoundingClientRect();
-    const absoluteTop = rect.top + window.pageYOffset;
-    const top = Math.max(absoluteTop - this.scrollOffset, 0);
+    const iframeEl = this.tidycalFrame.nativeElement;
+    const rect = iframeEl.getBoundingClientRect();
+    const absoluteTop = rect.top + window.scrollY; // distance from document top
 
-    // Use smooth scroll if supported
-    try {
-      window.scrollTo({ top, behavior: 'smooth' });
-    } catch (e) {
-      // fallback
-      window.scrollTo(0, top);
-    }
+    // Scroll to very top of the iframe, not where the tap was
+    window.scrollTo({
+      top: absoluteTop - 10, // small offset
+      behavior: 'smooth',
+    });
   }
 
   // Manual button click: open tidycal in new tab (best mobile fallback) or scroll
