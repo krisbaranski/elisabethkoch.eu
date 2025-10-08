@@ -36,6 +36,7 @@ import { HeroContactComponent } from './contact/hero-contact/hero-contact.compon
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { OfferComponent } from './offer/offer.component';
+import { OfferColourComponent } from './courses/colour/offer-colour/offer-colour.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PrivacyComponent } from './privacy/privacy.component';
@@ -103,6 +104,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     ImpressumComponent,
     OfferComponent,
+    OfferColourComponent,
     NewsletterComponent,
     NotFoundComponent,
     PopupComponent,
