@@ -32,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { HeroColourComponent } from './courses/colour/hero-colour/hero-colour.component';
+import { HeroContactComponent } from './contact/hero-contact/hero-contact.component';
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { OfferComponent } from './offer/offer.component';
@@ -97,6 +98,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     HeroComponent,
     HeroColourComponent,
+    HeroContactComponent,
     HomeComponent,
     HomeComponent,
     ImpressumComponent,

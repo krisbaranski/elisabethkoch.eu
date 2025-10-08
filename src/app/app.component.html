@@ -1,5 +1,7 @@
 <app-header />
-<div [class.container]="router.url" [@routeAnimations]="prepareRoute(outlet)">
+<div [class.container]="router.url">
   <router-outlet #outlet="outlet"></router-outlet>
 </div>
 <app-footer></app-footer>
+
+<!-- [@routeAnimations]="prepareRoute(outlet)" -->
