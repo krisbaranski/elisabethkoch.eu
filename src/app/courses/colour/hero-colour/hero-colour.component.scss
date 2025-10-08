@@ -5,7 +5,9 @@
   align-items: center;
   width: 100%;
   height: min(100vh, 840px);
-  background: url('../../../../assets/img/three_muses.jpg');
+  // background-image: url('../../../../assets/img/three_muses.jpg');
+  background-image: linear-gradient(hsla(28, 100%, 35%, 0.4) 0 0),
+    url('../../../../assets/img/three_muses.jpg');
   background-size: cover;
   background-position: center;
   padding-top: 4rem;
