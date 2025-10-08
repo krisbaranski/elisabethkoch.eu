@@ -16,7 +16,7 @@ import {
 })
 export class Tidycal30Component implements AfterViewInit, OnDestroy {
   @Input() src = 'https://tidycal.com/elisabethkoch/30-minute-meeting'; // pass your tidycal url
-  @Input() initialHeight = 1500; // px for desktop/default
+  @Input() initialHeight = 1080; // px for desktop/default
   @Input() expandedHeightMobile = 1800; // px — larger to reveal booking form on mobile
   @Input() scrollOffset = 20; // offset from top when scrolling
 
