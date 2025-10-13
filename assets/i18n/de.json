@@ -121,6 +121,23 @@
         "text_10_2": "Wie kannst Du Dich Anderen sicher & selbstbewusst zuwenden? Im Alltag und vor Publikum."
       }
     },
+    "pricing": {
+      "box_1": {
+        "title": "Basic",
+        "text_1": "Online oder vor Ort",
+        "text_2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, itaque ab odit sed nostrum perferendis vitae aspernatur. Quibusdam, harum nobis."
+      },
+      "box_2": {
+        "title": "Premium",
+        "text_1": "Online oder vor Ort",
+        "text_2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, itaque ab odit sed nostrum perferendis vitae aspernatur. Quibusdam, harum nobis."
+      },
+      "box_3": {
+        "title": "Advanced",
+        "text_1": "Online oder vor Ort",
+        "text_2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, itaque ab odit sed nostrum perferendis vitae aspernatur. Quibusdam, harum nobis."
+      }
+    },
     "short": {
       "title": "Einzeltraining",
       "speaker": {
