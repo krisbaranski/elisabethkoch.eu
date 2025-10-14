@@ -44,8 +44,8 @@ p {
   margin: 2px 5px;
 
   .phone {
-    text-decoration: none;
-    pointer-events: none;
+    text-decoration: none !important;
+    pointer-events: none !important;
   }
 }
 
