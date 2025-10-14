@@ -1,7 +1,7 @@
 {
   "menu": {
     "home": "Home",
-    "trainings": "Trainings",
+    "trainings": "Stimmtraining",
     "courses": "Kurse",
     "profile": "Über Mich",
     "blog": "Blog",
@@ -508,6 +508,6 @@
     "adress_11": "Behaimstraße 27",
     "adress_12": "13086 Berlin",
     "adress_21": "+49 0176 72173650",
-    "adress_22": "mail(at)elisabethkoch.eu"
+    "adress_22": "mail@elisabethkoch.eu"
   }
 }
