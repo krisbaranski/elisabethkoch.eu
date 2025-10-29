@@ -1,4 +1,7 @@
 <div class="wrapper">
+    <span class="offer" *ngIf="showButton">
+      <a href="#/{{ link }}">{{ button | translate }}</a>
+    </span>
   <div class="box">
     <div class="title">
       <h1>{{ 'trainings.main.boxes_3.title' | translate }}</h1>
