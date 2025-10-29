@@ -17,9 +17,9 @@ import { AquaintmentComponent } from './contact/aquaintment/aquaintment.componen
 import { FirstAppointmentComponent } from './contact/first-appointment/first-appointment.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, data: { animation: 'HomePage' } },
+  { path: 'home', component: HomeComponent, data: { animation: 'HomePage' } },
   {
-    path: 'trainings',
+    path: '',
     component: TrainingsComponent,
     data: { animation: 'TrainingsPage' },
   },

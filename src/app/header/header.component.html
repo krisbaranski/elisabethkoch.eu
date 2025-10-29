@@ -2,7 +2,7 @@
   <menu>
     <mat-toolbar>
       <div class="logo">
-        <img src="assets/img/logo_darkblue.svg" alt="logo" routerLink="/" />
+        <img src="assets/img/logo_darkblue.svg" alt="logo" routerLink="home" />
         <!-- <img
           [src]="
             isSticky
@@ -20,7 +20,7 @@
           <a
             class="top_menu_item"
             [routerLinkActive]="'active'"
-            routerLink="trainings"
+            routerLink="/"
             >{{ 'menu.trainings' | translate }}</a
           >
 
@@ -116,7 +116,7 @@
             (click)="sidenav.close()"
             (click)="navigateAndClose('trainings')"
             [routerLinkActive]="'active'"
-            routerLink="trainings"
+            routerLink=""
             >{{ 'menu.trainings' | translate }}</a
           >
 
