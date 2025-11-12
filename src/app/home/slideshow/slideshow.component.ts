@@ -11,6 +11,7 @@ export class SlideshowComponent implements OnInit {
   text_big = ['home.title_1'];
   headline = ['home.title_2'];
   text_small = ['trainings.women.text_1'];
+  link = ['contact'];
   // images = ['aboutme.jpg', 'stage.jpg', 'poem.png'];
   // text_big = ['home.slide_1', 'home.slide_2', 'home.slide_3'];
   // headline = ['home.box_1', 'home.box_2', 'home.box_3'];

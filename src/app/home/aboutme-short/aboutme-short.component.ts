@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './aboutme-short.component.html',
   styleUrls: ['./aboutme-short.component.scss'],
 })
-export class AboutmeShortComponent {}
+export class AboutmeShortComponent {
+  link = 'profile';
+}
