@@ -70,12 +70,13 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 600px;
-  background-color: var(--color-dark);
+  // background-color: var(--color-dark);
   color: #fff;
   flex-direction: column;
   border-radius: 3px;
   margin: 2rem auto;
-  padding: 3rem 5rem;
+  padding: 0;
+  // padding: 3rem 5rem;
 
   h1 {
     font-family: 'Montserrat Medium', sans-serif;
@@ -103,6 +104,12 @@
 
   b {
     padding-right: 0.5rem;
+  }
+
+  img {
+    margin: auto;
+    width: 100%;
+    border-radius: 6px;
   }
 
   .button {
