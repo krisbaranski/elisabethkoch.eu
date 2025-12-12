@@ -23,7 +23,7 @@
     "text_5": "Ich zeige Dir, wie Du Deine lebendige, kraftvolle Stimme aus Dir hervorholst und Dein Auftreten in kürzester Zeit effektiv stärkst und verbesserst: ",
     "text_6": "Mit praktischem Wissen über den Einsatz und die Wirkung Deiner Stimme, Deiner Körperhaltung, Deiner Atmung, und Deiner individuellen Ressourcen. ",
     "text_7": "Damit Du Dich anderen sicher & selbstbewusst zuwenden und authentisch auf Augenhöhe begegnen kannst. Damit Du in Deiner Profession stark & souverän in der Welt wirken kannst.",
-    "button_offer": "Lass uns mal sprechen"
+    "button_offer": "Lass uns sprechen"
   },
   "popup": {
     "header": "Neuer Kurs",
@@ -38,7 +38,7 @@
       "title_22": "Stimme wirkt. Präsenz führt. Persönlichkeit überzeugt.",
       "title_3": "Wer gehört werden will, braucht eine Stimme, in der seine Persönlichkeit spürbar wird.",
       "title_33": "Hier bist Du richtig, wenn Du Deine Kompetenz klar, souverän und lebendig auf den Punkt bringen möchtest.",
-      "link": "Lass uns mal sprechen",
+      "link": "Lass uns sprechen",
       "boxes_1": {
         "box_1": {
           "title_1": "Auftreten",
@@ -175,6 +175,34 @@
       "text_2": "Alle, die ihre Stimme und Präsenz stärken möchten und alle Berufsgruppen sind in meinen Einzeltrainings herzlich willkommen. Die Trainings sind individuell auf Dich abgestimmt und direkt buchbar. Sie finden wahlweise persönlich, in Präsenz oder online statt. ",
       "link": "Zu den Trainings"
     },
+    "link": "Mehr »"
+  },
+  "courses": {
+    "title_1": "Kurse",
+    "title_2": "Wachsen im Austausch mit anderen",
+    "text_1": "In meinen Kursen lernst Du, wie Du Deine Stimme kraftvoll und sicher einsetzt, Vertrauen gewinnst, Verbindung stärkst und andere überzeugst und inspirierst. Gemeinsam schaffen wir die Grundlage, auf der Du mit gutem Gefühl souverän, authentisch & lebendig auftreten kannst – mit Präsenz, Klarheit und Selbstbewusstsein.",
+    "text_2": "Die Dynamik eines Kurses bietet Dir die Möglichkeit in Übungen und Impulsen miteinander, und von anderen Teilnehmern zu lernen. Erlebe, wie schnell Du Fortschritte machst, wenn Du in einer unterstützenden und wertschätzenden Gruppe Deine Stimme und Präsenz entfaltest.",
+    "text_3": "Ob in meinen offenen Kursen oder inhouse für Dein Team – diese Erfahrung wird Dich nachhaltig stärken.",
+    "text_4": "Buche ein kostenfreies Kennenlerngespräch und melde Dich für meinen Newsletter an.",
+    "link": "Zu den Kursen",
+    "short": {
+      "title": "Kursinhalte",
+      "texte": {
+        "title_1": "Stimmliche Präsenz entwickeln: ",
+        "text_1": "Lerne Techniken, die Deine Stimme & Sprache kraftvoll, klar und souverän klingen lassen.",
+        "title_2": "Authentizität in der Kommunikation: ",
+        "text_2": "Finde Deinen natürlichen Stimmklang, der Deine Persönlichkeit unterstreicht und Authentizität vermittelt.",
+        "title_3": "Umgang mit Nervosität & Lampenfieber: ",
+        "text_3": "Wandle Nervosität in freudige Erwartung. Fühl Dich mit Deiner Stimme auch in herausfordernden Situationen zentriert, sicher & wohl.",
+        "title_4": "Führungsstärke durch Stimme: ",
+        "text_4": "Entwickle einen lebendigen Stimmklang in dem Deine Qualitäten zum klingen kommen. Schenke Sicherheit und werde gehört.",
+        "title_5": " Selbstbewusstsein & Präsenz: ",
+        "text_5": "Entwickle eine selbstbewusste Präsenz. Stimmlich und persönlich. Im Alltag und vor Publikum. ",
+        "title_6": "Präsentieren und Auftreten: ",
+        "text_6": "Wie kannst Du souverän auftreten und präsentieren, Deine Selbstsicherheit und Überzeugungskraft beeinflussen und hierdurch wirklich Berührendes schaffen? "
+      },
+      "link": "Zur Buchung"
+    },
     "women": {
       "title": "Frauen",
       "title_menu": "Starke Stimme",
@@ -182,7 +210,7 @@
       "short": "In Deinem Stimmklang und Deinem Auftreten werden Deine Kompetenzen Unmittelbar hörbar & spürbar. Trainiere Deine authentische, starke Stimme und Dein souveränes Auftreten. Mach es Dir einfach und lass Dein Publikum spüren, dass es Dir am Herzen liegt!",
       "title_1": "Starke Stimme. Starke Frauen. Starke Führung",
       "text_2": "Was Du mir über Deine Stimme, Dein Auftreten und deren Knackpunkte erzählst ist wichtig für mich, denn Du bist die Expertin. Und dann höre und schaue ich genau hin, was Deine Stimme, Dein Körper, Deine Atmung und Dein Nervensystem brauchen um stark zu werden. ",
-      "title_2": "Mit starker Stimme authentisch und kraftvoll führen",
+      "title_2": "Mit kraftvoller Stimme authentisch und kraftvoll führen",
       "text_1": "Wie Du klingst, ist wichtig: Deine Stimme ist ein kraftvolles Werkzeug, das Vertrauen und Klarheit vermittelt. Eine starke und authentische Stimme stärkt Deine Präsenz und Wirkung in jeder Situation: In Meetings und Präsentationen sowie in der täglichen Kommunikation",
       "boxes": {
         "box_1": {
@@ -232,39 +260,10 @@
         "link": "Zur Buchung"
       }
     },
-
-    "link": "Mehr »"
-  },
-  "courses": {
-    "title_1": "Kurse",
-    "title_2": "Wachsen im Austausch mit anderen",
-    "text_1": "In meinen Kursen lernst Du, wie Du Deine Stimme kraftvoll und sicher einsetzt, Vertrauen gewinnst, Verbindung stärkst und andere überzeugst und inspirierst. Gemeinsam schaffen wir die Grundlage, auf der Du mit gutem Gefühl souverän, authentisch & lebendig auftreten kannst – mit Präsenz, Klarheit und Selbstbewusstsein.",
-    "text_2": "Die Dynamik eines Kurses bietet Dir die Möglichkeit in Übungen und Impulsen miteinander, und von anderen Teilnehmern zu lernen. Erlebe, wie schnell Du Fortschritte machst, wenn Du in einer unterstützenden und wertschätzenden Gruppe Deine Stimme und Präsenz entfaltest.",
-    "text_3": "Ob in meinen offenen Kursen oder inhouse für Dein Team – diese Erfahrung wird Dich nachhaltig stärken.",
-    "text_4": "Buche ein kostenfreies Kennenlerngespräch und melde Dich für meinen Newsletter an.",
-    "link": "Zu den Kursen",
-    "short": {
-      "title": "Kursinhalte",
-      "texte": {
-        "title_1": "Stimmliche Präsenz entwickeln: ",
-        "text_1": "Lerne Techniken, die Deine Stimme & Sprache kraftvoll, klar und souverän klingen lassen.",
-        "title_2": "Authentizität in der Kommunikation: ",
-        "text_2": "Finde Deinen natürlichen Stimmklang, der Deine Persönlichkeit unterstreicht und Authentizität vermittelt.",
-        "title_3": "Umgang mit Nervosität & Lampenfieber: ",
-        "text_3": "Wandle Nervosität in freudige Erwartung. Fühl Dich mit Deiner Stimme auch in herausfordernden Situationen zentriert, sicher & wohl.",
-        "title_4": "Führungsstärke durch Stimme: ",
-        "text_4": "Entwickle einen lebendigen Stimmklang in dem Deine Qualitäten zum klingen kommen. Schenke Sicherheit und werde gehört.",
-        "title_5": " Selbstbewusstsein & Präsenz: ",
-        "text_5": "Entwickle eine selbstbewusste Präsenz. Stimmlich und persönlich. Im Alltag und vor Publikum. ",
-        "title_6": "Präsentieren und Auftreten: ",
-        "text_6": "Wie kannst Du souverän auftreten und präsentieren, Deine Selbstsicherheit und Überzeugungskraft beeinflussen und hierdurch wirklich Berührendes schaffen? "
-      },
-      "link": "Zur Buchung"
-    },
     "colour": {
       "title": "Colour",
-      "title_menu": "Colour Your Voice",
-      "title_1": "Colour Your Voice",
+      "title_menu": "Stimme ist Gold",
+      "title_1": "Stimme ist Gold",
       "title_2": "Entfalte den vollen Klang Deiner Stimme",
       "text": "In diesem Kurs entfaltest Du das volle Farbspektrum Deiner Stimme. Du lernst, wie Du Deine Stimme bewusst einsetzen kannst und erlebst, wie ihre Farben wirken: auf Dein Gefühl von innerer Souveränität und auf Deine Zuhörer.",
       "button": "Jetzt anmelden",
