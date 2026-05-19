@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "overrideRuntime": "Node.js",
-  "installCommand": "npm install --legacy-peer-deps",
-  "buildCommand": "npx ng build",
   "outputDirectory": "dist/elisabethkoch.eu/browser",
   "rewrites": [
     {
