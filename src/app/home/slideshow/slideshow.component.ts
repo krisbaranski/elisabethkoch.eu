@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common'; // <-- NEUEN IMPORT HINZUFÜGEN
 
 @Component({
   selector: 'app-slideshow',
@@ -6,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slideshow.component.scss'],
 })
 export class SlideshowComponent implements OnInit {
+  // 1. Angular Plattform-ID injizieren
+  private platformId = inject(PLATFORM_ID);
+
   constructor() {}
+
   images = ['aboutme1.jpg'];
   text_big = ['home.title_1'];
   headline = ['home.title_2'];
   text_small = ['trainings.women.text_1'];
   link = ['contact'];
-  // images = ['aboutme.jpg', 'stage.jpg', 'poem.png'];
-  // text_big = ['home.slide_1', 'home.slide_2', 'home.slide_3'];
-  // headline = ['home.box_1', 'home.box_2', 'home.box_3'];
-  // text_small = ['home.text_1', 'home.text_2', 'home.text_3'];
 
   currentImage = 0;
   showImage = true;
@@ -25,6 +26,13 @@ export class SlideshowComponent implements OnInit {
   }
 
   updateImage() {
+    // 2. ABSICHERUNG: Wenn wir auf dem Server (SSR) sind, brechen wir hier SOFORT ab!
+    // Das unendliche setInterval wird auf dem Server NIEMALS gestartet.
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
+    // Ab hier läuft der Code garantiert nur noch im echten Browser des Nutzers:
     setInterval(() => {
       this.currentImage++;
       this.currentImage = this.currentImage % this.images.length;

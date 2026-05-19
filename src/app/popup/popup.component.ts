@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
@@ -11,8 +13,12 @@ export class PopupComponent {
   showPopup: boolean = false;
   readonly popupKey = 'popupDismissed';
   readonly autoCloseAfter = 4000; // auto-close after 10s
+  private platformId = inject(PLATFORM_ID);
 
-  constructor(private dialog: MatDialog, private router: Router) {}
+  constructor(
+    private dialog: MatDialog,
+    private router: Router,
+  ) {}
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -27,7 +33,12 @@ export class PopupComponent {
   goToPart(fragment: string) {
     const [path, anchor] = fragment.split('#');
     this.router.navigate([path], { fragment: anchor }).then(() => {
-      // Wait a short period for navigation to complete before trying to scroll
+      // SSR SCHUTZSCHILD: Der Server bricht hier sofort ab!
+      if (!isPlatformBrowser(this.platformId)) {
+        return;
+      }
+
+      // Erst im echten Browser läuft der Timer an:
       setTimeout(() => {
         const element = document.getElementById(anchor);
         if (element) {
@@ -37,7 +48,7 @@ export class PopupComponent {
             inline: 'nearest',
           });
         }
-      }, 500); // Delay ensures content is loaded
+      }, 200);
     });
   }
 

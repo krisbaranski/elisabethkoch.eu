@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,11 +10,17 @@ import { Router } from '@angular/router';
 })
 export class BenefitsShortComponent {
   constructor(private router: Router) {}
+  private platformId = inject(PLATFORM_ID);
 
   goToPart(fragment: string) {
     const [path, anchor] = fragment.split('#');
     this.router.navigate([path], { fragment: anchor }).then(() => {
-      // Wait a short period for navigation to complete before trying to scroll
+      // SSR SCHUTZSCHILD: Der Server bricht hier sofort ab!
+      if (!isPlatformBrowser(this.platformId)) {
+        return;
+      }
+
+      // Erst im echten Browser läuft der Timer an:
       setTimeout(() => {
         const element = document.getElementById(anchor);
         if (element) {
@@ -22,7 +30,7 @@ export class BenefitsShortComponent {
             inline: 'nearest',
           });
         }
-      }, 200); // Delay ensures content is loaded
+      }, 200);
     });
   }
 }

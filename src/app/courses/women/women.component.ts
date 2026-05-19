@@ -16,22 +16,22 @@ export class WomenComponent {
   goToPart(fragment: string) {
     const [path, anchor] = fragment.split('#');
     this.router.navigate([path], { fragment: anchor }).then(() => {
-      // Wait a short period for navigation to complete before trying to scroll
-      this.router.navigate([path], { fragment: anchor }).then(() => {
-        if (!isPlatformBrowser(this.platformId)) {
-          return;
+      // SSR SCHUTZSCHILD: Der Server bricht hier sofort ab!
+      if (!isPlatformBrowser(this.platformId)) {
+        return;
+      }
+
+      // Erst im echten Browser läuft der Timer an:
+      setTimeout(() => {
+        const element = document.getElementById(anchor);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest',
+          });
         }
-        setTimeout(() => {
-          const element = document.getElementById(anchor);
-          if (element) {
-            element.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-              inline: 'nearest',
-            });
-          }
-        }, 200); // Delay ensures content is loaded
-      });
+      }, 200);
     });
   }
 }

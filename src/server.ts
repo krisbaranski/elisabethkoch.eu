@@ -26,7 +26,7 @@ export function app(): express.Express {
     express.static(join(browserDistFolder, 'assets'), {
       maxAge: '1y',
       fallthrough: false,
-    })
+    }),
   );
 
   // Allgemeine statische Client-Dateien (main.js, styles.css etc.)
@@ -34,28 +34,18 @@ export function app(): express.Express {
     '**/*.*',
     express.static(browserDistFolder, {
       maxAge: '1y',
-    })
+    }),
   );
 
-  // Alle regulären Routen über die Angular-Engine rendern mit Sicherheits-Timeout
+  // Alle regulären Routen über die Angular-Engine rendern
   server.get(
     '**',
     (
       req: express.Request,
       res: express.Response,
-      next: express.NextFunction
+      next: express.NextFunction,
     ) => {
       const { protocol, originalUrl, baseUrl, headers } = req;
-
-      // Sicherheitsgurt gegen unendliches Laden (Zone.js Deadlocks)
-      let didTimeout = false;
-      const timeoutId = setTimeout(() => {
-        didTimeout = true;
-        console.warn(
-          `[SSR Timeout] Rendern dauerte zu lange für: ${originalUrl}. Wechsel zu CSR.`
-        );
-        res.sendFile(indexHtml);
-      }, 2000);
 
       commonEngine
         .render({
@@ -63,21 +53,19 @@ export function app(): express.Express {
           documentFilePath: indexHtml,
           url: `${protocol}://${headers.host}${originalUrl}`,
           publicPath: browserDistFolder,
+          inlineCriticalCss: false, // Verhindert asynchrone CSS-Hänger
           providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
         })
         .then((html: string) => {
-          if (!didTimeout) {
-            clearTimeout(timeoutId);
-            res.send(html);
-          }
+          // RADIKALER FIX: Wenn das HTML da ist, senden wir es SOFORT an den Browser,
+          // völlig egal, ob im Hintergrund noch unendliche Tasks laufen!
+          res.send(html);
         })
         .catch((err: any) => {
-          if (!didTimeout) {
-            clearTimeout(timeoutId);
-            next(err);
-          }
+          console.error('[SSR Render Error] Fehler beim Vorrendern:', err);
+          res.sendFile(indexHtml); // Im Fehlerfall sicherer Fallback auf Client-Rendering
         });
-    }
+    },
   );
 
   return server;
