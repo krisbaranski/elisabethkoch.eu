@@ -43,7 +43,7 @@ export class AppComponent {
     public router: Router,
     public translate: TranslateService,
     private dialog: MatDialog,
-    private http: HttpClient
+    private http: HttpClient,
   ) {
     // this language will be used as a fallback when a translation isn't found in the current language
     translate.setDefaultLang('en');
@@ -60,13 +60,4 @@ export class AppComponent {
       outlet.activatedRouteData['animation']
     );
   }
-
-  // ngOnInit(): void {
-  //   setTimeout(() => {
-  //     this.dialog.open(PopupComponent, {
-  //       maxWidth: '400px',
-  //       disableClose: true,
-  //     });
-  //   }, 4000);
-  // }
 }

@@ -71,11 +71,6 @@ const routerOptions: ExtraOptions = {
   anchorScrolling: 'disabled',
 };
 
-// const routerOptions: ExtraOptions = {
-//   anchorScrolling: 'enabled',
-//   scrollPositionRestoration: 'enabled',
-// };
-
 @NgModule({
   imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule],

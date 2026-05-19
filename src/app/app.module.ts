@@ -4,11 +4,10 @@ import {
   provideClientHydration,
 } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
-
+import { provideHttpClient } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AboutmeComponent } from './profile/aboutme/aboutme.component';
 import { AboutmeShortComponent } from './home/aboutme-short/aboutme-short.component';
@@ -174,10 +173,10 @@ export function createTranslateLoader() {
     MatFormFieldModule,
   ],
   providers: [
-    HttpClientModule,
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    provideHttpClient(), // Ersetzt das alte HttpClientModule sauber für SSR
     provideClientHydration(),
   ],
+
   bootstrap: [AppComponent],
 })
 export class AppModule {}
