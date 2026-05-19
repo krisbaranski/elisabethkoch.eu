@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -69,8 +72,51 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { PopupComponent } from './popup/popup.component';
 
 // AoT requires an exported function for factories
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+// export function HttpLoaderFactory(http: HttpClient) {
+//   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+// }
+
+import { PLATFORM_ID, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Observable, from, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
+export class TranslateUniversalLoader implements TranslateLoader {
+  // Wir nutzen Angulars inject, um die Plattform zu prüfen
+  private platformId = inject(PLATFORM_ID);
+
+  public getTranslation(lang: string): Observable<any> {
+    // 1. Wenn wir im Browser sind, laden wir das JSON klassisch via fetch()
+    if (isPlatformBrowser(this.platformId)) {
+      return from(
+        fetch(`assets/i18n/${lang}.json`).then((res) => res.json()),
+      ).pipe(
+        catchError((err) => {
+          console.error(`[Browser] Fehler beim Laden von '${lang}.json':`, err);
+          return of({}); // Leeres Fallback-Objekt verhindert den Absturz
+        }),
+      );
+    }
+
+    // 2. Wenn wir auf dem Server (SSR) sind, importieren wir das JSON direkt als Modul
+    // Hier wird KEIN 'fs' und KEIN 'join' mehr benötigt!
+    return from(
+      import(`../assets/i18n/${lang}.json`).then((module) => module.default),
+    ).pipe(
+      catchError((err) => {
+        console.warn(
+          `[SSR] Konnte '${lang}.json' nicht vorrendern. Wird im Client geladen.`,
+          err,
+        );
+        return of({}); // Server ignoriert den Fehler und liefert die Seite trotzdem aus
+      }),
+    );
+  }
+}
+
+// Diese Funktion wird im TranslateModule.forRoot() registriert
+export function createTranslateLoader() {
+  return new TranslateUniversalLoader();
 }
 
 @NgModule({
@@ -134,11 +180,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
-      defaultLanguage: 'en',
+      defaultLanguage: 'de',
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
+        useFactory: createTranslateLoader,
       },
     }),
     MatToolbarModule,
@@ -152,6 +197,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     HttpClientModule,
     { provide: LocationStrategy, useClass: HashLocationStrategy },
+    provideClientHydration(),
   ],
   bootstrap: [AppComponent],
 })

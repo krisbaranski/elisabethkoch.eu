@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject, PLATFORM_ID } from '@angular/core';
 import { Router } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-women',
@@ -8,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class WomenComponent {
   @Input() darkMode = true;
+  private platformId = inject(PLATFORM_ID);
 
   constructor(private router: Router) {}
 
@@ -15,16 +17,21 @@ export class WomenComponent {
     const [path, anchor] = fragment.split('#');
     this.router.navigate([path], { fragment: anchor }).then(() => {
       // Wait a short period for navigation to complete before trying to scroll
-      setTimeout(() => {
-        const element = document.getElementById(anchor);
-        if (element) {
-          element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest',
-          });
+      this.router.navigate([path], { fragment: anchor }).then(() => {
+        if (!isPlatformBrowser(this.platformId)) {
+          return;
         }
-      }, 200); // Delay ensures content is loaded
+        setTimeout(() => {
+          const element = document.getElementById(anchor);
+          if (element) {
+            element.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+              inline: 'nearest',
+            });
+          }
+        }, 200); // Delay ensures content is loaded
+      });
     });
   }
 }

@@ -4,7 +4,10 @@ import {
   Input,
   ViewChild,
   HostListener,
+  inject,
+  PLATFORM_ID,
 } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
@@ -16,16 +19,24 @@ import { OverlayContainer } from '@angular/cdk/overlay';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild('sidenav') sidenav: MatSidenav;
+  @ViewChild('sidenav') sidenav!: MatSidenav;
   isSticky: boolean = false;
   isOpen: boolean = false;
   @Input() darkMode = true;
-  previousScrollPosition: number = window.scrollY;
+  previousScrollPosition: number = 0; // Sicherer Standardwert für den Server
   currentLanguage: string;
   isSidenavOpen = false;
 
+  // Angular Plattform-ID injizieren
+  private platformId = inject(PLATFORM_ID);
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
+    // Abbrechen, wenn der Code auf dem Server ausgeführt wird
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
     const currentScrollPosition = window.scrollY;
 
     // Check if user is scrolling down
@@ -60,6 +71,15 @@ export class HeaderComponent implements OnInit {
     this.currentLanguage = this.translate.currentLang || 'de'; // Default language
   }
 
+  ngOnInit(): void {
+    // Erst hier – und nur im echten Browser – holen wir uns die echte Scroll-Position
+    if (isPlatformBrowser(this.platformId)) {
+      this.previousScrollPosition = window.scrollY;
+    } else {
+      this.previousScrollPosition = 0; // Sicherer Standardwert für den Server
+    }
+  }
+
   changeLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLanguage = lang;
@@ -73,14 +93,6 @@ export class HeaderComponent implements OnInit {
     this.isSidenavOpen = false;
   }
 
-  // onSidenavOpened() {
-  //   this.overlayContainer.getContainerElement().classList.add('no-scroll');
-  // }
-
-  // onSidenavClosed() {
-  //   this.overlayContainer.getContainerElement().classList.remove('no-scroll');
-  // }
-
   isActive(route: string): boolean {
     return this.router.url.startsWith(route);
   }
@@ -89,18 +101,21 @@ export class HeaderComponent implements OnInit {
     const [path, anchor] = fragment.split('#');
     this.router.navigate([path], { fragment: anchor }).then(() => {
       // Wait a short period for navigation to complete before trying to scroll
-      setTimeout(() => {
-        const element = document.getElementById(anchor);
-        if (element) {
-          element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest',
-          });
+      this.router.navigate([path], { fragment: anchor }).then(() => {
+        if (!isPlatformBrowser(this.platformId)) {
+          return;
         }
-      }, 200); // Delay ensures content is loaded
-      // Close the sidebar after navigation is complete
-      this.sidenav.close();
+        setTimeout(() => {
+          const element = document.getElementById(anchor);
+          if (element) {
+            element.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+              inline: 'nearest',
+            });
+          }
+        }, 200); // Delay ensures content is loaded
+      });
     });
   }
 
@@ -115,6 +130,4 @@ export class HeaderComponent implements OnInit {
       this.sidenav.close();
     });
   }
-
-  ngOnInit(): void {}
 }
