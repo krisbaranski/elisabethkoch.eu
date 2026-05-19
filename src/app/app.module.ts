@@ -71,34 +71,25 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { PopupComponent } from './popup/popup.component';
 
-// AoT requires an exported function for factories
-// export function HttpLoaderFactory(http: HttpClient) {
-//   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-// }
-
 import { PLATFORM_ID, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { Observable, from, of } from 'rxjs';
 
-// Statische Dummies für den Server bereitstellen (Beschleunigt SSR auf 0 Millisekunden)
-const deTranslation = {
-  // Falls Sie hier wichtige Schlüssel direkt vorrendern möchten, können Sie sie eintragen.
-  // Ein leeres Objekt reicht jedoch völlig aus, da der Client die echten Texte sofort nachlädt!
-};
-const enTranslation = {};
+import deLang from '../assets/i18n/de.json';
+import enLang from '../assets/i18n/en.json';
 
 export class TranslateUniversalLoader implements TranslateLoader {
   private platformId = inject(PLATFORM_ID);
 
   public getTranslation(lang: string): Observable<any> {
-    // 1. Im Browser laden wir die JSON-Dateien ganz normal via fetch()
+    // 1. Wenn wir im Browser sind, laden wir die JSONs weiterhin dynamisch über fetch
     if (isPlatformBrowser(this.platformId)) {
       return from(fetch(`assets/i18n/${lang}.json`).then((res) => res.json()));
     }
 
-    // 2. Auf dem Server geben wir die Daten OHNE asynchronen Request sofort zurück!
-    // Das bricht die unendliche Warteschleife von Zone.js augenblicklich auf.
-    const staticData = lang === 'de' ? deTranslation : enTranslation;
+    // 2. Wenn wir auf dem Server (SSR) sind, geben wir die echten Daten SOFORT synchron zurück!
+    // Keine Ladezeit, kein Zone.js-Deadlock und Google sieht die echten Texte!
+    const staticData = lang === 'de' ? deLang : enLang;
     return of(staticData);
   }
 }
