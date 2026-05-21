@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "public": true,
+  "public": false,
+  "framework": "angular",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/(..*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/",
       "destination": "/api/index.js"
     }
   ]
