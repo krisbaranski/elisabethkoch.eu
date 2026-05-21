@@ -9,27 +9,24 @@ export default async function handler(req, res) {
     const distFolder = join(__dirname, '..', 'dist', 'elisabethkoch.eu');
     const serverModulePath = join(distFolder, 'server', 'main.server.mjs');
 
-    // Node.js file:// URL Format für dynamische Cloud-Imports erzeugen
+    // WICHTIG: Überschreibe die Umgebungsvariablen, damit Angular
+    // seine Vorlagen-HTML-Dateien im Vercel-System findet
+    process.env['BROWSER_DIST_DIR'] = join(distFolder, 'browser');
+
+    // Erzeuge eine gültige file://-URL für den dynamischen Cloud-Import
     const moduleUrl = pathToFileURL(serverModulePath).href;
     const module = await import(moduleUrl);
 
-    // WICHTIG: Setze die Pfade für die Angular CommonEngine
-    process.env['BROWSER_DIST_DIR'] = join(distFolder, 'browser');
-
-    // 🌟 DER FIX: Angular 17+ exportiert direkt den lauffähigen reqHandler oder die app-Funktion.
-    // Wir prüfen beide Varianten, um Flexibilität zu garantieren:
+    // Angular 17+ exportiert bei standardmäßigem "ssr: true" direkt den reqHandler.
+    // Falls das Projekt eine ältere Struktur hat, nutzen wir den Fallback auf module.app()
     if (module.reqHandler) {
       return module.reqHandler(req, res);
     } else if (module.app) {
-      const angularExpressApp = module.app();
-      return angularExpressApp(req, res);
-    } else if (module.default) {
+      return module.app(req, res);
+    } else {
+      // Wenn es ein direkter Express-Export ist
       return module.default(req, res);
     }
-
-    throw new Error(
-      'Kein gültiger Angular SSR Handler im Server-Bundle gefunden.',
-    );
   } catch (error) {
     res.statusCode = 500;
     res.setHeader('Content-Type', 'text/plain');
