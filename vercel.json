@@ -6,10 +6,15 @@
       "includeFiles": "dist/elisabethkoch.eu/**"
     }
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/api"
+      "src": "/(.*\\.(?:js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|webm|mp4))$",
+      "headers": { "cache-control": "public, max-age=31536000, immutable" },
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api"
     }
   ]
 }
