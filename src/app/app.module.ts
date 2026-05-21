@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+
+import { ServerModule } from '@angular/platform-server';
 import {
   BrowserModule,
   provideClientHydration,
@@ -153,7 +155,8 @@ export function createTranslateLoader() {
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule,
+    ServerModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,

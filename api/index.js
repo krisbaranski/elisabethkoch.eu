@@ -3,35 +3,56 @@ import { pathToFileURL } from 'url';
 
 export default async function handler(req, res) {
   try {
+    // 1. Wichtigste Core-Pakete explizit zur Laufzeit bereitstellen
+    await import('@angular/compiler');
+
     const baseDir = process.cwd();
     const distFolder = path.join(baseDir, 'dist', 'elisabethkoch.eu');
     const serverModulePath = path.join(distFolder, 'server', 'main.server.mjs');
     const browserDistFolder = path.join(distFolder, 'browser');
 
-    // WICHTIG: Pfad für die Angular CommonEngine setzen
+    // Pfad für Angular setzen
     process.env['BROWSER_DIST_DIR'] = browserDistFolder;
 
+    // Server-Bundle laden
     const moduleUrl = pathToFileURL(serverModulePath).href;
     const module = await import(moduleUrl);
 
-    // 🌟 DER FIX: Wir rufen module.app() auf, um die Express-Instanz zu instanziieren.
-    // Das verhindert den "Class constructor cannot be invoked without new"-Fehler.
-    if (module.app) {
-      const angularExpressApp = module.app();
-      return angularExpressApp(req, res);
-    } else if (module.reqHandler) {
-      // Fallback für neuere Subversionen, falls reqHandler direkt exportiert wird
-      return module.reqHandler(req, res);
-    } else if (module.default) {
-      return module.default(req, res);
+    // Angular SSR Engine importieren
+    const { CommonEngine } = await import('@angular/ssr');
+    const engine = new CommonEngine();
+
+    // Den standardmäßigen Bootstrap-Export holen
+    const bootstrap = module.default || module.bootstrap;
+
+    if (!bootstrap) {
+      throw new Error(
+        'Kein gültiger Bootstrap-Export in main.server.mjs gefunden.',
+      );
     }
 
-    throw new Error(
-      'Kein gültiger Angular SSR Handler (app() oder reqHandler) im Server-Bundle gefunden.',
-    );
+    // URL rekonstruieren
+    const protocol = req.headers['x-forwarded-proto'] || 'http';
+    const host = req.headers['x-forwarded-host'] || req.headers.host;
+    const url = `${protocol}://${host}${req.url}`;
+
+    // Rendern ausführen
+    const html = await engine.render({
+      bootstrap,
+      documentFilePath: path.join(browserDistFolder, 'index.html'),
+      url,
+      publicPath: browserDistFolder,
+    });
+
+    res.setHeader('Content-Type', 'text/html');
+    res.status(200).send(html);
   } catch (error) {
+    // 🌟 DIAGNOSE: Falls ein Modul fehlt, bricht Vercel nicht anonym ab,
+    // sondern schreibt uns genau auf den Schirm, welche Datei vermisst wird!
     res.statusCode = 500;
     res.setHeader('Content-Type', 'text/plain');
-    res.end(`Angular Cloud-Boot Fehler:\n${error.stack}`);
+    res.end(
+      `Detaillierter Angular SSR Cloud-Fehler:\n${error.message}\n\nStack Trace:\n${error.stack}`,
+    );
   }
 }
