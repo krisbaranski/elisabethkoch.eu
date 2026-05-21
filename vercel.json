@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "public": false,
-  "framework": "angular",
-  "rewrites": [
+  "builds": [
     {
-      "source": "/(..*)",
-      "destination": "/api/index.js"
-    },
+      "src": "api/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": "dist/**"
+      }
+    }
+  ],
+  "routes": [
     {
-      "source": "/",
-      "destination": "/api/index.js"
+      "src": "/(.*)",
+      "dest": "api/index.js"
     }
   ]
 }
