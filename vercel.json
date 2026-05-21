@@ -1,16 +1,18 @@
 {
   "version": 2,
-  "framework": "angular",
-  "buildCommand": "ng build",
-  "outputDirectory": "dist/elisabethkoch.eu",
-  "cleanUrls": true,
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": "dist/**"
+      }
+    }
+  ],
   "routes": [
     {
-      "handle": "filesystem"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "api/index.js"
     }
   ]
 }

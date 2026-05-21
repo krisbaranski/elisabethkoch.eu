@@ -1,46 +1,25 @@
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
-import express from 'express';
 
-const app = express();
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-// ⚠️ IMPORTANT: Replace 'YOUR_PROJECT_NAME' with your folder name inside dist/
-const distFolder = join(__dirname, '..', 'dist', 'elisabethkoch.eu');
-const browserDistFolder = join(distFolder, 'browser');
-const serverDistFolder = join(distFolder, 'server');
-
-// Serve static assets directly from the browser directory (images, CSS, JS)
-app.use(express.static(browserDistFolder, { maxAge: '1y', index: false }));
-
-// Fallback all web paths to Angular's Server-Side engine
-app.all('*', async (req, res, next) => {
+export default async function handler(req, res) {
   try {
-    // Dynamically pull your main.server.mjs file
-    const bootstrapPath = join(serverDistFolder, 'main.server.mjs');
-    const { default: bootstrap } = await import(bootstrapPath);
+    const __dirname = dirname(fileURLToPath(import.meta.url));
 
-    // Pull the rendering engine natively
-    const { CommonEngine } = await import('@angular/ssr');
-    const engine = new CommonEngine();
+    // ⚠️ CRITICAL: Replace 'YOUR_PROJECT_NAME' with your actual folder name inside dist/
+    const distFolder = join(__dirname, '..', 'dist', 'elisabethkoch.eu');
+    const serverModulePath = join(distFolder, 'server', 'main.server.mjs');
 
-    const protocol = req.headers['x-forwarded-proto'] || 'http';
-    const host = req.headers['x-forwarded-host'] || req.headers.host;
-    const url = `${protocol}://${host}${req.originalUrl}`;
+    // Dynamically load your main.server.mjs file
+    const module = await import(serverModulePath);
 
-    const html = await engine.render({
-      bootstrap,
-      documentFilePath: join(browserDistFolder, 'index.html'),
-      url,
-      publicPath: browserDistFolder,
-    });
+    // Angular exports the app() function you found. We execute it here to get the Express instance:
+    const angularExpressApp = module.app();
 
-    res.setHeader('Content-Type', 'text/html');
-    res.send(html);
-  } catch (err) {
-    // If the server fails, this trace outputs exactly why onto your screen
-    res.status(500).send(`Angular SSR Crash Trace:\n${err.stack}`);
+    // Pass the Vercel request and response directly into Angular's Express application
+    return angularExpressApp(req, res);
+  } catch (error) {
+    res.statusCode = 500;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end(`Angular SSR Runtime Crash:\n${error.stack}`);
   }
-});
-
-export default app;
+}
