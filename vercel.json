@@ -2,5 +2,15 @@
   "version": 2,
   "framework": "angular",
   "buildCommand": "ng build",
-  "outputDirectory": "dist/elisabethkoch.eu"
+  "outputDirectory": "dist/elisabethkoch.eu",
+  "cleanUrls": true,
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
