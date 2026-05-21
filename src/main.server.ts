@@ -1,19 +1,13 @@
-// import 'zone.js';
-// export { AppServerModule as default } from './app/app.module.server';
-
 import { platformServer } from '@angular/platform-server';
-import { INITIAL_CONFIG } from '@angular/platform-server';
 import { AppModule } from './app/app.module';
+import { ApplicationRef } from '@angular/core';
+import { NgModuleRef } from '@angular/core';
 
-// Dieser Export liefert das typensichere Bootstrap-Signal für Vercels Node-Server
-export default function bootstrap() {
-  return platformServer([
-    {
-      provide: INITIAL_CONFIG,
-      useValue: {
-        doc: '<app-root></app-root>',
-        url: '/',
-      },
-    },
-  ]).bootstrapModule(AppModule);
+// Reines, fehlerfreies NgModule-Bootstrapping für die Angular CommonEngine
+export default function bootstrap(): Promise<ApplicationRef> {
+  return platformServer([])
+    .bootstrapModule(AppModule)
+    .then((moduleRef: NgModuleRef<AppModule>) => {
+      return moduleRef.injector.get(ApplicationRef);
+    });
 }
