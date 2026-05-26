@@ -1,9 +1,9 @@
+import '@angular/compiler';
 import { platformServer } from '@angular/platform-server';
 import { AppModule } from './app/app.module';
-import { ApplicationRef } from '@angular/core';
-import { NgModuleRef } from '@angular/core';
+import { ApplicationRef, NgModuleRef } from '@angular/core';
 
-// Reines, fehlerfreies NgModule-Bootstrapping für die Angular CommonEngine
+// Bootstrappt dein echtes AppModule direkt und gibt die von Vercel erwartete ApplicationRef zurück
 export default function bootstrap(): Promise<ApplicationRef> {
   return platformServer([])
     .bootstrapModule(AppModule)
