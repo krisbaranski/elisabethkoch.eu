@@ -1,28 +1,20 @@
-import '@angular/compiler';
-import path from 'path';
-import { pathToFileURL } from 'url';
-import fs from 'fs';
-import express from 'express';
-
-// Statischer Import deines Server-Bundles für den Vercel-Packer
-import * as angularServerBundle from '../dist/app/server/main.server.mjs';
-
-const app = express();
-
-const baseDir = process.cwd();
-const distFolder = path.join(baseDir, 'dist', 'app');
-const browserDistFolder = path.join(distFolder, 'browser');
-
-// Statische Assets direkt ausliefern (CSS, JS, Bilder)
-app.use(express.static(browserDistFolder, { maxAge: '1y', index: false }));
+// ... (Dein oberer Express-Code bleibt völlig unverändert)
 
 app.all('*', async (req, res) => {
   const documentFilePath = path.join(browserDistFolder, 'index.html');
 
   try {
+    const serverModulePath = path.join(serverDistFolder, 'main.server.mjs');
     process.env['BROWSER_DIST_DIR'] = browserDistFolder;
-    const bootstrap =
-      angularServerBundle.default || angularServerBundle.bootstrap;
+
+    // 🌟 DYNAMIC CLOUD LOOKUP: Lädt das frisch korrigierte Server-Bundle direkt aus dem Task-RAM
+    const moduleUrl = pathToFileURL(serverModulePath).href;
+    const module = await import(moduleUrl);
+
+    const bootstrap = module.default || module.bootstrap;
+    if (!bootstrap) {
+      throw new Error('Bootstrap-Export in main.server.mjs nicht gefunden.');
+    }
 
     const { CommonEngine } = await import('@angular/ssr');
     const engine = new CommonEngine();
@@ -31,21 +23,9 @@ app.all('*', async (req, res) => {
     const host = req.headers['x-forwarded-host'] || req.headers.host;
     const url = `${protocol}://${host}${req.originalUrl}`;
 
-    // 1. Die echte index.html einlesen
-    let indexHtmlContent = fs.readFileSync(documentFilePath, 'utf8');
+    const indexHtmlContent = fs.readFileSync(documentFilePath, 'utf8');
 
-    // 🌟 DErfinale REGEX-SCHUTZ: Findet app-root, egal ob Attribute oder Klassen darin stehen
-    const appRootRegex = /<app-root[\s\S]*?>[\s\S]*?<\/app-root>/i;
-
-    if (!appRootRegex.test(indexHtmlContent)) {
-      // Falls der Selektor komplett fehlt oder unleserlich ist, erzwingen wir ihn sauber im body
-      indexHtmlContent = indexHtmlContent.replace(
-        /<body([\s\S]*?)>/i,
-        '<body$1><app-root></app-root>',
-      );
-    }
-
-    // 🚀 Rendering ausführen
+    // 🚀 Ausführung über das stabilisierte Dokument-Feld
     const html = await engine.render({
       bootstrap,
       document: indexHtmlContent,
@@ -62,7 +42,6 @@ app.all('*', async (req, res) => {
       error.message,
     );
 
-    // Unser bewährter Sicherheitsgurt liefert im Fehlerfall die stabile Client-App
     if (fs.existsSync(documentFilePath)) {
       const clientHtml = fs.readFileSync(documentFilePath, 'utf8');
       res.setHeader('Content-Type', 'text/html');
