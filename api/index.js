@@ -1,17 +1,15 @@
 import '@angular/compiler';
 import path from 'path';
-import { pathToFileURL } from 'url';
 import fs from 'fs';
 import express from 'express';
 
-// Statischer Import deines Server-Bundles für den Vercel-Packer
+// 🌟 DER VERCEL-PACKER-ZWANG: Durch diesen statischen Import weiß der Vercel-Compiler,
+// dass er das Server-Bundle und den dist-Ordner ZWINGEND in den Cloud-Container einpacken muss!
 import * as angularServerBundle from '../dist/app/server/main.server.mjs';
 
 const app = express();
 
-// 🌟 DER ANGULAR 18 PATH-FIX: Löst die Verzeichnisse absolut sicher relativ zur API-Laufzeit auf
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
-const baseDir = path.resolve(__dirname, '..');
+const baseDir = process.cwd();
 const distFolder = path.join(baseDir, 'dist', 'app');
 const browserDistFolder = path.join(distFolder, 'browser');
 
@@ -23,8 +21,13 @@ app.all('*', async (req, res) => {
 
   try {
     process.env['BROWSER_DIST_DIR'] = browserDistFolder;
+
+    // Nutzt das statisch geladene Bundle (umgeht den fehlerhaften dynamischen Cloud-Import)
     const bootstrap =
       angularServerBundle.default || angularServerBundle.bootstrap;
+    if (!bootstrap || typeof bootstrap !== 'function') {
+      throw new Error('Gültige Bootstrap-Funktion in main.server.mjs fehlt.');
+    }
 
     const { CommonEngine } = await import('@angular/ssr');
     const engine = new CommonEngine();
