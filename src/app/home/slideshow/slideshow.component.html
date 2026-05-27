@@ -9,12 +9,12 @@
 <div class="contain">
   <div class="slideshow-overlay">
     <div *ngIf="showImage" class="fadeIn">
-      <h2>{{ text_big[currentImage] | translate }}</h2>
+      <h2>{{ text_big | translate }}</h2>
       <h1>
-        {{ headline[currentImage] | translate }}
+        {{ headline | translate }}
       </h1>
       <p>
-        {{ text_small[currentImage] | translate }}
+        {{ text_small | translate }}
       </p>
       <span class="offer">
         <a href="{{ link }}">{{ 'home.button_offer' | translate }}</a>

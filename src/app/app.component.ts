@@ -1,9 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common'; // 🌟 WICHTIG FÜR SSR
 import { HttpClient } from '@angular/common/http';
-import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
-// import { PopupComponent } from './popup/popup.component';
 import {
   trigger,
   transition,
@@ -19,15 +19,10 @@ import {
   animations: [
     trigger('routeAnimations', [
       transition('* <=> *', [
-        // Start state of new page
         query(':enter', [style({ opacity: 0 })], { optional: true }),
-
-        // Leave the old page
         query(':leave', [animate('100ms ease-out', style({ opacity: 0 }))], {
           optional: true,
         }),
-
-        // Enter the new page
         query(':enter', [animate('100ms ease-in', style({ opacity: 1 }))], {
           optional: true,
         }),
@@ -38,21 +33,28 @@ import {
 export class AppComponent {
   title: String = 'title name';
 
-  // Transtale constructor
   constructor(
     public router: Router,
     public translate: TranslateService,
     private dialog: MatDialog,
     private http: HttpClient,
+    @Inject(PLATFORM_ID) private platformId: Object, // 🌟 Holt das Cloud-Erkennungs-Signal
   ) {
-    // this language will be used as a fallback when a translation isn't found in the current language
+    // Standard-Fallbacks gelten für Server und Browser gleichermaßen
     translate.setDefaultLang('en');
 
-    // the lang to use, if the lang isn't available, it will use the current loader to get them
-    translate.use('de');
+    // 🛡️ DER CLOUD-SCHUTZ:
+    if (isPlatformBrowser(this.platformId)) {
+      // 🌐 BROWSER-ONLY: Erst beim Kunden im Browser laden wir die Sprache asynchron
+      // über das Netzwerk nach. Das verhindert den unendlichen Zone.js-Hänger in der Cloud!
+      this.translate.use('de');
+    } else {
+      // ☁️ SERVER-ONLY: Auf Vercel setzen wir die Sprache rein statisch im Speicher fest,
+      // ohne asynchrone Netzwerk-Hintergrund-Tasks zu triggern.
+      this.translate.currentLang = 'de';
+    }
   }
 
-  // Prepare the route animation between pages
   prepareRoute(outlet: RouterOutlet) {
     return (
       outlet &&

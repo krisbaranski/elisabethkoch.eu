@@ -13,10 +13,10 @@ export class SlideshowComponent implements OnInit {
   constructor() {}
 
   images = ['aboutme1.jpg'];
-  text_big = ['home.title_1'];
-  headline = ['home.title_2'];
-  text_small = ['trainings.women.text_1'];
-  link = ['contact'];
+  text_big = 'home.title_1';
+  headline = 'home.title_2';
+  text_small = 'trainings.women.text_1';
+  link = 'contact';
 
   currentImage = 0;
   showImage = true;

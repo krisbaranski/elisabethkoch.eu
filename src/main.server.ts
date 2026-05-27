@@ -1,3 +1,4 @@
+import 'zone.js/node';
 import '@angular/compiler';
 import { enableProdMode, ApplicationRef, NgModuleRef } from '@angular/core';
 import { platformServer } from '@angular/platform-server';

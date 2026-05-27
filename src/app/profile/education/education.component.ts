@@ -1,3 +1,5 @@
+import { first } from 'rxjs/operators'; // 🌟 NEUER IMPORT!
+
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -12,6 +14,7 @@ export class EducationComponent {
   constructor(public translate: TranslateService) {
     this.translate
       .get('profile.work.boxes.text_1')
+      .pipe(first())
       .subscribe((res: string[]) => {
         this.text_1 = res;
       });
