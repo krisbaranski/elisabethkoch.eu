@@ -4,13 +4,18 @@ import { pathToFileURL } from 'url';
 import fs from 'fs';
 import express from 'express';
 
+// Statischer Import deines Server-Bundles für den Vercel-Packer
 import * as angularServerBundle from '../dist/app/server/main.server.mjs';
 
 const app = express();
-const baseDir = process.cwd();
+
+// 🌟 DER ANGULAR 18 PATH-FIX: Löst die Verzeichnisse absolut sicher relativ zur API-Laufzeit auf
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+const baseDir = path.resolve(__dirname, '..');
 const distFolder = path.join(baseDir, 'dist', 'app');
 const browserDistFolder = path.join(distFolder, 'browser');
 
+// Statische Assets direkt ausliefern (CSS, JS, Bilder)
 app.use(express.static(browserDistFolder, { maxAge: '1y', index: false }));
 
 app.all('*', async (req, res) => {
@@ -28,8 +33,10 @@ app.all('*', async (req, res) => {
     const host = req.headers['x-forwarded-host'] || req.headers.host;
     const url = `${protocol}://${host}${req.originalUrl}`;
 
+    // Die echte index.html auslesen
     const indexHtmlContent = fs.readFileSync(documentFilePath, 'utf8');
 
+    // Rendering ausführen
     const html = await engine.render({
       bootstrap,
       document: indexHtmlContent,
@@ -41,13 +48,23 @@ app.all('*', async (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     return res.status(200).send(html);
   } catch (error) {
-    console.error('SSR fehlgeschlagen, wechsle zu Fallback:', error.message);
+    console.error(
+      'SSR fehlgeschlagen, sende sicheren Client-Fallback:',
+      error.message,
+    );
+
+    // Unser bewährter Sicherheitsgurt liefert im Fehlerfall die stabile Client-App
     if (fs.existsSync(documentFilePath)) {
       const clientHtml = fs.readFileSync(documentFilePath, 'utf8');
       res.setHeader('Content-Type', 'text/html');
       return res.status(200).send(clientHtml);
     }
-    res.status(500).send(`Kritischer Fehler.\n${error.message}`);
+
+    res
+      .status(500)
+      .send(
+        `Kritischer Fehler: Vorlage fehlt.\n${error.message}\n\nGesuchter Pfad:\n${documentFilePath}`,
+      );
   }
 });
 
