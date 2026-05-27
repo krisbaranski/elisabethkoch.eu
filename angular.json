@@ -34,7 +34,8 @@
             },
             "ssr": true,
             "prerender": false,
-            "scripts": []
+            "scripts": [],
+            "externalDependencies": ["assets/*", "assets/img/*"]
           },
           "configurations": {
             "production": {
