@@ -3,8 +3,7 @@ import path from 'path';
 import fs from 'fs';
 import express from 'express';
 
-// 🌟 DER VERCEL-PACKER-ZWANG: Durch diesen statischen Import weiß der Vercel-Compiler,
-// dass er das Server-Bundle und den dist-Ordner ZWINGEND in den Cloud-Container einpacken muss!
+// Statischer Import deines Server-Bundles für den Vercel-Packer
 import * as angularServerBundle from '../dist/app/server/main.server.mjs';
 
 const app = express();
@@ -13,16 +12,16 @@ const baseDir = process.cwd();
 const distFolder = path.join(baseDir, 'dist', 'app');
 const browserDistFolder = path.join(distFolder, 'browser');
 
-// Statische Assets direkt ausliefern (CSS, JS, Bilder)
+// Statische Assets (CSS, JS, Bilder) direkt über das CDN ausliefern
 app.use(express.static(browserDistFolder, { maxAge: '1y', index: false }));
 
 app.all('*', async (req, res) => {
-  const documentFilePath = path.join(browserDistFolder, 'index.html');
+  // 🌟 DER ULTIMATIVE SPEICHER-FIX: Wir lesen die Vorlage direkt aus dem api/-Ordner!
+  // Das verhindert jegliche "Not Found"-Fehler im Cloud-Container.
+  const documentFilePath = path.join(baseDir, 'api', 'index.ssr.html');
 
   try {
     process.env['BROWSER_DIST_DIR'] = browserDistFolder;
-
-    // Nutzt das statisch geladene Bundle (umgeht den fehlerhaften dynamischen Cloud-Import)
     const bootstrap =
       angularServerBundle.default || angularServerBundle.bootstrap;
     if (!bootstrap || typeof bootstrap !== 'function') {
@@ -36,7 +35,7 @@ app.all('*', async (req, res) => {
     const host = req.headers['x-forwarded-host'] || req.headers.host;
     const url = `${protocol}://${host}${req.originalUrl}`;
 
-    // Die echte index.html auslesen
+    // Liest die vom Automatisierungs-Skript kopierte Vorlage aus
     const indexHtmlContent = fs.readFileSync(documentFilePath, 'utf8');
 
     // Rendering ausführen
@@ -52,11 +51,12 @@ app.all('*', async (req, res) => {
     return res.status(200).send(html);
   } catch (error) {
     console.error(
-      'SSR fehlgeschlagen, sende sicheren Client-Fallback:',
+      'SSR Initialisierung fehlgeschlagen, wechsle zu Fallback:',
       error.message,
     );
 
-    // Unser bewährter Sicherheitsgurt liefert im Fehlerfall die stabile Client-App
+    // Falls das SSR im Hintergrund zuckt, sendet der Sicherheitsgurt das echte Client-HTML.
+    // Die Seite lädt dadurch IMMER sofort für den Besucher und wird niemals weiß!
     if (fs.existsSync(documentFilePath)) {
       const clientHtml = fs.readFileSync(documentFilePath, 'utf8');
       res.setHeader('Content-Type', 'text/html');
@@ -66,7 +66,7 @@ app.all('*', async (req, res) => {
     res
       .status(500)
       .send(
-        `Kritischer Fehler: Vorlage fehlt.\n${error.message}\n\nGesuchter Pfad:\n${documentFilePath}`,
+        `Kritischer Fehler: Vorlage fehlt.\n${error.message}\n\nPfad:\n${documentFilePath}`,
       );
   }
 });

@@ -9,10 +9,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration=production",
+    "postbuild": "cp dist/app/browser/index.html api/index.ssr.html",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "i18n:init": "ngx-translate-extract --input ./src --output ./src/assets/i18n/de.json ./src/assets/i18n/en.json --key-as-default-value --replace --format json",
-    "i18n:extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/{en,de}.json --clean --format json"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
