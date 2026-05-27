@@ -7,7 +7,6 @@ import { dirname, join, resolve } from 'node:path';
 import bootstrap from './main.server';
 
 export function app(): express.Express {
-  // Express korrekt initialisieren
   const server = (express as any).default
     ? (express as any).default()
     : express();
@@ -20,7 +19,7 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
 
-  // FIX FÜR NGX-TRANSLATE: Sprachdateien und Assets direkt als echte Dateien ausliefern
+  // Sprachdateien und Assets direkt als echte Dateien ausliefern
   server.use(
     '/assets',
     express.static(join(browserDistFolder, 'assets'), {
@@ -53,12 +52,10 @@ export function app(): express.Express {
           documentFilePath: indexHtml,
           url: `${protocol}://${headers.host}${originalUrl}`,
           publicPath: browserDistFolder,
-          inlineCriticalCss: false, // Verhindert asynchrone CSS-Hänger
+          inlineCriticalCss: false,
           providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
         })
         .then((html: string) => {
-          // RADIKALER FIX: Wenn das HTML da ist, senden wir es SOFORT an den Browser,
-          // völlig egal, ob im Hintergrund noch unendliche Tasks laufen!
           res.send(html);
         })
         .catch((err: any) => {
@@ -71,13 +68,15 @@ export function app(): express.Express {
   return server;
 }
 
-function run(): void {
+// 🌟 VERCEL RUNTIME MODULATION:
+// Wir starten server.listen() NUR, wenn wir lokal testen (wo process.env['VERCEL'] fehlt).
+// In der Cloud übernimmt Vercels Serverless Function das Kommando vollautomatisch!
+if (!process.env['VERCEL']) {
   const port = process.env['PORT'] || 4000;
   const server = app();
-
   server.listen(Number(port), '127.0.0.1', () => {
-    console.log(`Node Express server listening on http://127.0.0.1:${port}`);
+    console.log(
+      `Lokaler Node Express server läuft auf http://127.0.0.1:${port}`,
+    );
   });
 }
-
-run();

@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "cleanUrls": true,
+  "cleanUrls": false,
   "functions": {
     "api/index.js": {
-      "includeFiles": "dist/elisabethkoch.eu/**"
+      "includeFiles": "dist/app/**"
     }
   },
   "routes": [
     {
-      "src": "/(.*\\.(?:js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|webm|mp4))$",
+      "src": "/(assets/.*|.*\\.(?:js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|webm|mp4))$",
       "headers": { "cache-control": "public, max-age=31536000, immutable" },
       "continue": true
     },
     {
       "src": "/(.*)",
-      "dest": "api/index.mjs"
+      "dest": "/api/index.js"
     }
   ]
 }

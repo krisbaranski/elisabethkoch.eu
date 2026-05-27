@@ -76,25 +76,50 @@ import { PLATFORM_ID, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { Observable, from, of } from 'rxjs';
 
-import deLang from '../assets/i18n/de.json';
-import enLang from '../assets/i18n/en.json';
+// import deLang from '../assets/i18n/de.json';
+// import enLang from '../assets/i18n/en.json';
+
+// 🌟 DEINE ECHTEN TEXTE FÜR DEN SERVER-START (Ergänze hier die wichtigsten Keys deiner de.json):
+const DE_SERVER_TEXTS = {
+  WELCOME: 'Willkommen',
+  CONTACT: 'Kontakt',
+  hero: {
+    title: 'Stimme & gelungener Auftritt',
+    subtitle: 'Elisabeth Koch',
+  },
+  nav: {
+    home: 'Home',
+    about: 'Über mich',
+  },
+  // Kopiere hier einfach die wichtigsten 10-15 Zeilen deiner echten de.json hinein!
+};
+
+const EN_SERVER_TEXTS = {
+  WELCOME: 'Welcome',
+  CONTACT: 'Contact',
+  hero: {
+    title: 'Voice & Successful Appearance',
+    subtitle: 'Elisabeth Koch',
+  },
+  nav: {
+    home: 'Home',
+    about: 'About me',
+  },
+};
 
 export class TranslateUniversalLoader implements TranslateLoader {
   private platformId = inject(PLATFORM_ID);
 
   public getTranslation(lang: string): Observable<any> {
-    // 1. Wenn wir im Browser sind, laden wir die JSONs weiterhin dynamisch über fetch
     if (isPlatformBrowser(this.platformId)) {
-      return from(fetch(`assets/i18n/${lang}.json`).then((res) => res.json()));
+      return from(fetch(`/assets/i18n/${lang}.json`).then((res) => res.json()));
     }
-
-    // 2. Wenn wir auf dem Server (SSR) sind, geben wir die echten Daten SOFORT synchron zurück!
-    // Keine Ladezeit, kein Zone.js-Deadlock und Google sieht die echten Texte!
-    const staticData = lang === 'de' ? deLang : enLang;
+    const staticData = lang === 'de' ? DE_SERVER_TEXTS : EN_SERVER_TEXTS;
     return of(staticData);
   }
 }
 
+// 🌟 DIESE FUNKTION FEHLT BEI DIR GERADE – HIER WIEDER HINZUFÜGEN:
 export function createTranslateLoader() {
   return new TranslateUniversalLoader();
 }
@@ -131,7 +156,6 @@ export function createTranslateLoader() {
     HeroLionComponent,
     HeroTrainComponent,
     HomeComponent,
-    HomeComponent,
     ImpressumComponent,
     OfferComponent,
     OfferColourComponent,
@@ -155,7 +179,6 @@ export function createTranslateLoader() {
   ],
   imports: [
     AppRoutingModule,
-    ServerModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     FormsModule,
