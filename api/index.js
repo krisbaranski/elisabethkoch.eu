@@ -10,14 +10,12 @@ const app = express();
 
 const baseDir = process.cwd();
 const distFolder = path.join(baseDir, 'dist', 'app');
-const browserDistFolder = path.join(distFolder, 'browser');
+const browserDistFolder = path.join(distFolder, 'browser'); // 🌟 Wieder auf browser-Ordner gesetzt!
 
-// Statische Assets (CSS, JS, Bilder) direkt über das CDN ausliefern
 app.use(express.static(browserDistFolder, { maxAge: '1y', index: false }));
 
 app.all('*', async (req, res) => {
-  // 🌟 DER ULTIMATIVE SPEICHER-FIX: Wir lesen die Vorlage direkt aus dem api/-Ordner!
-  // Das verhindert jegliche "Not Found"-Fehler im Cloud-Container.
+  // Wir lesen die vom postbuild-Skript kopierte index.ssr.html ein
   const documentFilePath = path.join(baseDir, 'api', 'index.ssr.html');
 
   try {
@@ -35,7 +33,6 @@ app.all('*', async (req, res) => {
     const host = req.headers['x-forwarded-host'] || req.headers.host;
     const url = `${protocol}://${host}${req.originalUrl}`;
 
-    // Liest die vom Automatisierungs-Skript kopierte Vorlage aus
     const indexHtmlContent = fs.readFileSync(documentFilePath, 'utf8');
 
     // Rendering ausführen
@@ -55,19 +52,13 @@ app.all('*', async (req, res) => {
       error.message,
     );
 
-    // Falls das SSR im Hintergrund zuckt, sendet der Sicherheitsgurt das echte Client-HTML.
-    // Die Seite lädt dadurch IMMER sofort für den Besucher und wird niemals weiß!
     if (fs.existsSync(documentFilePath)) {
       const clientHtml = fs.readFileSync(documentFilePath, 'utf8');
       res.setHeader('Content-Type', 'text/html');
       return res.status(200).send(clientHtml);
     }
 
-    res
-      .status(500)
-      .send(
-        `Kritischer Fehler: Vorlage fehlt.\n${error.message}\n\nPfad:\n${documentFilePath}`,
-      );
+    res.status(500).send(`Kritischer Fehler.\n${error.message}`);
   }
 });
 

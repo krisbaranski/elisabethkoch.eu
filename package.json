@@ -9,7 +9,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration=production",
-    "postbuild": "cp dist/app/browser/index.html api/index.ssr.html",
+    "postbuild": "node -e \"const fs = require('fs'); const path = require('path'); const src = path.join('dist', 'app', 'browser', 'index.csr.html'); const dest = path.join('api', 'index.ssr.html'); if (fs.existsSync(src)) { fs.copyFileSync(src, dest); console.log('🌟 Vorlage erfolgreich in den api/-Ordner gespiegelt!'); } else { console.error('❌ Fehler: Quelldatei nicht gefunden unter ' + src); process.exit(1); }\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
