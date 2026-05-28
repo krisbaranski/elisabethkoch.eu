@@ -3,19 +3,29 @@ import path from 'path';
 import fs from 'fs';
 import express from 'express';
 
-// Statischer Import deines Server-Bundles für den Vercel-Packer
 import * as angularServerBundle from '../dist/app/server/main.server.mjs';
 
 const app = express();
 
 const baseDir = process.cwd();
 const distFolder = path.join(baseDir, 'dist', 'app');
-const browserDistFolder = path.join(distFolder, 'browser'); // 🌟 Wieder auf browser-Ordner gesetzt!
+const browserDistFolder = path.join(distFolder, 'browser');
 
 app.use(express.static(browserDistFolder, { maxAge: '1y', index: false }));
 
+// 🌟 DER ABSOLUTE SITEMAP-EXPRESS-BYPASS:
+// Wenn Google oder du die sitemap.xml aufrufen, senden wir die Datei direkt an den Browser!
+app.get('/sitemap.xml', (req, res) => {
+  const sitemapPath = path.join(browserDistFolder, 'assets', 'sitemap.xml');
+  if (fs.existsSync(sitemapPath)) {
+    res.setHeader('Content-Type', 'application/xml');
+    return res.status(200).sendFile(sitemapPath);
+  }
+  res.status(404).send('Sitemap nicht auf der Festplatte gefunden.');
+});
+
+// Dein bestehender app.all('*') Block bleibt darunter völlig unverändert:
 app.all('*', async (req, res) => {
-  // Wir lesen die vom postbuild-Skript kopierte index.ssr.html ein
   const documentFilePath = path.join(baseDir, 'api', 'index.ssr.html');
 
   try {
