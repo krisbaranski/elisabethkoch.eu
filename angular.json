@@ -41,7 +41,7 @@
             "stylePreprocessorOptions": {
               "includePaths": ["node_modules/"]
             },
-            "ssr": true,
+            "ssr": false,
             "prerender": false,
             "scripts": [],
             "externalDependencies": ["assets/*", "assets/img/*"]

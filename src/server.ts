@@ -1,4 +1,6 @@
 import 'zone.js';
+import { readFileSync, existsSync } from 'node:fs';
+
 import { APP_BASE_HREF } from '@angular/common';
 import { CommonEngine } from '@angular/ssr';
 import express from 'express';
@@ -12,7 +14,10 @@ export function app(): express.Express {
     : express();
   const serverDistFolder = dirname(fileURLToPath(import.meta.url));
   const browserDistFolder = resolve(serverDistFolder, '../browser');
-  const indexHtml = join(browserDistFolder, 'index.html');
+  // const indexHtml = join(browserDistFolder, 'index.html');
+  const indexHtml = existsSync(join(browserDistFolder, 'index.original.html'))
+    ? join(browserDistFolder, 'index.original.html')
+    : join(browserDistFolder, 'index.html');
 
   const commonEngine = new CommonEngine();
 
@@ -46,10 +51,18 @@ export function app(): express.Express {
     ) => {
       const { protocol, originalUrl, baseUrl, headers } = req;
 
+      // NEU: Die HTML-Vorlage sicher einlesen statt nur den Pfad zu übergeben
+      let htmlTemplate = '';
+      try {
+        htmlTemplate = readFileSync(indexHtml, 'utf-8');
+      } catch (err) {
+        console.error('[SSR] index.html konnte nicht gelesen werden:', err);
+      }
+
       commonEngine
         .render({
           bootstrap,
-          documentFilePath: indexHtml,
+          document: htmlTemplate, // <-- Geändert von documentFilePath auf document
           url: `${protocol}://${headers.host}${originalUrl}`,
           publicPath: browserDistFolder,
           inlineCriticalCss: false,
@@ -60,7 +73,7 @@ export function app(): express.Express {
         })
         .catch((err: any) => {
           console.error('[SSR Render Error] Fehler beim Vorrendern:', err);
-          res.sendFile(indexHtml); // Im Fehlerfall sicherer Fallback auf Client-Rendering
+          res.send(htmlTemplate); // Sicherer Fallback: Das rohe HTML ohne SSR ausgeben
         });
     },
   );
