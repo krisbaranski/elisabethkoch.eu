@@ -3,7 +3,8 @@ import path from 'path';
 import fs from 'fs';
 import express from 'express';
 
-import * as angularServerBundle from '../dist/app/server/main.server.mjs';
+// 1. Wir importieren direkt den fertigen Request-Handler von Angular 18
+import { reqHandler } from '../dist/app/server/main.server.mjs';
 
 const app = express();
 
@@ -11,10 +12,10 @@ const baseDir = process.cwd();
 const distFolder = path.join(baseDir, 'dist', 'app');
 const browserDistFolder = path.join(distFolder, 'browser');
 
+// Statische Dateien (CSS, JS, Bilder) direkt ausliefern
 app.use(express.static(browserDistFolder, { maxAge: '1y', index: false }));
 
-// 🌟 DER ABSOLUTE SITEMAP-EXPRESS-BYPASS:
-// Wenn Google oder du die sitemap.xml aufrufen, senden wir die Datei direkt an den Browser!
+// 🌟 DER SITEMAP-EXPRESS-BYPASS:
 app.get('/sitemap.xml', (req, res) => {
   const sitemapPath = path.join(browserDistFolder, 'assets', 'sitemap.xml');
   if (fs.existsSync(sitemapPath)) {
@@ -24,51 +25,22 @@ app.get('/sitemap.xml', (req, res) => {
   res.status(404).send('Sitemap nicht auf der Festplatte gefunden.');
 });
 
-// Dein bestehender app.all('*') Block bleibt darunter völlig unverändert:
-app.all('*', async (req, res) => {
-  const documentFilePath = path.join(baseDir, 'api', 'index.ssr.html');
-
+// 🌟 NEU: Übergabe ALLER Routen an den offiziellen Angular 18 SSR-Handler
+app.all('*', (req, res, next) => {
   try {
-    process.env['BROWSER_DIST_DIR'] = browserDistFolder;
-    const bootstrap =
-      angularServerBundle.default || angularServerBundle.bootstrap;
-    if (!bootstrap || typeof bootstrap !== 'function') {
-      throw new Error('Gültige Bootstrap-Funktion in main.server.mjs fehlt.');
-    }
-
-    const { CommonEngine } = await import('@angular/ssr');
-    const engine = new CommonEngine();
-
-    const protocol = req.headers['x-forwarded-proto'] || 'http';
-    const host = req.headers['x-forwarded-host'] || req.headers.host;
-    const url = `${protocol}://${host}${req.originalUrl}`;
-
-    const indexHtmlContent = fs.readFileSync(documentFilePath, 'utf8');
-
-    // Rendering ausführen
-    const html = await engine.render({
-      bootstrap,
-      document: indexHtmlContent,
-      url,
-      publicPath: browserDistFolder,
-      inlineCriticalCss: false,
-    });
-
-    res.setHeader('Content-Type', 'text/html');
-    return res.status(200).send(html);
+    // Angular 18 regelt das Rendering, Routing und Fallbacks vollautomatisch
+    return reqHandler(req, res, next);
   } catch (error) {
-    console.error(
-      'SSR Initialisierung fehlgeschlagen, wechsle zu Fallback:',
-      error.message,
-    );
+    console.error('Kritischer Fehler im Angular SSR Handler:', error.message);
 
-    if (fs.existsSync(documentFilePath)) {
-      const clientHtml = fs.readFileSync(documentFilePath, 'utf8');
+    // Sicherer Fallback: Wenn alles reißt, laden wir die statische index.html aus dem browser-Ordner
+    const fallbackHtmlPath = path.join(browserDistFolder, 'index.html');
+    if (fs.existsSync(fallbackHtmlPath)) {
       res.setHeader('Content-Type', 'text/html');
-      return res.status(200).send(clientHtml);
+      return res.status(200).sendFile(fallbackHtmlPath);
     }
 
-    res.status(500).send(`Kritischer Fehler.\n${error.message}`);
+    res.status(500).send(`Kritischer Server-Fehler.\n${error.message}`);
   }
 });
 
