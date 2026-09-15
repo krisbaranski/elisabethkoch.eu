@@ -30,7 +30,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem; // Ersetzt margin an den Boxen für sauberere Abstände
   width: 100%;
-  max-width: 1200px; // Verhindert, dass die Boxen auf Ultra-Wide-Screens zu breit werden
+  max-width: 1500px; // Verhindert, dass die Boxen auf Ultra-Wide-Screens zu breit werden
   margin: 3rem auto 6rem;
   padding: 0 2rem;
   box-sizing: border-box;
