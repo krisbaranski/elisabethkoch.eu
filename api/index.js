@@ -3,44 +3,41 @@ import path from 'path';
 import fs from 'fs';
 import express from 'express';
 
-// 1. Wir importieren direkt den fertigen Request-Handler von Angular 18
-import { reqHandler } from '../dist/app/server/main.server.mjs';
-
 const app = express();
 
 const baseDir = process.cwd();
-const distFolder = path.join(baseDir, 'dist', 'app');
+// HINWEIS: Angular 17 nutzt Ihren echten Projektnamen im dist-Ordner!
+const distFolder = path.join(baseDir, 'dist', 'elisabethkoch.eu');
 const browserDistFolder = path.join(distFolder, 'browser');
+const serverDistFolder = path.join(distFolder, 'server');
 
-// Statische Dateien (CSS, JS, Bilder) direkt ausliefern
 app.use(express.static(browserDistFolder, { maxAge: '1y', index: false }));
 
-// 🌟 DER SITEMAP-EXPRESS-BYPASS:
+// SITEMAP-BYPASS:
 app.get('/sitemap.xml', (req, res) => {
   const sitemapPath = path.join(browserDistFolder, 'assets', 'sitemap.xml');
   if (fs.existsSync(sitemapPath)) {
     res.setHeader('Content-Type', 'application/xml');
     return res.status(200).sendFile(sitemapPath);
   }
-  res.status(404).send('Sitemap nicht auf der Festplatte gefunden.');
+  res.status(404).send('Sitemap nicht gefunden.');
 });
 
-// 🌟 NEU: Übergabe ALLER Routen an den offiziellen Angular 18 SSR-Handler
-app.all('*', (req, res, next) => {
+// SSR ROUTING:
+app.all('*', async (req, res, next) => {
   try {
-    // Angular 18 regelt das Rendering, Routing und Fallbacks vollautomatisch
+    const serverModulePath = path.join(serverDistFolder, 'main.server.mjs');
+    const { reqHandler } = await import(serverModulePath);
     return reqHandler(req, res, next);
   } catch (error) {
-    console.error('Kritischer Fehler im Angular SSR Handler:', error.message);
+    console.error('Fehler im SSR Handler:', error.message);
 
-    // Sicherer Fallback: Wenn alles reißt, laden wir die statische index.html aus dem browser-Ordner
     const fallbackHtmlPath = path.join(browserDistFolder, 'index.html');
     if (fs.existsSync(fallbackHtmlPath)) {
       res.setHeader('Content-Type', 'text/html');
       return res.status(200).sendFile(fallbackHtmlPath);
     }
-
-    res.status(500).send(`Kritischer Server-Fehler.\n${error.message}`);
+    res.status(500).send(`Server-Fehler: ${error.message}`);
   }
 });
 
