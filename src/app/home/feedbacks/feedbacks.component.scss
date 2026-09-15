@@ -27,10 +27,10 @@
 .boxes {
   display: grid;
   // Erstellt automatisch Spalten, die mindestens 300px breit sind, aber maximal den Platz gleichmäßig aufteilen
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem; // Ersetzt margin an den Boxen für sauberere Abstände
   width: 100%;
-  max-width: 1500px; // Verhindert, dass die Boxen auf Ultra-Wide-Screens zu breit werden
+  max-width: 1400px; // Verhindert, dass die Boxen auf Ultra-Wide-Screens zu breit werden
   margin: 3rem auto 6rem;
   padding: 0 2rem;
   box-sizing: border-box;
