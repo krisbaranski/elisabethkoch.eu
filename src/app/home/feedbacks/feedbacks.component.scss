@@ -14,33 +14,38 @@
 
   h1 {
     font-family: 'Funky-signature';
-    font-size: 6rem;
-    // color: var(--color-light);
+    font-size: clamp(
+      3rem,
+      6vw,
+      6rem
+    ); // Fließende Schriftgröße auch für Desktops
     color: var(--color-white);
     text-align: center;
-    // text-shadow: 4px 10px 6px var(--color-dark), 6px 12px 4px black,
-    //   8px 14px 2px black;
   }
 }
 
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: auto;
+  display: grid;
+  // Erstellt automatisch Spalten, die mindestens 300px breit sind, aber maximal den Platz gleichmäßig aufteilen
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; // Ersetzt margin an den Boxen für sauberere Abstände
+  width: 100%;
+  max-width: 1200px; // Verhindert, dass die Boxen auf Ultra-Wide-Screens zu breit werden
   margin: 3rem auto 6rem;
-  padding: 1rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .box {
-  flex: 0 1 19vw;
+  // Kein 'flex' mehr nötig, da wir Grid nutzen
   height: auto;
   border: 3px solid #ffffff7a;
   border-radius: 3px;
-  margin: 1rem;
   padding: 3rem;
   backdrop-filter: blur(1rem);
   background-color: #052a3380;
+  display: flex;
+  flex-direction: column;
 
   .content {
     color: #fff;
@@ -64,6 +69,7 @@
       color: var(--color-light);
       font-family: 'Montserrat Light', sans-serif;
       font-size: var(--size--1);
+      margin-top: auto; // Schiebt den Link immer ganz nach unten, falls Texte unterschiedlich lang sind
 
       &:hover {
         color: #eee;
@@ -76,13 +82,14 @@
 // // MEDIA QUERIES
 // //
 @media only screen and (max-width: 1024px) {
-  .title {
-    h1 {
-      font-size: clamp(3rem, 8vw, 8rem);
-    }
+  .boxes {
+    // Auf Tablets und Smartphones wechseln wir zu einer Spalte
+    grid-template-columns: 1fr;
+    max-width: 600px; // Schöne, lesbare Breite auf mobilen Geräten
+    gap: 1.5rem;
   }
 
   .box {
-    flex: 0 1 70vw;
+    padding: 2rem; // Etwas kompakterer Innenabstand auf Mobilgeräten
   }
 }
