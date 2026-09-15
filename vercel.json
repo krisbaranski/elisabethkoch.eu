@@ -3,17 +3,17 @@
   "cleanUrls": false,
   "functions": {
     "api/index.js": {
-      "includeFiles": "dist/elisabethkoch.eu/**"
+      "includeFiles": "dist/app/**"
     }
   },
   "rewrites": [
     {
       "source": "/sitemap.xml",
-      "destination": "/dist/elisabethkoch.eu/browser/assets/sitemap.xml"
+      "destination": "/dist/app/browser/assets/sitemap.xml"
     },
     {
       "source": "/(assets/.*|.*\\.(?:js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|webm|mp4))$",
-      "destination": "/dist/elisabethkoch.eu/browser/$1"
+      "destination": "/dist/app/browser/$1"
     },
     {
       "source": "/(.*)",

@@ -6,8 +6,8 @@ import express from 'express';
 const app = express();
 
 const baseDir = process.cwd();
-// HINWEIS: Angular 17 nutzt Ihren echten Projektnamen im dist-Ordner!
-const distFolder = path.join(baseDir, 'dist', 'elisabethkoch.eu');
+// 🌟 WICHTIG: Hier muss exakt 'dist/app' stehen!
+const distFolder = path.join(baseDir, 'dist', 'app');
 const browserDistFolder = path.join(distFolder, 'browser');
 const serverDistFolder = path.join(distFolder, 'server');
 
