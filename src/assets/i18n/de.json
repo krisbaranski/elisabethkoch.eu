@@ -9,8 +9,8 @@
     "policy": "Datenschutz"
   },
   "home": {
-    "title_1": "Frei sprechen, kraftvoll auftreten!",
-    "title_2": "Entfalte Dein Stimmpotenzial!",
+    "title_1": "",
+    "title_2": "Entfalte Deine Stimmpräsenz!",
     "box_1": "Stimme",
     "box_2": "Vertrauen",
     "box_3": "Präsenz",
@@ -484,8 +484,12 @@
     "author_5": "Daniel Aichinger / 50 Jahre / Schauspieler & Ernährungsberater",
     "link_5": "https://pieceofcake.coach/",
     "pagename_5": "piece of cake",
+    "author_6": "Celine Dion",
     "text_6": "„When your voice brings you joy, you're the best of yourself!”",
-    "author_6": "Celine Dion"
+    "text_7": "„Mit feinen Antennen und Humor hat Elisabeth meine Körpersprache und meine Stimme für mich bearbeitbar gemacht. Ich kann meine Kompetenz jetzt viel besser abrufen, souveräner auftreten und bin viel intensiver mit meiner Sprache und meiner Stimme verbunden.”",
+    "author_7": "Jütika, Produktmanagement, dt. Konzern",
+    "link_7": "",
+    "pagename_7": ""
   },
   "newsletter": {
     "title_1": "Komm in den",
