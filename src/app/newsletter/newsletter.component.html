@@ -3,20 +3,19 @@
     <div class="col text">
       <h1>
         {{ 'newsletter.title_1' | translate }}
-        <span>
-          {{ 'newsletter.title_2' | translate }}
-        </span>
+        <span>{{ 'newsletter.title_2' | translate }}</span>
       </h1>
       <p>{{ 'newsletter.text' | translate }}</p>
     </div>
+
     <div class="col">
-      <!-- <div class="ml-embedded" data-form="3oWMzk"></div> -->
       <div
         id="mlb2-22029023"
         class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-22029023"
       >
         <div class="ml-form-align-center">
           <div class="ml-form-embedWrapper embedForm">
+            <!-- FORMULAR-BEREICH (Wird nach dem Absenden ausgeblendet) -->
             <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
               <div
                 class="ml-form-embedContent"
@@ -26,88 +25,58 @@
               <form
                 ngNoForm
                 class="ml-block-form"
-                action="https://assets.mailerlite.com/jsonp/1264344/forms/144685679533622555/subscribe"
-                data-code=""
+                action="https://mailerlite.com"
                 method="post"
-                target="_blank"
               >
                 <div class="ml-form-formContent horozintalForm">
                   <div class="ml-form-horizontalRow">
+                    <!-- Eingabefelder nebeneinander -->
                     <div class="ml-input-horizontal">
-                      <div style="width: 50%" class="horizontal-fields">
+                      <div class="horizontal-fields name-field">
                         <div class="ml-field-group ml-field-name">
-                          <!-- input -->
                           <input
                             type="text"
                             class="form-control"
-                            data-inputmask=""
                             name="fields[name]"
                             placeholder="Name"
                             autocomplete="given-name"
+                            required
                           />
-                          <!-- /input -->
                         </div>
                       </div>
-                      <div style="width: 50%" class="horizontal-fields">
+                      <div class="horizontal-fields email-field">
                         <div
                           class="ml-field-group ml-field-email ml-validate-email ml-validate-required"
                         >
-                          <!-- input -->
                           <input
                             type="email"
                             class="form-control"
-                            data-inputmask=""
                             name="fields[email]"
                             placeholder="Email"
                             autocomplete="email"
+                            required
                           />
-                          <!-- /input -->
                         </div>
                       </div>
                     </div>
 
+                    <!-- Der Absenden Button direkt in der Reihe -->
                     <div class="ml-button-horizontal primary">
                       <button type="submit" class="primary">Absenden</button>
-
-                      <button
-                        disabled="disabled"
-                        style="display: none"
-                        type="button"
-                        class="loading"
-                      >
-                        <div class="ml-form-embedSubmitLoad"></div>
-                        <span class="sr-only">Loading...</span>
-                      </button>
                     </div>
                   </div>
                 </div>
 
-                <!-- Privacy policy -->
-
-                <!-- /Privacy policy -->
-
                 <input type="hidden" name="ml-submit" value="1" />
-
-                <div class="ml-mobileButton-horizontal">
-                  <button type="submit" class="primary">Absenden</button>
-                  <button
-                    disabled="disabled"
-                    style="display: none"
-                    type="button"
-                    class="loading"
-                  >
-                    <div class="ml-form-embedSubmitLoad"></div>
-                    <span class="sr-only">Loading...</span>
-                  </button>
-                </div>
                 <input type="hidden" name="anticsrf" value="true" />
               </form>
             </div>
 
+            <!-- ERFOLGSMELDUNG (Standardmäßig versteckt, wird nach dem Absenden eingeblendet) -->
             <div class="ml-form-successBody row-success" style="display: none">
               <div class="ml-form-successContent">
                 <h4>Vielen Dank!</h4>
-                <p>Das hat geklappt. Du erhältst meinen Newsletter. <br /></p>
+                <p>Das hat geklappt. Du erhältst meinen Newsletter.</p>
               </div>
             </div>
           </div>

@@ -9,12 +9,13 @@ export class NewsletterComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // Registriert die MailerLite-Erfolgsfunktion im globalen Fenster-Objekt
+    // MailerLite-Erfolgsfunktion im globalen Fenster-Objekt registrieren
     (window as any).ml_webform_success_22029023 = () => {
-      // Sucht die Formular-Elemente und blendet das Formular aus / Erfolg ein
+      // Formular suchen und ausblenden
       const formContainer = document.querySelector(
         '.ml-subscribe-form-22029023 .row-form',
       ) as HTMLElement;
+      // Erfolgstext suchen und einblenden
       const successContainer = document.querySelector(
         '.ml-subscribe-form-22029023 .row-success',
       ) as HTMLElement;
