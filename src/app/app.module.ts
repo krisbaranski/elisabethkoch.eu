@@ -43,6 +43,8 @@ import { HeroColourComponent } from './courses/colour/hero-colour/hero-colour.co
 import { HeroContactComponent } from './contact/hero-contact/hero-contact.component';
 import { HeroLionComponent } from './courses/women/hero-lion/hero-lion.component';
 import { HeroTrainComponent } from './trainings/hero-train/hero-train.component';
+import { HeroCoopComponent } from './cooperation/hero-coop/hero-coop.component';
+
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { OfferComponent } from './offer/offer.component';
@@ -160,6 +162,7 @@ export function createTranslateLoader() {
     HeroContactComponent,
     HeroLionComponent,
     HeroTrainComponent,
+    HeroCoopComponent,
     HomeComponent,
     ImpressumComponent,
     OfferComponent,

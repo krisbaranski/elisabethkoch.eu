@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <div class="gold-banner"></div>
+  <div class="boxes">
+    <div class="box_1">
+      <div class="text-content">
+        <h2>
+          {{ 'cooperation.hero.title' | translate }}
+        </h2>
+        <p>
+          {{ 'cooperation.hero.text_1' | translate }}
+        </p>
+        <p>
+          {{ 'cooperation.hero.text_2' | translate }}
+        </p>
+        <p>
+          {{ 'cooperation.hero.text_3' | translate }}
+        </p>
+        <span class="offer" *ngIf="showButton">
+          <a href="{{ link }}">{{ button | translate }}</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="box_2 offer">
+      <img
+        src="../../../assets/img/victor_elisabeth.png"
+        alt="Elisabeth Koch bei Podcast"
+      />
+    </div>
+  </div>
+</div>
