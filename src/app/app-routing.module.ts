@@ -4,6 +4,7 @@ import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { CoursesComponent } from './courses/courses.component';
+import { CooperationComponent } from './cooperation/cooperation.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
@@ -32,6 +33,11 @@ const routes: Routes = [
       // { path: '', redirectTo: 'women', pathMatch: 'full' }, // Default child route
     ],
     data: { animation: 'CoursesPage' },
+  },
+  {
+    path: 'cooperation',
+    component: CooperationComponent,
+    data: { animation: 'CooperationPage' },
   },
   {
     path: 'profile',

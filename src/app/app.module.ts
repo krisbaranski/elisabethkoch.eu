@@ -24,6 +24,7 @@ import { BoxesWomenComponent } from './courses/women/boxes-women/boxes-women.com
 import { BoxesColourComponent } from './courses/colour/boxes-colour/boxes-colour.component';
 import { BoxesTrainingComponent } from './trainings/boxes-training/boxes-training.component';
 import { ColourComponent } from './courses/colour/colour.component';
+import { CooperationComponent } from './cooperation/cooperation.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactShortComponent } from './home/contact-short/contact-short.component';
 import { CoursesComponent } from './courses/courses.component';
@@ -140,6 +141,7 @@ export function createTranslateLoader() {
     BoxesColourComponent,
     BoxesTrainingComponent,
     ColourComponent,
+    CooperationComponent,
     ContactComponent,
     ContactShortComponent,
     CourseContentComponent,
