@@ -1,11 +1,10 @@
 /* ==========================================================================
-   1. LOADER & ACCESSIBILITY (Wichtig für den Absende-Status)
+   1. LOADER & BASIS STYLES
    ========================================================================== */
 .ml-form-embedSubmitLoad {
   display: inline-block;
   width: 20px;
   height: 20px;
-
   &:after {
     content: ' ';
     display: block;
@@ -18,7 +17,6 @@
     animation: ml-form-embedSubmitLoad 1.2s linear infinite;
   }
 }
-
 @keyframes ml-form-embedSubmitLoad {
   0% {
     transform: rotate(0deg);
@@ -27,7 +25,6 @@
     transform: rotate(360deg);
   }
 }
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -40,140 +37,158 @@
 }
 
 /* ==========================================================================
-   2. MAILERLITE BASIS-STRUKTUR & VALIDIERUNG
+   2. NEUES FLEXBOX FORMULAR-LAYOUT (In einer Reihe)
    ========================================================================== */
 #mlb2-22029023.ml-form-embedContainer {
   box-sizing: border-box;
   width: 100% !important;
 
   .ml-form-embedWrapper.embedForm {
-    max-width: 650px;
     width: 100%;
-    display: inline-block !important;
   }
 
-  .ml-form-embedBody,
-  .ml-form-successBody {
-    padding: 20px 20px 0 20px;
+  // Das ist die Reihe, die alles beinhaltet (Felder + Button)
+  .ml-form-horizontalRow {
+    display: flex;
+    flex-direction: row; // Bringt alles in eine Reihe
+    gap: 1rem; // Abstand zwischen Inputs und Button
+    width: 100%;
+    align-items: center;
+  }
+
+  // Der Container, der die beiden Inputs hält
+  .ml-input-horizontal {
+    display: flex;
+    flex-direction: row; // Name und E-Mail nebeneinander
+    gap: 1rem;
+    flex: 1; // Nimmt den verfügbaren Platz ein
+  }
+
+  .horizontal-fields {
+    flex: 1; // Beide Felder teilen sich den Platz 50/50
   }
 
   /* Input Felder Styling */
-  .ml-form-embedBody .ml-form-fieldRow input,
-  .ml-form-horizontalRow input {
-    background-color: #ffffff;
-    color: #052a33;
-    border: 1px solid #ffffff;
-    border-radius: 2px;
+  input.form-control {
+    background-color: #ffffff !important;
+    color: #052a33 !important;
+    border: 1px solid var(--color-light, #ffffff) !important;
+    border-radius: 3px !important;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
+    font-size: 13px !important;
+    padding: 12px 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
 
     &::placeholder {
       color: #052a33;
     }
   }
 
-  /* Der originale MailerLite Button */
-  .ml-form-horizontalRow button {
-    background-color: #b18724 !important;
-    border: 1px solid #b18724;
-    border-radius: 3px;
-    color: #ffffff !important;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px !important;
-    padding: 10px !important;
-    width: 100%;
+  /* Button Styling */
+  .ml-button-horizontal {
+    width: auto; // Button passt sich seiner Textbreite an
+
+    button.primary {
+      background-color: var(--color-light, #b18724) !important;
+      border: 1px solid var(--color-light, #b18724) !important;
+      border-radius: 3px !important;
+      color: #ffffff !important;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px !important;
+      font-weight: 500;
+      padding: 12px 25px !important;
+      white-space: nowrap;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: var(--color-dark, #052a33) !important;
+        border-color: var(--color-dark, #052a33) !important;
+      }
+    }
   }
 }
 
-/* Fehlerzustand bei falscher E-Mail */
 .ml-error input {
   border-color: red !important;
 }
 
 /* ==========================================================================
-   3. DEIN EIGENES LAYOUT (Wrapper, Grid & Text)
+   3. DEIN SEITEN-LAYOUT (Wrapper & Grid)
    ========================================================================== */
 .wrapper {
   display: block;
   width: 100%;
   background-color: #123b45;
-  margin: auto;
 }
 
 .form {
-  width: 1100px;
-  margin: auto;
-  padding: 4rem 0;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 1rem;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .col {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1 1 50%;
+  flex: 1;
 }
 
 .text {
   color: #ffffff;
-  padding: 1rem;
   text-align: left;
 
   h1 {
     font-family: 'Montserrat Light', sans-serif;
-    font-size: var(--size-1);
+    font-size: var(--size-4, 2.5rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
   }
 
   span {
     font-family: 'Funky-signature', sans-serif;
-    font-size: var(--size-5);
-    color: var(--color-white);
+    font-size: var(--size-5, 4rem);
+    color: var(--color-white, #ffffff);
+    display: block;
   }
 
   p {
     font-family: 'Montserrat Regular', sans-serif;
-    font-size: var(--size--2);
-  }
-}
-
-.success {
-  border-radius: 3px;
-  color: var(--color-light);
-  background-color: #fff;
-
-  h1 {
-    font-family: 'Montserrat Regular', sans-serif;
-    font-size: var(--size-0);
+    font-size: var(--size--2, 1rem);
+    line-height: 1.6;
   }
 }
 
 /* ==========================================================================
-   4. MEDIA QUERIES (Responsive Design)
+   4. RESPONSIVE DESIGN (Wechsel zu Spalten auf kleinen Screens)
    ========================================================================== */
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1024px) {
   .form {
-    width: 80vw;
     flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 2rem;
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .ml-form-formContent.horozintalForm .ml-form-horizontalRow {
-    flex-direction: column;
-    width: 100% !important;
+@media screen and (max-width: 768px) {
+  #mlb2-22029023.ml-form-embedContainer {
+    // Auf Handys wird aus der Reihe eine Spalte untereinander
+    .ml-form-horizontalRow,
+    .ml-input-horizontal {
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+    }
 
-    .ml-input-horizontal,
-    .horizontal-fields,
-    .ml-button-horizontal {
-      width: 100% !important;
-      padding-right: 0px !important;
-      margin-bottom: 10px !important;
+    .ml-button-horizontal,
+    .ml-button-horizontal button {
+      width: 100% !important; // Button nimmt auf Mobile volle Breite ein
     }
   }
 }
