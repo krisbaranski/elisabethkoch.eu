@@ -38,12 +38,7 @@
   // Nutzt deine CSS-Variable für den Hintergrund
   background-color: var(--color-dark);
   color: var(--color-white);
-<<<<<<< HEAD
   padding: 2rem;
-=======
-  padding: 4rem;
-  max-height: 700px;
->>>>>>> c93166c3c468cb9e9b0bc7e52b89ef5528225773
 
   // Container für den Text, damit die Liste linksbündig bleibt, aber als Block zentriert ist
   .text-content {
@@ -137,19 +132,12 @@
   .boxes {
     grid-template-columns: 1fr; /* 1 column */
     grid-template-rows: auto; /* Automatic row heights */
-<<<<<<< HEAD
     margin-bottom: 0;
     background-color: var(--color-white);
-=======
-    margin: 0 auto;
-    padding: 0 auto;
-    margin-bottom: 7rem;
->>>>>>> c93166c3c468cb9e9b0bc7e52b89ef5528225773
   }
 
   .box_1 {
     max-width: 100%;
-<<<<<<< HEAD
     margin-top: 2rem;
     padding-top: 3rem;
   }
@@ -164,18 +152,6 @@
       margin: 0 auto;
       object-fit: cover;
       display: block;
-=======
-    padding-top: 6rem;
-  }
-  .box_2 {
-    width: 100%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-white);
-    img {
-      width: 67vw;
->>>>>>> c93166c3c468cb9e9b0bc7e52b89ef5528225773
     }
   }
 }
