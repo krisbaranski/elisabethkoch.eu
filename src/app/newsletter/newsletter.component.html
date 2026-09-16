@@ -15,25 +15,23 @@
       >
         <div class="ml-form-align-center">
           <div class="ml-form-embedWrapper embedForm">
-            <!-- FORMULAR-BEREICH (Wird nach dem Absenden ausgeblendet) -->
+            <!-- FORMULAR-BEREICH -->
             <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
               <div
                 class="ml-form-embedContent"
                 style="margin-bottom: 0px"
               ></div>
 
+              <!-- MINIMALE ÄNDERUNG: 'ngNoForm' hinzugefügt und 'target="_blank"' entfernt, damit kein neuer Tab aufreißt -->
               <form
                 ngNoForm
                 class="ml-block-form"
                 action="https://mailerlite.com"
-                data-code=""
                 method="post"
-                target="_blank"
               >
-                >
                 <div class="ml-form-formContent horozintalForm">
                   <div class="ml-form-horizontalRow">
-                    <!-- Eingabefelder nebeneinander -->
+                    <!-- Eingabefelder -->
                     <div class="ml-input-horizontal">
                       <div class="horizontal-fields name-field">
                         <div class="ml-field-group ml-field-name">
@@ -63,7 +61,7 @@
                       </div>
                     </div>
 
-                    <!-- Der Absenden Button direkt in der Reihe -->
+                    <!-- Absenden Button -->
                     <div class="ml-button-horizontal primary">
                       <button type="submit" class="primary">Absenden</button>
                     </div>
@@ -75,7 +73,7 @@
               </form>
             </div>
 
-            <!-- ERFOLGSMELDUNG (Standardmäßig versteckt, wird nach dem Absenden eingeblendet) -->
+            <!-- ERFOLGSMELDUNG -->
             <div class="ml-form-successBody row-success" style="display: none">
               <div class="ml-form-successContent">
                 <h4>Vielen Dank!</h4>
