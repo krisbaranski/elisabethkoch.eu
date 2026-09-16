@@ -42,7 +42,7 @@
   // Nutzt deine CSS-Variable für den Hintergrund
   background-color: var(--color-dark);
   color: var(--color-white);
-  padding: 4rem;
+  padding: 2rem;
 
   // Container für den Text, damit die Liste linksbündig bleibt, aber als Block zentriert ist
   .text-content {
@@ -54,13 +54,12 @@
     font-family: 'Montserrat Bold', sans-serif;
     font-size: var(--size-4);
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 
   p {
     font-family: 'Montserrat Regular', sans-serif;
     font-size: var(--size--2);
-    // Farbe auf hell geändert, da var(--color-dark) auf dunklem Grund unsichtbar wäre
     margin: 1rem 0;
   }
 }
@@ -131,35 +130,26 @@
   .boxes {
     grid-template-columns: 1fr; /* 1 column */
     grid-template-rows: auto; /* Automatic row heights */
-    grid-template-areas:
-      'box1'
-      'box2';
+    margin-bottom: 0;
+    background-color: var(--color-white);
   }
 
   .box_1 {
-    grid-area: box1;
     max-width: 100%;
     margin-top: 2rem;
+    padding-top: 3rem;
   }
   .box_2 {
-    grid-area: box2;
-    max-height: 60%;
-    width: 100%;
-  }
+    background-color: var(--color-white);
+    max-width: 600px;
+    margin: auto;
+    padding: 0 3rem;
 
-  .box-frame {
-    border-left: 1px solid var(--color-light);
-    border-right: none;
-    margin: 2rem 1rem;
-    padding-left: 2rem;
-    text-align: left;
-
-    h1 {
-      font-size: var(--size-5);
-    }
-
-    .handwrite {
-      font-size: clamp(4rem, 9vw, 8rem);
+    img {
+      height: auto;
+      margin: 0 auto;
+      object-fit: cover;
+      display: block;
     }
   }
 }
