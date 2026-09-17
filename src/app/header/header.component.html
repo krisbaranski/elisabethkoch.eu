@@ -67,7 +67,16 @@
             href="https://linkedin.com/in/elisabethkochstimmtraining"
             target="_blank"
           >
-            <img src="./assets/img/linkedin.svg" alt="linkedin" />
+            <img
+              [src]="
+                isSticky
+                  ? 'assets/img/linkedin_blue.svg'
+                  : isOpen
+                    ? 'assets/img/linkedin_blue.svg'
+                    : 'assets/img/linkedin_white.svg'
+              "
+              alt="linkedin"
+            />
           </a>
         </div>
 
