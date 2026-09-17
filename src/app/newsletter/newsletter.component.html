@@ -1,5 +1,6 @@
 <div class="wrapper">
   <div class="form">
+    <!-- Linke Spalte: Dein Text -->
     <div class="col text">
       <h1>
         {{ 'newsletter.title_1' | translate }}
@@ -8,87 +9,14 @@
       <p>{{ 'newsletter.text' | translate }}</p>
     </div>
 
+    <!-- Rechte Spalte: Hier klinkt sich MailerLite jetzt vollautomatisch ein -->
     <div class="col">
-      <div
-        id="mlb2-22029023"
-        class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-22029023"
-      >
-        <div class="ml-form-align-center">
-          <div class="ml-form-embedWrapper embedForm">
-            <!-- FORMULAR-BEREICH (row-form) -->
-            <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
-              <div
-                class="ml-form-embedContent"
-                style="margin-bottom: 0px"
-              ></div>
-
-              <!-- KORREKTUR: action-URL auf den universellen Empfänger geändert. 
-                   target schluckt das Wegspringen und (submit) tauscht die Boxen aus. -->
-              <form
-                ngNoForm
-                class="ml-block-form"
-                action="https://mailerlite.com"
-                method="POST"
-                target="newsletter-target-frame"
-                (submit)="onFormSubmit()"
-              >
-                <div class="ml-form-formContent horozintalForm">
-                  <div class="ml-form-horizontalRow">
-                    <div class="ml-input-horizontal">
-                      <div class="horizontal-fields name-field">
-                        <div class="ml-field-group ml-field-name">
-                          <input
-                            type="text"
-                            class="form-control"
-                            name="fields[name]"
-                            placeholder="Name"
-                            autocomplete="given-name"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div class="horizontal-fields email-field">
-                        <div class="ml-field-group ml-field-email">
-                          <input
-                            type="email"
-                            class="form-control"
-                            name="fields[email]"
-                            placeholder="Email"
-                            autocomplete="email"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="ml-button-horizontal primary">
-                      <button type="submit" class="primary">Absenden</button>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Wichtig für die korrekte Zuordnung im MailerLite-System -->
-                <input type="hidden" name="ml-submit" value="1" />
-              </form>
-            </div>
-
-            <!-- ERFOLGSMELDUNG (row-success) -->
-            <div class="ml-form-successBody row-success" style="display: none">
-              <div class="ml-form-successContent">
-                <h4>Vielen Dank!</h4>
-                <p>Das hat geklappt. Du erhältst meinen Newsletter.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- 
+        Das ist der offizielle Platzhalter für dein Formular (ID: 3oWMzk).
+        Das Universal-Script aus deiner index.html erkennt dieses Element 
+        und baut das funktionierende Formular inklusive Erfolgstext direkt hier ein.
+      -->
+      <div class="ml-embedded" data-form="3oWMzk"></div>
     </div>
   </div>
 </div>
-
-<!-- Das unsichtbare Empfänger-Feld für die Formulardaten -->
-<iframe
-  name="newsletter-target-frame"
-  id="newsletter-target-frame"
-  style="display: none"
-></iframe>

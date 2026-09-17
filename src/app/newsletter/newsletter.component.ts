@@ -1,36 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-newsletter',
   templateUrl: './newsletter.component.html',
   styleUrls: ['./newsletter.component.scss'],
 })
-export class NewsletterComponent implements OnInit {
+export class NewsletterComponent implements AfterViewInit {
   constructor() {}
 
-  ngOnInit(): void {
-    // Falls das MailerLite Skript doch irgendwo greift, fangen wir es hier ab
-    (window as any).ml_webform_success_22029023 = () => {
-      this.showSuccessText();
-    };
-  }
-
-  // Wird direkt beim Klick auf den Absenden-Button ausgeführt
-  onFormSubmit(): void {
-    this.showSuccessText();
-  }
-
-  private showSuccessText(): void {
-    const formContainer = document.querySelector(
-      '.ml-subscribe-form-22029023 .row-form',
-    ) as HTMLElement;
-    const successContainer = document.querySelector(
-      '.ml-subscribe-form-22029023 .row-success',
-    ) as HTMLElement;
-
-    if (formContainer && successContainer) {
-      formContainer.style.display = 'none';
-      successContainer.style.display = 'block';
-    }
+  ngAfterViewInit(): void {
+    // Kleiner Timeout, damit Angular das HTML zu 100% fertig im Browser gerendert hat
+    setTimeout(() => {
+      // Prüft, ob das Universal-Skript aus der index.html bereitsteht
+      if ((window as any).ml) {
+        // Zwingt MailerLite, die Seite nach dem Platzhalter "3oWMzk" abzusuchen
+        // und das Formular live reinzuladen!
+        (window as any).ml('account', '1264344');
+      }
+    }, 100);
   }
 }

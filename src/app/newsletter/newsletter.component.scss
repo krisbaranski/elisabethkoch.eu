@@ -97,8 +97,10 @@
 .wrapper {
   display: block;
   width: 100%;
-  background-color: #123b45;
+  background-color: var(--color-dark);
   margin: auto;
+  border-top: var(--color-light) solid 1px;
+  border-bottom: var(--color-light) solid 1px;
 }
 
 .form {
