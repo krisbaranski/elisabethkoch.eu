@@ -3,17 +3,6 @@
     <mat-toolbar>
       <div class="logo">
         <img src="assets/img/logo_darkblue.svg" alt="logo" routerLink="/" />
-        <!-- <img
-          [src]="
-            isSticky
-              ? 'assets/img/logo_darkblue.svg'
-              : isOpen
-              ? 'assets/img/logo_darkblue.svg'
-              : 'assets/img/logo_white.png'
-          "
-          alt="logo"
-          routerLink="/"
-        /> -->
       </div>
       <div class="menu">
         <div>
@@ -178,35 +167,14 @@
             routerLink="contact"
             >{{ 'menu.contact' | translate }}</a
           >
-        </div>
 
-        <!-- Spacer -->
-        <div class="spacer"></div>
-
-        <!--
-        <div class="translate_sidebar">
-          <a
-            class="langLink sidebar_item"
-            *ngIf="currentLanguage !== 'de'"
-            (click)="changeLanguage('de')"
-            >DE</a
-          >
-          <a
-            class="langLink sidebar_item"
-            *ngIf="currentLanguage !== 'en'"
-            (click)="changeLanguage('en')"
-            >EN</a
-          >
-        </div> -->
-
-        <!-- Social links -->
-        <div class="social_sidebar">
+          <!-- Social links -->
           <a
             (click)="sidenav.close()"
             href="https://linkedin.com/in/elisabethkochstimmtraining"
             target="_blank"
           >
-            <img src="./assets/img/linkedin.svg" alt="linkedin" />
+            <img src="./assets/img/linkedin_white.svg" alt="linkedin" />
           </a>
         </div>
       </mat-sidenav>
