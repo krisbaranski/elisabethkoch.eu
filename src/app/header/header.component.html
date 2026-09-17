@@ -60,6 +60,15 @@
             routerLink="contact"
             >{{ 'menu.contact' | translate }}</a
           >
+
+          <a
+            class="social_display"
+            [routerLinkActive]="'active'"
+            href="https://linkedin.com/in/elisabethkochstimmtraining"
+            target="_blank"
+          >
+            <img src="./assets/img/linkedin.svg" alt="linkedin" />
+          </a>
         </div>
 
         <!-- Spacer -->
@@ -185,14 +194,7 @@
         <div class="social_sidebar">
           <a
             (click)="sidenav.close()"
-            href="https://instagram.com/stimme_u_gelungener_auftritt"
-            target="_blank"
-          >
-            <img src="./assets/img/instagram.svg" alt="instagram" />
-          </a>
-          <a
-            (click)="sidenav.close()"
-            href="https://linkedin.com/in/elisabeth-koch-stimmtraining"
+            href="https://linkedin.com/in/elisabethkochstimmtraining"
             target="_blank"
           >
             <img src="./assets/img/linkedin.svg" alt="linkedin" />

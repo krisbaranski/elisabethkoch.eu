@@ -52,6 +52,27 @@ menu {
       border-radius: 0;
     }
   }
+  a.social_display {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0.8em;
+    background-color: transparent;
+    border: 1px solid transparent;
+    vertical-align: middle;
+
+    img {
+      width: 25px;
+      height: 25px;
+      display: block;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        border-radius: 0;
+      }
+    }
+  }
 
   .title-sublinks {
     cursor: pointer;
@@ -136,44 +157,44 @@ menu {
   background-color: transparent;
 }
 
-.langLink {
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  cursor: pointer;
-}
+// .langLink {
+//   margin: 0;
+//   padding: 0;
+//   font-weight: 600;
+//   cursor: pointer;
+// }
 
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+// .social {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
 
-  a img {
-    // padding: 1px;
-    background-color: var(--color-dark);
-    border-radius: 6px;
-    margin: 0 5px;
-  }
-}
+//   a img {
+//     // padding: 1px;
+//     background-color: var(--color-dark);
+//     border-radius: 6px;
+//     margin: 0 5px;
+//   }
+// }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// SIDE MENU
+// MEDIA QUERIES
+//
 
 #menuIcon,
 .sidenav {
   display: none;
 }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// MEDIA QUERIES
-//
 @media screen and (max-width: 1200px) {
   header {
     display: flex;
