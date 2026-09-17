@@ -9,21 +9,28 @@ export class NewsletterComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // MailerLite-Erfolgsfunktion im globalen Fenster-Objekt registrieren
+    // Falls das MailerLite Skript doch irgendwo greift, fangen wir es hier ab
     (window as any).ml_webform_success_22029023 = () => {
-      // Formular suchen und ausblenden
-      const formContainer = document.querySelector(
-        '.ml-subscribe-form-22029023 .row-form',
-      ) as HTMLElement;
-      // Erfolgstext suchen und einblenden
-      const successContainer = document.querySelector(
-        '.ml-subscribe-form-22029023 .row-success',
-      ) as HTMLElement;
-
-      if (formContainer && successContainer) {
-        formContainer.style.display = 'none';
-        successContainer.style.display = 'block';
-      }
+      this.showSuccessText();
     };
+  }
+
+  // Wird direkt beim Klick auf den Absenden-Button ausgeführt
+  onFormSubmit(): void {
+    this.showSuccessText();
+  }
+
+  private showSuccessText(): void {
+    const formContainer = document.querySelector(
+      '.ml-subscribe-form-22029023 .row-form',
+    ) as HTMLElement;
+    const successContainer = document.querySelector(
+      '.ml-subscribe-form-22029023 .row-success',
+    ) as HTMLElement;
+
+    if (formContainer && successContainer) {
+      formContainer.style.display = 'none';
+      successContainer.style.display = 'block';
+    }
   }
 }

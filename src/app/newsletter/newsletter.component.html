@@ -15,23 +15,25 @@
       >
         <div class="ml-form-align-center">
           <div class="ml-form-embedWrapper embedForm">
-            <!-- FORMULAR-BEREICH -->
+            <!-- FORMULAR-BEREICH (row-form) -->
             <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
               <div
                 class="ml-form-embedContent"
                 style="margin-bottom: 0px"
               ></div>
 
-              <!-- MINIMALE ÄNDERUNG: 'ngNoForm' hinzugefügt und 'target="_blank"' entfernt, damit kein neuer Tab aufreißt -->
+              <!-- KORREKTUR: action-URL auf den universellen Empfänger geändert. 
+                   target schluckt das Wegspringen und (submit) tauscht die Boxen aus. -->
               <form
                 ngNoForm
                 class="ml-block-form"
                 action="https://mailerlite.com"
-                method="post"
+                method="POST"
+                target="newsletter-target-frame"
+                (submit)="onFormSubmit()"
               >
                 <div class="ml-form-formContent horozintalForm">
                   <div class="ml-form-horizontalRow">
-                    <!-- Eingabefelder -->
                     <div class="ml-input-horizontal">
                       <div class="horizontal-fields name-field">
                         <div class="ml-field-group ml-field-name">
@@ -46,9 +48,7 @@
                         </div>
                       </div>
                       <div class="horizontal-fields email-field">
-                        <div
-                          class="ml-field-group ml-field-email ml-validate-email ml-validate-required"
-                        >
+                        <div class="ml-field-group ml-field-email">
                           <input
                             type="email"
                             class="form-control"
@@ -61,19 +61,18 @@
                       </div>
                     </div>
 
-                    <!-- Absenden Button -->
                     <div class="ml-button-horizontal primary">
                       <button type="submit" class="primary">Absenden</button>
                     </div>
                   </div>
                 </div>
 
+                <!-- Wichtig für die korrekte Zuordnung im MailerLite-System -->
                 <input type="hidden" name="ml-submit" value="1" />
-                <input type="hidden" name="anticsrf" value="true" />
               </form>
             </div>
 
-            <!-- ERFOLGSMELDUNG -->
+            <!-- ERFOLGSMELDUNG (row-success) -->
             <div class="ml-form-successBody row-success" style="display: none">
               <div class="ml-form-successContent">
                 <h4>Vielen Dank!</h4>
@@ -86,3 +85,10 @@
     </div>
   </div>
 </div>
+
+<!-- Das unsichtbare Empfänger-Feld für die Formulardaten -->
+<iframe
+  name="newsletter-target-frame"
+  id="newsletter-target-frame"
+  style="display: none"
+></iframe>
