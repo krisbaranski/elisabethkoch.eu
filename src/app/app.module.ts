@@ -14,6 +14,7 @@ import {
   provideHttpClient,
   withInterceptorsFromDi,
 } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { AboutmeComponent } from './profile/aboutme/aboutme.component';
 import { AboutmeShortComponent } from './home/aboutme-short/aboutme-short.component';
@@ -45,7 +46,6 @@ import { HeroContactComponent } from './contact/hero-contact/hero-contact.compon
 import { HeroLionComponent } from './courses/women/hero-lion/hero-lion.component';
 import { HeroTrainComponent } from './trainings/hero-train/hero-train.component';
 import { HeroCoopComponent } from './cooperation/hero-coop/hero-coop.component';
-
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { OfferComponent } from './offer/offer.component';
@@ -80,11 +80,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { PopupComponent } from './popup/popup.component';
 
 import { PLATFORM_ID, inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import { Observable, from, of } from 'rxjs';
 
-// import deLang from '../assets/i18n/de.json';
-// import enLang from '../assets/i18n/en.json';
+// JSONs direkt importieren für absolute Gleichheit auf dem Server
+import deJson from '../assets/i18n/de.json';
+import enJson from '../assets/i18n/en.json';
 
 // 🌟 DEINE ECHTEN TEXTE FÜR DEN SERVER-START (Ergänze hier die wichtigsten Keys deiner de.json):
 const DE_SERVER_TEXTS = {
@@ -116,13 +117,19 @@ const EN_SERVER_TEXTS = {
 
 export class TranslateUniversalLoader implements TranslateLoader {
   private platformId = inject(PLATFORM_ID);
+  private http = inject(HttpClient);
 
   public getTranslation(lang: string): Observable<any> {
-    if (isPlatformBrowser(this.platformId)) {
-      return from(fetch(`/assets/i18n/${lang}.json`).then((res) => res.json()));
+    // 1. Wenn wir auf dem Server sind: Sofort das exakte JSON zurückgeben
+    if (isPlatformServer(this.platformId)) {
+      const staticData = lang === 'de' ? deJson : enJson;
+      return of(staticData);
     }
-    const staticData = lang === 'de' ? DE_SERVER_TEXTS : EN_SERVER_TEXTS;
-    return of(staticData);
+
+    // 2. Wenn wir im Browser sind: HttpClient nutzen.
+    // Durch Angulars SSR TransferState "weiß" der HttpClient oft schon,
+    // was der Server geladen hat und verhindert das asynchrone Flackern.
+    return this.http.get(`./assets/i18n/${lang}.json`);
   }
 }
 
