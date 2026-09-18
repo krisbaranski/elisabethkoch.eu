@@ -176,6 +176,23 @@
           >
             <img src="./assets/img/linkedin_white.svg" alt="linkedin" />
           </a>
+
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            (click)="navigateAndClose('impressum')"
+            [routerLinkActive]="'active'"
+            routerLink="impressum"
+            >Impressum</a
+          >
+          <a
+            class="sidebar_item"
+            (click)="sidenav.close()"
+            (click)="navigateAndClose('privacy')"
+            [routerLinkActive]="'active'"
+            routerLink="privacy"
+            >{{ 'menu.policy' | translate }}</a
+          >
         </div>
       </mat-sidenav>
     </mat-sidenav-container>
