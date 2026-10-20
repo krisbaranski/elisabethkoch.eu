@@ -1,0 +1,28 @@
+# Allow main search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Explicitly allow OpenAI's web crawlers (ChatGPT)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Explicitly allow Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Explicitly allow Google's AI models (Gemini / Google AI)
+User-agent: Google-Extended
+Allow: /
+
+# Explicitly allow Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+# Explicitly allow Apple's AI crawler
+User-agent: Applebot-Extended
+Allow: /
+
+# 💡 LINK YOUR SITEMAP HERE (Make sure this matches your actual filename)
+Sitemap: https://elisabethkoch.eu/sitemap.xml

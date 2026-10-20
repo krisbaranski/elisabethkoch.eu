@@ -52,20 +52,81 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Stimmtraining & Stimmcoaching",
-        "provider": {
-          "@type": "ProfessionalService",
-          "name": "Elisabeth Koch - Stimme & gelungener Auftritt"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Berlin"
-        },
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "Frauen / Frauen in Führungspositionen"
-        }
+        "@graph": [
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://elisabethkoch.eu",
+            "name": "Elisabeth Koch - Stimme & gelungener Auftritt",
+            "image": "https://www.elisabethkoch.eu/assets/img/aboutme1.jpg",
+            "url": "https://elisabethkoch.eu",
+            "telephone": "+49-176-72173650",
+            "priceRange": "€€€",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Behaimstrasse 27",
+              "addressLocality": "Berlin",
+              "postalCode": "13086",
+              "addressCountry": "DE"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 52.550366,
+              "longitude": 13.4463586
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            },
+            "sameAs": ["https://linkedin.com"],
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": "https://tidycal.com/elisabethkoch/30-minute-meeting",
+              "result": {
+                "@type": "EventReservation",
+                "name": "Kostenloses Erstgespräch vereinbaren"
+              }
+            }
+          },
+          {
+            "@type": "Service",
+            "serviceType": "Stimmtraining & Stimmcoaching (Online & Präsenz)",
+            "provider": {
+              "@type": "ProfessionalService",
+              "@id": "https://elisabethkoch.eu"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Germany"
+              },
+              {
+                "@type": "Country",
+                "name": "Austria"
+              },
+              {
+                "@type": "Country",
+                "name": "Switzerland"
+              },
+              {
+                "@type": "City",
+                "name": "Berlin"
+              }
+            ],
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Frauen / Frauen in Führungspositionen und Führungskräfte"
+            },
+            "description": "Professionelles, individuelles Stimmcoaching und Rhetorik-Training für Frauen und Führungskräfte. Flexibel online via Video-Call im gesamten DACH-Raum oder persönlich in Berlin-Weißensee."
+          }
+        ]
       }
     </script>
   </head>
