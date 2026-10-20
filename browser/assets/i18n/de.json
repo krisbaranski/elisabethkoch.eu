@@ -10,7 +10,7 @@
   },
   "home": {
     "title_1": "Frei sprechen, kraftvoll auftreten!",
-    "title_2": "Entfalte Dein Stimmpotenzial!",
+    "title_2": "Entfalte Deine Stimmpräsenz!",
     "box_1": "Stimme",
     "box_2": "Vertrauen",
     "box_3": "Präsenz",
@@ -176,6 +176,14 @@
       "link": "Zu den Trainings"
     },
     "link": "Mehr »"
+  },
+  "cooperation": {
+    "hero": {
+      "title": "Veränderungen überzeugend kommunizieren.",
+      "text_1": "Veränderung braucht Klarheit. Führung braucht Präsenz.",
+      "text_2": "Victor Rochow und Elisabeth Koch verbinden zwei Perspektiven, die in Veränderungsprozessen zusammengehören: Führung, Organisation und Veränderung auf der einen Seite – Stimme Präsenz und überzeugende Kommunikation auf der anderen.",
+      "text_3": "Gemeinsam unterstützen sie Führungskräfte dabei, Veränderungen überzeugend zu kommunizieren und zugleich auch in anspruchsvollen Situationen Orientierung zu geben."
+    }
   },
   "courses": {
     "title_1": "Kurse",
@@ -461,6 +469,9 @@
     "title": "Kundenstimmen",
     "text": "„When your voice brings you joy, you're the best of yourself!”",
     "author": "Celine Dion",
+    "text_0": "Und Du? Worauf wartest Du. ",
+    "author_0": "Deine Kundenstimme",
+    "pagename_0": "Lass und sprechen",
     "text_1": " „Das Stimmtraining mit Elisabeth hat mir viel Selbstsicherheit und Freude am Sprechen gegeben. Ich kann es nur empfehlen! ”",
     "author_1": "Karina F.",
     "text_2_1": " „Die Arbeit mit Elisabeth hat mir eine solide Basis für mein Instrument Stimme geschenkt. Ich nehme meine Stimme viel bewusster wahr, kann mit ihr spielen und mich auf ihre Wirkung verlassen.”",
@@ -484,8 +495,16 @@
     "author_5": "Daniel Aichinger / 50 Jahre / Schauspieler & Ernährungsberater",
     "link_5": "https://pieceofcake.coach/",
     "pagename_5": "piece of cake",
+    "author_6": "Celine Dion",
     "text_6": "„When your voice brings you joy, you're the best of yourself!”",
-    "author_6": "Celine Dion"
+    "text_7": "„Mit feinen Antennen und Humor hat Elisabeth meine Körpersprache und meine Stimme für mich bearbeitbar gemacht. Ich kann meine Kompetenz jetzt viel besser abrufen, souveräner auftreten und bin viel intensiver mit meiner Sprache und meiner Stimme verbunden.”",
+    "author_7": "Jütika, Produktmanagement, dt. Konzern",
+    "link_7": "",
+    "pagename_7": "",
+    "text_8": "„Ich spreche jetzt alles so klar und deutlich aus und dadurch wird auch das Ergebnis klarer.”",
+    "author_8": "Julia Kaiser, selbstständige immobilienverwalterin",
+    "link_8": "https://kaiser-hv.com/",
+    "pagename_8": "kaiser-hv"
   },
   "newsletter": {
     "title_1": "Komm in den",
