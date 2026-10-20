@@ -12,6 +12,10 @@
       "destination": "/dist/app/browser/assets/sitemap.xml"
     },
     {
+      "source": "/robots.txt",
+      "destination": "/dist/app/browser/assets/robots.txt"
+    },
+    {
       "source": "/(assets/.*|.*\\.(?:js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|webm|mp4))$",
       "destination": "/dist/app/browser/$1"
     },
