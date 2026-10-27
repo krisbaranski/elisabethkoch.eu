@@ -30,7 +30,14 @@
       "source": "/(assets/.*|.*\\.(?:js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|webm|mp4))$",
       "destination": "/dist/app/browser/$1"
     },
-
+    {
+      "source": "/blog/wp-admin",
+      "destination": "http://elisabethkoch.eu"
+    },
+    {
+      "source": "/blog/wp-login.php",
+      "destination": "http://elisabethkoch.eu"
+    },
     {
       "source": "/blog",
       "destination": "http://elisabethkoch.eu/blog"
