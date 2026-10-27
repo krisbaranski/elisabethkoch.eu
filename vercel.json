@@ -15,6 +15,19 @@
           "value": "text/html; charset=utf-8"
         }
       ]
+    },
+    {
+      "source": "/blog/:path*",
+      "headers": [
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "0"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+        }
+      ]
     }
   ],
   "rewrites": [
@@ -32,7 +45,7 @@
     },
     {
       "source": "/blog/wp-admin",
-      "destination": "http://elisabethkoch.eu"
+      "destination": "https://elisabethkoch.eu"
     },
     {
       "source": "/blog/wp-login.php",
@@ -40,7 +53,7 @@
     },
     {
       "source": "/blog",
-      "destination": "http://elisabethkoch.eu/blog"
+      "destination": "https://elisabethkoch.eu/blog"
     },
     {
       "source": "/blog/:path*",
