@@ -18,6 +18,7 @@ import {
 import { AppComponent } from './app.component';
 import { AboutmeComponent } from './profile/aboutme/aboutme.component';
 import { AboutmeShortComponent } from './home/aboutme-short/aboutme-short.component';
+import { AnalyseComponent } from './analyse/analyse.component';
 import { AquaintmentComponent } from './contact/aquaintment/aquaintment.component';
 import { BenefitsShortComponent } from './courses/women/benefits-short/benefits-short.component';
 import { BoxesComponent } from './boxes/boxes.component';
@@ -37,7 +38,6 @@ import { FactsComponent } from './profile/facts/facts.component';
 import { FaqComponent } from './home/faq/faq.component';
 import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
 import { FeedbackComponent } from './feedback/feedback.component';
-import { FirstAppointmentComponent } from './contact/first-appointment/first-appointment.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
@@ -59,7 +59,6 @@ import { SingleTrainingComponent } from './trainings/single-training/single-trai
 import { SpacerComponent } from './spacer/spacer.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { Tidycal30Component } from './contact/tidycal-30/tidycal-30.component';
-import { Tidycal60Component } from './contact/tidycal-60/tidycal-60.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { TrainingsShortComponent } from './home/trainings-short/trainings-short.component';
 import { WeWorkComponent } from './trainings/we-work/we-work.component';
@@ -143,6 +142,7 @@ export function createTranslateLoader() {
     AppComponent,
     AboutmeComponent,
     AboutmeShortComponent,
+    AnalyseComponent,
     AquaintmentComponent,
     BenefitsShortComponent,
     BoxesComponent,
@@ -162,7 +162,6 @@ export function createTranslateLoader() {
     FaqComponent,
     FeedbacksComponent,
     FeedbackComponent,
-    FirstAppointmentComponent,
     FooterComponent,
     HeaderComponent,
     HeroComponent,
@@ -185,7 +184,6 @@ export function createTranslateLoader() {
     SpacerComponent,
     TestimonialComponent,
     Tidycal30Component,
-    Tidycal60Component,
     TrainingsComponent,
     TrainingsShortComponent,
     WeWorkComponent,

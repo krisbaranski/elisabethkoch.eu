@@ -8,6 +8,7 @@ import { CooperationComponent } from './cooperation/cooperation.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { AnalyseComponent } from './analyse/analyse.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -15,7 +16,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { WomenComponent } from './courses/women/women.component';
 import { ColourComponent } from './courses/colour/colour.component';
 import { AquaintmentComponent } from './contact/aquaintment/aquaintment.component';
-import { FirstAppointmentComponent } from './contact/first-appointment/first-appointment.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'HomePage' } },
@@ -48,12 +48,12 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
-    children: [
-      { path: 'aquaintment', component: AquaintmentComponent },
-      { path: 'first-appointment', component: FirstAppointmentComponent },
-      { path: '', redirectTo: 'women', pathMatch: 'full' }, // Default child route
-    ],
     data: { animation: 'ContactPage' },
+  },
+  {
+    path: 'analyse',
+    component: AnalyseComponent,
+    data: { animation: 'AnalysePage' },
   },
   {
     path: 'impressum',
