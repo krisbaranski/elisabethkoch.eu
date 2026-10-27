@@ -30,6 +30,15 @@
       "source": "/(assets/.*|.*\\.(?:js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|webm|mp4))$",
       "destination": "/dist/app/browser/$1"
     },
+
+    {
+      "source": "/blog",
+      "destination": "http://elisabethkoch.eu/blog"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "http://elisabethkoch.eu/blog/:path*"
+    },
     {
       "source": "/(.*)",
       "destination": "/api/index.js"
