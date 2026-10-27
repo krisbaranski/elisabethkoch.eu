@@ -21,6 +21,7 @@ import { AboutmeShortComponent } from './home/aboutme-short/aboutme-short.compon
 import { AnalyseComponent } from './analyse/analyse.component';
 import { AquaintmentComponent } from './contact/aquaintment/aquaintment.component';
 import { BenefitsShortComponent } from './courses/women/benefits-short/benefits-short.component';
+import { BlogComponent } from './blog/blog.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
 import { BoxesWomenComponent } from './courses/women/boxes-women/boxes-women.component';
@@ -145,6 +146,7 @@ export function createTranslateLoader() {
     AnalyseComponent,
     AquaintmentComponent,
     BenefitsShortComponent,
+    BlogComponent,
     BoxesComponent,
     BoxesHomeComponent,
     BoxesWomenComponent,
