@@ -1,19 +1,26 @@
-<div class="tidycal">
-  <iframe
-    src="https://tidycal.com/elisabethkoch/30-minute-meeting"
-    #tidycalFrame
-    title="TidyCal"
-    allowfullscreen
-    scrolling="no"
-  ></iframe>
-  <div>
-    <script
-      async=""
-      consent-by="services"
-      consent-id="2944"
-      type="application/javascript"
-      src="https://asset-tidycal.b-cdn.net/js/embed.js"
-      consent-transaction-complete="1"
-    ></script>
+@if (isBrowser) {
+  <div class="tidycal">
+    <iframe
+      src="https://tidycal.com/elisabethkoch/30-minute-meeting"
+      #tidycalFrame
+      title="TidyCal"
+      allowfullscreen
+      scrolling="auto"
+    ></iframe>
+    <div>
+      <script
+        async=""
+        consent-by="services"
+        consent-id="2944"
+        type="application/javascript"
+        src="https://asset-tidycal.b-cdn.net/js/embed.js"
+        consent-transaction-complete="1"
+      ></script>
+    </div>
   </div>
-</div>
+} @else {
+  <!-- Platzhalter für den Server (SSR), damit das Layout stabil bleibt -->
+  <div class="tidycal-placeholder">
+    <p>Lade Kalender...</p>
+  </div>
+}

@@ -1,26 +1,69 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  Input,
+  OnDestroy,
+  ViewChild,
+  inject,
+  PLATFORM_ID,
+} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
+// Sagt TypeScript, dass das TidyCal-Skript diese Funktion global bereitstellt
+declare var iFrameResize: any;
 @Component({
   selector: 'app-analyse',
   templateUrl: './analyse.component.html',
   styleUrl: './analyse.component.scss',
 })
-export class AnalyseComponent implements OnInit {
-  private titleService = inject(Title);
-  private metaService = inject(Meta);
+export class AnalyseComponent implements AfterViewInit, OnDestroy {
+  @Input() src = 'https://tidycal.com';
 
-  ngOnInit() {
-    // 🚀 Google-Titel für die Kontaktseite
-    this.titleService.setTitle(
-      'Professionelle Stimmanalyse | Elisabeth Koch Berlin',
-    );
+  @ViewChild('tidycalFrame', { static: false })
+  tidycalFrame!: ElementRef<HTMLIFrameElement>;
 
-    // 🚀 Google-Beschreibung
-    this.metaService.updateTag({
-      name: 'description',
-      content:
-        'Entdecken Sie das volle Potenzial Ihrer Stimme. Mit einer professionellen Stimmanalyse decken wir Stärken und Blockaden auf. Jetzt online Termin vereinbaren!',
-    });
+  isBrowser: boolean = false;
+  private platformId = inject(PLATFORM_ID);
+  private resizerInstance: any = null;
+
+  constructor() {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
+
+  ngAfterViewInit(): void {
+    if (!this.isBrowser) {
+      return;
+    }
+
+    if (this.tidycalFrame && this.tidycalFrame.nativeElement) {
+      const iframeEl = this.tidycalFrame.nativeElement;
+
+      iframeEl.onload = () => {
+        // Prüfen, ob die Funktion vom TidyCal-Skript geladen wurde
+        if (typeof iFrameResize === 'function') {
+          this.resizerInstance = iFrameResize(
+            {
+              log: false,
+              checkOrigin: false,
+              minHeight: 580,
+              heightCalculationMethod: 'lowestElement', // Reagiert auf Mobilgeräten deutlich dynamischer
+            },
+            iframeEl,
+          );
+        }
+      };
+    }
+  }
+
+  ngOnDestroy(): void {
+    // Sauberes Entfernen der Instanz, falls vorhanden
+    if (
+      this.isBrowser &&
+      this.resizerInstance &&
+      this.resizerInstance[0]?.iFrameResizer
+    ) {
+      this.resizerInstance[0].iFrameResizer.close();
+    }
   }
 }
