@@ -47,7 +47,7 @@
       "destination": "http://elisabethkoch.eu/blog/:path*"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!blog).*)",
       "destination": "/api/index.js"
     }
   ]
