@@ -9,6 +9,9 @@ import {
   PLATFORM_ID,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { first } from 'rxjs/operators'; // 🌟 NEUER IMPORT!
+
+import { TranslateService } from '@ngx-translate/core';
 
 // Sagt TypeScript, dass das TidyCal-Skript diese Funktion global bereitstellt
 declare var iFrameResize: any;

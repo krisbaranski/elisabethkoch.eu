@@ -453,9 +453,11 @@
     },
     "analyse": {
       "title": "Stimmanalyse",
-      "text_1": "Deine Stimme zeigt, was in Dir steckt.",
-      "text_2": "Buch Dir hier Deine Stimmanalyse.",
-      "text_3": "Ich freue mich auf Dich!"
+      "text_1": [
+        "Deine Stimme zeigt, was in Dir steckt.",
+        "Buch Dir hier Deine Stimmanalyse.",
+        "Ich freu mich auf Dich!"
+      ]
     },
     "short": {
       "header_1": "Ich freue mich, von Dir zu",

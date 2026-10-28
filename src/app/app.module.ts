@@ -45,6 +45,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
+import { HeroAnalyseComponent } from './analyse/hero-analyse/hero-analyse.component';
 import { HeroBlogComponent } from './blog/hero-blog/hero-blog.component';
 import { HeroColourComponent } from './courses/colour/hero-colour/hero-colour.component';
 import { HeroContactComponent } from './contact/hero-contact/hero-contact.component';
@@ -172,6 +173,7 @@ export function createTranslateLoader() {
     FooterComponent,
     HeaderComponent,
     HeroComponent,
+    HeroAnalyseComponent,
     HeroBlogComponent,
     HeroColourComponent,
     HeroContactComponent,
