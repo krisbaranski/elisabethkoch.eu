@@ -13,14 +13,14 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     // 🌟 Optimal für die Google-Suche (Max. 60 Zeichen)
     this.titleService.setTitle(
-      'Stimmtraining & Auftrittscoaching für Frauen | Elisabeth Koch',
+      'Stimmtraining & Auftrittscoaching in Berlin | Elisabeth Koch',
     );
 
     // 🌟 Die Vorschau-Beschreibung in den Suchergebnissen (Max. 155 Zeichen)
     this.metaService.updateTag({
       name: 'description',
       content:
-        'Professionelles Stimmcoaching & Auftrittstraining für Frauen in Berlin. Lernen Sie, mit Ihrer Stimme zu überzeugen. Jetzt Termin vereinbaren!',
+        'Professionelles Stimmcoaching & Auftrittstraining in Berlin. Lernen Sie, mit Ihrer Stimme zu überzeugen. Jetzt Termin vereinbaren!',
     });
   }
 }
