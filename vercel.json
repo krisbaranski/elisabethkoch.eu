@@ -1,7 +1,6 @@
 {
   "version": 2,
   "cleanUrls": false,
-  "trailingSlash": true,
   "functions": {
     "api/index.js": {
       "includeFiles": "dist/app/**"
@@ -14,19 +13,6 @@
         {
           "key": "Content-Type",
           "value": "text/html; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/blog/:path*",
-      "headers": [
-        {
-          "key": "x-vercel-enable-rewrite-caching",
-          "value": "0"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
         }
       ]
     }
@@ -44,21 +30,9 @@
       "source": "/(assets/.*|.*\\.(?:js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|webm|mp4))$",
       "destination": "/dist/app/browser/$1"
     },
-    { "source": "/blog", "destination": "http://elisabethkoch.eu" },
+
     {
-      "source": "/blog/wp-admin",
-      "destination": "http://elisabethkoch.euwp-admin/"
-    },
-    {
-      "source": "/blog/wp-login.php",
-      "destination": "http://elisabethkoch.euwp-login.php"
-    },
-    {
-      "source": "/blog/:path*",
-      "destination": "http://elisabethkoch.eu:path*"
-    },
-    {
-      "source": "/((?!blog|wp-).*)",
+      "source": "/(.*)",
       "destination": "/api/index.js"
     }
   ]
