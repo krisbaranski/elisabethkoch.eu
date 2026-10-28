@@ -24,6 +24,7 @@ import { AnalyseComponent } from './analyse/analyse.component';
 import { AquaintmentComponent } from './contact/aquaintment/aquaintment.component';
 import { BenefitsShortComponent } from './courses/women/benefits-short/benefits-short.component';
 import { BlogComponent } from './blog/blog.component';
+import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { BoxesHomeComponent } from './home/boxes-home/boxes-home.component';
 import { BoxesWomenComponent } from './courses/women/boxes-women/boxes-women.component';
@@ -44,6 +45,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
+import { HeroBlogComponent } from './blog/hero-blog/hero-blog.component';
 import { HeroColourComponent } from './courses/colour/hero-colour/hero-colour.component';
 import { HeroContactComponent } from './contact/hero-contact/hero-contact.component';
 import { HeroLionComponent } from './courses/women/hero-lion/hero-lion.component';
@@ -149,6 +151,7 @@ export function createTranslateLoader() {
     AquaintmentComponent,
     BenefitsShortComponent,
     BlogComponent,
+    BlogDetailComponent,
     BoxesComponent,
     BoxesHomeComponent,
     BoxesWomenComponent,
@@ -169,6 +172,7 @@ export function createTranslateLoader() {
     FooterComponent,
     HeaderComponent,
     HeroComponent,
+    HeroBlogComponent,
     HeroColourComponent,
     HeroContactComponent,
     HeroLionComponent,
@@ -217,7 +221,10 @@ export function createTranslateLoader() {
     MatMenuModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([{ path: 'blog', component: BlogComponent }]),
+    RouterModule.forRoot([
+      { path: 'blog', component: BlogComponent },
+      { path: 'blog/:slug', component: BlogDetailComponent }, // Dynamic article lookup routing
+    ]),
   ],
   providers: [
     provideHttpClient(), // Ersetzt das alte HttpClientModule sauber für SSR
