@@ -10,6 +10,7 @@ export class HeroContactComponent {
   @Input() titleMedium = '';
   @Input() titleBig = '';
   @Input() text = '';
+  @Input() text_1 = '';
   @Input() link = '';
   @Input() button = '';
   @Input() showButton: boolean = true; // Control visibility

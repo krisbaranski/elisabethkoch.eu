@@ -8,12 +8,12 @@
   background-image: url('../../../assets/img/hero_bg.png');
   background-size: cover;
   background-position: center;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 .text {
   color: #ffffff;
-  max-width: 1200px;
+  max-width: 1300px;
   text-align: center;
   margin: auto;
   // align-content: center;
@@ -30,7 +30,7 @@
   h2 {
     font-family: 'Montserrat ExtraLight', sans-serif;
     font-size: var(--size-2);
-    max-width: 640px;
+    max-width: 700px;
     margin: auto;
     padding: 2rem;
     line-height: 1.4;
@@ -39,12 +39,16 @@
 
   p {
     font-family: 'Montserrat Regular', sans-serif;
-    font-size: var(--size--1);
+    font-size: var(--size-0);
     max-width: 700px;
     margin: auto;
+    padding: 1rem;
     line-height: 2;
-    padding: 1rem 1rem 9rem;
     text-wrap: pretty;
+  }
+
+  p .text_1 {
+    padding: 1rem 1rem 9rem;
   }
 
   .offer {
