@@ -12,16 +12,16 @@ interface BlogPost {
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css'],
+  styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent implements OnInit {
   // 1. Deine Artikelliste (Erweitere diese Liste einfach, wenn neue .md-Dateien dazukommen)
   allPosts: BlogPost[] = [
     {
-      title: 'Souveränes Auftreten im Beruf',
-      slug: 'souveraener-auftritt',
-      date: '2026-10-15',
-      fileName: 'auftritt.md',
+      title: 'Lampenfieber erfolgreich bekämpfen',
+      slug: 'lampenfieber',
+      date: '2026-10-28',
+      fileName: 'lampenfieber.md', // <-- Muss exakt dem Dateinamen entsprechen!
     },
     {
       title: 'Stimmtraining für Frauen',
@@ -51,7 +51,7 @@ export class BlogComponent implements OnInit {
 
   displayedPosts: BlogPost[] = []; // Artikel, die aktuell auf der Seite sichtbar sind
   currentPage: number = 1; // Die aktuelle Seite
-  postsPerPage: number = 3; // Wie viele Artikel sollen pro Seite sichtbar sein?
+  postsPerPage: number = 4; // Wie viele Artikel sollen pro Seite sichtbar sein?
   totalPages: number = 1; // Gesamtanzahl der Seiten
 
   constructor(private http: HttpClient) {}

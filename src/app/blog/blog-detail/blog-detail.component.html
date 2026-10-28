@@ -1,0 +1,9 @@
+<div class="post-detail-container">
+  <!-- Back Button navigation -->
+  <a routerLink="/blog" class="back-link">← Zurück zur Übersicht</a>
+
+  <article class="blog-post-content">
+    <!-- The structural ngx-markdown component parses everything automatically -->
+    <markdown [src]="markdownPath" *ngIf="markdownPath"></markdown>
+  </article>
+</div>

@@ -1,7 +1,44 @@
+<app-hero-blog
+  titleBig="blog.hero.title"
+  titleMedium="blog.hero.text"
+  text=""
+  [showButton]="false"
+/>
 <div class="wrapper">
-  <div class="text">
-    <!-- <h6>{{ 'contact.text_1' | translate }}</h6>
-        <h3>{{ 'contact.title' | translate }}</h3>
-        <p>{{ 'contact.text_2' | translate }}</p> -->
+  <div class="blog-grid">
+    <div *ngFor="let post of displayedPosts" class="blog-card">
+      <h2>{{ post.title }}</h2>
+      <p class="blog-date">
+        <small>{{ post.date | date: 'dd.MM.yyyy' }}</small>
+      </p>
+
+      <!-- Hier wird der vorgenerierte Vorschautext angezeigt -->
+      <p class="blog-preview">{{ post.previewText }}</p>
+
+      <!-- Link zum vollständigen Artikel -->
+      <a [routerLink]="['/blog', post.slug]" class="read-more-btn"
+        >Weiterlesen →</a
+      >
+    </div>
+  </div>
+
+  <!-- Dynamische Paginierungs-Buttons -->
+  <div class="pagination-controls" *ngIf="totalPages > 1">
+    <button
+      (click)="prevPage()"
+      [disabled]="currentPage === 1"
+      class="page-btn"
+    >
+      ← Zurück
+    </button>
+    <span class="page-info">Seite {{ currentPage }} von {{ totalPages }}</span>
+    <button
+      (click
+      leaping)="nextPage()"
+      [disabled]="currentPage === totalPages"
+      class="page-btn"
+    >
+      Weiter →
+    </button>
   </div>
 </div>
