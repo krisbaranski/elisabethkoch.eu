@@ -451,10 +451,11 @@
       "text_1": "für Deine klare Stimme und Deinen selbstbewussten Ausdruck!",
       "text_2": ""
     },
-    "first-appointment": {
-      "title": "Kostprobe dessen, wie Du deine Stimme zu Deinem Juwelen machen kannst",
-      "text_1": "Erstes Termin mit mir",
-      "text_2": "Hier kannst Du Dich anmelden und Dein erstes Termin auswählen."
+    "analyse": {
+      "title": "Stimmanalyse",
+      "text_1": "Deine Stimme zeigt, was in Dir steckt.",
+      "text_2": "Buch Dir hier Deine Stimmanalyse.",
+      "text_3": "Ich freue mich auf Dich!"
     },
     "short": {
       "header_1": "Ich freue mich, von Dir zu",
