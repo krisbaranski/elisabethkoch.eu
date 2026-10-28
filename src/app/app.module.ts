@@ -14,6 +14,8 @@ import {
   provideHttpClient,
   withInterceptorsFromDi,
 } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { MarkdownModule } from 'ngx-markdown';
 
 import { AppComponent } from './app.component';
 import { AboutmeComponent } from './profile/aboutme/aboutme.component';
@@ -200,6 +202,7 @@ export function createTranslateLoader() {
     BrowserAnimationsModule,
     CommonModule,
     FormsModule,
+    MarkdownModule.forRoot(),
     TranslateModule.forRoot({
       defaultLanguage: 'de',
       loader: {
@@ -212,8 +215,9 @@ export function createTranslateLoader() {
     MatSidenavModule,
     MatButtonModule,
     MatMenuModule,
-    ReactiveFormsModule,
     MatFormFieldModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([{ path: 'blog', component: BlogComponent }]),
   ],
   providers: [
     provideHttpClient(), // Ersetzt das alte HttpClientModule sauber für SSR
