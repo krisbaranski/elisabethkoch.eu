@@ -32,15 +32,15 @@
   width: 100%;
   max-width: 1400px; // Verhindert, dass die Boxen auf Ultra-Wide-Screens zu breit werden
   margin: 3rem auto 6rem;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   box-sizing: border-box;
 }
 
 .box {
   // Kein 'flex' mehr nötig, da wir Grid nutzen
   height: auto;
-  border: 3px solid #ffffff7a;
-  border-radius: 3px;
+  border: 1px solid #ffffff66;
+  border-radius: 6px;
   padding: 3rem;
   backdrop-filter: blur(1rem);
   background-color: #052a3380;
@@ -62,6 +62,7 @@
       font-size: var(--size--1);
       margin-bottom: 1rem;
       line-height: 1.3;
+      text-wrap: pretty;
     }
 
     a {
